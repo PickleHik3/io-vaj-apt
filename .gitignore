@@ -1,0 +1,23 @@
+# Generated package/repository artifacts
+artifacts/
+build/
+dist/
+out/
+tmp/
+*.deb
+*.changes
+*.buildinfo
+*.zip
+
+# Local caches/tooling
+.cache/
+.venv/
+__pycache__/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+.gnupg/
+secrets/
+workspace.local.yaml
