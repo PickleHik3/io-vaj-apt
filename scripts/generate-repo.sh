@@ -65,12 +65,14 @@ MD5Sum:
 RELEOF
 
 for f in dists/stable/main/binary-aarch64/Packages dists/stable/main/binary-aarch64/Packages.gz; do
-    printf " %s %16d %s\n" "$(md5sum "$f" | cut -d' ' -f1)" "$(stat -c%s "$f")" "$f" >> "$RELEASE"
+    release_path="${f#dists/stable/}"
+    printf " %s %16d %s\n" "$(md5sum "$f" | cut -d' ' -f1)" "$(stat -c%s "$f")" "$release_path" >> "$RELEASE"
 done
 
 echo "SHA256:" >> "$RELEASE"
 for f in dists/stable/main/binary-aarch64/Packages dists/stable/main/binary-aarch64/Packages.gz; do
-    printf " %s %16d %s\n" "$(sha256sum "$f" | cut -d' ' -f1)" "$(stat -c%s "$f")" "$f" >> "$RELEASE"
+    release_path="${f#dists/stable/}"
+    printf " %s %16d %s\n" "$(sha256sum "$f" | cut -d' ' -f1)" "$(stat -c%s "$f")" "$release_path" >> "$RELEASE"
 done
 
 echo "[generate-repo] Done."
