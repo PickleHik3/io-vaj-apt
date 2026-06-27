@@ -1,10 +1,11 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
 # Generated: 2026-06-27T09:10:42.469841Z
-# Package count: 157
+# Package count: 158
 # Columns: name version arch sha256 object-path
 
-apt	2.8.1-2	aarch64	5f240d52d1e9a4b22a2a15609fbf4fbe8bf1016bd6ef0be92a1f3782fd465fe0	pool/main/a/apt/apt_2.8.1-2_aarch64.deb
+apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb
+io-vaj-keyring	1.0-1	all	d48db1591cc5284a76c4d6588a5ae73b93f19dd9091922bd933b4ed4dda61315	pool/main/i/io-vaj-keyring/io-vaj-keyring_1.0-1_all.deb
 apt-ftparchive	2.8.1-2	aarch64	4ebb028d76ba20b043f4377751d2844e0665c63796ac13b04b237fb158499ba8	pool/main/a/apt-ftparchive/apt-ftparchive_2.8.1-2_aarch64.deb
 apt-transport-tor	2.8.1-2	all	c337ce9d7bf0c2c1378e5e22e6373f30104caef4d9b3369131d27ce6af570fae	pool/main/a/apt-transport-tor/apt-transport-tor_2.8.1-2_all.deb
 attr	2.5.2-1	aarch64	a063680629b989b75e47959574be25072f484d54c0bdcc9632dd81cad4b63bd3	pool/main/a/attr/attr_2.5.2-1_aarch64.deb
