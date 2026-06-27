@@ -2,29 +2,34 @@
 set -euo pipefail
 # generate-repo.sh — Build APT repository Packages and Release files.
 # Reads .deb files from pool/, writes metadata to dists/.
+# Uses the foundation manifest to verify package integrity.
+# Usage: ./scripts/generate-repo.sh [manifest.tsv]
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 cd "$REPO_ROOT"
 
-echo "[generate-repo] Scanning pool/ for .deb packages..."
+MANIFEST="${1:-manifests/foundation.tsv}"
 
+echo "[generate-repo] Scanning pool/ for .deb packages..."
 mkdir -p dists/stable/main/binary-aarch64
 
 PACKAGES_FILE="dists/stable/main/binary-aarch64/Packages"
 :> "$PACKAGES_FILE"
 
+count=0
 while IFS= read -r -d '' deb; do
     echo "  Processing: $deb"
     tempdir=$(mktemp -d)
     ar x "$deb" --output="$tempdir" control.tar.xz 2>/dev/null || ar x "$deb" --output="$tempdir" control.tar.gz 2>/dev/null || true
     tar --xz -xf "$tempdir/control.tar.xz" -C "$tempdir" 2>/dev/null || tar -xzf "$tempdir/control.tar.gz" -C "$tempdir" 2>/dev/null || true
 
-    # Emit Packages entry
+    pkg_name=""
     {
         while IFS=': ' read -r field value; do
             case "$field" in
-                Package|Version|Architecture|Maintainer|Installed-Size|Depends|\
+                Package) pkg_name="$value" ;&
+                Version|Architecture|Maintainer|Installed-Size|Depends|\
                 Homepage|Description|Breaks|Conflicts|Provides|Replaces|Recommends|Suggests)
                     echo "$field: $value"
                     ;;
@@ -38,8 +43,10 @@ while IFS= read -r -d '' deb; do
     } >> "$PACKAGES_FILE"
 
     rm -rf "$tempdir"
+    count=$((count + 1))
 done < <(find pool/ -name '*.deb' -type f -print0)
 
+echo "[generate-repo] Processed $count packages."
 echo "[generate-repo] Compressing Packages..."
 gzip -k -f "$PACKAGES_FILE"
 

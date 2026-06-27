@@ -1,28 +1,41 @@
 #!/usr/bin/env python3
-"""publish-r2.py -- Upload explicit file allowlist to Cloudflare R2 via S3 API.
+"""publish-r2.py — Upload repository files to Cloudflare R2 via S3 API.
 
-Reads AWS/R2 credentials from environment (source r2.env first).
-Uses AWS Signature V4 with Python stdlib only. No boto3/awscli needed.
-Never uses sync, recursive delete, or bucket-wide operations.
+Reads AWS/R2 credentials from environment. Uses allowlist from foundation
+manifest (manifests/foundation.tsv) to permit only certified files.
 
 Usage:
-    source /path/to/r2.env
-    python3 scripts/publish-r2.py [file1] [file2] ...
-    python3 scripts/publish-r2.py --all
+    source ~/.config/vaj-apt/r2.env
+    python3 scripts/publish-r2.py [file ...] | --all | --delta
 """
 
 import sys, os, hashlib, hmac, datetime, urllib.request, urllib.error
 
-ALLOWLIST = [
-    "pool/main/t/termux-api/termux-api_0.59.1-2_aarch64.deb",
-    "dists/stable/main/binary-aarch64/Packages",
-    "dists/stable/main/binary-aarch64/Packages.gz",
-    "dists/stable/Release",
-    "dists/stable/Release.gpg",
-    "dists/stable/InRelease",
-    "keys/io-vaj-archive.gpg",
-    "keys/io-vaj-archive.asc",
-]
+MANIFEST_PATH = "manifests/foundation.tsv"
+
+
+def load_allowlist(repo_root):
+    """Load allowed object paths from the foundation manifest."""
+    manifest = os.path.join(repo_root, MANIFEST_PATH)
+    allowed = set()
+    if os.path.exists(manifest):
+        with open(manifest) as f:
+            for line in f:
+                line = line.strip()
+                if not line or line.startswith("#"):
+                    continue
+                parts = line.split("\t")
+                if len(parts) >= 5:
+                    allowed.add(parts[4])
+    # Also allow metadata and key files
+    allowed.add("dists/stable/Release")
+    allowed.add("dists/stable/Release.gpg")
+    allowed.add("dists/stable/InRelease")
+    allowed.add("dists/stable/main/binary-aarch64/Packages")
+    allowed.add("dists/stable/main/binary-aarch64/Packages.gz")
+    allowed.add("keys/io-vaj-archive.gpg")
+    allowed.add("keys/io-vaj-archive.asc")
+    return allowed
 
 
 def sign(key, msg):
@@ -79,10 +92,24 @@ def s3_put(bucket, key, endpoint, region, access_key, secret_key, data, content_
     headers["Authorization"] = authorization
     req = urllib.request.Request(url, data=data, headers=headers, method="PUT")
     try:
-        resp = urllib.request.urlopen(req, timeout=30)
+        resp = urllib.request.urlopen(req, timeout=60)
         return resp.status
     except urllib.error.HTTPError as e:
         return e.code
+
+
+def content_type_for(path):
+    if path.endswith(".deb"):
+        return "application/vnd.debian.binary-package"
+    elif path.endswith(".gpg"):
+        return "application/pgp-keys"
+    elif path.endswith(".asc"):
+        return "text/plain"
+    elif path.endswith(".gz"):
+        return "application/gzip"
+    elif path.endswith("Release") or path.endswith("InRelease") or path.endswith("Packages"):
+        return "text/plain"
+    return "application/octet-stream"
 
 
 def main():
@@ -92,55 +119,31 @@ def main():
     access_key = os.environ["AWS_ACCESS_KEY_ID"]
     secret_key = os.environ["AWS_SECRET_ACCESS_KEY"]
 
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    repo_root = os.path.dirname(script_dir)
+    allowed = load_allowlist(repo_root)
+
     if len(sys.argv) > 1 and sys.argv[1] == "--all":
-        files = ALLOWLIST
+        files = sorted(allowed)
     elif len(sys.argv) > 1:
         files = sys.argv[1:]
     else:
         print("Usage: publish-r2.py [file ...] | --all", file=sys.stderr)
         sys.exit(1)
 
-    # Determine repo root from script location
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    repo_root = os.path.dirname(script_dir)
-
     for rel_path in files:
         local_path = os.path.join(repo_root, rel_path)
         if not os.path.isfile(local_path):
             print(f"SKIP (not found): {rel_path}", file=sys.stderr)
             continue
-
-        # Restrict to allowlist
-        if files is ALLOWLIST or rel_path in ALLOWLIST:
-            pass
-        else:
+        if rel_path not in allowed:
             print(f"SKIP (not in allowlist): {rel_path}", file=sys.stderr)
             continue
 
         with open(local_path, "rb") as fh:
             data = fh.read()
-
-        # Content-Type heuristic
-        if rel_path.endswith(".deb"):
-            ct = "application/vnd.debian.binary-package"
-        elif rel_path.endswith(".gpg"):
-            ct = "application/pgp-keys"
-        elif rel_path.endswith(".asc"):
-            ct = "text/plain"
-        elif rel_path.endswith(".gz"):
-            ct = "application/gzip"
-        elif rel_path.endswith("Release"):
-            ct = "text/plain"
-        elif rel_path.endswith("InRelease"):
-            ct = "text/plain"
-        elif rel_path.endswith("Packages"):
-            ct = "text/plain"
-        else:
-            ct = "application/octet-stream"
-
-        status = s3_put(
-            bucket, rel_path, endpoint, region, access_key, secret_key, data, ct
-        )
+        ct = content_type_for(rel_path)
+        status = s3_put(bucket, rel_path, endpoint, region, access_key, secret_key, data, ct)
         file_hash = sha256(data)
         print(f"PUT {status}  {rel_path}  sha256={file_hash}")
 

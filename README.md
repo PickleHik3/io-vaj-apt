@@ -4,14 +4,11 @@ Repository infrastructure for the io.vaj.tl package archive.
 
 Artifacts are stored in Cloudflare R2 and served at `https://repo.pathayam.xyz`.
 
-## Layout
+## Public Key
 
-```
-keys/                  Public GPG keys for APT trust
-scripts/               Repository generation and publishing tooling
-pool/                  Binary package pool (not committed)
-dists/                 Generated repository metadata (not committed)
-```
+The archive signing key is at `keys/io-vaj-archive.gpg`.
+
+Fingerprint: `98C1 464F EE61 FCBA 4E7F  54AE 86B6 50B2 12C8 DB81`
 
 ## Quick Start
 
@@ -27,19 +24,22 @@ source ~/.config/vaj-apt/r2.env
 ./scripts/publish-r2.py --all
 ```
 
-## Public Key
+## Foundation Catalog
 
-The archive signing key is at `keys/io-vaj-archive.gpg`.
+The foundation catalog at `manifests/foundation.tsv` contains 157 packages
+recovered from the certified Phase 0A bootstrap (SHA-256:
+`be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3`).
 
-Fingerprint: `98C1 464F EE61 FCBA 4E7F  54AE 86B6 50B2 12C8 DB81`
+Each entry records: package name, version, architecture, SHA-256, and
+repository object path. The manifest is the authoritative allowlist for
+`publish-r2.py`.
 
-Install into APT:
-
-```bash
-cp keys/io-vaj-archive.gpg /data/data/io.vaj.tl/files/usr/etc/apt/keyrings/
-```
+To reproduce the catalog from the manifest, place each `.deb` at its
+object path under `pool/`, then run `generate-repo.sh`.
 
 ## Source Configuration
+
+Add the VAJ repository to your APT sources:
 
 ```
 deb [signed-by=/data/data/io.vaj.tl/files/usr/etc/apt/keyrings/io-vaj-archive.gpg]
