@@ -10,6 +10,7 @@ Usage:
 """
 
 import sys, os, hashlib, hmac, datetime, urllib.request, urllib.error
+from urllib.parse import quote
 
 MANIFEST_PATH = "manifests/foundation.tsv"
 
@@ -55,7 +56,9 @@ def sha256(data):
 
 def s3_put(bucket, key, endpoint, region, access_key, secret_key, data, content_type):
     service = "s3"
-    url = f"{endpoint}/{bucket}/{key}"
+    encoded_bucket = quote(bucket, safe="")
+    encoded_key = quote(key, safe="/~")
+    url = f"{endpoint}/{encoded_bucket}/{encoded_key}"
     t = datetime.datetime.now(datetime.UTC)
     amzdate = t.strftime("%Y%m%dT%H%M%SZ")
     datestamp = t.strftime("%Y%m%d")
@@ -72,7 +75,7 @@ def s3_put(bucket, key, endpoint, region, access_key, secret_key, data, content_
         f"{k.lower()}:{v}\n"
         for k, v in sorted(headers.items(), key=lambda x: x[0].lower())
     )
-    canonical_uri = f"/{bucket}/{key}"
+    canonical_uri = f"/{encoded_bucket}/{encoded_key}"
     canonical_request = (
         f"PUT\n{canonical_uri}\n\n{canonical_headers}\n{signed_headers}\n{payload_hash}"
     )
