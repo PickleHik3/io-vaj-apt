@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
-# Generated: 2026-06-27T09:10:42.469841Z
-# Package count: 155
+# Generated: 2026-06-28T12:50:00Z
+# Package count: 165
 # Columns: name version arch sha256 object-path
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb
@@ -159,3 +159,13 @@ xxhash	0.8.3-1	aarch64	3d2ba654018c115752bc1c552aee117b610b5ebd7dcb7c47f57a85d48
 xz-utils	5.8.3	aarch64	bcef33d788e76233bb3f2d26a6a377f0855d872a56eb8eeacc2131ee5b7417ab	pool/main/x/xz-utils/xz-utils_5.8.3_aarch64.deb
 zlib	1.3.2	aarch64	e5b690ac8b0da59cdc815574637af74c946d1bf77e07c796f755bdb79d4e3d75	pool/main/z/zlib/zlib_1.3.2_aarch64.deb
 zstd	1.5.7-1	aarch64	c909e6818f3c1c8d9731ede61c0bb38b8a3b03e4fec1391589393cf4e23312d5	pool/main/z/zstd/zstd_1.5.7-1_aarch64.deb
+bc	1.08.2-1	aarch64	1b5bb68ccb35490bbd267a95506b4073e5800b6a0b22594f646708ed531918ea	pool/main/b/bc/bc_1.08.2-1_aarch64.deb
+file	5.48-1	aarch64	002b6f33fa6ecae28cd975709f88850f9b90d5e9c2fbe6900159bd6530a01a10	pool/main/f/file/file_5.48-1_aarch64.deb
+flex	2.6.4-4	aarch64	e7e353ad0a1593318a6b895c746e49f35c830deed13b0ee3af7e90a20985ec1c	pool/main/f/flex/flex_2.6.4-4_aarch64.deb
+jq	1.8.2	aarch64	ab3122a6bf7d735cb8587a0713077ef6fa0c662d10d90049084a64c2356fa2bb	pool/main/j/jq/jq_1.8.2_aarch64.deb
+libcap	2.69-1	aarch64	e3a27f047833392e0d04ae2195390531456180fa471553083fc66994f8b2d74f	pool/main/l/libcap/libcap_2.69-1_aarch64.deb
+m4	1.4.19-5	aarch64	17e18e5eda84e77f51c6bd9c502b5da55cc5af2a7d0120e96df83817ced7849c	pool/main/m/m4/m4_1.4.19-5_aarch64.deb
+oniguruma	6.9.10-1	aarch64	4072a7845a22cb3af05021421dbfbdf547f0d484d390b05241fd9e8c326adc9e	pool/main/o/oniguruma/oniguruma_6.9.10-1_aarch64.deb
+which	2.25	aarch64	f2f131778aa2459de1a10aa5ee68f1d13985f2aeb199d67606f6b23077ecb002	pool/main/w/which/which_2.25_aarch64.deb
+zsh	5.9.1-1	aarch64	c5d0ce023faad29bf36864d94df0b5347436b62d801c037fb5147780407e9c57	pool/main/z/zsh/zsh_5.9.1-1_aarch64.deb
+zsh-completions	0.36.0	all	b9c3787499029cdc9d44f52dfcea6d19b05a203da0ec240e3c1d72b7d79937ed	pool/main/z/zsh-completions/zsh-completions_0.36.0_all.deb
