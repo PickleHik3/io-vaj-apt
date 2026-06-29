@@ -254,3 +254,9 @@ rubberband	4.0.0-1	aarch64	37b86bbaa5a88aaa063a712de49073f1f393fdea12882d13fbf8a
 libudfread	1.2.0	aarch64	6deed51c335cbe5bfcfea495e0abe4eaf471c6cce47c8e57a7637723e5e70ec2	pool/main/l/libudfread/libudfread_1.2.0_aarch64.deb
 libbluray	1.4.1	aarch64	88cac4ba3c896a27ecc78c4ee2a10f9bf6991411b956b721fc791458f793e049	pool/main/l/libbluray/libbluray_1.4.1_aarch64.deb
 libwebrtc-audio-processing	1.3-4	aarch64	36ceb7767191d7ddaa5ba8097ccbee9ecfd2020fde8b63548c7faf5d328260f0	pool/main/l/libwebrtc-audio-processing/libwebrtc-audio-processing_1.3-4_aarch64.deb
+binutils	2.46.0-3	aarch64	679bd221c7f6e63d0c7e1e926a897b6087982a44f8d4c662b69f4613b3d4d29e	pool/main/b/binutils/binutils_2.46.0-3_aarch64.deb
+groff	1.23.0-2	aarch64	e4662524014cfacbe45c1c7c6f53f8374ede3623257d4b229e3351ad6809e427	pool/main/g/groff/groff_1.23.0-2_aarch64.deb
+dbus	1.16.2-3	aarch64	c07eb580a229200bb2043adb202020f808c55647a801384998c68443d92fb291	pool/main/d/dbus/dbus_1.16.2-3_aarch64.deb
+glib	2.88.1	aarch64	bba0bd0d642f80f98d6dfa7d202cd0e6f6ad9468d87bd60744985bfe6ce3454f	pool/main/g/glib/glib_2.88.1_aarch64.deb
+libgraphite	1.3.15	aarch64	99065401ef5d96ed9a520f680db3669d940ce7fe413de3bed45e570d3aaa17c5	pool/main/l/libgraphite/libgraphite_1.3.15_aarch64.deb
+libpixman	0.46.4-1	aarch64	93313b329ef4c1b9d927b9538738c1f2bfb52eff00917eb3772f0a7dfcdb4c6d	pool/main/l/libpixman/libpixman_0.46.4-1_aarch64.deb
