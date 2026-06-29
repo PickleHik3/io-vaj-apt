@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
 # Generated: 2026-06-28T12:50:00Z
-# Package count: 190
+# Package count: 196
 # Columns: name version arch sha256 object-path
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb
@@ -194,3 +194,9 @@ oniguruma	6.9.10-1	aarch64	4072a7845a22cb3af05021421dbfbdf547f0d484d390b05241fd9
 which	2.25	aarch64	f2f131778aa2459de1a10aa5ee68f1d13985f2aeb199d67606f6b23077ecb002	pool/main/w/which/which_2.25_aarch64.deb
 zsh	5.9.1-1	aarch64	c5d0ce023faad29bf36864d94df0b5347436b62d801c037fb5147780407e9c57	pool/main/z/zsh/zsh_5.9.1-1_aarch64.deb
 zsh-completions	0.36.0	all	b9c3787499029cdc9d44f52dfcea6d19b05a203da0ec240e3c1d72b7d79937ed	pool/main/z/zsh-completions/zsh-completions_0.36.0_all.deb
+libedit	20240517-3.1-1	aarch64	7ad8b8c7abc50e435ebd83b43d7dcb7b1df7baa4ab2ec7cd7f1987ea5ae5bf23	pool/main/l/libedit/libedit_20240517-3.1-1_aarch64.deb
+libmsgpack	7.0.1	aarch64	67e689150b16b403ebdd39f0e69b038a5e6924cf83e149bccd88c54c1fb41039	pool/main/l/libmsgpack/libmsgpack_7.0.1_aarch64.deb
+libsodium	1.0.22-1	aarch64	0955e84abc624861fe137bf48f7ba8bc6c873aaa817582452bcefc2f29c025cc	pool/main/l/libsodium/libsodium_1.0.22-1_aarch64.deb
+libunibilium	2.1.2-2	aarch64	fab75532450f845af97fa5053d055c5bccf6bdf892518389996b0c3812ea8728	pool/main/l/libunibilium/libunibilium_2.1.2-2_aarch64.deb
+libuv	1.52.1	aarch64	202c6c599c34903f4462c545914d9719b9fd0d4186ab3e942b98950ec715d3c4	pool/main/l/libuv/libuv_1.52.1_aarch64.deb
+utf8proc	2.11.3	aarch64	e82065a6f4fc2a1555b09adbbcfb6ac5366e8ff0300168aa01d5d20aee549374	pool/main/u/utf8proc/utf8proc_2.11.3_aarch64.deb
