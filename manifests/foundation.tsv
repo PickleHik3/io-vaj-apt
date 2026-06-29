@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
 # Generated: 2026-06-28T12:50:00Z
-# Package count: 165
+# Package count: 170
 # Columns: name version arch sha256 object-path
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb
@@ -33,6 +33,7 @@ findutils	4.10.0-1	aarch64	feefad07b49cced41b04ad8e4a3dae103acbe26be39f010a40caa
 fontconfig	2.18.1	aarch64	141f637e751fddf4d2f79dee4f54b0d7be1f7331654786f876ec56eb99e3e9f2	pool/main/f/fontconfig/fontconfig_2.18.1_aarch64.deb
 fontconfig-utils	2.18.1	aarch64	e2990a5bc568689ecf56633d10e038407473f9039de04474cf77251a4a9008c1	pool/main/f/fontconfig-utils/fontconfig-utils_2.18.1_aarch64.deb
 freetype	2.14.3	aarch64	2246723a6292752315fdd234ab7e5ddf411438df7bbeb9a096e403969e3ff49b	pool/main/f/freetype/freetype_2.14.3_aarch64.deb
+fish	4.8.0	aarch64	78797d036a2d5cd9aad4cfcd320d6a8f6baafc593b6852df969a332a8439ee1e	pool/main/f/fish/fish_4.8.0_aarch64.deb
 gawk	5.3.2	aarch64	b194a09534713a56a529df2bcef83b573055f921fa04bac6a7fadfe02c548864	pool/main/g/gawk/gawk_5.3.2_aarch64.deb
 gdbm	1.26-1	aarch64	bb816a64bd0ea0fb55383a30531aa326a31b48bf9c91cb0df37ece48e5cfbbbd	pool/main/g/gdbm/gdbm_1.26-1_aarch64.deb
 gnupg	2.5.17	aarch64	555458b45da02f93fa9e3a2e49685e49660957528f27fbb1b05f2a2367c140a6	pool/main/g/gnupg/gnupg_2.5.17_aarch64.deb
@@ -104,7 +105,10 @@ libxslt	1.1.45-1	aarch64	fb271080d15bef5a7277337a2cd409f5d3973d85427d143e9777f16
 libxss	1.2.5	aarch64	f17f6284e6ccf2d9b386e4f1412c46ff60205a2c8e207d3407adb483d151f37b	pool/main/l/libxss/libxss_1.2.5_aarch64.deb
 lsof	4.99.7	aarch64	330ee7802171119ce204b5d7623af85e204e9bcb7805807c3f0ffaade0c817f1	pool/main/l/lsof/lsof_4.99.7_aarch64.deb
 lz4	1.10.0-1	aarch64	5bd040eda0d52082ce4db8b0e8f3f9f3036fed7194d8d9aa77cc3c2f04d204d8	pool/main/l/lz4/lz4_1.10.0-1_aarch64.deb
+lua51	5.1.5-8	aarch64	9b29d50c13f31feab365720dbd9d738060480d5faf5debafa39ca19b2f378f2c	pool/main/l/lua51/lua51_5.1.5-8_aarch64.deb
+lua51-lpeg	1.1.0-6	aarch64	9ac8bb26257a1bd94d3ff16da7742a99c5ff5f3d85f2c3e467fb1c7bc142c28b	pool/main/l/lua-lpeg/lua51-lpeg_1.1.0-6_aarch64.deb
 make	4.4.1-1	aarch64	ef097d1c9319ed49c21355acf1337234b0b4af1cba496d08b002cf3608dc5e3e	pool/main/m/make/make_4.4.1-1_aarch64.deb
+mandoc	1.14.6-6	aarch64	2b28b9ef5b6e297ac27f4257aa44da00f84912aabd10550890cf7a25f28ed159	pool/main/m/mandoc/mandoc_1.14.6-6_aarch64.deb
 mount-utils	2.42.1-2	aarch64	1d671dae5d01bb9cbf038a1da0992e6c227a0751ef514decb580340ea5eec3e1	pool/main/m/mount-utils/mount-utils_2.42.1-2_aarch64.deb
 nano	9.1	aarch64	fbca0b2ee53a4a8da799f0e85184a227f9f357878a28913026f5b411f548ea4a	pool/main/n/nano/nano_9.1_aarch64.deb
 ncurses	6.6.20260307+really6.5.20250830	aarch64	2561bd489c4953d0a502a6fc781750dcdb9ea598caf436ea0d7fb013b2bd597b	pool/main/n/ncurses/ncurses_6.6.20260307+really6.5.20250830_aarch64.deb
@@ -144,6 +148,7 @@ termux-keyring	3.13	all	1700d551bb2000ced5aa089e2712b760e217e90d2f434adf8a6a6cdb
 termux-licenses	2.1	all	6d7e22b8ef1871d04ff47eda4b5c48903a01b66c0eb32484ce9c3bcc878a4dd0	pool/main/t/termux-licenses/termux-licenses_2.1_all.deb
 termux-tools	1.46.0+really1.45.0-3	aarch64	05a237af0f0e48703561d90cd742c1797209e96ec12462a8caa068f89592682d	pool/main/t/termux-tools/termux-tools_1.46.0+really1.45.0-3_aarch64.deb
 tk	8.6.14-1	aarch64	922c757950f31682f474ed8f2dafb75e90df27a57fd8aa45419dff8edf05ac33	pool/main/t/tk/tk_8.6.14-1_aarch64.deb
+tmux	3.7	aarch64	71b12e2c8a6a1c0a9bfb823be064f6642fb58fa06664b95377dc1ced73149404	pool/main/t/tmux/tmux_3.7_aarch64.deb
 tor	0.4.9.10	aarch64	f3435fe4a37890e4d8b667f8ec32663fec725ec88c50fc6b91f3422bc627a39d	pool/main/t/tor/tor_0.4.9.10_aarch64.deb
 ttf-dejavu	2.37-8	all	d8d1b07911919f9ddf50bb8b06539214d32d133a197ad0c58c6ff3833437e99d	pool/main/t/ttf-dejavu/ttf-dejavu_2.37-8_all.deb
 unbound	1.25.1	aarch64	a06cc555440e2512685f22dcf829e2608e903575a55189f3c022d52f114e4c56	pool/main/u/unbound/unbound_1.25.1_aarch64.deb
