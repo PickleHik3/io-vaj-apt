@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
-# Generated: 2026-06-29T14:45:00Z
-# Package count: 208
+# Generated: 2026-06-29T19:15:00Z
+# Package count: 250
 # Columns: name version arch sha256 object-path
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb
@@ -233,3 +233,24 @@ libssh	0.12.0-1	aarch64	5a4b313d261f2df06c8b624c93f4e50f1d9a4ec7d68666e49f516934
 libvmaf	3.2.0	aarch64	61c0c1676b3721e5851c2c8ee6da2dcbfd91114cd5b3d6a22dae787e01739321	pool/main/l/libvmaf/libvmaf_3.2.0_aarch64.deb
 libwebp	1.6.0-1	aarch64	a57c94323db75e038925f5d3491a39454750c84bae3972dab5759e599ed2e6b2	pool/main/l/libwebp/libwebp_1.6.0-1_aarch64.deb
 libzmq	4.3.5-2	aarch64	44d4e067247052e18819ee858128094ad6140ee9e809d19560f54fa489be15c9	pool/main/l/libzmq/libzmq_4.3.5-2_aarch64.deb
+libaom	3.14.1	aarch64	61ea51960b10690715bfd1ab588f39649bd0eaefcd95ea4c0720ad02be3d5826	pool/main/l/libaom/libaom_3.14.1_aarch64.deb
+aom-tools	3.14.1	aarch64	4cce1b02280d2e958c6e82a28191fbb71f7af82240147d5d09f7c643c7753a33	pool/main/a/aom-tools/aom-tools_3.14.1_aarch64.deb
+libdav1d	1.5.3	aarch64	cc7c0f55a8f11bf217ffff532c54708b42c7780bced370b827a4e417633e814d	pool/main/l/libdav1d/libdav1d_1.5.3_aarch64.deb
+libvidstab	1.1.1-3	aarch64	5ba0b65ddc6f41fff11b6edb5ec63395138efccd925cf8852daaf88d836368e0	pool/main/l/libvidstab/libvidstab_1.1.1-3_aarch64.deb
+libx264	1:0.164.3191-1	aarch64	e21dbe0869ad9ac69af516e6d5ef22462b3270ca31e12106005bd6c29215381e	pool/main/l/libx264/libx264_1:0.164.3191-1_aarch64.deb
+x264	1:0.164.3191-1	aarch64	dbdd934107d589875e817603ff14abf324eefcfc7a4e2632a7c1ced2437bf921	pool/main/x/x264/x264_1:0.164.3191-1_aarch64.deb
+libde265	1.1.1	aarch64	538d353cdffb3a37b9613ea4c61227ea5cb23fbd4e4c308617fdc4bb3161ba7d	pool/main/l/libde265/libde265_1.1.1_aarch64.deb
+libmysofa	1.3.4-1	aarch64	e447438deda3e7621ef8acc0b38a4505816d38c9628cd4aa696380b91890542f	pool/main/l/libmysofa/libmysofa_1.3.4-1_aarch64.deb
+libzimg	3.0.6	aarch64	0570c13e434b0f90876c71484b56e24aa3fbea85b3d51a0453c8f24f9c0e1b0d	pool/main/l/libzimg/libzimg_3.0.6_aarch64.deb
+libsrt	1.5.5	aarch64	b6890d2cad7efb7579fcdbcf1f224efd9b5e17549686cdd27b506712f084ca83	pool/main/l/libsrt/libsrt_1.5.5_aarch64.deb
+srt-tools	1.5.5	aarch64	42adc3475c76845083999fd41985586948ca3f4b59503e5785f7e28a1911ecc9	pool/main/s/srt-tools/srt-tools_1.5.5_aarch64.deb
+libvpx	1:1.16.0	aarch64	27b43e8072531ccc1736d4cd78d636b1b2880ef41970b1282bbb4d9905ee15f5	pool/main/l/libvpx/libvpx_1:1.16.0_aarch64.deb
+game-music-emu	0.6.5	aarch64	09d14349831e7842302cd74006238c88de8047d02630fbcf5069afef96c23c1a	pool/main/g/game-music-emu/game-music-emu_0.6.5_aarch64.deb
+libbs2b	3.1.0-2	aarch64	f1152ab17dce445cf11a303cebb533f92f62fd6ea9c9f2764b6c26a773b181b4	pool/main/l/libbs2b/libbs2b_3.1.0-2_aarch64.deb
+libtheora	1.2.0-1	aarch64	ebeb076f8215fc9a70c4117922bad14635ce314c62e1a766ebe2ea52486126e6	pool/main/l/libtheora/libtheora_1.2.0-1_aarch64.deb
+libx265	4.2	aarch64	7e3fa67e4845895147edc360e1bad3f0862f1c57c22d0a3b2c3fa8cf1fd5a9f4	pool/main/l/libx265/libx265_4.2_aarch64.deb
+x265	4.2	aarch64	cd2fd4496b831e0183ea8ac9fba0c01a96bd408398a5809df3f0b2b2d85784c3	pool/main/x/x265/x265_4.2_aarch64.deb
+rubberband	4.0.0-1	aarch64	37b86bbaa5a88aaa063a712de49073f1f393fdea12882d13fbf8a94c18d5b156	pool/main/r/rubberband/rubberband_4.0.0-1_aarch64.deb
+libudfread	1.2.0	aarch64	6deed51c335cbe5bfcfea495e0abe4eaf471c6cce47c8e57a7637723e5e70ec2	pool/main/l/libudfread/libudfread_1.2.0_aarch64.deb
+libbluray	1.4.1	aarch64	88cac4ba3c896a27ecc78c4ee2a10f9bf6991411b956b721fc791458f793e049	pool/main/l/libbluray/libbluray_1.4.1_aarch64.deb
+libwebrtc-audio-processing	1.3-4	aarch64	36ceb7767191d7ddaa5ba8097ccbee9ecfd2020fde8b63548c7faf5d328260f0	pool/main/l/libwebrtc-audio-processing/libwebrtc-audio-processing_1.3-4_aarch64.deb
