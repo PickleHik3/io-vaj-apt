@@ -42,6 +42,32 @@ def _parse_packages(packages_path: Path) -> list[dict[str, str]]:
     return records
 
 
+def _raw_stanzas_by_package(packages_path: Path) -> dict[str, str]:
+    stanzas: dict[str, str] = {}
+    text = packages_path.read_text(encoding="utf-8")
+    for stanza in text.strip().split("\n\n"):
+        if not stanza.strip():
+            continue
+        stanza_text = stanza + "\n\n"
+        name = next(
+            line.split(": ", 1)[1]
+            for line in stanza.splitlines()
+            if line.startswith("Package: ")
+        )
+        stanzas[name] = stanza_text
+    return stanzas
+
+
+def _field_order(stanza_text: str) -> list[str]:
+    order: list[str] = []
+    for line in stanza_text.splitlines():
+        if not line or line.startswith((" ", "\t")) or ": " not in line:
+            continue
+        field, _value = line.split(": ", 1)
+        order.append(field)
+    return order
+
+
 def _write_manifest(manifest_path: Path, rows: list[tuple[str, ...]]) -> None:
     manifest_path.parent.mkdir(parents=True, exist_ok=True)
     with manifest_path.open("w", encoding="utf-8") as handle:
@@ -285,8 +311,165 @@ class ManifestAuthoritySyntheticPoolTests(unittest.TestCase):
             with self.assertRaisesRegex(gen.ManifestAuthorityError, "size must be greater than zero"):
                 gen.load_manifest(manifest)
 
+    def test_control_parser_preserves_continuation_lines(self):
+        control_text = (
+            "Package: continuationpkg\n"
+            "Version: 1.0\n"
+            "Description: summary line\n"
+            " continuation one\n"
+            " continuation two\n"
+            "Architecture: aarch64\n"
+        )
+
+        selected_blocks, identity = gen._parse_selected_control_blocks(control_text)
+
+        self.assertEqual(identity["Package"], "continuationpkg")
+        self.assertEqual(identity["Version"], "1.0")
+        self.assertEqual(identity["Architecture"], "aarch64")
+        self.assertEqual(
+            dict(selected_blocks)["Description"],
+            "Description: summary line\n continuation one\n continuation two",
+        )
+
+    def test_historical_ordering_is_package_generic(self):
+        selected_blocks_a = [
+            ("Package", "Package: alpha"),
+            ("Architecture", "Architecture: aarch64"),
+            ("Installed-Size", "Installed-Size: 1"),
+            ("Maintainer", "Maintainer: example"),
+            ("Version", "Version: 1.0"),
+            ("Homepage", "Homepage: https://example.invalid/a"),
+            ("Breaks", "Breaks: old-alpha"),
+            ("Depends", "Depends: libc++"),
+            ("Replaces", "Replaces: old-alpha"),
+            ("Description", "Description: alpha package"),
+        ]
+        selected_blocks_b = [
+            ("Package", "Package: beta"),
+            ("Architecture", "Architecture: aarch64"),
+            ("Installed-Size", "Installed-Size: 2"),
+            ("Maintainer", "Maintainer: example"),
+            ("Version", "Version: 2.0"),
+            ("Homepage", "Homepage: https://example.invalid/b"),
+            ("Breaks", "Breaks: old-beta"),
+            ("Depends", "Depends: libc++, zlib"),
+            ("Replaces", "Replaces: old-beta"),
+            ("Description", "Description: beta package"),
+        ]
+        order = (
+            "Package",
+            "Version",
+            "Architecture",
+            "Maintainer",
+            "Installed-Size",
+            "Depends",
+            "Homepage",
+            "Description",
+            "Breaks",
+            "Replaces",
+        )
+
+        rendered_a = gen._render_selected_control_blocks(selected_blocks_a, field_order=order)
+        rendered_b = gen._render_selected_control_blocks(selected_blocks_b, field_order=order)
+
+        self.assertEqual(_field_order("\n".join(rendered_a) + "\n"), list(order))
+        self.assertEqual(_field_order("\n".join(rendered_b) + "\n"), list(order))
+
+    def test_historical_compatibility_rejects_altered_field_order(self):
+        profile = gen.HISTORICAL_SERIALIZATION_PROFILES_BY_TRIPLET[("binutils", "2.46.0-3", "aarch64")]
+        entry = gen.ManifestEntry(
+            name=profile.name,
+            version=profile.version,
+            arch=profile.arch,
+            sha256=profile.sha256,
+            object_path="pool/main/b/binutils/binutils_2.46.0-3_aarch64.deb",
+            size=2438504,
+        )
+        altered_stanza = (
+            "Package: binutils\n"
+            "Architecture: aarch64\n"
+            "Installed-Size: 19736\n"
+            "Maintainer: @termux\n"
+            "Version: 2.46.0-3\n"
+            "Homepage: https://www.gnu.org/software/binutils/\n"
+            "Breaks: binutils (<< 2.46), binutils-bin, binutils-libs, binutils-dev\n"
+            "Depends: libc++, zlib, zstd\n"
+            "Replaces: binutils (<< 2.46), binutils-bin, binutils-libs, binutils-dev\n"
+            "Description: A GNU collection of binary utilities\n"
+            "Filename: pool/main/b/binutils/binutils_2.46.0-3_aarch64.deb\n"
+            "Size: 2438504\n"
+            "SHA256: 679bd221c7f6e63d0c7e1e926a897b6087982a44f8d4c662b69f4613b3d4d29e\n"
+            "MD5sum: dcb99d9c68a37af276f11d31d40add12\n\n"
+        )
+
+        with self.assertRaisesRegex(gen.ManifestAuthorityError, "historical serialization compatibility mismatch"):
+            gen._enforce_historical_stanza_compatibility(entry, profile, altered_stanza)
+
 
 class ManifestAuthorityActiveManifestTests(unittest.TestCase):
+    def test_active_manifest_regeneration_matches_current_public_packages_bytes(self):
+        repo_root = Path(__file__).resolve().parents[1]
+        manifest = repo_root / "manifests" / "foundation.tsv"
+        current_packages_path = repo_root / "dists" / "stable" / "main" / "binary-aarch64" / "Packages"
+
+        with tempfile.TemporaryDirectory() as output_str:
+            output_root = Path(output_str)
+            result = gen.generate_repository(manifest, repo_root, output_root)
+            regenerated_packages_path = result["packages_path"]
+
+            current_bytes = current_packages_path.read_bytes()
+            regenerated_bytes = regenerated_packages_path.read_bytes()
+            current_stanzas = _raw_stanzas_by_package(current_packages_path)
+            regenerated_stanzas = _raw_stanzas_by_package(regenerated_packages_path)
+            regenerated_records = _parse_packages(regenerated_packages_path)
+
+        self.assertEqual(len(regenerated_stanzas), 289)
+        self.assertEqual(regenerated_bytes, current_bytes)
+        self.assertEqual(set(regenerated_stanzas), set(current_stanzas))
+        versions = [record["Version"] for record in regenerated_records if record["Package"] == "openexr"]
+        self.assertEqual(versions, ["3.4.4-1"])
+        self.assertNotIn("openexr_3.4.4_aarch64.deb", regenerated_bytes.decode("utf-8"))
+
+    def test_six_historical_wave_g_stanzas_regenerate_byte_identical(self):
+        repo_root = Path(__file__).resolve().parents[1]
+        manifest = repo_root / "manifests" / "foundation.tsv"
+        current_packages_path = repo_root / "dists" / "stable" / "main" / "binary-aarch64" / "Packages"
+        expected_stanzas = _raw_stanzas_by_package(current_packages_path)
+        historical_names = {"binutils", "groff", "dbus", "glib", "libgraphite", "libpixman"}
+        expected_profiles = {
+            profile.name: profile
+            for profile in gen.HISTORICAL_SERIALIZATION_PROFILES
+        }
+
+        with tempfile.TemporaryDirectory() as output_str:
+            output_root = Path(output_str)
+            result = gen.generate_repository(manifest, repo_root, output_root)
+            regenerated_stanzas = _raw_stanzas_by_package(result["packages_path"])
+
+        for name in historical_names:
+            with self.subTest(name=name):
+                self.assertEqual(regenerated_stanzas[name], expected_stanzas[name])
+                self.assertEqual(
+                    hashlib.sha256(regenerated_stanzas[name].encode("utf-8")).hexdigest(),
+                    expected_profiles[name].expected_stanza_sha256,
+                )
+
+    def test_existing_non_wave_g_stanzas_retain_byte_identity(self):
+        repo_root = Path(__file__).resolve().parents[1]
+        manifest = repo_root / "manifests" / "foundation.tsv"
+        current_packages_path = repo_root / "dists" / "stable" / "main" / "binary-aarch64" / "Packages"
+        expected_stanzas = _raw_stanzas_by_package(current_packages_path)
+        sampled_names = {"apt", "io-vaj-keyring", "openexr", "openssh-sftp-server"}
+
+        with tempfile.TemporaryDirectory() as output_str:
+            output_root = Path(output_str)
+            result = gen.generate_repository(manifest, repo_root, output_root)
+            regenerated_stanzas = _raw_stanzas_by_package(result["packages_path"])
+
+        for name in sampled_names:
+            with self.subTest(name=name):
+                self.assertEqual(regenerated_stanzas[name], expected_stanzas[name])
+
     def test_active_manifest_matches_generated_package_set(self):
         repo_root = Path(__file__).resolve().parents[1]
         manifest = repo_root / "manifests" / "foundation.tsv"

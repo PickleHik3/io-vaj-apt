@@ -122,8 +122,11 @@ class PublisherProvenanceActiveManifestTests(unittest.TestCase):
     def test_valid_disposable_289_package_generation_passes_publisher_validation(self):
         repo_root = Path(__file__).resolve().parents[1]
         manifest = repo_root / "manifests" / "foundation.tsv"
+        current_packages = repo_root / "dists" / "stable" / "main" / "binary-aarch64" / "Packages"
         with tempfile.TemporaryDirectory() as output_str:
             output_root = Path(output_str)
-            gen.generate_repository(manifest, repo_root, output_root)
+            generated = gen.generate_repository(manifest, repo_root, output_root)
             result = pub.validate_metadata_provenance(str(repo_root), str(manifest), str(output_root))
+            generated_bytes = generated["packages_path"].read_bytes()
         self.assertEqual(result["package_count"], 289)
+        self.assertEqual(generated_bytes, current_packages.read_bytes())
