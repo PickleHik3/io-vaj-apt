@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import hashlib
 import importlib.util
+import json
 import os
 from pathlib import Path
 import subprocess
@@ -119,6 +120,118 @@ def _rename_deb(repo_root: Path, old_rel: str, new_rel: str) -> tuple[str, str, 
     return new_rel, _sha256(new_path), new_path.stat().st_size
 
 
+def _build_authority(
+    repo_root: Path,
+    manifest_path: Path,
+    *,
+    authority_path: Path | None = None,
+) -> Path:
+    """Build an authority JSON file for a temporary repo from deb control data.
+
+    Extracts control directly from each deb, computes what the canonical stanza
+    would look like (with default field order, no historical override), and writes
+    an authority that records that exact stanza. This allows the generator to
+    produce byte-identical output on the next run.
+    """
+    if authority_path is None:
+        authority_path = repo_root / gen.DEFAULT_AUTHORITY_PATH
+
+    import io
+    import tarfile
+    import subprocess
+
+    manifest_entries = gen.load_manifest(manifest_path)
+
+    authority_entries = []
+    for seq, me in enumerate(manifest_entries):
+        deb_path = repo_root / me.object_path
+        # Extract control text from deb
+        result = subprocess.run(
+            ["dpkg-deb", "--ctrl-tarfile", str(deb_path)],
+            check=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+        )
+        with tarfile.open(fileobj=io.BytesIO(result.stdout), mode="r:*") as archive:
+            for candidate in ("./control", "control"):
+                try:
+                    member = archive.getmember(candidate)
+                except KeyError:
+                    continue
+                control_file = archive.extractfile(member)
+                if control_file is None:
+                    break
+                control_text = control_file.read().decode("utf-8")
+                break
+            else:
+                raise RuntimeError(f"{deb_path}: control not found")
+
+        selected_blocks, identity = gen._parse_selected_control_blocks(control_text)
+        selected_lines = gen._render_selected_control_blocks(selected_blocks)
+
+        md5sum = gen._hash_file(deb_path, "md5")
+        stanza_lines = [
+            *selected_lines,
+            f"Filename: {me.object_path}",
+            f"Size: {me.size}",
+            f"SHA256: {me.sha256}",
+            f"MD5sum: {md5sum}",
+            "",
+        ]
+        stanza_text = "\n".join(stanza_lines) + "\n"
+        expected_sha = hashlib.sha256(stanza_text.encode("utf-8")).hexdigest()
+
+        control_field_order = [field for field, _block in selected_blocks]
+
+        authority_entries.append({
+            "identity": {
+                "name": me.name,
+                "version": me.version,
+                "arch": me.arch,
+                "sha256": me.sha256,
+                "object_path": me.object_path,
+                "size": me.size,
+            },
+            "sequence": seq,
+            "selected_control_field_order": control_field_order,
+            "expected_stanza_sha256": expected_sha,
+        })
+
+    authority = {
+        "schema_version": 1,
+        "source_packages": {
+            "path": "dists/stable/main/binary-aarch64/Packages",
+            "sha256": "0" * 64,
+            "size": 0,
+            "stanza_count": len(authority_entries),
+            "schema_version": 1,
+        },
+        "entries": authority_entries,
+    }
+
+    authority_path.parent.mkdir(parents=True, exist_ok=True)
+    authority_path.write_text(json.dumps(authority, indent=2) + "\n", encoding="utf-8")
+    return authority_path
+
+
+def _write_authority(authority_path: Path, entries: list[dict]) -> Path:
+    """Write a synthetic authority JSON file (for fail-closed testing)."""
+    authority = {
+        "schema_version": 1,
+        "source_packages": {
+            "path": "dists/stable/main/binary-aarch64/Packages",
+            "sha256": "0" * 64,
+            "size": 0,
+            "stanza_count": len(entries),
+            "schema_version": 1,
+        },
+        "entries": entries,
+    }
+    authority_path.parent.mkdir(parents=True, exist_ok=True)
+    authority_path.write_text(json.dumps(authority, indent=2) + "\n", encoding="utf-8")
+    return authority_path
+
+
 class ManifestAuthoritySyntheticPoolTests(unittest.TestCase):
     def test_superseded_openexr_is_excluded(self):
         with tempfile.TemporaryDirectory() as repo_str, tempfile.TemporaryDirectory() as output_str:
@@ -131,6 +244,7 @@ class ManifestAuthoritySyntheticPoolTests(unittest.TestCase):
                 manifest,
                 [("openexr", "3.4.4-1", "aarch64", new_sha, new_rel, str((repo_root / new_rel).stat().st_size))],
             )
+            _build_authority(repo_root, manifest)
 
             result = gen.generate_repository(manifest, repo_root, output_root)
             records = _parse_packages(result["packages_path"])
@@ -152,6 +266,7 @@ class ManifestAuthoritySyntheticPoolTests(unittest.TestCase):
                 manifest,
                 [("hello", "2.0", "aarch64", kept_sha, kept_rel, str((repo_root / kept_rel).stat().st_size))],
             )
+            _build_authority(repo_root, manifest)
 
             result = gen.generate_repository(manifest, repo_root, output_root)
             payload = result["packages_path"].read_text(encoding="utf-8")
@@ -176,6 +291,22 @@ class ManifestAuthoritySyntheticPoolTests(unittest.TestCase):
                 )],
             )
 
+            # Authority must exist; create minimal one for the entry we are about to fail on
+            _write_authority(
+                repo_root / gen.DEFAULT_AUTHORITY_PATH,
+                [{
+                    "identity": {
+                        "name": "missingpkg", "version": "1.0", "arch": "aarch64",
+                        "sha256": "0" * 64,
+                        "object_path": "pool/main/m/missingpkg/missingpkg_1.0_aarch64.deb",
+                        "size": 1234,
+                    },
+                    "sequence": 0,
+                    "selected_control_field_order": ["Package", "Version", "Architecture", "Maintainer", "Description"],
+                    "expected_stanza_sha256": "0" * 64,
+                }],
+            )
+
             with self.assertRaisesRegex(gen.ManifestAuthorityError, "selected object missing"):
                 gen.generate_repository(manifest, repo_root, output_root)
             self.assertFalse((output_root / "dists").exists())
@@ -191,6 +322,7 @@ class ManifestAuthoritySyntheticPoolTests(unittest.TestCase):
                 manifest,
                 [("mismatchpkg", "1.0", "aarch64", wrong_sha, rel_path, str((repo_root / rel_path).stat().st_size))],
             )
+            _build_authority(repo_root, manifest)
 
             with self.assertRaisesRegex(gen.ManifestAuthorityError, "SHA-256 mismatch"):
                 gen.generate_repository(manifest, repo_root, output_root)
@@ -211,6 +343,7 @@ class ManifestAuthoritySyntheticPoolTests(unittest.TestCase):
                 manifest,
                 [("wrongpkg", "1.0", "aarch64", sha256, rel_path, str((repo_root / rel_path).stat().st_size))],
             )
+            _build_authority(repo_root, manifest)
 
             with self.assertRaisesRegex(gen.ManifestAuthorityError, "control Package mismatch"):
                 gen.generate_repository(manifest, repo_root, output_root)
@@ -231,6 +364,7 @@ class ManifestAuthoritySyntheticPoolTests(unittest.TestCase):
                 manifest,
                 [("archpkg", "1.0", "aarch64", sha256, rel_path, str((repo_root / rel_path).stat().st_size))],
             )
+            _build_authority(repo_root, manifest)
 
             with self.assertRaisesRegex(gen.ManifestAuthorityError, "control Architecture mismatch"):
                 gen.generate_repository(manifest, repo_root, output_root)
@@ -250,6 +384,21 @@ class ManifestAuthoritySyntheticPoolTests(unittest.TestCase):
                     ("duppkg", "1.1", "aarch64", sha_b, rel_b, str((repo_root / rel_b).stat().st_size)),
                 ],
             )
+            # Create a minimal authority (won't be used since manifest loading fails first)
+            _write_authority(
+                repo_root / gen.DEFAULT_AUTHORITY_PATH,
+                [{
+                    "identity": {
+                        "name": "duppkg", "version": "1.0", "arch": "aarch64",
+                        "sha256": sha_a,
+                        "object_path": rel_a,
+                        "size": (repo_root / rel_a).stat().st_size,
+                    },
+                    "sequence": 0,
+                    "selected_control_field_order": ["Package", "Version", "Architecture", "Maintainer", "Description"],
+                    "expected_stanza_sha256": "0" * 64,
+                }],
+            )
 
             with self.assertRaisesRegex(gen.ManifestAuthorityError, "duplicate package selection"):
                 gen.generate_repository(manifest, repo_root, output_root)
@@ -265,6 +414,7 @@ class ManifestAuthoritySyntheticPoolTests(unittest.TestCase):
                 manifest,
                 [("sizepkg", "1.0", "aarch64", sha256, rel_path, str(size + 1))],
             )
+            _build_authority(repo_root, manifest)
 
             with self.assertRaisesRegex(gen.ManifestAuthorityError, "size mismatch"):
                 gen.generate_repository(manifest, repo_root, output_root)
@@ -375,35 +525,214 @@ class ManifestAuthoritySyntheticPoolTests(unittest.TestCase):
         self.assertEqual(_field_order("\n".join(rendered_a) + "\n"), list(order))
         self.assertEqual(_field_order("\n".join(rendered_b) + "\n"), list(order))
 
-    def test_historical_compatibility_rejects_altered_field_order(self):
-        profile = gen.HISTORICAL_SERIALIZATION_PROFILES_BY_TRIPLET[("binutils", "2.46.0-3", "aarch64")]
+    def test_authority_rejects_altered_field_order(self):
+        """Pick an authority-backed entry generically, swap two control fields, assert rejection."""
+        repo_root = Path(__file__).resolve().parents[1]
+        authority_path = repo_root / gen.DEFAULT_AUTHORITY_PATH
+        authority = gen.load_authority(authority_path)
+        current_packages = repo_root / "dists" / "stable" / "main" / "binary-aarch64" / "Packages"
+        stanzas_by_pkg = _raw_stanzas_by_package(current_packages)
+
+        # Find first authority entry whose control field order has >1 fields
+        target = None
+        for key, rec in authority.items():
+            if len(rec["field_order"]) > 2:
+                canonical_stanza = stanzas_by_pkg.get(key[0])
+                if canonical_stanza is not None:
+                    target = (key, rec, canonical_stanza)
+                    break
+        self.assertIsNotNone(target, "no suitable authority entry found")
+
+        key, rec, canonical_stanza = target
         entry = gen.ManifestEntry(
-            name=profile.name,
-            version=profile.version,
-            arch=profile.arch,
-            sha256=profile.sha256,
-            object_path="pool/main/b/binutils/binutils_2.46.0-3_aarch64.deb",
-            size=2438504,
-        )
-        altered_stanza = (
-            "Package: binutils\n"
-            "Architecture: aarch64\n"
-            "Installed-Size: 19736\n"
-            "Maintainer: @termux\n"
-            "Version: 2.46.0-3\n"
-            "Homepage: https://www.gnu.org/software/binutils/\n"
-            "Breaks: binutils (<< 2.46), binutils-bin, binutils-libs, binutils-dev\n"
-            "Depends: libc++, zlib, zstd\n"
-            "Replaces: binutils (<< 2.46), binutils-bin, binutils-libs, binutils-dev\n"
-            "Description: A GNU collection of binary utilities\n"
-            "Filename: pool/main/b/binutils/binutils_2.46.0-3_aarch64.deb\n"
-            "Size: 2438504\n"
-            "SHA256: 679bd221c7f6e63d0c7e1e926a897b6087982a44f8d4c662b69f4613b3d4d29e\n"
-            "MD5sum: dcb99d9c68a37af276f11d31d40add12\n\n"
+            name=key[0], version=key[1], arch=key[2],
+            sha256=key[3], object_path=key[4], size=key[5],
         )
 
-        with self.assertRaisesRegex(gen.ManifestAuthorityError, "historical serialization compatibility mismatch"):
-            gen._enforce_historical_stanza_compatibility(entry, profile, altered_stanza)
+        # Parse stanza, swap first two control fields, rebuild, leaving mechanical fields in place
+        lines = canonical_stanza.strip("\n").split("\n")
+        control_lines = []
+        mechanical_lines = []
+        in_mechanical = False
+        for line in lines:
+            if line.startswith("Filename: "):
+                in_mechanical = True
+            if in_mechanical:
+                mechanical_lines.append(line)
+            else:
+                control_lines.append(line)
+
+        self.assertGreaterEqual(len(control_lines), 2, "need at least two control fields to swap")
+        # Swap the first two control lines
+        control_lines[0], control_lines[1] = control_lines[1], control_lines[0]
+        altered_stanza = "\n".join(control_lines + mechanical_lines) + "\n\n"
+
+        with self.assertRaisesRegex(gen.ManifestAuthorityError, "historical serialization authority stanza SHA-256 mismatch"):
+            gen._verify_stanza_sha256(entry, rec, altered_stanza)
+
+    def test_duplicate_authority_identity_fails_closed(self):
+        """Fail-closed: duplicate identity in authority JSON raises error."""
+        with tempfile.TemporaryDirectory() as repo_str:
+            repo_root = Path(repo_str)
+            auth_path = repo_root / gen.DEFAULT_AUTHORITY_PATH
+            # Write authority with duplicate entry
+            _write_authority(auth_path, [
+                {
+                    "identity": {
+                        "name": "duppkg", "version": "1.0", "arch": "aarch64",
+                        "sha256": "a" * 64,
+                        "object_path": "pool/main/d/duppkg/duppkg_1.0_aarch64.deb",
+                        "size": 1000,
+                    },
+                    "sequence": 0,
+                    "selected_control_field_order": ["Package", "Version", "Architecture", "Maintainer", "Description"],
+                    "expected_stanza_sha256": "b" * 64,
+                },
+                {
+                    "identity": {
+                        "name": "duppkg", "version": "1.0", "arch": "aarch64",
+                        "sha256": "a" * 64,
+                        "object_path": "pool/main/d/duppkg/duppkg_1.0_aarch64.deb",
+                        "size": 1000,
+                    },
+                    "sequence": 1,
+                    "selected_control_field_order": ["Package", "Version", "Architecture", "Maintainer", "Description"],
+                    "expected_stanza_sha256": "c" * 64,
+                },
+            ])
+
+            with self.assertRaisesRegex(gen.ManifestAuthorityError, "duplicate identity"):
+                gen.load_authority(auth_path)
+
+    def test_missing_authority_fails_closed(self):
+        """Fail-closed: missing authority file raises error."""
+        with tempfile.TemporaryDirectory() as repo_str:
+            repo_root = Path(repo_str)
+            auth_path = repo_root / gen.DEFAULT_AUTHORITY_PATH
+            # Don't create the authority file
+            with self.assertRaisesRegex(gen.ManifestAuthorityError, "historical serialization authority not found"):
+                gen.load_authority(auth_path)
+
+    def test_corrupt_authority_fails_closed(self):
+        """Fail-closed: corrupt authority JSON raises error."""
+        with tempfile.TemporaryDirectory() as repo_str:
+            repo_root = Path(repo_str)
+            auth_path = repo_root / gen.DEFAULT_AUTHORITY_PATH
+            auth_path.parent.mkdir(parents=True, exist_ok=True)
+            auth_path.write_text("not valid json", encoding="utf-8")
+
+            with self.assertRaisesRegex(gen.ManifestAuthorityError, "failed to parse authority file"):
+                gen.load_authority(auth_path)
+
+    def test_malformed_authority_missing_entries_fails_closed(self):
+        """Fail-closed: authority without entries list raises error."""
+        with tempfile.TemporaryDirectory() as repo_str:
+            repo_root = Path(repo_str)
+            auth_path = repo_root / gen.DEFAULT_AUTHORITY_PATH
+            auth_path.parent.mkdir(parents=True, exist_ok=True)
+            auth_path.write_text(json.dumps({"schema_version": 1}), encoding="utf-8")
+
+            with self.assertRaisesRegex(gen.ManifestAuthorityError, "missing top-level 'entries' list"):
+                gen.load_authority(auth_path)
+
+    def test_seventh_package_synthetic_authority_regression(self):
+        """Arbitrary synthetic authority regression: unusual field order from data artifact, no code changes."""
+        with tempfile.TemporaryDirectory() as repo_str, tempfile.TemporaryDirectory() as output_str:
+            repo_root = Path(repo_str)
+            output_root = Path(output_str)
+            rel_path, sha256, size = _build_deb(repo_root, "seventhpkg", "7.0")
+            manifest = repo_root / "manifests" / "foundation.tsv"
+            _write_manifest(
+                manifest,
+                [("seventhpkg", "7.0", "aarch64", sha256, rel_path, str(size))],
+            )
+
+            # Build synthetic authority with unusual field order using only fields
+            # that _build_deb actually populates in control
+            unusual_order = [
+                "Description",
+                "Maintainer",
+                "Architecture",
+                "Version",
+                "Package",
+            ]
+
+            # Extract control text from the built deb to compute expected stanza
+            import io, tarfile, subprocess
+            deb_path = repo_root / rel_path
+            result = subprocess.run(
+                ["dpkg-deb", "--ctrl-tarfile", str(deb_path)],
+                check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+            )
+            with tarfile.open(fileobj=io.BytesIO(result.stdout), mode="r:*") as archive:
+                for candidate in ("./control", "control"):
+                    try:
+                        member = archive.getmember(candidate)
+                    except KeyError:
+                        continue
+                    control_file = archive.extractfile(member)
+                    if control_file is None:
+                        break
+                    control_text = control_file.read().decode("utf-8")
+                    break
+                else:
+                    self.fail("control not found in deb")
+
+            selected_blocks, identity = gen._parse_selected_control_blocks(control_text)
+            selected_lines = gen._render_selected_control_blocks(
+                selected_blocks,
+                field_order=tuple(unusual_order),
+            )
+
+            md5 = hashlib.md5()
+            with deb_path.open("rb") as f:
+                for chunk in iter(lambda: f.read(1024 * 1024), b""):
+                    md5.update(chunk)
+            md5sum = md5.hexdigest()
+            stanza_lines = [
+                *selected_lines,
+                f"Filename: {rel_path}",
+                f"Size: {size}",
+                f"SHA256: {sha256}",
+                f"MD5sum: {md5sum}",
+                "",
+            ]
+            stanza_text = "\n".join(stanza_lines) + "\n"
+            expected_sha = hashlib.sha256(stanza_text.encode("utf-8")).hexdigest()
+
+            auth_path = repo_root / gen.DEFAULT_AUTHORITY_PATH
+            _write_authority(auth_path, [{
+                "identity": {
+                    "name": "seventhpkg",
+                    "version": "7.0",
+                    "arch": "aarch64",
+                    "sha256": sha256,
+                    "object_path": rel_path,
+                    "size": size,
+                },
+                "sequence": 0,
+                "selected_control_field_order": unusual_order,
+                "expected_stanza_sha256": expected_sha,
+            }])
+
+            result = gen.generate_repository(manifest, repo_root, output_root)
+            records = _parse_packages(result["packages_path"])
+            self.assertEqual(len(records), 1)
+            self.assertEqual(records[0]["Package"], "seventhpkg")
+            self.assertEqual(records[0]["Version"], "7.0")
+
+            # Verify unusual field order
+            stanza_text_for_pkg = _raw_stanzas_by_package(result["packages_path"])["seventhpkg"]
+            actual_order = _field_order(stanza_text_for_pkg)
+            # Control fields should follow unusual_order, then Filename/Size/SHA256/MD5sum
+            expected_all_order = unusual_order + ["Filename", "Size", "SHA256", "MD5sum"]
+            self.assertEqual(actual_order, expected_all_order)
+
+            # Verify stanza hash matches
+            self.assertEqual(
+                hashlib.sha256(stanza_text_for_pkg.encode("utf-8")).hexdigest(),
+                expected_sha,
+            )
 
 
 class ManifestAuthorityActiveManifestTests(unittest.TestCase):
@@ -430,29 +759,40 @@ class ManifestAuthorityActiveManifestTests(unittest.TestCase):
         self.assertEqual(versions, ["3.4.4-1"])
         self.assertNotIn("openexr_3.4.4_aarch64.deb", regenerated_bytes.decode("utf-8"))
 
-    def test_six_historical_wave_g_stanzas_regenerate_byte_identical(self):
+    def test_each_authority_entry_regenerates_byte_identical_with_matching_hash(self):
+        """Every authority-backed stanza regenerates byte-identical and matches the authority's expected SHA-256."""
         repo_root = Path(__file__).resolve().parents[1]
         manifest = repo_root / "manifests" / "foundation.tsv"
+        authority_path = repo_root / gen.DEFAULT_AUTHORITY_PATH
+        authority = gen.load_authority(authority_path)
         current_packages_path = repo_root / "dists" / "stable" / "main" / "binary-aarch64" / "Packages"
         expected_stanzas = _raw_stanzas_by_package(current_packages_path)
-        historical_names = {"binutils", "groff", "dbus", "glib", "libgraphite", "libpixman"}
-        expected_profiles = {
-            profile.name: profile
-            for profile in gen.HISTORICAL_SERIALIZATION_PROFILES
-        }
 
         with tempfile.TemporaryDirectory() as output_str:
             output_root = Path(output_str)
             result = gen.generate_repository(manifest, repo_root, output_root)
             regenerated_stanzas = _raw_stanzas_by_package(result["packages_path"])
 
-        for name in historical_names:
-            with self.subTest(name=name):
-                self.assertEqual(regenerated_stanzas[name], expected_stanzas[name])
+        # Verify every authority entry's expected stanza hash matches regeneration
+        checked = 0
+        for key, rec in authority.items():
+            pkg_name = key[0]
+            regenerated = regenerated_stanzas.get(pkg_name)
+            if regenerated is None:
+                continue  # not selected in manifest this run
+            actual_sha = hashlib.sha256(regenerated.encode("utf-8")).hexdigest()
+            self.assertEqual(
+                actual_sha, rec["expected_stanza_sha256"],
+                f"stanza SHA-256 mismatch for {pkg_name}",
+            )
+            expected = expected_stanzas.get(pkg_name)
+            if expected is not None:
                 self.assertEqual(
-                    hashlib.sha256(regenerated_stanzas[name].encode("utf-8")).hexdigest(),
-                    expected_profiles[name].expected_stanza_sha256,
+                    regenerated, expected,
+                    f"byte identity mismatch for {pkg_name}",
                 )
+            checked += 1
+        self.assertGreaterEqual(checked, 1, "expected at least one authority entry to be checked")
 
     def test_existing_non_wave_g_stanzas_retain_byte_identity(self):
         repo_root = Path(__file__).resolve().parents[1]

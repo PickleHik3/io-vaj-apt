@@ -1,0 +1,6579 @@
+{
+  "schema_version": 1,
+  "source_packages": {
+    "path": "dists/stable/main/binary-aarch64/Packages",
+    "sha256": "2e5bd27c7dc738d8ef766424b3f18e26ef7cc49e47b25e8522b070c5bf886573",
+    "size": 129281,
+    "stanza_count": 289,
+    "schema_version": 1
+  },
+  "entries": [
+    {
+      "identity": {
+        "name": "zsh",
+        "version": "5.9.1-1",
+        "arch": "aarch64",
+        "sha256": "c5d0ce023faad29bf36864d94df0b5347436b62d801c037fb5147780407e9c57",
+        "object_path": "pool/main/z/zsh/zsh_5.9.1-1_aarch64.deb",
+        "size": 1994572
+      },
+      "sequence": 0,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Recommends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "36821012f5602f8555ebb434b377659cc411c64624a1aaff5f5025b5883e215d"
+    },
+    {
+      "identity": {
+        "name": "zstd",
+        "version": "1.5.7-1",
+        "arch": "aarch64",
+        "sha256": "c909e6818f3c1c8d9731ede61c0bb38b8a3b03e4fec1391589393cf4e23312d5",
+        "object_path": "pool/main/z/zstd/zstd_1.5.7-1_aarch64.deb",
+        "size": 359544
+      },
+      "sequence": 1,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "cd3a2228508004946e105746506713bda86f0b1414151a00bb8f0b6c61791093"
+    },
+    {
+      "identity": {
+        "name": "zsh-completions",
+        "version": "0.36.0",
+        "arch": "all",
+        "sha256": "b9c3787499029cdc9d44f52dfcea6d19b05a203da0ec240e3c1d72b7d79937ed",
+        "object_path": "pool/main/z/zsh-completions/zsh-completions_0.36.0_all.deb",
+        "size": 299164
+      },
+      "sequence": 2,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "7d2a89d82319cfb12bc3fccb2adb19162ec15aa6c3e3d47fdd810e1dcf4a8e3d"
+    },
+    {
+      "identity": {
+        "name": "zlib",
+        "version": "1.3.2",
+        "arch": "aarch64",
+        "sha256": "e5b690ac8b0da59cdc815574637af74c946d1bf77e07c796f755bdb79d4e3d75",
+        "object_path": "pool/main/z/zlib/zlib_1.3.2_aarch64.deb",
+        "size": 62892
+      },
+      "sequence": 3,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "62b00643a20a85b20bc2d050bf0ed23041430f944f25d872d7bacdb7dcbe58ac"
+    },
+    {
+      "identity": {
+        "name": "swig",
+        "version": "4.4.1",
+        "arch": "aarch64",
+        "sha256": "a85c56f8d462e64fec26dc1f3a6583207122efd17eadece17cfc3d26ecc0fac9",
+        "object_path": "pool/main/s/swig/swig_4.4.1_aarch64.deb",
+        "size": 926180
+      },
+      "sequence": 4,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "87aa7771e5741ccf5b5c27a83cc3edde3542a43ba8987851377d3c77761f5dfb"
+    },
+    {
+      "identity": {
+        "name": "srt-tools",
+        "version": "1.5.5",
+        "arch": "aarch64",
+        "sha256": "42adc3475c76845083999fd41985586948ca3f4b59503e5785f7e28a1911ecc9",
+        "object_path": "pool/main/s/srt-tools/srt-tools_1.5.5_aarch64.deb",
+        "size": 132036
+      },
+      "sequence": 5,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "9fe3fffa817d2e949fbe4e4fff5c968a8c0756194ab5864a70096ee16a54cee5"
+    },
+    {
+      "identity": {
+        "name": "sqlite",
+        "version": "3.53.2",
+        "arch": "aarch64",
+        "sha256": "528f433f037a95eb7808684c1be4f9277178cbd5456cc19c9d6d29fef9b42448",
+        "object_path": "pool/main/s/sqlite/sqlite_3.53.2_aarch64.deb",
+        "size": 658028
+      },
+      "sequence": 6,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "f18710b101b70cb2467fefc6e8260081e37c39fe4d8ba3bfca21dc0e6b4bf3d0"
+    },
+    {
+      "identity": {
+        "name": "speexdsp",
+        "version": "1.2.1-1",
+        "arch": "aarch64",
+        "sha256": "1dd1097d21b5fdbeac6fc04bf480ae8cdb3e09a1e5bea093fcbda4d25461a9ec",
+        "object_path": "pool/main/s/speexdsp/speexdsp_1.2.1-1_aarch64.deb",
+        "size": 37308
+      },
+      "sequence": 7,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "010f97d09a5ee64bbb3df079d67ee0dcdde999ff30282d4bf5edae1ba2aa73e0"
+    },
+    {
+      "identity": {
+        "name": "sed",
+        "version": "4.9-2",
+        "arch": "aarch64",
+        "sha256": "5e90ae9eb65532e75f5feb9684b2b92dccfb5371fb9f054d643a47adbc8a5e6c",
+        "object_path": "pool/main/s/sed/sed_4.9-2_aarch64.deb",
+        "size": 118384
+      },
+      "sequence": 8,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "19129c8671a1918c655533e4e75c27325ed2f097c7f46c6ea7485da327eff395"
+    },
+    {
+      "identity": {
+        "name": "scdaemon",
+        "version": "2.5.17",
+        "arch": "aarch64",
+        "sha256": "a205fa67063c09b58de04ad2c0ae9af517b8337fd9b1d584fb9e2d4d549cc2c6",
+        "object_path": "pool/main/s/scdaemon/scdaemon_2.5.17_aarch64.deb",
+        "size": 183772
+      },
+      "sequence": 9,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Conflicts",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "bb8ed96f4644458ae75313baa1e76f652fa66d48e645ce6df3095046d928e4c9"
+    },
+    {
+      "identity": {
+        "name": "file",
+        "version": "5.48-1",
+        "arch": "aarch64",
+        "sha256": "002b6f33fa6ecae28cd975709f88850f9b90d5e9c2fbe6900159bd6530a01a10",
+        "object_path": "pool/main/f/file/file_5.48-1_aarch64.deb",
+        "size": 411548
+      },
+      "sequence": 10,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "8ad4367d4ffa477c9cf160e99f7250563d039ba2a7241ae038e2b99e5757b7a0"
+    },
+    {
+      "identity": {
+        "name": "freetype",
+        "version": "2.14.3",
+        "arch": "aarch64",
+        "sha256": "2246723a6292752315fdd234ab7e5ddf411438df7bbeb9a096e403969e3ff49b",
+        "object_path": "pool/main/f/freetype/freetype_2.14.3_aarch64.deb",
+        "size": 412144
+      },
+      "sequence": 11,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "58f2e92ad39f08092efc2141c749aa4e0da9851f44cdfe60891130114fa7c9b8"
+    },
+    {
+      "identity": {
+        "name": "fftw",
+        "version": "3.3.11",
+        "arch": "aarch64",
+        "sha256": "fa24426da889dc7a5207095cc37dbef174cd2d1ae0f5b89be3f6fdb53552e0c7",
+        "object_path": "pool/main/f/fftw/fftw_3.3.11_aarch64.deb",
+        "size": 1003944
+      },
+      "sequence": 12,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "62172395a5b863a3ded61b236bfa5c8dd7a35d00fa429af55e3d9cefeff05411"
+    },
+    {
+      "identity": {
+        "name": "faad2",
+        "version": "2.11.2",
+        "arch": "aarch64",
+        "sha256": "e4c4a5d58aefe3fbc484be8d863110ea2b70af30cb0884cd67dfe1986a6c5b80",
+        "object_path": "pool/main/f/faad2/faad2_2.11.2_aarch64.deb",
+        "size": 183864
+      },
+      "sequence": 13,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "be1bb781153b711d78ea3d660ae63a03fcfe796f4c62b145f6c4529f804693f8"
+    },
+    {
+      "identity": {
+        "name": "fdisk",
+        "version": "2.42.1-2",
+        "arch": "aarch64",
+        "sha256": "01a1561a16fd653ea684f6b52462aef0fb4cacb46fca3ed3e40cc2b4066f434d",
+        "object_path": "pool/main/f/fdisk/fdisk_2.42.1-2_aarch64.deb",
+        "size": 117120
+      },
+      "sequence": 14,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "15734f905fd5e38ddf57b13f69a8d362575f125f309ceac0dfdedddc678fc069"
+    },
+    {
+      "identity": {
+        "name": "flex",
+        "version": "2.6.4-4",
+        "arch": "aarch64",
+        "sha256": "e7e353ad0a1593318a6b895c746e49f35c830deed13b0ee3af7e90a20985ec1c",
+        "object_path": "pool/main/f/flex/flex_2.6.4-4_aarch64.deb",
+        "size": 201792
+      },
+      "sequence": 15,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Conflicts",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "b970054635b06b3bf7398929d8a3641600f655226b2d368aad3bff1c8e3d5deb"
+    },
+    {
+      "identity": {
+        "name": "fontconfig-utils",
+        "version": "2.18.1",
+        "arch": "aarch64",
+        "sha256": "e2990a5bc568689ecf56633d10e038407473f9039de04474cf77251a4a9008c1",
+        "object_path": "pool/main/f/fontconfig-utils/fontconfig-utils_2.18.1_aarch64.deb",
+        "size": 14488
+      },
+      "sequence": 16,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "b29830cd343da5b9c9ab42683419c23a16cc16eab2016957243926aef5daf288"
+    },
+    {
+      "identity": {
+        "name": "findutils",
+        "version": "4.10.0-1",
+        "arch": "aarch64",
+        "sha256": "feefad07b49cced41b04ad8e4a3dae103acbe26be39f010a40caa4b432a9a02a",
+        "object_path": "pool/main/f/findutils/findutils_4.10.0-1_aarch64.deb",
+        "size": 251808
+      },
+      "sequence": 17,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "0b159d6d868c9ec6e5a31475f0119fc27a96c71390bd6ca863c5264f007c04fc"
+    },
+    {
+      "identity": {
+        "name": "fish",
+        "version": "4.8.0",
+        "arch": "aarch64",
+        "sha256": "78797d036a2d5cd9aad4cfcd320d6a8f6baafc593b6852df969a332a8439ee1e",
+        "object_path": "pool/main/f/fish/fish_4.8.0_aarch64.deb",
+        "size": 7052564
+      },
+      "sequence": 18,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "c444426e9d98a906a34ff923c88dc0b569916c08aa876c045144f2b4c8cac49f"
+    },
+    {
+      "identity": {
+        "name": "fontconfig",
+        "version": "2.18.1",
+        "arch": "aarch64",
+        "sha256": "141f637e751fddf4d2f79dee4f54b0d7be1f7331654786f876ec56eb99e3e9f2",
+        "object_path": "pool/main/f/fontconfig/fontconfig_2.18.1_aarch64.deb",
+        "size": 126204
+      },
+      "sequence": 19,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "e1e0f3bf51a59e34c95451df6ca0e115a1e9839d31851670083ecf3271cdc979"
+    },
+    {
+      "identity": {
+        "name": "termux-am",
+        "version": "0.8.0-2",
+        "arch": "all",
+        "sha256": "ceab6d9dfaeb2ab728d5ce7621150c44cb7e5cfff8d4798c9572d7cae14c119c",
+        "object_path": "pool/main/t/termux-am/termux-am_0.8.0-2_all.deb",
+        "size": 577076
+      },
+      "sequence": 20,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Conflicts",
+        "Description"
+      ],
+      "expected_stanza_sha256": "f71f36dd1769712b5a4c94467ae05193cfbc74353fcb883a410d94034446d854"
+    },
+    {
+      "identity": {
+        "name": "termux-licenses",
+        "version": "2.1",
+        "arch": "all",
+        "sha256": "6d7e22b8ef1871d04ff47eda4b5c48903a01b66c0eb32484ce9c3bcc878a4dd0",
+        "object_path": "pool/main/t/termux-licenses/termux-licenses_2.1_all.deb",
+        "size": 52556
+      },
+      "sequence": 21,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "ea49b4098611ec0ca9aa9c70a9ad2a9ae1345d55fedcf474e18ed2c4c22e3709"
+    },
+    {
+      "identity": {
+        "name": "termux-api",
+        "version": "0.59.1-2",
+        "arch": "aarch64",
+        "sha256": "4b3de3bd4d3b824cf63ecbb24c323e69e61e2171323b9c30f033da60690efb73",
+        "object_path": "pool/main/t/termux-api/termux-api_0.59.1-2_aarch64.deb",
+        "size": 28384
+      },
+      "sequence": 22,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "bbd790252a53593b630c0b1c3b13c6f935cab3549f998236fcd01ed3eebddd90"
+    },
+    {
+      "identity": {
+        "name": "texinfo",
+        "version": "7.3",
+        "arch": "aarch64",
+        "sha256": "81e64842b46b88962e7cbdeb25717b3da1df71215e23514ff6c248eecacdc749",
+        "object_path": "pool/main/t/texinfo/texinfo_7.3_aarch64.deb",
+        "size": 1212116
+      },
+      "sequence": 23,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Recommends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "b3e915660baa47156cdfbcbfd8d1878ab9a9dbdbb8967bf0dc520909259a7c78"
+    },
+    {
+      "identity": {
+        "name": "tcl",
+        "version": "8.6.14-1",
+        "arch": "aarch64",
+        "sha256": "80d2f52fc6d5ad5ad7d72533f5f3f8cc8911f079dda0893ee8c3a370b45b029b",
+        "object_path": "pool/main/t/tcl/tcl_8.6.14-1_aarch64.deb",
+        "size": 2259668
+      },
+      "sequence": 24,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "4bb8dd5aaa6dd057720864fbc54ee943d3d472c6cd08f934d8868379bc7ef4f4"
+    },
+    {
+      "identity": {
+        "name": "tor",
+        "version": "0.4.9.10",
+        "arch": "aarch64",
+        "sha256": "f3435fe4a37890e4d8b667f8ec32663fec725ec88c50fc6b91f3422bc627a39d",
+        "object_path": "pool/main/t/tor/tor_0.4.9.10_aarch64.deb",
+        "size": 3316884
+      },
+      "sequence": 25,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "f58fd835ff76cbc30cc27f2d57d69a11ed6c114ac29a7efa0aa5894e133e750a"
+    },
+    {
+      "identity": {
+        "name": "termux-core",
+        "version": "0.4.0-1",
+        "arch": "aarch64",
+        "sha256": "82dee12170d56ea5e78735761b517ac2337f3eb56fda6f8ff8d486baad1a5c74",
+        "object_path": "pool/main/t/termux-core/termux-core_0.4.0-1_aarch64.deb",
+        "size": 198676
+      },
+      "sequence": 26,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "6d129a1650b3ba5e50d0c3dbbdf2490ce786554493d88f62eaab0d43d5b47da4"
+    },
+    {
+      "identity": {
+        "name": "termux-keyring",
+        "version": "3.13",
+        "arch": "all",
+        "sha256": "1700d551bb2000ced5aa089e2712b760e217e90d2f434adf8a6a6cdb6c3ce988",
+        "object_path": "pool/main/t/termux-keyring/termux-keyring_3.13_all.deb",
+        "size": 39784
+      },
+      "sequence": 27,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "354a84e660700246ce238aa2533f3d28524a7e634e3fa8078f9fbfff51f41f76"
+    },
+    {
+      "identity": {
+        "name": "termux-tools",
+        "version": "1.46.0+really1.45.0-3",
+        "arch": "aarch64",
+        "sha256": "05a237af0f0e48703561d90cd742c1797209e96ec12462a8caa068f89592682d",
+        "object_path": "pool/main/t/termux-tools/termux-tools_1.46.0+really1.45.0-3_aarch64.deb",
+        "size": 26392
+      },
+      "sequence": 28,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Conflicts",
+        "Recommends",
+        "Suggests",
+        "Description"
+      ],
+      "expected_stanza_sha256": "fdc691fbf25310a40f60ed9487be079ea900e8fa2a99c166fa28a09caadeb608"
+    },
+    {
+      "identity": {
+        "name": "tmux",
+        "version": "3.7",
+        "arch": "aarch64",
+        "sha256": "71b12e2c8a6a1c0a9bfb823be064f6642fb58fa06664b95377dc1ced73149404",
+        "object_path": "pool/main/t/tmux/tmux_3.7_aarch64.deb",
+        "size": 386380
+      },
+      "sequence": 29,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "a3f4b62af22d52c24b8efebf7267a052fd85fc166d966a1ff2085dad7c14b637"
+    },
+    {
+      "identity": {
+        "name": "tk",
+        "version": "8.6.14-1",
+        "arch": "aarch64",
+        "sha256": "922c757950f31682f474ed8f2dafb75e90df27a57fd8aa45419dff8edf05ac33",
+        "object_path": "pool/main/t/tk/tk_8.6.14-1_aarch64.deb",
+        "size": 1754584
+      },
+      "sequence": 30,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "6b66c812bbd43556b8c8c3767332c5f74cf419052cc9ca4c576bc2f71dae88ab"
+    },
+    {
+      "identity": {
+        "name": "termux-am-socket",
+        "version": "1.5.0-1",
+        "arch": "aarch64",
+        "sha256": "f942672582008c4e8e30a0dae49b6e77d717df5a048dcea80db6095317503032",
+        "object_path": "pool/main/t/termux-am-socket/termux-am-socket_1.5.0-1_aarch64.deb",
+        "size": 16376
+      },
+      "sequence": 31,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "107275c1cb4cfced47be516d1ae860a8ef220afa8725972a00cd88fc440db483"
+    },
+    {
+      "identity": {
+        "name": "tar",
+        "version": "1.35-2",
+        "arch": "aarch64",
+        "sha256": "fcb464cddcf2a686f4437413961a695cb9d8299d22a4e7fbd50a9dd9bc71341d",
+        "object_path": "pool/main/t/tar/tar_1.35-2_aarch64.deb",
+        "size": 345528
+      },
+      "sequence": 32,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "7e3837d62569826c99f5df58c870ff1a2788d87b5fc235d034e82e278e91096c"
+    },
+    {
+      "identity": {
+        "name": "ttf-dejavu",
+        "version": "2.37-8",
+        "arch": "all",
+        "sha256": "d8d1b07911919f9ddf50bb8b06539214d32d133a197ad0c58c6ff3833437e99d",
+        "object_path": "pool/main/t/ttf-dejavu/ttf-dejavu_2.37-8_all.deb",
+        "size": 2460480
+      },
+      "sequence": 33,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "df8cdebf3ae52beb7c957d2799804abde02399202a7a9dda86c12728dec5e00c"
+    },
+    {
+      "identity": {
+        "name": "termux-exec",
+        "version": "1:2.4.0-1",
+        "arch": "aarch64",
+        "sha256": "a90e3db57156a0d25ec6d561b092bdddf93d0437508f4a4aaed1f57e01e1eb0c",
+        "object_path": "pool/main/t/termux-exec/termux-exec_1:2.4.0-1_aarch64.deb",
+        "size": 285960
+      },
+      "sequence": 34,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "9539541f8e1d6d72c14fca92467b25ad7cef48d966fefb5ee6667a48aa7adf2c"
+    },
+    {
+      "identity": {
+        "name": "libxext",
+        "version": "1.3.7",
+        "arch": "aarch64",
+        "sha256": "5e6b2c45fbfd94d507db1c1d922867ea75fae51a376131219368f7f602d128de",
+        "object_path": "pool/main/l/libxext/libxext_1.3.7_aarch64.deb",
+        "size": 98032
+      },
+      "sequence": 35,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "8926a526cb214c8d2a8cdbcd3d60da4ec855a53846c20ed6d06beabbca6e0e1a"
+    },
+    {
+      "identity": {
+        "name": "libbluray",
+        "version": "1.4.1",
+        "arch": "aarch64",
+        "sha256": "88cac4ba3c896a27ecc78c4ee2a10f9bf6991411b956b721fc791458f793e049",
+        "object_path": "pool/main/l/libbluray/libbluray_1.4.1_aarch64.deb",
+        "size": 110192
+      },
+      "sequence": 36,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "50679028512a7a14c629e6ab4da0e3f1daa16b7a2624dca995b61554f88fcea1"
+    },
+    {
+      "identity": {
+        "name": "libacl",
+        "version": "2.3.2",
+        "arch": "aarch64",
+        "sha256": "cfb235eb89f557408640623fae63c9e502aa9e8b09328fcace08207d800a76d0",
+        "object_path": "pool/main/l/libacl/libacl_2.3.2_aarch64.deb",
+        "size": 115824
+      },
+      "sequence": 37,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "8b924d2855c7f3b7403d513eb61a77d9e67a7172f39fb8a1fb600c15e4989412"
+    },
+    {
+      "identity": {
+        "name": "libxrender",
+        "version": "0.9.12-1",
+        "arch": "aarch64",
+        "sha256": "bff00ef668a756cfbec50e89aad4085ff80035a04aed310d5e10bb6e8213377a",
+        "object_path": "pool/main/l/libxrender/libxrender_0.9.12-1_aarch64.deb",
+        "size": 24664
+      },
+      "sequence": 38,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "1cd281836f2f14df44652fbf7c32f29ce5b10bceb696bfc2ca054ec243c740f0"
+    },
+    {
+      "identity": {
+        "name": "libandroid-posix-semaphore",
+        "version": "0.1-4",
+        "arch": "aarch64",
+        "sha256": "988bb9c3aabfa169ff7982f654f5485af13ef903104c826cd689ee6a47fdf266",
+        "object_path": "pool/main/l/libandroid-posix-semaphore/libandroid-posix-semaphore_0.1-4_aarch64.deb",
+        "size": 4080
+      },
+      "sequence": 39,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "7c5e83d21ba65d7415c5498f105760982f605d87192a42f71e6ed9eda7809981"
+    },
+    {
+      "identity": {
+        "name": "libcap",
+        "version": "2.69-1",
+        "arch": "aarch64",
+        "sha256": "e3a27f047833392e0d04ae2195390531456180fa471553083fc66994f8b2d74f",
+        "object_path": "pool/main/l/libcap/libcap_2.69-1_aarch64.deb",
+        "size": 74364
+      },
+      "sequence": 40,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "f32e2e242bd3ee6821bfb0c452179ba8536bc0ab288e36fa82e7c7818d2c852b"
+    },
+    {
+      "identity": {
+        "name": "libxdmcp",
+        "version": "1.1.5-2",
+        "arch": "aarch64",
+        "sha256": "5f1bf78edf088b72206ff66d6bcb1b8f84dc8e9ae6730537a6f554100d827c0d",
+        "object_path": "pool/main/l/libxdmcp/libxdmcp_1.1.5-2_aarch64.deb",
+        "size": 24396
+      },
+      "sequence": 41,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "87fbba0050921304bb914978b96b6661f7183cc366d1a1c06f2bd298254daec5"
+    },
+    {
+      "identity": {
+        "name": "libmpfr",
+        "version": "4.2.1-1",
+        "arch": "aarch64",
+        "sha256": "f191db92d28422982fe3068cb8610deb29ed859f9d4c2eff034ec213b2bf3aeb",
+        "object_path": "pool/main/l/libmpfr/libmpfr_4.2.1-1_aarch64.deb",
+        "size": 272660
+      },
+      "sequence": 42,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "8781932562c1589a6761e39e67aa880fb562684068c60ff58531bf95051aa6cd"
+    },
+    {
+      "identity": {
+        "name": "libicu",
+        "version": "78.3",
+        "arch": "aarch64",
+        "sha256": "147ca641ce1efd4bb4a4d950bd6c9169a0ce71f369a84d311eaddbd4d36af337",
+        "object_path": "pool/main/l/libicu/libicu_78.3_aarch64.deb",
+        "size": 10210248
+      },
+      "sequence": 43,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "fbe4c94b10dfe64d7e77e9eb9d16b8c2a8b030f8317480d97c1eec01d7d5fc2e"
+    },
+    {
+      "identity": {
+        "name": "libsqlite-tcl",
+        "version": "3.53.2",
+        "arch": "aarch64",
+        "sha256": "959cd93828ca647a9ae78ef80b1e0d486f63f00fc0d8e1bcfcbf6987783a9da5",
+        "object_path": "pool/main/l/libsqlite-tcl/libsqlite-tcl_3.53.2_aarch64.deb",
+        "size": 550844
+      },
+      "sequence": 44,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Breaks",
+        "Description"
+      ],
+      "expected_stanza_sha256": "5dee5297d24b68c3467bff44237fbd5871b60f3e017e87896bad7b10c95c7d03"
+    },
+    {
+      "identity": {
+        "name": "libzimg",
+        "version": "3.0.6",
+        "arch": "aarch64",
+        "sha256": "0570c13e434b0f90876c71484b56e24aa3fbea85b3d51a0453c8f24f9c0e1b0d",
+        "object_path": "pool/main/l/libzimg/libzimg_3.0.6_aarch64.deb",
+        "size": 140932
+      },
+      "sequence": 45,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "36860d169d82086664e6684a481e76f0c059165cdf4191d6e0ad8eb00a88b7fa"
+    },
+    {
+      "identity": {
+        "name": "libmysofa",
+        "version": "1.3.4-1",
+        "arch": "aarch64",
+        "sha256": "e447438deda3e7621ef8acc0b38a4505816d38c9628cd4aa696380b91890542f",
+        "object_path": "pool/main/l/libmysofa/libmysofa_1.3.4-1_aarch64.deb",
+        "size": 1160552
+      },
+      "sequence": 46,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "06f1da4609b335e1584e3843c7fb8c50d72c4ad89b370eca5adb600303ba0630"
+    },
+    {
+      "identity": {
+        "name": "libzmq",
+        "version": "4.3.5-2",
+        "arch": "aarch64",
+        "sha256": "44d4e067247052e18819ee858128094ad6140ee9e809d19560f54fa489be15c9",
+        "object_path": "pool/main/l/libzmq/libzmq_4.3.5-2_aarch64.deb",
+        "size": 321996
+      },
+      "sequence": 47,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "e845682f3cf31afe315b270c66cb2921c224da768b6fefac02c0096aa8d20297"
+    },
+    {
+      "identity": {
+        "name": "libvmaf",
+        "version": "3.2.0",
+        "arch": "aarch64",
+        "sha256": "61c0c1676b3721e5851c2c8ee6da2dcbfd91114cd5b3d6a22dae787e01739321",
+        "object_path": "pool/main/l/libvmaf/libvmaf_3.2.0_aarch64.deb",
+        "size": 190424
+      },
+      "sequence": 48,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "81af6cd82e642868706454e455d282dd4b6d9e16e0eed30c8a640eb8afb69054"
+    },
+    {
+      "identity": {
+        "name": "libaom",
+        "version": "3.14.1",
+        "arch": "aarch64",
+        "sha256": "61ea51960b10690715bfd1ab588f39649bd0eaefcd95ea4c0720ad02be3d5826",
+        "object_path": "pool/main/l/libaom/libaom_3.14.1_aarch64.deb",
+        "size": 2068620
+      },
+      "sequence": 49,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "04f4d2681fcf6c8533b2cc77c540fc8a6118f7f235860660861183b98f72c7ed"
+    },
+    {
+      "identity": {
+        "name": "liblz4",
+        "version": "1.10.0-1",
+        "arch": "aarch64",
+        "sha256": "261026f95896c8746da87a18772f3df2ed287366dfad6aede90a796df650ccde",
+        "object_path": "pool/main/l/liblz4/liblz4_1.10.0-1_aarch64.deb",
+        "size": 86352
+      },
+      "sequence": 50,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "e3eeda6a13e3e717c784256092c38e50d9301981f89170eca6409272a16c7f23"
+    },
+    {
+      "identity": {
+        "name": "libsndfile",
+        "version": "1.2.2-2",
+        "arch": "aarch64",
+        "sha256": "901607b44d1579cd5df048fb7b2c067c75cb92630f19d4d4a8296007a1e2f822",
+        "object_path": "pool/main/l/libsndfile/libsndfile_1.2.2-2_aarch64.deb",
+        "size": 218516
+      },
+      "sequence": 51,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "00a7a1aeb857ccc9f60c974e7bd4d25a0b568151e486f4613d64cab6b4214364"
+    },
+    {
+      "identity": {
+        "name": "lsof",
+        "version": "4.99.7",
+        "arch": "aarch64",
+        "sha256": "330ee7802171119ce204b5d7623af85e204e9bcb7805807c3f0ffaade0c817f1",
+        "object_path": "pool/main/l/lsof/lsof_4.99.7_aarch64.deb",
+        "size": 124120
+      },
+      "sequence": 52,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "e7475b309c086a39a1ff3df8b53610aa5cd2da00213be9c2be5b4c2aeab38ec1"
+    },
+    {
+      "identity": {
+        "name": "libvorbis",
+        "version": "1.3.7-4",
+        "arch": "aarch64",
+        "sha256": "cdf453da386808d6331abbb5763dfb8abc006924e4be78c2e55934785ed18ea6",
+        "object_path": "pool/main/l/libvorbis/libvorbis_1.3.7-4_aarch64.deb",
+        "size": 261904
+      },
+      "sequence": 53,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "48eb950a1a8ca2922a8dd1d3fffa7c659ba53447d67561ff1d33c9c7e2e45521"
+    },
+    {
+      "identity": {
+        "name": "libsoxr",
+        "version": "0.1.3-8",
+        "arch": "aarch64",
+        "sha256": "e3b478d4e03a5bf3ae9be0470f54b95c20e3141f6801b27bf065479b63fedab6",
+        "object_path": "pool/main/l/libsoxr/libsoxr_0.1.3-8_aarch64.deb",
+        "size": 288700
+      },
+      "sequence": 54,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "f62227b8731329308b8f15833b9b47221a201fe29449a6f5a29c4123fe39f7f8"
+    },
+    {
+      "identity": {
+        "name": "libarchive",
+        "version": "3.8.8",
+        "arch": "aarch64",
+        "sha256": "8ba39a79a35b1cc9bcdd938252b3dee3143c81e0389b6e3d693e93c640feb826",
+        "object_path": "pool/main/l/libarchive/libarchive_3.8.8_aarch64.deb",
+        "size": 393092
+      },
+      "sequence": 55,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "7a8fe0a123c64f734163aff2f8e4ff75da7e4d572c2a3364de02229e29c6d072"
+    },
+    {
+      "identity": {
+        "name": "libidn2",
+        "version": "2.3.8-1",
+        "arch": "aarch64",
+        "sha256": "f0e6d7fb0abddf5f866d98b3268bca9049ce702ed4018347d37745dcfb6c84e3",
+        "object_path": "pool/main/l/libidn2/libidn2_2.3.8-1_aarch64.deb",
+        "size": 105044
+      },
+      "sequence": 56,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "3caee6fc64136ff0c671c9999d0653c021fa87e9f0706b66d7714727d5d2cea8"
+    },
+    {
+      "identity": {
+        "name": "lua51",
+        "version": "5.1.5-8",
+        "arch": "aarch64",
+        "sha256": "9b29d50c13f31feab365720dbd9d738060480d5faf5debafa39ca19b2f378f2c",
+        "object_path": "pool/main/l/lua51/lua51_5.1.5-8_aarch64.deb",
+        "size": 103132
+      },
+      "sequence": 57,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "2db91b1333731f2b4ccf5b7303dda3cab50523ed36198f1b87b529bb880648c1"
+    },
+    {
+      "identity": {
+        "name": "libxslt",
+        "version": "1.1.45-1",
+        "arch": "aarch64",
+        "sha256": "fb271080d15bef5a7277337a2cd409f5d3973d85427d143e9777f16f9e9fcb13",
+        "object_path": "pool/main/l/libxslt/libxslt_1.1.45-1_aarch64.deb",
+        "size": 225360
+      },
+      "sequence": 58,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "bf613f0fabf45fa9f56774a4402253d89a93f7d6b4a24b1db686d18c60238fe0"
+    },
+    {
+      "identity": {
+        "name": "libsqlite",
+        "version": "3.53.2",
+        "arch": "aarch64",
+        "sha256": "3ee515f3c4c6d7a18927819703792a4eb50f81a9894aa98bbbab396f8b849bcc",
+        "object_path": "pool/main/l/libsqlite/libsqlite_3.53.2_aarch64.deb",
+        "size": 757880
+      },
+      "sequence": 59,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "856333f453782d7db8791b6aee71784ca771f1f211d223257c10bbced8f82646"
+    },
+    {
+      "identity": {
+        "name": "liblzma",
+        "version": "5.8.3",
+        "arch": "aarch64",
+        "sha256": "5f6fbc4426d53c5aac41f5167181737594a1030043138a4716f1365cc30cde4e",
+        "object_path": "pool/main/l/liblzma/liblzma_5.8.3_aarch64.deb",
+        "size": 193092
+      },
+      "sequence": 60,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "e4b30d797ff58a0078e89e305a2cb67826d3fecff8cbeed9d49ded727292f27f"
+    },
+    {
+      "identity": {
+        "name": "libsrt",
+        "version": "1.5.5",
+        "arch": "aarch64",
+        "sha256": "b6890d2cad7efb7579fcdbcf1f224efd9b5e17549686cdd27b506712f084ca83",
+        "object_path": "pool/main/l/libsrt/libsrt_1.5.5_aarch64.deb",
+        "size": 275948
+      },
+      "sequence": 61,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "1d3ac8338a80c7a9249d35062305e3b57df1ec8e04aa3866daa5104e79ef246c"
+    },
+    {
+      "identity": {
+        "name": "libvpx",
+        "version": "1:1.16.0",
+        "arch": "aarch64",
+        "sha256": "27b43e8072531ccc1736d4cd78d636b1b2880ef41970b1282bbb4d9905ee15f5",
+        "object_path": "pool/main/l/libvpx/libvpx_1:1.16.0_aarch64.deb",
+        "size": 864376
+      },
+      "sequence": 62,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "807536d5de4613d9e285ecee92e559837001f7647fd0299d45f87d9d1a75e570"
+    },
+    {
+      "identity": {
+        "name": "ldns",
+        "version": "1.8.4-1",
+        "arch": "aarch64",
+        "sha256": "32c3190e73f16d6f7eba82ed2708ef5093f67f20101e34035f0dd579c77891f3",
+        "object_path": "pool/main/l/ldns/ldns_1.8.4-1_aarch64.deb",
+        "size": 303548
+      },
+      "sequence": 63,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "4fea6a6ae5debc9eba241cda19a3f7d7df6474e38090b853351878a798b4f86a"
+    },
+    {
+      "identity": {
+        "name": "libunbound",
+        "version": "1.25.1",
+        "arch": "aarch64",
+        "sha256": "ed6c279c47e98fac53f6602f762f711e7c6fe507aa5d6538305fb277913d1b01",
+        "object_path": "pool/main/l/libunbound/libunbound_1.25.1_aarch64.deb",
+        "size": 384812
+      },
+      "sequence": 64,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "9e102f10ec20133e6d6899ec1d2977ae3cd3ef6cd8708c8fec09e90bb49a9e83"
+    },
+    {
+      "identity": {
+        "name": "libgnutls",
+        "version": "3.8.13",
+        "arch": "aarch64",
+        "sha256": "f92af51b04be755dc6ebeb7feea4d74898baf042da62661288297f872dba6a8d",
+        "object_path": "pool/main/l/libgnutls/libgnutls_3.8.13_aarch64.deb",
+        "size": 752724
+      },
+      "sequence": 65,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "b5d07a72b95aa26289446c5b3697c5cc070ac46a771b017c0b03dec0bfa44f5c"
+    },
+    {
+      "identity": {
+        "name": "libxml2",
+        "version": "2.15.3",
+        "arch": "aarch64",
+        "sha256": "80ebf7fe0d62ed25e1efe1e6dda6e812d2aaef19344db5b2f9e3266fec936ac4",
+        "object_path": "pool/main/l/libxml2/libxml2_2.15.3_aarch64.deb",
+        "size": 442536
+      },
+      "sequence": 66,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "6b44e2f4ef7d799a53280d9249cdff8f242370c5cb1ae5532f6b32f8f15fe5c4"
+    },
+    {
+      "identity": {
+        "name": "libdeflate",
+        "version": "1.25",
+        "arch": "aarch64",
+        "sha256": "368118c5a329432be330002c0e3ad42f15d9e35347f3ea3b6fc7191ef035c680",
+        "object_path": "pool/main/l/libdeflate/libdeflate_1.25_aarch64.deb",
+        "size": 57700
+      },
+      "sequence": 67,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "87be7704bc372a7db07f5a17d96def949fa735e705a3212fe03ebeb57df7628e"
+    },
+    {
+      "identity": {
+        "name": "libogg",
+        "version": "1.3.6-1",
+        "arch": "aarch64",
+        "sha256": "f63aed7403269d6dbd1a5b2bfd36f95542e0f04bb9a20d0bb01b447bd8cf1b9c",
+        "object_path": "pool/main/l/libogg/libogg_1.3.6-1_aarch64.deb",
+        "size": 188540
+      },
+      "sequence": 68,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "adb00ca6079339451787f4731e8c5cab6a9241cc73b8cb236e8e027f59fd8e02"
+    },
+    {
+      "identity": {
+        "name": "libuuid",
+        "version": "2.42.1-2",
+        "arch": "aarch64",
+        "sha256": "148104d8eb71f359243424b69d6d15017ed5f42d35b410ae0a6b46cff3e63cd0",
+        "object_path": "pool/main/l/libuuid/libuuid_2.42.1-2_aarch64.deb",
+        "size": 15432
+      },
+      "sequence": 69,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "17fe459b3f85e32c7c53081593f47ce09195276b94f7d5bae6ba869c8e9fb958"
+    },
+    {
+      "identity": {
+        "name": "libngtcp2",
+        "version": "1.23.0",
+        "arch": "aarch64",
+        "sha256": "b1cad4c7e343249b27a21a30144a1318d2e43907ebf3da5ddc4003ea9bbc31ac",
+        "object_path": "pool/main/l/libngtcp2/libngtcp2_1.23.0_aarch64.deb",
+        "size": 173340
+      },
+      "sequence": 70,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "98533e0bfc2c5ee703d5bf7adc2764f3c09597fa5b4bae74c00a8851697349d0"
+    },
+    {
+      "identity": {
+        "name": "libjasper",
+        "version": "4.2.9",
+        "arch": "aarch64",
+        "sha256": "15d7e4b7f0ca1a53b66a1e183ecfea3eb60a9ffa7a12a723c135a2d9985a70da",
+        "object_path": "pool/main/l/libjasper/libjasper_4.2.9_aarch64.deb",
+        "size": 408688
+      },
+      "sequence": 71,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "5d950fe16bab28dc9483eab944c4b97c7e2a9270557dcf31f28a48642d4afb24"
+    },
+    {
+      "identity": {
+        "name": "libandroid-glob",
+        "version": "0.6-3",
+        "arch": "aarch64",
+        "sha256": "eab4c8a3ef23875527b4f245c4c96798470181c199d2c400d4b91d9890e5049e",
+        "object_path": "pool/main/l/libandroid-glob/libandroid-glob_0.6-3_aarch64.deb",
+        "size": 7016
+      },
+      "sequence": 72,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "4b67fc2fabd78164764f8fa710c7c4647a09bb101330b07b0e7c4e7a568c9070"
+    },
+    {
+      "identity": {
+        "name": "libvidstab",
+        "version": "1.1.1-3",
+        "arch": "aarch64",
+        "sha256": "5ba0b65ddc6f41fff11b6edb5ec63395138efccd925cf8852daaf88d836368e0",
+        "object_path": "pool/main/l/libvidstab/libvidstab_1.1.1-3_aarch64.deb",
+        "size": 264276
+      },
+      "sequence": 73,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "348e28ad606539d5b5235ad58602dc0ffa08992cd586ffcdb91675a0f411adee"
+    },
+    {
+      "identity": {
+        "name": "libjpeg-turbo-progs",
+        "version": "3.1.4.1",
+        "arch": "aarch64",
+        "sha256": "e879358a3565fa087fb59f1469287aa321a3dbc95a3f4cb3939a5440947a9688",
+        "object_path": "pool/main/l/libjpeg-turbo-progs/libjpeg-turbo-progs_3.1.4.1_aarch64.deb",
+        "size": 98076
+      },
+      "sequence": 74,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "2f5611b0ff63c9bf6f3cdc2023a4e5c5dc7b95f71527bf3aca32484828c6ad52"
+    },
+    {
+      "identity": {
+        "name": "libresolv-wrapper",
+        "version": "1.1.7-6",
+        "arch": "aarch64",
+        "sha256": "80e9d5206170742d5b8ef108c7ea20dc7df9ebe4e19202c054a01fcc8018c87d",
+        "object_path": "pool/main/l/libresolv-wrapper/libresolv-wrapper_1.1.7-6_aarch64.deb",
+        "size": 11488
+      },
+      "sequence": 75,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "5ef0189c972fab0dcec7a589832775232864aed3450cefe14b5a4e001e672ece"
+    },
+    {
+      "identity": {
+        "name": "lz4",
+        "version": "1.10.0-1",
+        "arch": "aarch64",
+        "sha256": "5bd040eda0d52082ce4db8b0e8f3f9f3036fed7194d8d9aa77cc3c2f04d204d8",
+        "object_path": "pool/main/l/lz4/lz4_1.10.0-1_aarch64.deb",
+        "size": 92484
+      },
+      "sequence": 76,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "b9f4abdf2404e4745c1998005cb0e9decad1bd541b75f578eac64a375ef0c1e8"
+    },
+    {
+      "identity": {
+        "name": "libcurl",
+        "version": "8.21.0",
+        "arch": "aarch64",
+        "sha256": "a6e6e437aea4fadaaac7cff61ca4fc7406b3c1f6a8cebc3b7526f22243eee89a",
+        "object_path": "pool/main/l/libcurl/libcurl_8.21.0_aarch64.deb",
+        "size": 1017240
+      },
+      "sequence": 77,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Conflicts",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "814c420db2dae001acda32e2111f1f6fad078bd4e4d6d83bfd43c2baec7200d8"
+    },
+    {
+      "identity": {
+        "name": "libnghttp2",
+        "version": "1.69.0",
+        "arch": "aarch64",
+        "sha256": "1fde4260cfd3fab5054f105728226d976ba71ac17a25a821899b7cff55a6a206",
+        "object_path": "pool/main/l/libnghttp2/libnghttp2_1.69.0_aarch64.deb",
+        "size": 95568
+      },
+      "sequence": 78,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "3150b1ba66417706bdb0365769bbe88b3d2a6ff5621cac2937a4fcad542efbf0"
+    },
+    {
+      "identity": {
+        "name": "libtool",
+        "version": "2.5.4-2",
+        "arch": "aarch64",
+        "sha256": "245caff838095199abc1ed024987f7b289e127912cba0a7cb67fc7c734ded909",
+        "object_path": "pool/main/l/libtool/libtool_2.5.4-2_aarch64.deb",
+        "size": 392020
+      },
+      "sequence": 79,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Conflicts",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "482f6cc907a606bdddb3f19704e3a3339c080fa518f07377d2c22b0f471a72a1"
+    },
+    {
+      "identity": {
+        "name": "libnspr",
+        "version": "4.39",
+        "arch": "aarch64",
+        "sha256": "fb47b5b3658607789329444d9ecc0e1440caaca42d1039213b302cdd8c1d79c9",
+        "object_path": "pool/main/l/libnspr/libnspr_4.39_aarch64.deb",
+        "size": 181456
+      },
+      "sequence": 80,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "75332d0a577aa90fded9651a44b83d7d35ffcfee71229542634f067d0811e5c2"
+    },
+    {
+      "identity": {
+        "name": "libwebrtc-audio-processing",
+        "version": "1.3-4",
+        "arch": "aarch64",
+        "sha256": "36ceb7767191d7ddaa5ba8097ccbee9ecfd2020fde8b63548c7faf5d328260f0",
+        "object_path": "pool/main/l/libwebrtc-audio-processing/libwebrtc-audio-processing_1.3-4_aarch64.deb",
+        "size": 409456
+      },
+      "sequence": 81,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "a0775edb190c7f33ca712c7f7b92834df2eb91df306f7eff70f93de479cc80a6"
+    },
+    {
+      "identity": {
+        "name": "libuv",
+        "version": "1.52.1",
+        "arch": "aarch64",
+        "sha256": "202c6c599c34903f4462c545914d9719b9fd0d4186ab3e942b98950ec715d3c4",
+        "object_path": "pool/main/l/libuv/libuv_1.52.1_aarch64.deb",
+        "size": 81964
+      },
+      "sequence": 82,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "c8fbebf513d1b2b2d971ccce98778bdad73cd1338297eac6d1812077188889ed"
+    },
+    {
+      "identity": {
+        "name": "libbs2b",
+        "version": "3.1.0-2",
+        "arch": "aarch64",
+        "sha256": "f1152ab17dce445cf11a303cebb533f92f62fd6ea9c9f2764b6c26a773b181b4",
+        "object_path": "pool/main/l/libbs2b/libbs2b_3.1.0-2_aarch64.deb",
+        "size": 13556
+      },
+      "sequence": 83,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "6fa0f2e0d0d2576c69d59081da0bca102bafa9363bc5c5097011f0949e2ef9ae"
+    },
+    {
+      "identity": {
+        "name": "libksba",
+        "version": "1.8.0",
+        "arch": "aarch64",
+        "sha256": "f88f98fbc6548debe9ff9a082eb558fdecd9b9b86e8ef43303c5aca890b910b0",
+        "object_path": "pool/main/l/libksba/libksba_1.8.0_aarch64.deb",
+        "size": 107032
+      },
+      "sequence": 84,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "ad3852facdfffb5b61e859ac2321db2de94e988cd79d7c4b0468ac93b9360b58"
+    },
+    {
+      "identity": {
+        "name": "libopus",
+        "version": "1.6.1",
+        "arch": "aarch64",
+        "sha256": "28d23379ae971497b2f192f3e922352a260fcb5ec3110a316d866467851ae416",
+        "object_path": "pool/main/l/libopus/libopus_1.6.1_aarch64.deb",
+        "size": 191232
+      },
+      "sequence": 85,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "ad8cc05a0816bc494111da76f209a65ea21ac27c9b6235981ec7bf0effdf0711"
+    },
+    {
+      "identity": {
+        "name": "libx265",
+        "version": "4.2",
+        "arch": "aarch64",
+        "sha256": "7e3fa67e4845895147edc360e1bad3f0862f1c57c22d0a3b2c3fa8cf1fd5a9f4",
+        "object_path": "pool/main/l/libx265/libx265_4.2_aarch64.deb",
+        "size": 1589308
+      },
+      "sequence": 86,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "bbdea616c0e7b20be8b4b701925062439291868e7b971e5b1a9ac690f8674951"
+    },
+    {
+      "identity": {
+        "name": "libtirpc",
+        "version": "1.3.7-1",
+        "arch": "aarch64",
+        "sha256": "405064f7b95898580da442e8d36af47453dcb4f60cb25d441ef73013c1a477a5",
+        "object_path": "pool/main/l/libtirpc/libtirpc_1.3.7-1_aarch64.deb",
+        "size": 123964
+      },
+      "sequence": 87,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "474f348edb8ce3f66b0ea1562e69ba41f3893e50d719b1b8a4b1bd5b61220bd4"
+    },
+    {
+      "identity": {
+        "name": "libx264",
+        "version": "1:0.164.3191-1",
+        "arch": "aarch64",
+        "sha256": "e21dbe0869ad9ac69af516e6d5ef22462b3270ca31e12106005bd6c29215381e",
+        "object_path": "pool/main/l/libx264/libx264_1:0.164.3191-1_aarch64.deb",
+        "size": 398020
+      },
+      "sequence": 88,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "e01b14edd4a81b1d7cea2e693e2923ac31f44eb7fdabb7f9f9eb9753c144b0f9"
+    },
+    {
+      "identity": {
+        "name": "libandroid-support",
+        "version": "29-1",
+        "arch": "aarch64",
+        "sha256": "44fcc63986ca6ebbe697230d9f1c45c948a6df935c4f2e5c908744b4ab8ee3f4",
+        "object_path": "pool/main/l/libandroid-support/libandroid-support_29-1_aarch64.deb",
+        "size": 10920
+      },
+      "sequence": 89,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "f661d7710b277145d95e9b145b2cb5819f43af363f19b7e4c8683e478cdca25e"
+    },
+    {
+      "identity": {
+        "name": "libevent",
+        "version": "2.1.12-3",
+        "arch": "aarch64",
+        "sha256": "1e7e3cf10c1878b28f6f263fbff34a460d94bf4cf50191945783d6e1bcfed254",
+        "object_path": "pool/main/l/libevent/libevent_2.1.12-3_aarch64.deb",
+        "size": 201884
+      },
+      "sequence": 90,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "fbc4643d1c38938816defca10949395d712f0c450e154f6b41e54f2292f3f878"
+    },
+    {
+      "identity": {
+        "name": "littlecms",
+        "version": "2.19.1",
+        "arch": "aarch64",
+        "sha256": "04fbcb422ade708df8ad94f15cb6631d7bb2ed35389c305755d2898cdc26dd22",
+        "object_path": "pool/main/l/littlecms/littlecms_2.19.1_aarch64.deb",
+        "size": 143916
+      },
+      "sequence": 91,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "527ce06241df7e87a6bf396725c14aa50f018700e0f7242929e270bffe7fb782"
+    },
+    {
+      "identity": {
+        "name": "libbz2",
+        "version": "1.0.8-8",
+        "arch": "aarch64",
+        "sha256": "c56c2d30c22e5bdbb96261f9c7b8967c8d0e3e85a408e0f0173879997ad9000d",
+        "object_path": "pool/main/l/libbz2/libbz2_1.0.8-8_aarch64.deb",
+        "size": 26124
+      },
+      "sequence": 92,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "9995a9f329b42ea8441aa46319f4dc5c2999f28ba33cb3343d46437e6e0400ce"
+    },
+    {
+      "identity": {
+        "name": "libsodium",
+        "version": "1.0.22-1",
+        "arch": "aarch64",
+        "sha256": "0955e84abc624861fe137bf48f7ba8bc6c873aaa817582452bcefc2f29c025cc",
+        "object_path": "pool/main/l/libsodium/libsodium_1.0.22-1_aarch64.deb",
+        "size": 150784
+      },
+      "sequence": 93,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "1b88d73f713c9e425cb29217edaf7e9203eda3c1b43de29c45388f0cbb970b96"
+    },
+    {
+      "identity": {
+        "name": "libgpg-error",
+        "version": "1.58",
+        "arch": "aarch64",
+        "sha256": "119ff60d269d9e85ab232c76c3da4220a3271004b1bdac6464963ca3709ccb0b",
+        "object_path": "pool/main/l/libgpg-error/libgpg-error_1.58_aarch64.deb",
+        "size": 121296
+      },
+      "sequence": 94,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "066f9953a5184f8debca850ec5d9363d258069c23a38083871f72fe958738f74"
+    },
+    {
+      "identity": {
+        "name": "libcrypt",
+        "version": "0.2-6",
+        "arch": "aarch64",
+        "sha256": "0870ed43076ff9331c7c1ac8f858c544d97fd24d6e2ab3ef28c4c73841f0c70d",
+        "object_path": "pool/main/l/libcrypt/libcrypt_0.2-6_aarch64.deb",
+        "size": 8812
+      },
+      "sequence": 95,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "131c8f3983948e1554937d61dd0239c863fa3f0c5fc47930027abdc8a8b8b822"
+    },
+    {
+      "identity": {
+        "name": "libgmp",
+        "version": "6.3.0-2",
+        "arch": "aarch64",
+        "sha256": "48aff3e0b7d77e7d55ecf738f4fd629c464e3007f7c5bd488e2d29b710e69c3d",
+        "object_path": "pool/main/l/libgmp/libgmp_6.3.0-2_aarch64.deb",
+        "size": 328108
+      },
+      "sequence": 96,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "733973a0ff6d9a740e509b0e73938599218d28599305ff01a34c0f14b9a69e9d"
+    },
+    {
+      "identity": {
+        "name": "libc++",
+        "version": "29",
+        "arch": "aarch64",
+        "sha256": "9c46ce364b13e395e3a5bdf7902288f035bbe237cfc1ca3f248bf780015bfd4b",
+        "object_path": "pool/main/l/libc++/libc++_29_aarch64.deb",
+        "size": 334712
+      },
+      "sequence": 97,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "8e30d335bb4e76819251bedb12705fcf0632631af9f518aeb2474c51d4eb0111"
+    },
+    {
+      "identity": {
+        "name": "libxcb",
+        "version": "1.17.0-1",
+        "arch": "aarch64",
+        "sha256": "ed440635cb4b1da544d7b131fbb30e87a3d50e82012411d6bca78e217f6ac7e1",
+        "object_path": "pool/main/l/libxcb/libxcb_1.17.0-1_aarch64.deb",
+        "size": 915216
+      },
+      "sequence": 98,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Recommends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "78ff8bbb3c7b31b53cb565b8dc7e576c26b89de0290c5c4d028e6db8ba07e589"
+    },
+    {
+      "identity": {
+        "name": "libjpeg-turbo",
+        "version": "3.1.4.1",
+        "arch": "aarch64",
+        "sha256": "5849ce3685defb718e5967e91a2d8bec7ea7cc4f18564e937a10c123f615eaee",
+        "object_path": "pool/main/l/libjpeg-turbo/libjpeg-turbo_3.1.4.1_aarch64.deb",
+        "size": 385224
+      },
+      "sequence": 99,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "8f222da43defbfbc81817550766c8352ccb42a1d31e0688d3acc2f35cf0aeb7a"
+    },
+    {
+      "identity": {
+        "name": "libblkid",
+        "version": "2.42.1-2",
+        "arch": "aarch64",
+        "sha256": "5eaf01e8c1e68990a103c88d6d6c0ad605ba595031e518bd7285406097cf1eaa",
+        "object_path": "pool/main/l/libblkid/libblkid_2.42.1-2_aarch64.deb",
+        "size": 128832
+      },
+      "sequence": 100,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "17ba8d59d8ce2d9905f5681ca5f1fc4014d1ce1724ec7fb3618fc54074a1d756"
+    },
+    {
+      "identity": {
+        "name": "libnpth",
+        "version": "1.6-3",
+        "arch": "aarch64",
+        "sha256": "43b22bf57ed17de415f11c137259f06f0cabb66f50b66f5d343d4809d5a4b0c7",
+        "object_path": "pool/main/l/libnpth/libnpth_1.6-3_aarch64.deb",
+        "size": 11248
+      },
+      "sequence": 101,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "faaffbd4acc050f4fff237591f788289982a784aa9cbfd96451e4cfbdc3e5e5b"
+    },
+    {
+      "identity": {
+        "name": "libvterm",
+        "version": "1:0.3.3-2",
+        "arch": "aarch64",
+        "sha256": "d6eb37537c9ff30e312bb8fd29fcdd9068cc2e090e5d6f149e984fe5c01999eb",
+        "object_path": "pool/main/l/libvterm/libvterm_1:0.3.3-2_aarch64.deb",
+        "size": 33016
+      },
+      "sequence": 102,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "97893c270ae635ec3cb4a57b0176841c67391ff48b0bd0cf73241908d68cb123"
+    },
+    {
+      "identity": {
+        "name": "libnettle",
+        "version": "4.0+really3.10.2",
+        "arch": "aarch64",
+        "sha256": "1159996465f247589bbeae16b14b59461c2ca19ff593e398b87bf12d43fc7b28",
+        "object_path": "pool/main/l/libnettle/libnettle_4.0+really3.10.2_aarch64.deb",
+        "size": 406164
+      },
+      "sequence": 103,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "f9ea4d148a97fc073542c4f790f576eb2283fcc467f97244c89910bb592f4230"
+    },
+    {
+      "identity": {
+        "name": "libandroid-sysv-semaphore",
+        "version": "0.1-1",
+        "arch": "aarch64",
+        "sha256": "e7864272f0e380fdba353d0ad3fdd95975ec3db177b69cb23744ecec511ad082",
+        "object_path": "pool/main/l/libandroid-sysv-semaphore/libandroid-sysv-semaphore_0.1-1_aarch64.deb",
+        "size": 3592
+      },
+      "sequence": 104,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "19e54a248aa050502170fae64a8f59b40480d7d7600759513613eaa7b0f8fb28"
+    },
+    {
+      "identity": {
+        "name": "libmp3lame",
+        "version": "3.100-7",
+        "arch": "aarch64",
+        "sha256": "88e211b35477f324f970ad31e61ae9db1ea666a2eb1f193092b0c3c568520e46",
+        "object_path": "pool/main/l/libmp3lame/libmp3lame_3.100-7_aarch64.deb",
+        "size": 114768
+      },
+      "sequence": 105,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "267a4021d070160b0295039ae9dae022ee1dfee916fd6b6b51a5ce17e988dfd1"
+    },
+    {
+      "identity": {
+        "name": "less",
+        "version": "704",
+        "arch": "aarch64",
+        "sha256": "9afec710486924addfc9c452c5cf0ee283c779f7ddd330c71c63d44cf42315f4",
+        "object_path": "pool/main/l/less/less_704_aarch64.deb",
+        "size": 138740
+      },
+      "sequence": 106,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "f438832a61eb553a1ac61be7f2bf9034f2049e2764ac68cd7a6a1330f6904abf"
+    },
+    {
+      "identity": {
+        "name": "libtalloc",
+        "version": "2.4.3",
+        "arch": "aarch64",
+        "sha256": "19b63c822e078a62f21e400d3250b081c66e0cd7431e93236b7ab9755cde36e2",
+        "object_path": "pool/main/l/libtalloc/libtalloc_2.4.3_aarch64.deb",
+        "size": 33104
+      },
+      "sequence": 107,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "10b7399687cc9eff16e05abd3ee01b8dbe6b25dbfcc2057eb79f3f311736e54c"
+    },
+    {
+      "identity": {
+        "name": "libxss",
+        "version": "1.2.5",
+        "arch": "aarch64",
+        "sha256": "f17f6284e6ccf2d9b386e4f1412c46ff60205a2c8e207d3407adb483d151f37b",
+        "object_path": "pool/main/l/libxss/libxss_1.2.5_aarch64.deb",
+        "size": 11980
+      },
+      "sequence": 108,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "c017a115403b2f93a2cf401bd69d5247dc9ef3fbe96c2d0efe35ca5428fb2cbc"
+    },
+    {
+      "identity": {
+        "name": "libexpat",
+        "version": "2.8.1",
+        "arch": "aarch64",
+        "sha256": "327f0a8b551d313b30df5629ac283c3f3bbc15881dd505760cd4e78822eba1a5",
+        "object_path": "pool/main/l/libexpat/libexpat_2.8.1_aarch64.deb",
+        "size": 94384
+      },
+      "sequence": 109,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "3370d1f9c5d58a82fec1212252fd9812c1369e5aa6c1103372ee0663220e20b9"
+    },
+    {
+      "identity": {
+        "name": "libsamplerate",
+        "version": "0.2.2-4",
+        "arch": "aarch64",
+        "sha256": "24e8f02f966ffff5b20f2f0c01c71221dd8d1b369fd0847bf7852e97599238a5",
+        "object_path": "pool/main/l/libsamplerate/libsamplerate_0.2.2-4_aarch64.deb",
+        "size": 973664
+      },
+      "sequence": 110,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "de886544b31e561a56ae9d40e89c8d100e8123738ebf9331c56184bddaa5434f"
+    },
+    {
+      "identity": {
+        "name": "libunistring",
+        "version": "1.3-1",
+        "arch": "aarch64",
+        "sha256": "d67904f5249ce3e4dacc54420f2ad566664e28cf303e9cb796f465404065d9e4",
+        "object_path": "pool/main/l/libunistring/libunistring_1.3-1_aarch64.deb",
+        "size": 549528
+      },
+      "sequence": 111,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "e0675c111bf73a243851e95217992e3863e40a95e2d8497b89e8f9c599557929"
+    },
+    {
+      "identity": {
+        "name": "libltdl",
+        "version": "2.5.4-2",
+        "arch": "aarch64",
+        "sha256": "6ae97abd9c6dc13040f0328e823d9a545bcc4815fd7728fc89d6dd1ee56402bc",
+        "object_path": "pool/main/l/libltdl/libltdl_2.5.4-2_aarch64.deb",
+        "size": 17948
+      },
+      "sequence": 112,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "0ef0bd36a30c1a9b5c44a06a2dd925787bb7769bf765fb2a816c10e7bc6cc167"
+    },
+    {
+      "identity": {
+        "name": "libxml2-python",
+        "version": "2.15.3",
+        "arch": "aarch64",
+        "sha256": "f1c0fd53e4b37694ad0fe5168fd9aa0b8af0f1b8c8beb54d00368c9898d49b7a",
+        "object_path": "pool/main/l/libxml2-python/libxml2-python_2.15.3_aarch64.deb",
+        "size": 95184
+      },
+      "sequence": 113,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "6e055abf1c6b1d02fbaf9c401c8a7d3f7deb8853bed3c00ed1b8f45146a36f82"
+    },
+    {
+      "identity": {
+        "name": "libmount",
+        "version": "2.42.1-2",
+        "arch": "aarch64",
+        "sha256": "662c3f82ac23e1f561c11d1a3f3e8cadffc6810655a233b6a8361dbe0b14cf57",
+        "object_path": "pool/main/l/libmount/libmount_2.42.1-2_aarch64.deb",
+        "size": 156700
+      },
+      "sequence": 114,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "518fe7c12ae2b083af2aa8e1a82f751ee1830e0b4874fca58465fd387b3e5380"
+    },
+    {
+      "identity": {
+        "name": "libunibilium",
+        "version": "2.1.2-2",
+        "arch": "aarch64",
+        "sha256": "fab75532450f845af97fa5053d055c5bccf6bdf892518389996b0c3812ea8728",
+        "object_path": "pool/main/l/libunibilium/libunibilium_2.1.2-2_aarch64.deb",
+        "size": 21772
+      },
+      "sequence": 115,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "544bcec6c3c28807cdbfb6e2dba9ed8e6007ac6be9df740ab40c024d389d358f"
+    },
+    {
+      "identity": {
+        "name": "libassuan",
+        "version": "3.0.2-1",
+        "arch": "aarch64",
+        "sha256": "a50cfdc5b6f618dda0c2858ca76cead36fb271de9b7e21139ab08cbd01555016",
+        "object_path": "pool/main/l/libassuan/libassuan_3.0.2-1_aarch64.deb",
+        "size": 73932
+      },
+      "sequence": 116,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "057ffc5ec6daedbafbb1300615908b12db49a0fa7168c1bd8e25c33b08053299"
+    },
+    {
+      "identity": {
+        "name": "libxau",
+        "version": "1.0.12-2",
+        "arch": "aarch64",
+        "sha256": "6aa26f6921e80f2845ea1d119d899c01cbc0334d392fa9667a0474990201ee28",
+        "object_path": "pool/main/l/libxau/libxau_1.0.12-2_aarch64.deb",
+        "size": 9164
+      },
+      "sequence": 117,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "d0ccb218d8b44a3724d6ce3648c333f07c7537a248ada94c610a5d99ea501cf0"
+    },
+    {
+      "identity": {
+        "name": "libtiff",
+        "version": "4.7.1",
+        "arch": "aarch64",
+        "sha256": "47adb040cee677edd0a532ec713807c99936f3d627cc58da83f95a9625c43f22",
+        "object_path": "pool/main/l/libtiff/libtiff_4.7.1_aarch64.deb",
+        "size": 848944
+      },
+      "sequence": 118,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "482177313d9c31b5761549e0385c94217ab34868ca1bddd5743c19575a7c168d"
+    },
+    {
+      "identity": {
+        "name": "libtheora",
+        "version": "1.2.0-1",
+        "arch": "aarch64",
+        "sha256": "ebeb076f8215fc9a70c4117922bad14635ce314c62e1a766ebe2ea52486126e6",
+        "object_path": "pool/main/l/libtheora/libtheora_1.2.0-1_aarch64.deb",
+        "size": 132232
+      },
+      "sequence": 119,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "1d95281f88d69f702b23d8b5c3374dbf8b0f18f5e11ebad83dda3a15e2f8a85d"
+    },
+    {
+      "identity": {
+        "name": "libflac",
+        "version": "1.5.0-1",
+        "arch": "aarch64",
+        "sha256": "f6a87a8e9454ac6207d3535e7b2ee88a6c0113149bed176d07c642f4662a6139",
+        "object_path": "pool/main/l/libflac/libflac_1.5.0-1_aarch64.deb",
+        "size": 203192
+      },
+      "sequence": 120,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "a821509699a4f523f501edd0043aac4105e1e5bf505c7b805f8cf41c397ccf4f"
+    },
+    {
+      "identity": {
+        "name": "libxft",
+        "version": "2.3.9-1",
+        "arch": "aarch64",
+        "sha256": "8ffd51aa7c5a2755fb4c56e29d13fe5f5c7116d2db9f934ca145041dd00eb9ff",
+        "object_path": "pool/main/l/libxft/libxft_2.3.9-1_aarch64.deb",
+        "size": 48004
+      },
+      "sequence": 121,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "8ecebe8e66bd509100832445d9e59185b8988bf3a83dc5b39a57b4ad4a7a0c18"
+    },
+    {
+      "identity": {
+        "name": "libxml2-utils",
+        "version": "2.15.3",
+        "arch": "aarch64",
+        "sha256": "a44dc1fb038438e9e652caaf964d0183fed5fc796ee7d595e2a7595899de7b6b",
+        "object_path": "pool/main/l/libxml2-utils/libxml2-utils_2.15.3_aarch64.deb",
+        "size": 33972
+      },
+      "sequence": 122,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Provides",
+        "Description"
+      ],
+      "expected_stanza_sha256": "a6c580df720bb5d8590b2128218f31d11779b4415d09a6726079ce0011bd4df1"
+    },
+    {
+      "identity": {
+        "name": "libgcrypt",
+        "version": "1.11.2-1",
+        "arch": "aarch64",
+        "sha256": "1d620df1fde88ca3d3808131325ec891bbf10bfc8b593d4428783377b11fd9d5",
+        "object_path": "pool/main/l/libgcrypt/libgcrypt_1.11.2-1_aarch64.deb",
+        "size": 500804
+      },
+      "sequence": 123,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "2430c1bb606fba8843b788a5453738008dd87b8bb540adf542476bdd4effd419"
+    },
+    {
+      "identity": {
+        "name": "libiconv",
+        "version": "1.18-1",
+        "arch": "aarch64",
+        "sha256": "15d21d70dc7c72c9a7d28e1260999318eac46a2a875972ea504a1d693117cfdd",
+        "object_path": "pool/main/l/libiconv/libiconv_1.18-1_aarch64.deb",
+        "size": 562492
+      },
+      "sequence": 124,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "0f860d4a89a68e8b88aff116d04eee2cd564f6955be7573bf2c97a4cd9785b5e"
+    },
+    {
+      "identity": {
+        "name": "libffi",
+        "version": "3.5.2",
+        "arch": "aarch64",
+        "sha256": "dd56137565486de3adb6c0f94faccb9848e12dd4153f77a621669415512fa8d3",
+        "object_path": "pool/main/l/libffi/libffi_3.5.2_aarch64.deb",
+        "size": 31136
+      },
+      "sequence": 125,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "29ea74b7233eb89cf6de1bf12b96c3a5f1adb71d4ba3f9dbaa87122ed4b8c784"
+    },
+    {
+      "identity": {
+        "name": "libpng",
+        "version": "1.6.58",
+        "arch": "aarch64",
+        "sha256": "4c8ef9d4f28b8edc4b6b9fd98971062ce03b0a66b2f2fc97287f366a31248b82",
+        "object_path": "pool/main/l/libpng/libpng_1.6.58_aarch64.deb",
+        "size": 195836
+      },
+      "sequence": 126,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "aba4fa16e27a647015656232a31a6a9c49d3dcd861baa5629da77d813d76bd46"
+    },
+    {
+      "identity": {
+        "name": "libusb",
+        "version": "1.0.30",
+        "arch": "aarch64",
+        "sha256": "63bc738cea29228f9b8468e404e120bd0fe8492224e67967c31937632d6cf4e5",
+        "object_path": "pool/main/l/libusb/libusb_1.0.30_aarch64.deb",
+        "size": 59772
+      },
+      "sequence": 127,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "fc3f9d0f9e41712953846bd3366b1973f1417980bdb406b148fdbd6cd2a6f9e9"
+    },
+    {
+      "identity": {
+        "name": "libsmartcols",
+        "version": "2.42.1-2",
+        "arch": "aarch64",
+        "sha256": "90e198a586e14b0d146eca9e8bd56c7d52a108b30ea5744568e2f47bf9949443",
+        "object_path": "pool/main/l/libsmartcols/libsmartcols_2.42.1-2_aarch64.deb",
+        "size": 103440
+      },
+      "sequence": 128,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "afc0de0636bed823620792894c14651bfb769b30bbf871acce1bdb8d21c0baac"
+    },
+    {
+      "identity": {
+        "name": "libandroid-utimes",
+        "version": "0.4",
+        "arch": "aarch64",
+        "sha256": "25cf3dfe3c5095780dd77557f756e3f1c2a59f348c891e4fb34a24e2bbbd80d0",
+        "object_path": "pool/main/l/libandroid-utimes/libandroid-utimes_0.4_aarch64.deb",
+        "size": 3124
+      },
+      "sequence": 129,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "3875dd0afb9c37b368ff508596269b88be02a20eeb25de0c623ebe65f2b6075e"
+    },
+    {
+      "identity": {
+        "name": "libx11",
+        "version": "1.8.13",
+        "arch": "aarch64",
+        "sha256": "75f580c287c3a5a07520dfa13a312cbc533832739df044ea644718bd7e719314",
+        "object_path": "pool/main/l/libx11/libx11_1.8.13_aarch64.deb",
+        "size": 1909040
+      },
+      "sequence": 130,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Recommends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "3f86304b2a6267b08a0b0be337ed03f86ec7b7ebe432b1b754e4665a8df0cd0b"
+    },
+    {
+      "identity": {
+        "name": "libdb",
+        "version": "18.1.40-5",
+        "arch": "aarch64",
+        "sha256": "8d313573f2398a9167dee2517f25f944422099ca373132308370c65046da396e",
+        "object_path": "pool/main/l/libdb/libdb_18.1.40-5_aarch64.deb",
+        "size": 509500
+      },
+      "sequence": 131,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "7c5f9c4a9533a70a46eff13ce9bc4df001ebaae6a44739d80610d3e00e46b83e"
+    },
+    {
+      "identity": {
+        "name": "libnss",
+        "version": "3.125",
+        "arch": "aarch64",
+        "sha256": "a460eb44b0295af2836d3f242bfd0fa070bd56f4ea9098d929c27036ffe5c5a2",
+        "object_path": "pool/main/l/libnss/libnss_3.125_aarch64.deb",
+        "size": 1735124
+      },
+      "sequence": 132,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "26e7f0e466c7326f3ea1e573e11da4b3e2144306052b8028537fda522f3334c6"
+    },
+    {
+      "identity": {
+        "name": "libedit",
+        "version": "20240517-3.1-1",
+        "arch": "aarch64",
+        "sha256": "7ad8b8c7abc50e435ebd83b43d7dcb7b1df7baa4ab2ec7cd7f1987ea5ae5bf23",
+        "object_path": "pool/main/l/libedit/libedit_20240517-3.1-1_aarch64.deb",
+        "size": 79256
+      },
+      "sequence": 133,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "0a43ab5aabfc4cc22f74cbfa8beb2620d4c7285771c6a60f07d1c92f0e879e99"
+    },
+    {
+      "identity": {
+        "name": "libgit2",
+        "version": "1.9.4",
+        "arch": "aarch64",
+        "sha256": "fe7a4bf22b48ad80d6d2fc8ebbea3d5e143ae37413e08bce7e006c6a2b586440",
+        "object_path": "pool/main/l/libgit2/libgit2_1.9.4_aarch64.deb",
+        "size": 719544
+      },
+      "sequence": 134,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "0f69fb8afee977e1bc3b8c7fc1baf20b6656ec9c5644cff04bc7fac13c95d924"
+    },
+    {
+      "identity": {
+        "name": "libandroid-shmem",
+        "version": "0.7",
+        "arch": "aarch64",
+        "sha256": "e8703bca1e890a88bf15def72baddf639e64f32c5b2fa6246a1cb2cc13127a0a",
+        "object_path": "pool/main/l/libandroid-shmem/libandroid-shmem_0.7_aarch64.deb",
+        "size": 7208
+      },
+      "sequence": 135,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "3c9f2efe62c28ebfc20e01d95cc75159973ea47fc90b75a13eb6aef87b8a6bc5"
+    },
+    {
+      "identity": {
+        "name": "libdav1d",
+        "version": "1.5.3",
+        "arch": "aarch64",
+        "sha256": "cc7c0f55a8f11bf217ffff532c54708b42c7780bced370b827a4e417633e814d",
+        "object_path": "pool/main/l/libdav1d/libdav1d_1.5.3_aarch64.deb",
+        "size": 290096
+      },
+      "sequence": 136,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "cd20b1a4311784a7164e73fb264e89a7956ee3234e5c2ace9178acc34e0ce5fd"
+    },
+    {
+      "identity": {
+        "name": "libmd",
+        "version": "1.1.0-1",
+        "arch": "aarch64",
+        "sha256": "357de6648945c3ced045d81abb0fd2b23b2e72e29f58bf679a2b920d269112d1",
+        "object_path": "pool/main/l/libmd/libmd_1.1.0-1_aarch64.deb",
+        "size": 40620
+      },
+      "sequence": 137,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "02f727d3e64f6eafcf59232d2afe995acad1e14f46c6d1aa42f98983d2bdb5b7"
+    },
+    {
+      "identity": {
+        "name": "libssh2",
+        "version": "1.11.1-1",
+        "arch": "aarch64",
+        "sha256": "ed10f7127b53a8af963ed979ccf9c59a14e775fa749426330e9e9f320352aff9",
+        "object_path": "pool/main/l/libssh2/libssh2_1.11.1-1_aarch64.deb",
+        "size": 219044
+      },
+      "sequence": 138,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "631cc3c5eedffd55f8b6c14109d60c950848a77c3ad60b822fa0ecfab0f8aa71"
+    },
+    {
+      "identity": {
+        "name": "libmsgpack",
+        "version": "7.0.1",
+        "arch": "aarch64",
+        "sha256": "67e689150b16b403ebdd39f0e69b038a5e6924cf83e149bccd88c54c1fb41039",
+        "object_path": "pool/main/l/libmsgpack/libmsgpack_7.0.1_aarch64.deb",
+        "size": 26260
+      },
+      "sequence": 139,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "3ff9928c84417c6ff11598f7db94bfbdaa96605a0bc3a9f87da7a30e184cc487"
+    },
+    {
+      "identity": {
+        "name": "libfdisk",
+        "version": "2.42.1-2",
+        "arch": "aarch64",
+        "sha256": "82d7a621a8658486e9b1c84478e84c2ce25e4ecf65040373d3dbfc2dd9ef674c",
+        "object_path": "pool/main/l/libfdisk/libfdisk_2.42.1-2_aarch64.deb",
+        "size": 159532
+      },
+      "sequence": 140,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "4268a0e3a2dc29ee2bff66b71761307a37b2fde269432cbfe1dd7fd691620b8b"
+    },
+    {
+      "identity": {
+        "name": "libde265",
+        "version": "1.1.1",
+        "arch": "aarch64",
+        "sha256": "538d353cdffb3a37b9613ea4c61227ea5cb23fbd4e4c308617fdc4bb3161ba7d",
+        "object_path": "pool/main/l/libde265/libde265_1.1.1_aarch64.deb",
+        "size": 192580
+      },
+      "sequence": 141,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "ccec2ccfe573f1e430a741d0ab5c159d07837232fdc101d2ccaf5167459a5b77"
+    },
+    {
+      "identity": {
+        "name": "libandroid-selinux",
+        "version": "14.0.0.11-1",
+        "arch": "aarch64",
+        "sha256": "b282be41260acac1bd119707899d1209feca4da67562367402a5fcfd45008470",
+        "object_path": "pool/main/l/libandroid-selinux/libandroid-selinux_14.0.0.11-1_aarch64.deb",
+        "size": 59340
+      },
+      "sequence": 142,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "1ed69ab13d08c5e98dfd89f827b1b2109afcef458c18032a6f7585fd952bbfa0"
+    },
+    {
+      "identity": {
+        "name": "libcap-ng",
+        "version": "2:0.9.3",
+        "arch": "aarch64",
+        "sha256": "cb375084012bd365d26fe118d4281e16cee1ceec55534a1e6c4efbd124a066e6",
+        "object_path": "pool/main/l/libcap-ng/libcap-ng_2:0.9.3_aarch64.deb",
+        "size": 38944
+      },
+      "sequence": 143,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "55bf73aad41a3f78d22adb76bc3cbea124c952e28c1c294efd047f017d4415b8"
+    },
+    {
+      "identity": {
+        "name": "libudfread",
+        "version": "1.2.0",
+        "arch": "aarch64",
+        "sha256": "6deed51c335cbe5bfcfea495e0abe4eaf471c6cce47c8e57a7637723e5e70ec2",
+        "object_path": "pool/main/l/libudfread/libudfread_1.2.0_aarch64.deb",
+        "size": 14924
+      },
+      "sequence": 144,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "e6b579006a2cb52553537334a80555e6c76fd37f1e719956fffdc0b791c00c24"
+    },
+    {
+      "identity": {
+        "name": "libnghttp3",
+        "version": "1.16.0",
+        "arch": "aarch64",
+        "sha256": "e4cc71854e781dbc9bd9ac59ed8265e81d24a3833f3838ea934ced418ec9b553",
+        "object_path": "pool/main/l/libnghttp3/libnghttp3_1.16.0_aarch64.deb",
+        "size": 68528
+      },
+      "sequence": 145,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "6f384429a81437a6c5c9cb1c8ec984d62ebd46663a5c9cb71ff977fbb2bef1cf"
+    },
+    {
+      "identity": {
+        "name": "lua51-lpeg",
+        "version": "1.1.0-6",
+        "arch": "aarch64",
+        "sha256": "9ac8bb26257a1bd94d3ff16da7742a99c5ff5f3d85f2c3e467fb1c7bc142c28b",
+        "object_path": "pool/main/l/lua-lpeg/lua51-lpeg_1.1.0-6_aarch64.deb",
+        "size": 21536
+      },
+      "sequence": 146,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "13cc95803133ff15cca5e24ae431ebd371f8cbf454c6b0c07bd5d9670d6e0353"
+    },
+    {
+      "identity": {
+        "name": "libssh",
+        "version": "0.12.0-1",
+        "arch": "aarch64",
+        "sha256": "5a4b313d261f2df06c8b624c93f4e50f1d9a4ec7d68666e49f51693457bdcf07",
+        "object_path": "pool/main/l/libssh/libssh_0.12.0-1_aarch64.deb",
+        "size": 232748
+      },
+      "sequence": 147,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "cc2aec04c9961283537454904589c34c22aa8d250b4200514fed3f4b4dacf7d0"
+    },
+    {
+      "identity": {
+        "name": "libwebp",
+        "version": "1.6.0-1",
+        "arch": "aarch64",
+        "sha256": "a57c94323db75e038925f5d3491a39454750c84bae3972dab5759e599ed2e6b2",
+        "object_path": "pool/main/l/libwebp/libwebp_1.6.0-1_aarch64.deb",
+        "size": 328820
+      },
+      "sequence": 148,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "d47f09f9455efc1f6f962eba7bbf2b45e80ffb52fca93ee7b432e78e47f54732"
+    },
+    {
+      "identity": {
+        "name": "liblzo",
+        "version": "2.10-5",
+        "arch": "aarch64",
+        "sha256": "728abeb6c07e8409123262773ac982c695b13aeabd9cf7a3c35d758dd0912e43",
+        "object_path": "pool/main/l/liblzo/liblzo_2.10-5_aarch64.deb",
+        "size": 69564
+      },
+      "sequence": 149,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "f2534c6e5e77da1872178472c7754f0d5b282104835c9efb579a67eddac68681"
+    },
+    {
+      "identity": {
+        "name": "pinentry",
+        "version": "1.3.2-2",
+        "arch": "aarch64",
+        "sha256": "acfc39712cb9d96d3303fb0bc7be527c3406fb3e352d27c44f311781e723b653",
+        "object_path": "pool/main/p/pinentry/pinentry_1.3.2-2_aarch64.deb",
+        "size": 47308
+      },
+      "sequence": 150,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "3356d8e24a57e1e01fe7ffd35d6a27c453678bc1e9798e68839e90138cd90361"
+    },
+    {
+      "identity": {
+        "name": "python-tkinter",
+        "version": "3.13.13-1",
+        "arch": "aarch64",
+        "sha256": "8b753789ba2ed54ca250f50414ab4d901e131b6ae65ff98d01d48b8d86346649",
+        "object_path": "pool/main/p/python-tkinter/python-tkinter_3.13.13-1_aarch64.deb",
+        "size": 506220
+      },
+      "sequence": 151,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "65b226b1a1ee3663fed0b25e88f584130b6e19f1eb03126d2a5437d08cb506a4"
+    },
+    {
+      "identity": {
+        "name": "pcre2",
+        "version": "10.47",
+        "arch": "aarch64",
+        "sha256": "89e6122c398cdece71534ef688bd157b19d88d8ff6e2e7acc7827b0da3066dae",
+        "object_path": "pool/main/p/pcre2/pcre2_10.47_aarch64.deb",
+        "size": 960436
+      },
+      "sequence": 152,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "ef69c5f7b948fe2f66853c6b7b036a07f837e24ce3adb46bfbe0686b81baa842"
+    },
+    {
+      "identity": {
+        "name": "pcre2grep",
+        "version": "10.47",
+        "arch": "aarch64",
+        "sha256": "4906b0bd22bcf3ed90bdda46be37169fa1c5a14e2d153609456fcea52b4ad1ee",
+        "object_path": "pool/main/p/pcre2grep/pcre2grep_10.47_aarch64.deb",
+        "size": 34108
+      },
+      "sequence": 153,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "13f0c0f0eb3af88635e0a603a9b8cffc6401f15699723ff876113a703e365797"
+    },
+    {
+      "identity": {
+        "name": "patch",
+        "version": "2.8-1",
+        "arch": "aarch64",
+        "sha256": "e501c5a73242a1cf32b0b07c0e6504226a336879a6048d1bfa84d92ce8e35b8c",
+        "object_path": "pool/main/p/patch/patch_2.8-1_aarch64.deb",
+        "size": 74028
+      },
+      "sequence": 154,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "5e2fb6814f2e1d3ef670d88d979c97e2a2bf1523fb38086eaf19de0a000e728a"
+    },
+    {
+      "identity": {
+        "name": "pzstd",
+        "version": "1.5.7-1",
+        "arch": "aarch64",
+        "sha256": "63e782a135cc586eaa7618389c6b8ff405e07d2eb8753949398ee541f09adb56",
+        "object_path": "pool/main/p/pzstd/pzstd_1.5.7-1_aarch64.deb",
+        "size": 42032
+      },
+      "sequence": 155,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "2a85701b01a29b99c640f4135c19f328987c42801401d70e5f0c39129ea5bc9b"
+    },
+    {
+      "identity": {
+        "name": "psmisc",
+        "version": "23.7-1",
+        "arch": "aarch64",
+        "sha256": "471ae6ef743004448eee75f93d0d4dad0aae09920d6622a61e25ea7f49b44502",
+        "object_path": "pool/main/p/psmisc/psmisc_23.7-1_aarch64.deb",
+        "size": 93316
+      },
+      "sequence": 156,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "6aff7daf564e85e5b512b13564ee0c4a983bdbe3ab2de2e8886c56d217d6f810"
+    },
+    {
+      "identity": {
+        "name": "python-xcbgen",
+        "version": "1.17.0-2",
+        "arch": "all",
+        "sha256": "844fc644df354a09670e8b9ea809f2241ee67ad41d811b3d112043c574809e2a",
+        "object_path": "pool/main/p/python-xcbgen/python-xcbgen_1.17.0-2_all.deb",
+        "size": 15176
+      },
+      "sequence": 157,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Breaks",
+        "Recommends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "89cb47a86e9c156e10b634bea5e366de42b31ee74e070347c1ccce1ef1027846"
+    },
+    {
+      "identity": {
+        "name": "python",
+        "version": "3.13.13-1",
+        "arch": "aarch64",
+        "sha256": "eddadb66d87764effc0e1ca6cdd77a9225b81ceafa56f43d0dd460ddc7d2d255",
+        "object_path": "pool/main/p/python/python_3.13.13-1_aarch64.deb",
+        "size": 4546656
+      },
+      "sequence": 158,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Recommends",
+        "Replaces",
+        "Provides",
+        "Suggests",
+        "Description"
+      ],
+      "expected_stanza_sha256": "59d61c5a3ebb7f0620bbfc3e667edd91e07d4d71c15e74cae9e4420dd9218c3f"
+    },
+    {
+      "identity": {
+        "name": "perl",
+        "version": "5.42.0",
+        "arch": "aarch64",
+        "sha256": "3867b6ebdb254a66fe807146588f3ae27585fb8253990dcce649d5c737bb4993",
+        "object_path": "pool/main/p/perl/perl_5.42.0_aarch64.deb",
+        "size": 15081672
+      },
+      "sequence": 159,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "de4ccb86d035c7e4cd7cc9381089004a5a3c3798ae3cd93a8dbee61b4139d5b8"
+    },
+    {
+      "identity": {
+        "name": "python-ensurepip-wheels",
+        "version": "3.13.13-1",
+        "arch": "all",
+        "sha256": "1483696c3d8251af46af4de1437af6c68da5760ed307f5f22bbcc41266ca49b8",
+        "object_path": "pool/main/p/python-ensurepip-wheels/python-ensurepip-wheels_3.13.13-1_all.deb",
+        "size": 1713272
+      },
+      "sequence": 160,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "d6c46ec6b04d85ba7e3b9a67e52d480f20caa2085b6bd53834f588af5d40b99d"
+    },
+    {
+      "identity": {
+        "name": "procps",
+        "version": "3.3.17-6",
+        "arch": "aarch64",
+        "sha256": "7ab15a14ec29c8259c5134c7d94f22c671c3b3cfe451039f2fd78db828aae21f",
+        "object_path": "pool/main/p/procps/procps_3.3.17-6_aarch64.deb",
+        "size": 143128
+      },
+      "sequence": 161,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "92a60462fab1c8d24efd4c4b589b696fca1927f8b662f75470d310a67b5067b0"
+    },
+    {
+      "identity": {
+        "name": "pyunbound",
+        "version": "1.25.1",
+        "arch": "aarch64",
+        "sha256": "8dc6ac127c81d04555db41b2f945c5d2d8e1ae04dcbeed5f44eb003a5062596a",
+        "object_path": "pool/main/p/pyunbound/pyunbound_1.25.1_aarch64.deb",
+        "size": 776
+      },
+      "sequence": 162,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Conflicts",
+        "Description"
+      ],
+      "expected_stanza_sha256": "199b91f22beba01361ef0271ef70f36ed64d6aead9919602323754e998342705"
+    },
+    {
+      "identity": {
+        "name": "dialog",
+        "version": "1.3-20260107-1",
+        "arch": "aarch64",
+        "sha256": "fc7b43b047aeb3ba7a3d152472ba5c068a4c0b3efe00ce8fc147c93fd1f0cfd8",
+        "object_path": "pool/main/d/dialog/dialog_1.3-20260107-1_aarch64.deb",
+        "size": 100668
+      },
+      "sequence": 163,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "6a17238bf71df7bef39fc2dbb8906cea30d0bb7e70a9e2c2f4fac582e06e3857"
+    },
+    {
+      "identity": {
+        "name": "debianutils",
+        "version": "5.23.2-1",
+        "arch": "aarch64",
+        "sha256": "2974b8e936ac9330fd33459d44405b2cedd1e993b1dd7128926f5ee0503db54b",
+        "object_path": "pool/main/d/debianutils/debianutils_5.23.2-1_aarch64.deb",
+        "size": 16752
+      },
+      "sequence": 164,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "d028cefe7103248ade5cc1c8b7174c646e065bee589be9d7c50b303878511394"
+    },
+    {
+      "identity": {
+        "name": "docbook-xsl",
+        "version": "1.79.2-4",
+        "arch": "all",
+        "sha256": "1df930190610d0d0dd65e8c6d6e1c3d78597c54d64f5e1f0ee3817224c7bb2bd",
+        "object_path": "pool/main/d/docbook-xsl/docbook-xsl_1.79.2-4_all.deb",
+        "size": 1234484
+      },
+      "sequence": 165,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "b22651398553a5132947db36bbe0b25c798e759e59fb5de16c0a123bc22493ef"
+    },
+    {
+      "identity": {
+        "name": "dpkg",
+        "version": "1.22.6-5",
+        "arch": "aarch64",
+        "sha256": "50ebbc7b278188e05d192e29633b4df0ef969158eb6157bdf7ddb9736b0d986d",
+        "object_path": "pool/main/d/dpkg/dpkg_1.22.6-5_aarch64.deb",
+        "size": 309520
+      },
+      "sequence": 166,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "583f811e0f7b80e4b2ed96b070f7eab64170dd70b6c1baf90d8f3b37a2af42f1"
+    },
+    {
+      "identity": {
+        "name": "diffutils",
+        "version": "3.12-2",
+        "arch": "aarch64",
+        "sha256": "8a66a107164a7cdb13fbf9f516c57663374218e3f70f794858b3acf061d5a8b0",
+        "object_path": "pool/main/d/diffutils/diffutils_3.12-2_aarch64.deb",
+        "size": 162796
+      },
+      "sequence": 167,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "571f6d27af5610f242143726b3a0cb62f47056a592c7ef79eec7893138cdea20"
+    },
+    {
+      "identity": {
+        "name": "dos2unix",
+        "version": "7.5.6",
+        "arch": "aarch64",
+        "sha256": "0236b9a5fea5f7bb07038673d85c5e3303e7beb8fb7e4ac843921963a8997bc7",
+        "object_path": "pool/main/d/dos2unix/dos2unix_7.5.6_aarch64.deb",
+        "size": 65252
+      },
+      "sequence": 168,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "f94e7cdc036ae09b5fbeceb01a127fe9d0f11b9b47ccdfdc18eec96c3adc2d45"
+    },
+    {
+      "identity": {
+        "name": "doxygen",
+        "version": "1.17.0",
+        "arch": "aarch64",
+        "sha256": "cfd05668aded3b5406f107dd1961693e462c094b55cefb6e602c7b220f184921",
+        "object_path": "pool/main/d/doxygen/doxygen_1.17.0_aarch64.deb",
+        "size": 9710696
+      },
+      "sequence": 169,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "e33ad9fb21cda2bae8b2739d85df13a0d81b5806c16890292391c77692358134"
+    },
+    {
+      "identity": {
+        "name": "docbook-xml",
+        "version": "5.1-1",
+        "arch": "all",
+        "sha256": "128994f6caa87f971b3057659011ad0931cabe880c9cda128971e68c71bca11d",
+        "object_path": "pool/main/d/docbook-xml/docbook-xml_5.1-1_all.deb",
+        "size": 78204
+      },
+      "sequence": 170,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "ebc91ce2f4f87a85a0ffeb5b535f51f30f8bd5e82e2d86023f5df416d15a32d9"
+    },
+    {
+      "identity": {
+        "name": "dash",
+        "version": "0.5.12-2",
+        "arch": "aarch64",
+        "sha256": "a44120b3027756832eb0c027dd5bc001e9460ac88eb3089e0b55d350b28e1ab3",
+        "object_path": "pool/main/d/dash/dash_0.5.12-2_aarch64.deb",
+        "size": 65828
+      },
+      "sequence": 171,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "bb39901100472fc1db84960ebce934d127e165c3c8cdf6843f43d9bf4c3a9c72"
+    },
+    {
+      "identity": {
+        "name": "db",
+        "version": "18.1.40-5",
+        "arch": "aarch64",
+        "sha256": "7aa853c75c811bb87dc1902f1cc2aee2ffaeeba05ea727f49c9a4e9d6d93bf4e",
+        "object_path": "pool/main/d/db/db_18.1.40-5_aarch64.deb",
+        "size": 40204
+      },
+      "sequence": 172,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "41bfec63a7c24777651a704df7414eb947ec479ccc4df2d2338eb6e2b3d22194"
+    },
+    {
+      "identity": {
+        "name": "util-linux",
+        "version": "2.42.1-2",
+        "arch": "aarch64",
+        "sha256": "84ddbd102ac9d03405d123ec339b886519636c5cf9d0db5e12a32a5292f1272b",
+        "object_path": "pool/main/u/util-linux/util-linux_2.42.1-2_aarch64.deb",
+        "size": 774880
+      },
+      "sequence": 173,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "edc2e96fe25733045bf08ff23f7cedeaee62fe900cab961c09539598b5133dda"
+    },
+    {
+      "identity": {
+        "name": "unzip",
+        "version": "6.0-10",
+        "arch": "aarch64",
+        "sha256": "f7f76c79c50ea60cd9fb543f997098b74afec35e52d1f91bcfb16f8978c98983",
+        "object_path": "pool/main/u/unzip/unzip_6.0-10_aarch64.deb",
+        "size": 116760
+      },
+      "sequence": 174,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "fa4e8674223e9188d8e66c840ba93230384b6ac2b2eb7d2a88a3f2140781d94b"
+    },
+    {
+      "identity": {
+        "name": "uuid-utils",
+        "version": "2.42.1-2",
+        "arch": "aarch64",
+        "sha256": "aeb8419c6b73ade1c25065dd33c6ec441f63fd3546f02a9cda239484776295ee",
+        "object_path": "pool/main/u/uuid-utils/uuid-utils_2.42.1-2_aarch64.deb",
+        "size": 41820
+      },
+      "sequence": 175,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "44f35745b5a31939b69855a1abd441c2c2f0ea795adaf402d5e414cc7640e1c2"
+    },
+    {
+      "identity": {
+        "name": "unbound",
+        "version": "1.25.1",
+        "arch": "aarch64",
+        "sha256": "a06cc555440e2512685f22dcf829e2608e903575a55189f3c022d52f114e4c56",
+        "object_path": "pool/main/u/unbound/unbound_1.25.1_aarch64.deb",
+        "size": 647736
+      },
+      "sequence": 176,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "c84726f22e218bdc78060f263afa60f8f1908d0ff7a9a2a4635adb12469c6d30"
+    },
+    {
+      "identity": {
+        "name": "utf8proc",
+        "version": "2.11.3",
+        "arch": "aarch64",
+        "sha256": "e82065a6f4fc2a1555b09adbbcfb6ac5366e8ff0300168aa01d5d20aee549374",
+        "object_path": "pool/main/u/utf8proc/utf8proc_2.11.3_aarch64.deb",
+        "size": 59408
+      },
+      "sequence": 177,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "026e1700c6ec7fcee683f83ad1ff98a9ed4fee695a27297afd5ffe36970ac235"
+    },
+    {
+      "identity": {
+        "name": "utf8cpp",
+        "version": "1:4.1.1",
+        "arch": "all",
+        "sha256": "715f9c8d200bb0d02a4a6c83f67c85d5dc34a846135fe031d7cf5a343eefd71f",
+        "object_path": "pool/main/u/utf8cpp/utf8cpp_1:4.1.1_all.deb",
+        "size": 10488
+      },
+      "sequence": 178,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "bdd9b4180e1bef9c4c7d99e6e1dbcb201889a849119aa34083ecf6254ac06fdc"
+    },
+    {
+      "identity": {
+        "name": "xcb-proto",
+        "version": "1.17.0-2",
+        "arch": "all",
+        "sha256": "f6ce5c386d4dfb16e694bb758c21ee1b4d6fc213b0359641a665573b7a452be2",
+        "object_path": "pool/main/x/xcb-proto/xcb-proto_1.17.0-2_all.deb",
+        "size": 78604
+      },
+      "sequence": 179,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Conflicts",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "0463ea97734b721b7b6a05234b897f0a45c7b6b5e51fc1f1d8059ddb22448fd2"
+    },
+    {
+      "identity": {
+        "name": "x265",
+        "version": "4.2",
+        "arch": "aarch64",
+        "sha256": "cd2fd4496b831e0183ea8ac9fba0c01a96bd408398a5809df3f0b2b2d85784c3",
+        "object_path": "pool/main/x/x265/x265_4.2_aarch64.deb",
+        "size": 41976
+      },
+      "sequence": 180,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "7a811b43e0a02054aa373eebee2275ec1e3ac56061661dd32b1610ca378f88da"
+    },
+    {
+      "identity": {
+        "name": "x264",
+        "version": "1:0.164.3191-1",
+        "arch": "aarch64",
+        "sha256": "dbdd934107d589875e817603ff14abf324eefcfc7a4e2632a7c1ced2437bf921",
+        "object_path": "pool/main/x/x264/x264_1:0.164.3191-1_aarch64.deb",
+        "size": 413304
+      },
+      "sequence": 181,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "3e60bf694a50dce32ecf392e5bdc7832fd384d5f174541ed82a84932a0be4003"
+    },
+    {
+      "identity": {
+        "name": "xtrans",
+        "version": "1.6.0",
+        "arch": "all",
+        "sha256": "34b4b2bd6f45889bee78e279a252b8b6ce7d99e7bd1de3904c8efce07a2a8fdc",
+        "object_path": "pool/main/x/xtrans/xtrans_1.6.0_all.deb",
+        "size": 39872
+      },
+      "sequence": 182,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "3d612b15164e3e7d6fff5d18e9b11636cbfc276d6325e1445b441a7f7201d7d3"
+    },
+    {
+      "identity": {
+        "name": "xorg-util-macros",
+        "version": "1.20.2",
+        "arch": "all",
+        "sha256": "ff1a86aa2a202178a1ffa39df29ffe44fd3fd3304aadcf6f6541c4cfc99b1b1f",
+        "object_path": "pool/main/x/xorg-util-macros/xorg-util-macros_1.20.2_all.deb",
+        "size": 21968
+      },
+      "sequence": 183,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "5395fdd47ff2774037cafdd11decb4eb6adfab08fb8a8526a66dd5c5a4725737"
+    },
+    {
+      "identity": {
+        "name": "xorgproto",
+        "version": "2025.1",
+        "arch": "all",
+        "sha256": "a98c482c64220cb7ffe0256127ed8db770f7e760a6ad6e63cf0c4d001b4d2c24",
+        "object_path": "pool/main/x/xorgproto/xorgproto_2025.1_all.deb",
+        "size": 249656
+      },
+      "sequence": 184,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Conflicts",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "d216e8ad70019b7204a6ab56a3f47487545fbbae040307975466a1fea50b1de4"
+    },
+    {
+      "identity": {
+        "name": "xz-utils",
+        "version": "5.8.3",
+        "arch": "aarch64",
+        "sha256": "bcef33d788e76233bb3f2d26a6a377f0855d872a56eb8eeacc2131ee5b7417ab",
+        "object_path": "pool/main/x/xz-utils/xz-utils_5.8.3_aarch64.deb",
+        "size": 71212
+      },
+      "sequence": 185,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "b3a8fbc52a7019cf2c4cb1f192dee69f1713366e48ea09037208bc19fc02e57a"
+    },
+    {
+      "identity": {
+        "name": "xsltproc",
+        "version": "1.1.45-1",
+        "arch": "aarch64",
+        "sha256": "72c593b46c0bb7cafa2b25bd0fe0b908d8dc9602cd8e0e8616910e3099170a94",
+        "object_path": "pool/main/x/xsltproc/xsltproc_1.1.45-1_aarch64.deb",
+        "size": 11980
+      },
+      "sequence": 186,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "4cbe4408af6ff979ec62d1324bc28d52970c51ead34e0761063c5182db215ee1"
+    },
+    {
+      "identity": {
+        "name": "xxhash",
+        "version": "0.8.3-1",
+        "arch": "aarch64",
+        "sha256": "3d2ba654018c115752bc1c552aee117b610b5ebd7dcb7c47f57a85d483c12e2a",
+        "object_path": "pool/main/x/xxhash/xxhash_0.8.3-1_aarch64.deb",
+        "size": 76540
+      },
+      "sequence": 187,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "a2137049f767fd6b589aa52aeb7ebd8a26915ec5b0ace1746b0b5de2f8b9501a"
+    },
+    {
+      "identity": {
+        "name": "jq",
+        "version": "1.8.2",
+        "arch": "aarch64",
+        "sha256": "ab3122a6bf7d735cb8587a0713077ef6fa0c662d10d90049084a64c2356fa2bb",
+        "object_path": "pool/main/j/jq/jq_1.8.2_aarch64.deb",
+        "size": 184664
+      },
+      "sequence": 188,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "0c09a8b3290e4811e0cd8b9c0d7509627ce2d53cdf58fd2d2cf759c0c31dd2d9"
+    },
+    {
+      "identity": {
+        "name": "mount-utils",
+        "version": "2.42.1-2",
+        "arch": "aarch64",
+        "sha256": "1d671dae5d01bb9cbf038a1da0992e6c227a0751ef514decb580340ea5eec3e1",
+        "object_path": "pool/main/m/mount-utils/mount-utils_2.42.1-2_aarch64.deb",
+        "size": 149136
+      },
+      "sequence": 189,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Breaks",
+        "Description"
+      ],
+      "expected_stanza_sha256": "55b84e95d3b226ed58685c16c9f68177ff2dbc62cc4ff2ec1208d9b228bdf948"
+    },
+    {
+      "identity": {
+        "name": "make",
+        "version": "4.4.1-1",
+        "arch": "aarch64",
+        "sha256": "ef097d1c9319ed49c21355acf1337234b0b4af1cba496d08b002cf3608dc5e3e",
+        "object_path": "pool/main/m/make/make_4.4.1-1_aarch64.deb",
+        "size": 240652
+      },
+      "sequence": 190,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Conflicts",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "77aadd83f651ad74bf77c2d4403b4bcea30536e633f718f65c3b404a49676230"
+    },
+    {
+      "identity": {
+        "name": "mandoc",
+        "version": "1.14.6-6",
+        "arch": "aarch64",
+        "sha256": "2b28b9ef5b6e297ac27f4257aa44da00f84912aabd10550890cf7a25f28ed159",
+        "object_path": "pool/main/m/mandoc/mandoc_1.14.6-6_aarch64.deb",
+        "size": 276928
+      },
+      "sequence": 191,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Provides",
+        "Description"
+      ],
+      "expected_stanza_sha256": "c0d07220cc40473a621cf8e2ed329af3d45da508e48b98d0a0a8c154a46151ad"
+    },
+    {
+      "identity": {
+        "name": "m4",
+        "version": "1.4.19-5",
+        "arch": "aarch64",
+        "sha256": "17e18e5eda84e77f51c6bd9c502b5da55cc5af2a7d0120e96df83817ced7849c",
+        "object_path": "pool/main/m/m4/m4_1.4.19-5_aarch64.deb",
+        "size": 191628
+      },
+      "sequence": 192,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "5fc8349e0199d115951259997d4b1be0741c433a03c9370a54c86024be3acb07"
+    },
+    {
+      "identity": {
+        "name": "opusfile",
+        "version": "0.12-4",
+        "arch": "aarch64",
+        "sha256": "5169094ea749c82c84fd3661b5d1d762c7c41a723fbd11cc52cd9a3c077792d8",
+        "object_path": "pool/main/o/opusfile/opusfile_0.12-4_aarch64.deb",
+        "size": 42872
+      },
+      "sequence": 193,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "d77c7937ea064ed7b428bf1cc5bdb7490bfd2c019e95fb4f388f4cd75d161274"
+    },
+    {
+      "identity": {
+        "name": "oniguruma",
+        "version": "6.9.10-1",
+        "arch": "aarch64",
+        "sha256": "4072a7845a22cb3af05021421dbfbdf547f0d484d390b05241fd9e8c326adc9e",
+        "object_path": "pool/main/o/oniguruma/oniguruma_6.9.10-1_aarch64.deb",
+        "size": 135948
+      },
+      "sequence": 194,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "44ac0d8d4221677ba3ac0c76ba1fee7086f35869d3c55f4b907bc3472d5f0ad4"
+    },
+    {
+      "identity": {
+        "name": "openjpeg",
+        "version": "2.5.4",
+        "arch": "aarch64",
+        "sha256": "1d29e2de9b86d67b2e9e9a1f926f5cd157e024f3cae9d9b320b39772e34523bc",
+        "object_path": "pool/main/o/openjpeg/openjpeg_2.5.4_aarch64.deb",
+        "size": 150436
+      },
+      "sequence": 195,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "12ec1d2d0318c2fd9ab2aecd4b4cfd314d88e8fa85d678444aa76c27b5113b2b"
+    },
+    {
+      "identity": {
+        "name": "openssl",
+        "version": "1:3.6.3",
+        "arch": "aarch64",
+        "sha256": "8b9112c1d70097bcfd6f0f019bfa1b3e86923e3451332277a18998b5082ce6fd",
+        "object_path": "pool/main/o/openssl/openssl_1:3.6.3_aarch64.deb",
+        "size": 2477928
+      },
+      "sequence": 196,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Conflicts",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "314a7d72d04597a9833088c34575e88aaaaa3206a102c9d84ff01790c1164f28"
+    },
+    {
+      "identity": {
+        "name": "openssl-tool",
+        "version": "1:3.6.3",
+        "arch": "aarch64",
+        "sha256": "0bebce111e9a4c9dac27892138f33f25d109ab311fbb3ec3485ae06e1fd88066",
+        "object_path": "pool/main/o/openssl-tool/openssl-tool_1:3.6.3_aarch64.deb",
+        "size": 277060
+      },
+      "sequence": 197,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "0cf33107eeef9df5c1b77e3184277a0a1d345d5b3ed6628dca3f4e0a67dcf1d3"
+    },
+    {
+      "identity": {
+        "name": "alsa-lib",
+        "version": "1.2.16.1",
+        "arch": "aarch64",
+        "sha256": "7a1a876733e68ff5f886191f26dbb1dbf4e1d626d7a9ec4f665d4ed2702c75f2",
+        "object_path": "pool/main/a/alsa-lib/alsa-lib_1.2.16.1_aarch64.deb",
+        "size": 450992
+      },
+      "sequence": 198,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "1a2c8600ad2a9e2653a1a48291d1ddbb07a44dc8359394794e6bed3ede846167"
+    },
+    {
+      "identity": {
+        "name": "aom-tools",
+        "version": "3.14.1",
+        "arch": "aarch64",
+        "sha256": "4cce1b02280d2e958c6e82a28191fbb71f7af82240147d5d09f7c643c7753a33",
+        "object_path": "pool/main/a/aom-tools/aom-tools_3.14.1_aarch64.deb",
+        "size": 202868
+      },
+      "sequence": 199,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "19471b00f20de78fead67c5bd90163b138b1eeb26944c2dfe4efaaf65dadb61d"
+    },
+    {
+      "identity": {
+        "name": "autoconf",
+        "version": "2.73",
+        "arch": "all",
+        "sha256": "e5630025148596e8984cc1142954f7a99999016aa2c09ae46441abcc76ef7c35",
+        "object_path": "pool/main/a/autoconf/autoconf_2.73_all.deb",
+        "size": 624696
+      },
+      "sequence": 200,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "c449285bcc71a5803e9809b9533a98b64c4b729cd45d2ea72a2a27c1719900b3"
+    },
+    {
+      "identity": {
+        "name": "abseil-cpp",
+        "version": "20250814.1",
+        "arch": "aarch64",
+        "sha256": "b0234d9683e276325cceaeb9b55e9ec5b59d8970f1cb24f98ea6ecee6d01ff4e",
+        "object_path": "pool/main/a/abseil-cpp/abseil-cpp_20250814.1_aarch64.deb",
+        "size": 1116700
+      },
+      "sequence": 201,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Conflicts",
+        "Description"
+      ],
+      "expected_stanza_sha256": "99dd1f6809112d1fae30d1929277aba1eaa219275b1fc092ccb8db87eaaeb9d0"
+    },
+    {
+      "identity": {
+        "name": "apt-ftparchive",
+        "version": "2.8.1-3",
+        "arch": "aarch64",
+        "sha256": "1f84f91ebeb86f3a28f1a13a1568f6b4aa7018cd989566d762ec7bf119fd16b9",
+        "object_path": "pool/main/a/apt-ftparchive/apt-ftparchive_2.8.1-3_aarch64.deb",
+        "size": 95868
+      },
+      "sequence": 202,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "41239454fdece2c4c86157d96a230aefad4a915bb3dce683d0960250f5ea2598"
+    },
+    {
+      "identity": {
+        "name": "automake",
+        "version": "1.18.1",
+        "arch": "all",
+        "sha256": "1e3b09d24577ca3e8b17905eeecc22e7de4d3dd319cf7c98cbbf37b248e62494",
+        "object_path": "pool/main/a/automake/automake_1.18.1_all.deb",
+        "size": 576568
+      },
+      "sequence": 203,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "e9aadab504c5bbc1b0b6d1916dbcc02530acccf524b97869138ec28e218a701b"
+    },
+    {
+      "identity": {
+        "name": "attr",
+        "version": "2.5.2-1",
+        "arch": "aarch64",
+        "sha256": "a063680629b989b75e47959574be25072f484d54c0bdcc9632dd81cad4b63bd3",
+        "object_path": "pool/main/a/attr/attr_2.5.2-1_aarch64.deb",
+        "size": 52580
+      },
+      "sequence": 204,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "aeac6b7e9049bf0fc905e24421846f8798ccd1d29db3f4db70e889b9e434b85c"
+    },
+    {
+      "identity": {
+        "name": "apt",
+        "version": "2.8.1-3",
+        "arch": "aarch64",
+        "sha256": "db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509",
+        "object_path": "pool/main/a/apt/apt_2.8.1-3_aarch64.deb",
+        "size": 1033296
+      },
+      "sequence": 205,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Conflicts",
+        "Replaces",
+        "Provides",
+        "Suggests",
+        "Description"
+      ],
+      "expected_stanza_sha256": "0c3b053ef5380155eff98ddbceb771eb7815d76298b1c0686428612104db0cd1"
+    },
+    {
+      "identity": {
+        "name": "gpgme",
+        "version": "2.1.0",
+        "arch": "aarch64",
+        "sha256": "d7d92a3ad91b495045a44a69694055611c5fe93894b2882b9508546c52d63543",
+        "object_path": "pool/main/g/gpgme/gpgme_2.1.0_aarch64.deb",
+        "size": 263748
+      },
+      "sequence": 206,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "1fc5aa0b6789bd98698d66fbeffe08eaa1f5cf7c2f7c9dd86e77f185a7a014e3"
+    },
+    {
+      "identity": {
+        "name": "gnupg",
+        "version": "2.5.17",
+        "arch": "aarch64",
+        "sha256": "555458b45da02f93fa9e3a2e49685e49660957528f27fbb1b05f2a2367c140a6",
+        "object_path": "pool/main/g/gnupg/gnupg_2.5.17_aarch64.deb",
+        "size": 1409220
+      },
+      "sequence": 207,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Conflicts",
+        "Replaces",
+        "Suggests",
+        "Description"
+      ],
+      "expected_stanza_sha256": "4c4d86f56d72b84453e8d61c15764b0c6660c7ffc86cc9aa1f3ff1d515adf439"
+    },
+    {
+      "identity": {
+        "name": "game-music-emu",
+        "version": "0.6.5",
+        "arch": "aarch64",
+        "sha256": "09d14349831e7842302cd74006238c88de8047d02630fbcf5069afef96c23c1a",
+        "object_path": "pool/main/g/game-music-emu/game-music-emu_0.6.5_aarch64.deb",
+        "size": 128092
+      },
+      "sequence": 208,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "703eaf423e6f13f7e0a4bb7bda101586d5ab99e68dcca1269960c77980325e41"
+    },
+    {
+      "identity": {
+        "name": "gpgmepp",
+        "version": "2.1.0",
+        "arch": "aarch64",
+        "sha256": "e3b3d354844796889fdc102aae12743c4056b3af73eea5a3dfb2cc5f3c9474e7",
+        "object_path": "pool/main/g/gpgmepp/gpgmepp_2.1.0_aarch64.deb",
+        "size": 129252
+      },
+      "sequence": 209,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "b0fbb21ee28c7d1f599f4534ada6188c7f4c6be9298ade908e0f09222d3e59c9"
+    },
+    {
+      "identity": {
+        "name": "gpgv",
+        "version": "2.5.17",
+        "arch": "aarch64",
+        "sha256": "e56c567e45cd184827136cb46e76b1f0187326886d6c446acd96cdfb249e0b0e",
+        "object_path": "pool/main/g/gpgv/gpgv_2.5.17_aarch64.deb",
+        "size": 188324
+      },
+      "sequence": 210,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "ab6f2a51fb02dc1cb6946a8fddba748af9e103e16aaf8653d50e0e481d7bd0e7"
+    },
+    {
+      "identity": {
+        "name": "gzip",
+        "version": "1.14-1",
+        "arch": "aarch64",
+        "sha256": "d74e5e676fa8a72b32b01f244f4dd6a9edbee574589634fd1888fa370f10340c",
+        "object_path": "pool/main/g/gzip/gzip_1.14-1_aarch64.deb",
+        "size": 87628
+      },
+      "sequence": 211,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "6e53c8219e1a658a210a048951016f4c1f8c4448d6c150cf4c0506c582b196af"
+    },
+    {
+      "identity": {
+        "name": "giflib-utils",
+        "version": "5.2.2-2",
+        "arch": "aarch64",
+        "sha256": "f9c0e232562e83fd541b5281331f84437635a79b4666bae3da18020741fb74e4",
+        "object_path": "pool/main/g/giflib-utils/giflib-utils_5.2.2-2_aarch64.deb",
+        "size": 50548
+      },
+      "sequence": 212,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Conflicts",
+        "Description"
+      ],
+      "expected_stanza_sha256": "483acffc2ed6ece52bdf9bc60284a1bceeef1122ced85625a55dd1ec548d2c35"
+    },
+    {
+      "identity": {
+        "name": "gettext",
+        "version": "1.0",
+        "arch": "aarch64",
+        "sha256": "6462507d6650368cd61ad0a4f60f16e772eae02a5ab25e6eb1594d2737fbdceb",
+        "object_path": "pool/main/g/gettext/gettext_1.0_aarch64.deb",
+        "size": 3009456
+      },
+      "sequence": 213,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "3b4a0f4bfbb7f337fdf77868c905c713c2dcdf3f6bd01be03db7cb77790158b8"
+    },
+    {
+      "identity": {
+        "name": "git",
+        "version": "2.54.0",
+        "arch": "aarch64",
+        "sha256": "b16b334930dce494397ca3352f36816bfa1cf7e0090baeb789360e9f1ad86bcf",
+        "object_path": "pool/main/g/git/git_2.54.0_aarch64.deb",
+        "size": 4700420
+      },
+      "sequence": 214,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Recommends",
+        "Suggests",
+        "Description"
+      ],
+      "expected_stanza_sha256": "aa063ec014cc66cdf7e7635376f6456d3fb97f77317811183bd7acfa57d64692"
+    },
+    {
+      "identity": {
+        "name": "gdbm",
+        "version": "1.26-1",
+        "arch": "aarch64",
+        "sha256": "bb816a64bd0ea0fb55383a30531aa326a31b48bf9c91cb0df37ece48e5cfbbbd",
+        "object_path": "pool/main/g/gdbm/gdbm_1.26-1_aarch64.deb",
+        "size": 150292
+      },
+      "sequence": 215,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "439bc5bfb6e59bb01907f3481cd1f088f0345748fb769d4ab4434c38eb2e060b"
+    },
+    {
+      "identity": {
+        "name": "grep",
+        "version": "3.12-3",
+        "arch": "aarch64",
+        "sha256": "60836595ee88afd6e0b09291b4ff62159120c1058ebae84d0654dcfe79af5594",
+        "object_path": "pool/main/g/grep/grep_3.12-3_aarch64.deb",
+        "size": 128336
+      },
+      "sequence": 216,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "5727dbe85354d306b97e829c37b2e46a8b119f59d8893fa47a4743bbe5043e42"
+    },
+    {
+      "identity": {
+        "name": "gawk",
+        "version": "5.3.2",
+        "arch": "aarch64",
+        "sha256": "b194a09534713a56a529df2bcef83b573055f921fa04bac6a7fadfe02c548864",
+        "object_path": "pool/main/g/gawk/gawk_5.3.2_aarch64.deb",
+        "size": 872828
+      },
+      "sequence": 217,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "ef211f76d2d3e7024672c3ddc7e0e464092ab79f9980d9ff010bd3d00c1bf11a"
+    },
+    {
+      "identity": {
+        "name": "giflib",
+        "version": "5.2.2-2",
+        "arch": "aarch64",
+        "sha256": "db8b2b14645b8d49b7fd6e89dc40ffc10cd1a3c1e8eec45ad648a1a6457d85a6",
+        "object_path": "pool/main/g/giflib/giflib_5.2.2-2_aarch64.deb",
+        "size": 18224
+      },
+      "sequence": 218,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "d539b77d7416cdc567b551f5d50c15d02df29ba3570e95a498316084589bb02c"
+    },
+    {
+      "identity": {
+        "name": "gnutls",
+        "version": "3.8.13",
+        "arch": "aarch64",
+        "sha256": "a5ee4a0e7c65ad68fcc202fd6766cb8f80cdedc059e1077735ce63cb4c6a497a",
+        "object_path": "pool/main/g/gnutls/gnutls_3.8.13_aarch64.deb",
+        "size": 175712
+      },
+      "sequence": 219,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "b80323607fbff5bd8e7cca288fb63325ce4ceef08c42de5c3d46cbc622e8e396"
+    },
+    {
+      "identity": {
+        "name": "krb5",
+        "version": "1.22.2",
+        "arch": "aarch64",
+        "sha256": "496c08b3b6d99b9c3f6019ad2021e219d2d42988381e4f110b9fbb9680d65561",
+        "object_path": "pool/main/k/krb5/krb5_1.22.2_aarch64.deb",
+        "size": 901504
+      },
+      "sequence": 220,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "03d58c4e4da5db0d71d8055db671ff77f3c6d27c19d198fe5d0a492ba8a6910f"
+    },
+    {
+      "identity": {
+        "name": "iconv",
+        "version": "1.18-1",
+        "arch": "aarch64",
+        "sha256": "d0a067a55f09c0a48228f16d62923ff7fe5c43c961d7e15385e1be00c792af49",
+        "object_path": "pool/main/i/iconv/iconv_1.18-1_aarch64.deb",
+        "size": 10136
+      },
+      "sequence": 221,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "ed378204a2b31c7b51ee45cd7ab3c03eaea0266d7aac41c379ea15406c20523c"
+    },
+    {
+      "identity": {
+        "name": "inetutils",
+        "version": "2.7",
+        "arch": "aarch64",
+        "sha256": "1274b6860881a13c489bfcac471709742c92188c03eb063c4c173dd8afb853a8",
+        "object_path": "pool/main/i/inetutils/inetutils_2.7_aarch64.deb",
+        "size": 240044
+      },
+      "sequence": 222,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Suggests",
+        "Description"
+      ],
+      "expected_stanza_sha256": "0a10f55f527e4f924de520db36d51f7c7947c33133461af1dff053b7a1460022"
+    },
+    {
+      "identity": {
+        "name": "icu-devtools",
+        "version": "78.3",
+        "arch": "aarch64",
+        "sha256": "04c6249d28f91bbd2314496885098cf132689cb11a1b111e8d52d09dd3114e81",
+        "object_path": "pool/main/i/icu-devtools/icu-devtools_78.3_aarch64.deb",
+        "size": 210596
+      },
+      "sequence": 223,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "b3b63d87f1d0555af7be5393052fed008213065df2409e833f89fe6bf261f98e"
+    },
+    {
+      "identity": {
+        "name": "io-vaj-keyring",
+        "version": "1.0-1",
+        "arch": "all",
+        "sha256": "d48db1591cc5284a76c4d6588a5ae73b93f19dd9091922bd933b4ed4dda61315",
+        "object_path": "pool/main/i/io-vaj-keyring/io-vaj-keyring_1.0-1_all.deb",
+        "size": 1216
+      },
+      "sequence": 224,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "95a1063529049c622407b4a0d902419005b4cf55c7a4592ad11a3e29dc695244"
+    },
+    {
+      "identity": {
+        "name": "which",
+        "version": "2.25",
+        "arch": "aarch64",
+        "sha256": "f2f131778aa2459de1a10aa5ee68f1d13985f2aeb199d67606f6b23077ecb002",
+        "object_path": "pool/main/w/which/which_2.25_aarch64.deb",
+        "size": 12600
+      },
+      "sequence": 225,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Conflicts",
+        "Description"
+      ],
+      "expected_stanza_sha256": "8e438ca3c33a21752d013d122f1f471f7e07f7ec8c749065be2b3fdec9a4c8f2"
+    },
+    {
+      "identity": {
+        "name": "ca-certificates",
+        "version": "1:2026.05.14",
+        "arch": "all",
+        "sha256": "efc0563349b9bb3e4cdad32e024dc8e162831a803bef92036be0af5e4eeca2d5",
+        "object_path": "pool/main/c/ca-certificates/ca-certificates_1:2026.05.14_all.deb",
+        "size": 105724
+      },
+      "sequence": 226,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "288cb00bc94a07aa1b8667f3103c90586d967e526bf34a0fd87e7e364d6e6a99"
+    },
+    {
+      "identity": {
+        "name": "command-not-found",
+        "version": "3.4.1-15",
+        "arch": "aarch64",
+        "sha256": "60e6dde1cdd6078b506c2dd44099c2175eed8964fe7a8232babfc58b9b956fbc",
+        "object_path": "pool/main/c/command-not-found/command-not-found_3.4.1-15_aarch64.deb",
+        "size": 16964
+      },
+      "sequence": 227,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "fef83d65b74a63bcd4ce0c1dd1a3a8804ba806171cbce23593c49af0132924cb"
+    },
+    {
+      "identity": {
+        "name": "c-ares",
+        "version": "1.34.6",
+        "arch": "aarch64",
+        "sha256": "f21445838af9547816a9ff8d7c5563749260bbe51a35e524f9ec134ca3ce47c8",
+        "object_path": "pool/main/c/c-ares/c-ares_1.34.6_aarch64.deb",
+        "size": 192656
+      },
+      "sequence": 228,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "53702e2ae4887ef9690840297b92a839926bf231920b740cc66deb5af0a5f3b4"
+    },
+    {
+      "identity": {
+        "name": "curl",
+        "version": "8.21.0",
+        "arch": "aarch64",
+        "sha256": "1e2e1734995b46dbc68f8878e0c8e8f4c25172399ca816bba4ffbaf09a8785c8",
+        "object_path": "pool/main/c/curl/curl_8.21.0_aarch64.deb",
+        "size": 242588
+      },
+      "sequence": 229,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "aff06d9913ec7db6d7f4e4a30df283edb3057cbb40a19e20fe63b7b1ada6d2d4"
+    },
+    {
+      "identity": {
+        "name": "ca-certificates-java",
+        "version": "1:2026.05.14",
+        "arch": "all",
+        "sha256": "d9059086209369b126d1eb13254f613f1b89ba63729660fd5e8b19d7f804a971",
+        "object_path": "pool/main/c/ca-certificates-java/ca-certificates-java_1:2026.05.14_all.deb",
+        "size": 96456
+      },
+      "sequence": 230,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "cc418a85e4fec17e7f4a0e98c9fa61f9ed600c49a5ffe1aca12cbf0cdad8f2eb"
+    },
+    {
+      "identity": {
+        "name": "coreutils",
+        "version": "9.11-1",
+        "arch": "aarch64",
+        "sha256": "2ff6bb950130a573b85b4f853d19fc277341a92fa8ea25fab8f4745effba63a4",
+        "object_path": "pool/main/c/coreutils/coreutils_9.11-1_aarch64.deb",
+        "size": 813800
+      },
+      "sequence": 231,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "56be6401e6caefe81b9016de950bf43a5bd2ca203f52ed0b0247ca16f6919a5e"
+    },
+    {
+      "identity": {
+        "name": "net-tools",
+        "version": "2.10.0-1",
+        "arch": "aarch64",
+        "sha256": "102797f4ff2cf72a4c33b5b77f8b48aa09b297d408e3e7fe47dd45fdba74ea3e",
+        "object_path": "pool/main/n/net-tools/net-tools_2.10.0-1_aarch64.deb",
+        "size": 118264
+      },
+      "sequence": 232,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "5da3a0b539b29630c8fbb8bc4b2ba79cd11932225b5a1cc87639680ecd8c8d19"
+    },
+    {
+      "identity": {
+        "name": "nettle",
+        "version": "4.0+really3.10.2",
+        "arch": "aarch64",
+        "sha256": "b7d7ab32fcbcca8fb5fc11a9a8b0c5079bebbbfc0b586947a39f6b205e62e2b5",
+        "object_path": "pool/main/n/nettle/nettle_4.0+really3.10.2_aarch64.deb",
+        "size": 18160
+      },
+      "sequence": 233,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "fd2a6308ce766e8354c47fc099dbf5e874b259d4224aa87c09c3624cd9c701f4"
+    },
+    {
+      "identity": {
+        "name": "ncurses-utils",
+        "version": "6.6.20260307+really6.5.20250830",
+        "arch": "aarch64",
+        "sha256": "8975accb4492d25945fbc4ee43191dd21838aa0ef5da135ed6f50680cfdce00d",
+        "object_path": "pool/main/n/ncurses-utils/ncurses-utils_6.6.20260307+really6.5.20250830_aarch64.deb",
+        "size": 88992
+      },
+      "sequence": 234,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "4b5ac22a2d6c30bd3ae8657759413578024240169fe6379b51fd277f55645e4e"
+    },
+    {
+      "identity": {
+        "name": "ncurses-ui-libs",
+        "version": "6.6.20260307+really6.5.20250830",
+        "arch": "aarch64",
+        "sha256": "12d40bec7c776c6dc2f4a4e74da9f20ec1fa52fd6ea59989ea3284d95d8f81bb",
+        "object_path": "pool/main/n/ncurses-ui-libs/ncurses-ui-libs_6.6.20260307+really6.5.20250830_aarch64.deb",
+        "size": 32936
+      },
+      "sequence": 235,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "d96599f952b16ef1d08534632868416f649b88ef03eaef44f4448c530024f186"
+    },
+    {
+      "identity": {
+        "name": "nano",
+        "version": "9.1",
+        "arch": "aarch64",
+        "sha256": "fbca0b2ee53a4a8da799f0e85184a227f9f357878a28913026f5b411f548ea4a",
+        "object_path": "pool/main/n/nano/nano_9.1_aarch64.deb",
+        "size": 240440
+      },
+      "sequence": 236,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "6e6b5e644fd9a39596e9a0e008c06d8db8271b6084a5aeaeb115f015403170bc"
+    },
+    {
+      "identity": {
+        "name": "ncurses",
+        "version": "6.6.20260307+really6.5.20250830",
+        "arch": "aarch64",
+        "sha256": "2561bd489c4953d0a502a6fc781750dcdb9ea598caf436ea0d7fb013b2bd597b",
+        "object_path": "pool/main/n/ncurses/ncurses_6.6.20260307+really6.5.20250830_aarch64.deb",
+        "size": 558044
+      },
+      "sequence": 237,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "a54c8c27ec67b9cad1517e8417ed51a13f3aa94084129899ab47d00b101f1c63"
+    },
+    {
+      "identity": {
+        "name": "rubberband",
+        "version": "4.0.0-1",
+        "arch": "aarch64",
+        "sha256": "37b86bbaa5a88aaa063a712de49073f1f393fdea12882d13fbf8a94c18d5b156",
+        "object_path": "pool/main/r/rubberband/rubberband_4.0.0-1_aarch64.deb",
+        "size": 205864
+      },
+      "sequence": 238,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "d6e32d1cc2553669097cf2433c5014dac10f1af99c34d6507faebde59d0474f7"
+    },
+    {
+      "identity": {
+        "name": "readline",
+        "version": "8.3.3",
+        "arch": "aarch64",
+        "sha256": "fbf33185ad4dc5aca8e208df90483d001fed0badd75c7c8cfdfe9137ee78723e",
+        "object_path": "pool/main/r/readline/readline_8.3.3_aarch64.deb",
+        "size": 294108
+      },
+      "sequence": 239,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "6b0698fbc488ed96bab0d28e65a64568a9a1dea78a0174943d92a48e2c37c2db"
+    },
+    {
+      "identity": {
+        "name": "resolv-conf",
+        "version": "1.3",
+        "arch": "aarch64",
+        "sha256": "22ce7aef56d8cb529db1b6899418e8b54106660d630f0a84ce6e3b5c3c20ffff",
+        "object_path": "pool/main/r/resolv-conf/resolv-conf_1.3_aarch64.deb",
+        "size": 996
+      },
+      "sequence": 240,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "a446595843e9f66a2be4c5719de3947552ace4b18741a822280fb37fc1b72c46"
+    },
+    {
+      "identity": {
+        "name": "ed",
+        "version": "1.22.5",
+        "arch": "aarch64",
+        "sha256": "9d21b394242612ccdbdcd33a946990823ff3660a8d32eae3d16266cd405c2f10",
+        "object_path": "pool/main/e/ed/ed_1.22.5_aarch64.deb",
+        "size": 42872
+      },
+      "sequence": 241,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "55efad1f061d5fc13e26f961f205d8c92e6dceeb12ecacee4a2a47c5310eb5e8"
+    },
+    {
+      "identity": {
+        "name": "bzip2",
+        "version": "1.0.8-8",
+        "arch": "aarch64",
+        "sha256": "b42fb48de249aebf28e905b2ab11451e540e5a423337a242d9c0e203fcaf7661",
+        "object_path": "pool/main/b/bzip2/bzip2_1.0.8-8_aarch64.deb",
+        "size": 26280
+      },
+      "sequence": 242,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "e43058a81cf73034a7ca94083dfc6545bb33d332eb89808ee8d4713e975dbc7e"
+    },
+    {
+      "identity": {
+        "name": "bison",
+        "version": "3.8.2-4",
+        "arch": "aarch64",
+        "sha256": "b5682cbc1129ec3f19039baf7cfe4813e67fbbc6f59031a23444d153f2730678",
+        "object_path": "pool/main/b/bison/bison_3.8.2-4_aarch64.deb",
+        "size": 535072
+      },
+      "sequence": 243,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "15af397bf483b972a6fb20181cbb588f669460428b6de45a5b11b2f5bc31a7b4"
+    },
+    {
+      "identity": {
+        "name": "blk-utils",
+        "version": "2.42.1-2",
+        "arch": "aarch64",
+        "sha256": "f46b0bc35bae408f97ab20b58509083a819b053828ae9dea802998b442d093c0",
+        "object_path": "pool/main/b/blk-utils/blk-utils_2.42.1-2_aarch64.deb",
+        "size": 183296
+      },
+      "sequence": 244,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "d85331ff2b32134dc5c9dde8a071234385cfbdf2369782212d06a3cb4dd3cbd1"
+    },
+    {
+      "identity": {
+        "name": "brotli",
+        "version": "1.2.0",
+        "arch": "aarch64",
+        "sha256": "0382d830a4bed0e6f3b8320ffd0cbfff41e8e9969262f880765ed2049fe00dc1",
+        "object_path": "pool/main/b/brotli/brotli_1.2.0_aarch64.deb",
+        "size": 342000
+      },
+      "sequence": 245,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "f58a1699d1da3097891a7a869611f406edbaf13019cd1332ffba7ee29f11e5ce"
+    },
+    {
+      "identity": {
+        "name": "bc",
+        "version": "1.08.2-1",
+        "arch": "aarch64",
+        "sha256": "1b5bb68ccb35490bbd267a95506b4073e5800b6a0b22594f646708ed531918ea",
+        "object_path": "pool/main/b/bc/bc_1.08.2-1_aarch64.deb",
+        "size": 76180
+      },
+      "sequence": 246,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "705f4c4a78136aab34cc62505625452b798a13b163a9fe4c6fa29c01a97b18d3"
+    },
+    {
+      "identity": {
+        "name": "busybox",
+        "version": "1.38.0-1",
+        "arch": "aarch64",
+        "sha256": "1ce03e318844053d5aa0552bfd100cfd00b25de7e7eff09f81b90092a5b4ca22",
+        "object_path": "pool/main/b/busybox/busybox_1.38.0-1_aarch64.deb",
+        "size": 472032
+      },
+      "sequence": 247,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "5b35b20fdea842cd567d8917b43e4a3fd86fc8d462cf4e98a59542648a873f23"
+    },
+    {
+      "identity": {
+        "name": "bsdtar",
+        "version": "3.8.8",
+        "arch": "aarch64",
+        "sha256": "39cd100de5e5d35c53397d4d4303ecff9c6016d8577dea7f106bf1a126cda16f",
+        "object_path": "pool/main/b/bsdtar/bsdtar_3.8.8_aarch64.deb",
+        "size": 350900
+      },
+      "sequence": 248,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "3e7a393428f308d2c2440b6346054eb2b224cfb04515d47514ecabe9c17fbd7c"
+    },
+    {
+      "identity": {
+        "name": "bash",
+        "version": "5.3.9",
+        "arch": "aarch64",
+        "sha256": "837c87519b43be3c828c069ab3a017b7677ea48abce27b18cc175b5829ae59ce",
+        "object_path": "pool/main/b/bash/bash_5.3.9_aarch64.deb",
+        "size": 955184
+      },
+      "sequence": 249,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Recommends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "7e78c81f68ee83c2ccbc4e69fc3944424ba46dc80d6f6b07ef6ef06d7eb6efd5"
+    },
+    {
+      "identity": {
+        "name": "binutils",
+        "version": "2.46.0-3",
+        "arch": "aarch64",
+        "sha256": "679bd221c7f6e63d0c7e1e926a897b6087982a44f8d4c662b69f4613b3d4d29e",
+        "object_path": "pool/main/b/binutils/binutils_2.46.0-3_aarch64.deb",
+        "size": 2438504
+      },
+      "sequence": 250,
+      "selected_control_field_order": [
+        "Package",
+        "Version",
+        "Architecture",
+        "Maintainer",
+        "Installed-Size",
+        "Depends",
+        "Homepage",
+        "Description",
+        "Breaks",
+        "Replaces"
+      ],
+      "expected_stanza_sha256": "df84cd0ff8eac525d8f8ad37430425fd95456f1337bfe72087c0e9756754cea3"
+    },
+    {
+      "identity": {
+        "name": "groff",
+        "version": "1.23.0-2",
+        "arch": "aarch64",
+        "sha256": "e4662524014cfacbe45c1c7c6f53f8374ede3623257d4b229e3351ad6809e427",
+        "object_path": "pool/main/g/groff/groff_1.23.0-2_aarch64.deb",
+        "size": 9720324
+      },
+      "sequence": 251,
+      "selected_control_field_order": [
+        "Package",
+        "Version",
+        "Architecture",
+        "Maintainer",
+        "Installed-Size",
+        "Depends",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "c8353e1331325092e1057f91752b63f73cc7ae2697765d83ae69740600d5e967"
+    },
+    {
+      "identity": {
+        "name": "dbus",
+        "version": "1.16.2-3",
+        "arch": "aarch64",
+        "sha256": "c07eb580a229200bb2043adb202020f808c55647a801384998c68443d92fb291",
+        "object_path": "pool/main/d/dbus/dbus_1.16.2-3_aarch64.deb",
+        "size": 429100
+      },
+      "sequence": 252,
+      "selected_control_field_order": [
+        "Package",
+        "Version",
+        "Architecture",
+        "Maintainer",
+        "Installed-Size",
+        "Depends",
+        "Homepage",
+        "Description",
+        "Breaks",
+        "Replaces"
+      ],
+      "expected_stanza_sha256": "1687c82119807e907952902dff9e0efabbac8e016c14db15d903f259691d3ea5"
+    },
+    {
+      "identity": {
+        "name": "glib",
+        "version": "2.88.1",
+        "arch": "aarch64",
+        "sha256": "bba0bd0d642f80f98d6dfa7d202cd0e6f6ad9468d87bd60744985bfe6ce3454f",
+        "object_path": "pool/main/g/glib/glib_2.88.1_aarch64.deb",
+        "size": 2558652
+      },
+      "sequence": 253,
+      "selected_control_field_order": [
+        "Package",
+        "Version",
+        "Architecture",
+        "Maintainer",
+        "Installed-Size",
+        "Depends",
+        "Homepage",
+        "Description",
+        "Breaks",
+        "Replaces"
+      ],
+      "expected_stanza_sha256": "b480547ee9453faaf80688b05d16019f80cdac0e0dd968f4074815ececa62531"
+    },
+    {
+      "identity": {
+        "name": "libgraphite",
+        "version": "1.3.15",
+        "arch": "aarch64",
+        "sha256": "99065401ef5d96ed9a520f680db3669d940ce7fe413de3bed45e570d3aaa17c5",
+        "object_path": "pool/main/l/libgraphite/libgraphite_1.3.15_aarch64.deb",
+        "size": 81924
+      },
+      "sequence": 254,
+      "selected_control_field_order": [
+        "Package",
+        "Version",
+        "Architecture",
+        "Maintainer",
+        "Installed-Size",
+        "Depends",
+        "Homepage",
+        "Description",
+        "Breaks",
+        "Replaces"
+      ],
+      "expected_stanza_sha256": "857a49dde8bdecac49e9f6d6a00dac3f2b1b4dc0850d06b8cf7892bcaae387f4"
+    },
+    {
+      "identity": {
+        "name": "libpixman",
+        "version": "0.46.4-1",
+        "arch": "aarch64",
+        "sha256": "93313b329ef4c1b9d927b9538738c1f2bfb52eff00917eb3772f0a7dfcdb4c6d",
+        "object_path": "pool/main/l/libpixman/libpixman_0.46.4-1_aarch64.deb",
+        "size": 158756
+      },
+      "sequence": 255,
+      "selected_control_field_order": [
+        "Package",
+        "Version",
+        "Architecture",
+        "Maintainer",
+        "Installed-Size",
+        "Homepage",
+        "Description",
+        "Breaks",
+        "Replaces"
+      ],
+      "expected_stanza_sha256": "b9b65133c47c124035a3c3e7e9b20cf880532ce25a49c65bdfe17d003c4167e2"
+    },
+    {
+      "identity": {
+        "name": "libandroid-execinfo",
+        "version": "0.1-3",
+        "arch": "aarch64",
+        "sha256": "fb93289fc6a541862226f6942ea60fb67535d08625835ca0f238571759a9a4aa",
+        "object_path": "pool/main/l/libandroid-execinfo/libandroid-execinfo_0.1-3_aarch64.deb",
+        "size": 15192
+      },
+      "sequence": 256,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Conflicts",
+        "Provides",
+        "Description"
+      ],
+      "expected_stanza_sha256": "6918957282802b466262726c07664cf559394e62d6fd5c6e8785d6a177f50d23"
+    },
+    {
+      "identity": {
+        "name": "libandroid-spawn",
+        "version": "0.3",
+        "arch": "aarch64",
+        "sha256": "7ff5f0c6fcb6b717ef26eb36287054b0b02114b5913c78e1ebd06b151f8d0c83",
+        "object_path": "pool/main/l/libandroid-spawn/libandroid-spawn_0.3_aarch64.deb",
+        "size": 16104
+      },
+      "sequence": 257,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "b2905b5a7129b993c74fac65137466706ef4cf80ace46a6c0754d107d5265361"
+    },
+    {
+      "identity": {
+        "name": "libdrm",
+        "version": "2.4.134",
+        "arch": "aarch64",
+        "sha256": "b62b7ccc7cfa7d29e6e54173aaecf3c04c2054eed8877d228b75375e445b653e",
+        "object_path": "pool/main/l/libdrm/libdrm_2.4.134_aarch64.deb",
+        "size": 180592
+      },
+      "sequence": 258,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "e74e2372952c9191868d207ec6d463a9ac376ba18ee85c56ef0ef17611bc5d7d"
+    },
+    {
+      "identity": {
+        "name": "libwayland",
+        "version": "1.25.0",
+        "arch": "aarch64",
+        "sha256": "91fc6f482c271ac4ae9c287db27bb9e1dd79761fa9b1f5c91afbe65fb3e0e656",
+        "object_path": "pool/main/l/libwayland/libwayland_1.25.0_aarch64.deb",
+        "size": 127160
+      },
+      "sequence": 259,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "34e8b8c5297cb76d3d97b5454dee634e5db663154e03d45211fc757e631b4399"
+    },
+    {
+      "identity": {
+        "name": "harfbuzz",
+        "version": "14.2.1",
+        "arch": "aarch64",
+        "sha256": "87ef3a3ce4dbd57005dcd5231ad4dd3a71a86b39f91816cac03d9d63384c0169",
+        "object_path": "pool/main/h/harfbuzz/harfbuzz_14.2.1_aarch64.deb",
+        "size": 831524
+      },
+      "sequence": 260,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "8d85c465427fd1fce8a1c339e2e333f1b36df09fd4e9efb26e967d4add05b8c5"
+    },
+    {
+      "identity": {
+        "name": "harfbuzz-icu",
+        "version": "14.2.1",
+        "arch": "aarch64",
+        "sha256": "af67d73817341ff082baae5468ee34f804bc75aab12339e8893dc392c2cef343",
+        "object_path": "pool/main/h/harfbuzz-icu/harfbuzz-icu_14.2.1_aarch64.deb",
+        "size": 5260
+      },
+      "sequence": 261,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "2593a4fd5d3ae3ebdc2f8b8b32a0d0bfcec6364dba55cd5d7e30e7530bfe0cca"
+    },
+    {
+      "identity": {
+        "name": "harfbuzz-utils",
+        "version": "14.2.1",
+        "arch": "aarch64",
+        "sha256": "fbd928d5dbfdcddc6c9130082654d4579e66df563e5a023f56bfac28af7a85d9",
+        "object_path": "pool/main/h/harfbuzz-utils/harfbuzz-utils_14.2.1_aarch64.deb",
+        "size": 87748
+      },
+      "sequence": 262,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "8e9e3b5d0efe5c999af7d17edcc599a27d351a759b52118faf6542efaf97e6f7"
+    },
+    {
+      "identity": {
+        "name": "libcairo",
+        "version": "1.18.4-2",
+        "arch": "aarch64",
+        "sha256": "cfff1d8594cb07661418dac98d035bd8225332fb6e17290f1251f9f868571111",
+        "object_path": "pool/main/l/libcairo/libcairo_1.18.4-2_aarch64.deb",
+        "size": 485064
+      },
+      "sequence": 263,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "c34a80642e5f1b70dde284f7c321c730ab8cc2a4cabc1f504fab4cc2d08e9e77"
+    },
+    {
+      "identity": {
+        "name": "pango",
+        "version": "1.57.1",
+        "arch": "aarch64",
+        "sha256": "9818db588541dc736815603bd8e8f676fb7692e6a69a1a4a81fe94374ffb73d1",
+        "object_path": "pool/main/p/pango/pango_1.57.1_aarch64.deb",
+        "size": 361040
+      },
+      "sequence": 264,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "852f3ed6994a1ff13d88892909c5ccb19c13067c9ac6eb76bb4a154346f706ce"
+    },
+    {
+      "identity": {
+        "name": "gdk-pixbuf",
+        "version": "2.44.6",
+        "arch": "aarch64",
+        "sha256": "feb3dcf1675f6cb51296ba7288f749f59380cb20937d4411da68cfdb4845893e",
+        "object_path": "pool/main/g/gdk-pixbuf/gdk-pixbuf_2.44.6_aarch64.deb",
+        "size": 153220
+      },
+      "sequence": 265,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "bf56d9c5e16a7c6fb8102f872d150ea571e753022e7ae55396c73b02f350d34a"
+    },
+    {
+      "identity": {
+        "name": "libv4l",
+        "version": "1.24.1-2",
+        "arch": "aarch64",
+        "sha256": "a28e9d226801ee4992a1b3aeda063cc573f7468a6b0b01fa3fb30a28079dbc64",
+        "object_path": "pool/main/l/libv4l/libv4l_1.24.1-2_aarch64.deb",
+        "size": 93288
+      },
+      "sequence": 266,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "7efee00a2a62893fcde56ecde421a662bf347a623ae16d7085ef7568163fa076"
+    },
+    {
+      "identity": {
+        "name": "libass",
+        "version": "0.17.5",
+        "arch": "aarch64",
+        "sha256": "ac6c996efdde4fa4492d48927871011f42d71f378de4fda5ab90267c68771541",
+        "object_path": "pool/main/l/libass/libass_0.17.5_aarch64.deb",
+        "size": 85376
+      },
+      "sequence": 267,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "2ffcf43cdf9461a0f239dabddf2913007ed398018d664bfb124b6f1382bafbe7"
+    },
+    {
+      "identity": {
+        "name": "poppler",
+        "version": "26.02.0",
+        "arch": "aarch64",
+        "sha256": "86b610f8a12428b8fd629c06686d22f49161fc9b99142879bf88ff0153c06f6d",
+        "object_path": "pool/main/p/poppler/poppler_26.02.0_aarch64.deb",
+        "size": 1293900
+      },
+      "sequence": 268,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "e3bd765b5e123f1b33959022a88a600f649f8184f93518e8d3fa15f3ed8eaa73"
+    },
+    {
+      "identity": {
+        "name": "mc",
+        "version": "4.8.33-2",
+        "arch": "aarch64",
+        "sha256": "9f4469c02ffa2b395f7a1b5a6cb2a66b6774f63b95e41e872989b384ff384e31",
+        "object_path": "pool/main/m/mc/mc_4.8.33-2_aarch64.deb",
+        "size": 616156
+      },
+      "sequence": 269,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "0e12c9a99e4264bcabf3338e9d1365d8642ecee4f4da0ae18d5089cc5278fab6"
+    },
+    {
+      "identity": {
+        "name": "libjxl",
+        "version": "0.11.2-1",
+        "arch": "aarch64",
+        "sha256": "469bca1348fc9422129b95343faebd735d3ccc55f7d10e45353c4440661b9d63",
+        "object_path": "pool/main/l/libjxl/libjxl_0.11.2-1_aarch64.deb",
+        "size": 1205752
+      },
+      "sequence": 270,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Suggests",
+        "Description"
+      ],
+      "expected_stanza_sha256": "3acc395fdbebcd00f6f8a3f44c921a18a3a7c1f1ddec5f4264f83ea0e81cb9dc"
+    },
+    {
+      "identity": {
+        "name": "libjxl-progs",
+        "version": "0.11.2-1",
+        "arch": "aarch64",
+        "sha256": "e7151731122719ac7d6232c458484cc1563dc40fa4fa175e9ade09b6b711a1a6",
+        "object_path": "pool/main/l/libjxl-progs/libjxl-progs_0.11.2-1_aarch64.deb",
+        "size": 1277712
+      },
+      "sequence": 271,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "accf61196021b7e28ebec8f42c6a24b3392306e1c85d15f408cd0c4f565fef89"
+    },
+    {
+      "identity": {
+        "name": "fribidi",
+        "version": "1.0.16-1",
+        "arch": "aarch64",
+        "sha256": "4c758a39f343e77f7956b176afe596ba90572f4cff92485f2cb927de0be856e9",
+        "object_path": "pool/main/f/fribidi/fribidi_1.0.16-1_aarch64.deb",
+        "size": 64412
+      },
+      "sequence": 272,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "ba1a330f5289871f39671fc36cf69f15d1285e4255ed4eebaa74fbf6a04e652e"
+    },
+    {
+      "identity": {
+        "name": "imath",
+        "version": "3.2.2",
+        "arch": "aarch64",
+        "sha256": "ae467f0aceea78d77284a97bea6dc408ecbfca3daa083a67566892d344ef9031",
+        "object_path": "pool/main/i/imath/imath_3.2.2_aarch64.deb",
+        "size": 122196
+      },
+      "sequence": 273,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Conflicts",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "59f541c0a2bdc2ed524a60ceffe51d77c5f3660fe37d17cd412d2d2e4da688c5"
+    },
+    {
+      "identity": {
+        "name": "openexr",
+        "version": "3.4.4-1",
+        "arch": "aarch64",
+        "sha256": "40337a5b0cb2df38d13102b9948b5619dc86bfb925b435c78c5faec67f0ccea9",
+        "object_path": "pool/main/o/openexr/openexr_3.4.4-1_aarch64.deb",
+        "size": 849556
+      },
+      "sequence": 274,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Conflicts",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "0e0ef82539e2dfb9bd0aef6f08cb556888a20a91222550b20904d5cda4c1bed8"
+    },
+    {
+      "identity": {
+        "name": "svt-av1",
+        "version": "4.1.0",
+        "arch": "aarch64",
+        "sha256": "473098f59575070fc2d857e60009178cc0a23998f7d09c45e822defb8a1cfcc7",
+        "object_path": "pool/main/s/svt-av1/svt-av1_4.1.0_aarch64.deb",
+        "size": 1383732
+      },
+      "sequence": 275,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "64e2219197b3de1451376cf912e6b955901ccb04c16aff074c01930862c5e8cf"
+    },
+    {
+      "identity": {
+        "name": "proot",
+        "version": "5.1.107.81",
+        "arch": "aarch64",
+        "sha256": "ef2e3648ba08270dfdde85e278bbd2e4f835fdacf59f19294ccad4681f7f00e9",
+        "object_path": "pool/main/p/proot/proot_5.1.107.81_aarch64.deb",
+        "size": 94372
+      },
+      "sequence": 276,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Suggests",
+        "Description"
+      ],
+      "expected_stanza_sha256": "a6d16ccd101deeb95aef1694b8694093d06b31a3f58e256eb3f9a206320d8fd8"
+    },
+    {
+      "identity": {
+        "name": "runit",
+        "version": "2.1.2-4",
+        "arch": "aarch64",
+        "sha256": "a87e22f4f50a3aedf8f7bb9e3d97ed073f3d0c0c6855317490f8d445a40c8e0a",
+        "object_path": "pool/main/r/runit/runit_2.1.2-4_aarch64.deb",
+        "size": 52924
+      },
+      "sequence": 277,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "a7e5f7d0622d3e87f79864f515c3d57a199d193fecc3040739ee1064317a2e54"
+    },
+    {
+      "identity": {
+        "name": "termux-auth",
+        "version": "1.5.0-1",
+        "arch": "aarch64",
+        "sha256": "d38bd8434ed9c38331fb6c2e413ce2f69ddd62673b660a0f3781d7bb5c38d3f5",
+        "object_path": "pool/main/t/termux-auth/termux-auth_1.5.0-1_aarch64.deb",
+        "size": 6988
+      },
+      "sequence": 278,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "707b0ca7f16b1b0c03c35fde99f4ed6b947fa18f25540b6b26921f313576f4da"
+    },
+    {
+      "identity": {
+        "name": "termux-services",
+        "version": "0.13-1",
+        "arch": "all",
+        "sha256": "40e350971d28989aa8d083d4b2c497b23f2c968e5b2ff642208e101202e04e81",
+        "object_path": "pool/main/t/termux-services/termux-services_0.13-1_all.deb",
+        "size": 1920
+      },
+      "sequence": 279,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "87088fb9edce6fb4f95dce24021f4e4d719e19510e2041392b9f4bfe4f7600af"
+    },
+    {
+      "identity": {
+        "name": "libandroid-stub",
+        "version": "29-1",
+        "arch": "aarch64",
+        "sha256": "e4f29063c5c7c15cb7e2e296256d22d092468ab7719b673d5cb3f587e8280619",
+        "object_path": "pool/main/l/libandroid-stub/libandroid-stub_29-1_aarch64.deb",
+        "size": 16364
+      },
+      "sequence": 280,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Conflicts",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "f8006ad5a5ea0755114f6b8fde8b66367acd477d11b517a9bb61afbfc12c1344"
+    },
+    {
+      "identity": {
+        "name": "libexif",
+        "version": "0.6.22",
+        "arch": "aarch64",
+        "sha256": "4888b83026237db4f0bbe586e542ad1a71ae8663591a9ffb289b0dad056dcb8c",
+        "object_path": "pool/main/l/libexif/libexif_0.6.22_aarch64.deb",
+        "size": 101672
+      },
+      "sequence": 281,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "c38bf26eeea8bf88648c08c3b871d8e6d6099c7c2ec9c51f64e66498abc57a5c"
+    },
+    {
+      "identity": {
+        "name": "libopencore-amr",
+        "version": "0.1.6-1",
+        "arch": "aarch64",
+        "sha256": "5b7930344a2ec61511b88e3ea5e62055005aaae63cfc1ebfdb459fc8d295a5fd",
+        "object_path": "pool/main/l/libopencore-amr/libopencore-amr_0.1.6-1_aarch64.deb",
+        "size": 111668
+      },
+      "sequence": 282,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "35049b9752ce6cacf75c65df4e635b38852de294ba5070156fa87f4a83721408"
+    },
+    {
+      "identity": {
+        "name": "libvo-amrwbenc",
+        "version": "0.1.3-2",
+        "arch": "aarch64",
+        "sha256": "cf5b63281ce5997f5ef5c5bfd7f23591255ea5abd0d08676c69b37a43c4d6721",
+        "object_path": "pool/main/l/libvo-amrwbenc/libvo-amrwbenc_0.1.3-2_aarch64.deb",
+        "size": 52348
+      },
+      "sequence": 283,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "b41081f4d68960555014233dad3af4c93b1a7e3259b81ef093309e52b13cc3d7"
+    },
+    {
+      "identity": {
+        "name": "libxshmfence",
+        "version": "1.3.3-1",
+        "arch": "aarch64",
+        "sha256": "ca10097aa32e7ed9faa806383073f93e6683ad5bbb63a3c62851cf12f5e3a72d",
+        "object_path": "pool/main/l/libxshmfence/libxshmfence_1.3.3-1_aarch64.deb",
+        "size": 4564
+      },
+      "sequence": 284,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Description"
+      ],
+      "expected_stanza_sha256": "cf842a38d50ba60aa574b19c26a3e127d32a8b327d62b2d14b9660308dcb7c03"
+    },
+    {
+      "identity": {
+        "name": "openssh-sftp-server",
+        "version": "10.3p1-1",
+        "arch": "aarch64",
+        "sha256": "b8133c4cee5359885e76e7fbac489d3dba906653007fd2c3827f9d0ac6b8708a",
+        "object_path": "pool/main/o/openssh-sftp-server/openssh-sftp-server_10.3p1-1_aarch64.deb",
+        "size": 55992
+      },
+      "sequence": 285,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "9eaadfb2404a1ccbd7962dfdf5fb10622a34636c1d82f4254437a584d2e0174a"
+    },
+    {
+      "identity": {
+        "name": "pkg-config",
+        "version": "0.29.2-3",
+        "arch": "aarch64",
+        "sha256": "f303c33964f37bce7b26e818215158465f5cb2b07d4ba7f47dd9a4ea4a83b750",
+        "object_path": "pool/main/p/pkg-config/pkg-config_0.29.2-3_aarch64.deb",
+        "size": 32788
+      },
+      "sequence": 286,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Depends",
+        "Description"
+      ],
+      "expected_stanza_sha256": "7da5595cc26c3021372f69737fddce27347f4ca45098ad1fa42160b958e29fbe"
+    },
+    {
+      "identity": {
+        "name": "taglib",
+        "version": "2.3",
+        "arch": "aarch64",
+        "sha256": "a7cdab65b4c6f1dfd245c9747f3db55be10cbd5de01d84b7d1f8c05f635eadb3",
+        "object_path": "pool/main/t/taglib/taglib_2.3_aarch64.deb",
+        "size": 463056
+      },
+      "sequence": 287,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Depends",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "8e08a0e6b70b68dc441804ad743a2161ec636138bc56ca620815a1e5e4b18fed"
+    },
+    {
+      "identity": {
+        "name": "xvidcore",
+        "version": "1.3.7-1",
+        "arch": "aarch64",
+        "sha256": "f5d56458b20924a3c09432c89d6ef5859e07a32ed28961f1dfd4bce1fd64623b",
+        "object_path": "pool/main/x/xvidcore/xvidcore_1.3.7-1_aarch64.deb",
+        "size": 125948
+      },
+      "sequence": 288,
+      "selected_control_field_order": [
+        "Package",
+        "Architecture",
+        "Installed-Size",
+        "Maintainer",
+        "Version",
+        "Homepage",
+        "Breaks",
+        "Replaces",
+        "Description"
+      ],
+      "expected_stanza_sha256": "4204f2ed5b9ed0493e95a7b1bf75ae0023e209762ddea1f241f920e0a6aa9633"
+    }
+  ]
+}

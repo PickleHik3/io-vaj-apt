@@ -47,28 +47,11 @@ ALLOWED_CONTROL_FIELDS = {
     "Recommends",
     "Suggests",
 }
+DEFAULT_AUTHORITY_PATH = Path("manifests") / "historical-serialization-authority.json"
 
 
 class ManifestAuthorityError(RuntimeError):
     """Raised when manifest-authoritative generation cannot proceed safely."""
-
-
-@dataclass(frozen=True)
-class HistoricalSerializationProfile:
-    name: str
-    version: str
-    arch: str
-    sha256: str
-    field_order: tuple[str, ...]
-    expected_stanza_sha256: str
-
-    @property
-    def identity_triplet(self) -> tuple[str, str, str]:
-        return (self.name, self.version, self.arch)
-
-    @property
-    def identity_tuple(self) -> tuple[str, str, str, str]:
-        return (self.name, self.version, self.arch, self.sha256)
 
 
 @dataclass(frozen=True)
@@ -84,126 +67,9 @@ class ManifestEntry:
     def expected_filename(self) -> str:
         return f"{self.name}_{self.version}_{self.arch}.deb"
 
-
-HISTORICAL_SERIALIZATION_PROFILES = (
-    HistoricalSerializationProfile(
-        name="binutils",
-        version="2.46.0-3",
-        arch="aarch64",
-        sha256="679bd221c7f6e63d0c7e1e926a897b6087982a44f8d4c662b69f4613b3d4d29e",
-        field_order=(
-            "Package",
-            "Version",
-            "Architecture",
-            "Maintainer",
-            "Installed-Size",
-            "Depends",
-            "Homepage",
-            "Description",
-            "Breaks",
-            "Replaces",
-        ),
-        expected_stanza_sha256="df84cd0ff8eac525d8f8ad37430425fd95456f1337bfe72087c0e9756754cea3",
-    ),
-    HistoricalSerializationProfile(
-        name="groff",
-        version="1.23.0-2",
-        arch="aarch64",
-        sha256="e4662524014cfacbe45c1c7c6f53f8374ede3623257d4b229e3351ad6809e427",
-        field_order=(
-            "Package",
-            "Version",
-            "Architecture",
-            "Maintainer",
-            "Installed-Size",
-            "Depends",
-            "Homepage",
-            "Description",
-        ),
-        expected_stanza_sha256="c8353e1331325092e1057f91752b63f73cc7ae2697765d83ae69740600d5e967",
-    ),
-    HistoricalSerializationProfile(
-        name="dbus",
-        version="1.16.2-3",
-        arch="aarch64",
-        sha256="c07eb580a229200bb2043adb202020f808c55647a801384998c68443d92fb291",
-        field_order=(
-            "Package",
-            "Version",
-            "Architecture",
-            "Maintainer",
-            "Installed-Size",
-            "Depends",
-            "Homepage",
-            "Description",
-            "Breaks",
-            "Replaces",
-        ),
-        expected_stanza_sha256="1687c82119807e907952902dff9e0efabbac8e016c14db15d903f259691d3ea5",
-    ),
-    HistoricalSerializationProfile(
-        name="glib",
-        version="2.88.1",
-        arch="aarch64",
-        sha256="bba0bd0d642f80f98d6dfa7d202cd0e6f6ad9468d87bd60744985bfe6ce3454f",
-        field_order=(
-            "Package",
-            "Version",
-            "Architecture",
-            "Maintainer",
-            "Installed-Size",
-            "Depends",
-            "Homepage",
-            "Description",
-            "Breaks",
-            "Replaces",
-        ),
-        expected_stanza_sha256="b480547ee9453faaf80688b05d16019f80cdac0e0dd968f4074815ececa62531",
-    ),
-    HistoricalSerializationProfile(
-        name="libgraphite",
-        version="1.3.15",
-        arch="aarch64",
-        sha256="99065401ef5d96ed9a520f680db3669d940ce7fe413de3bed45e570d3aaa17c5",
-        field_order=(
-            "Package",
-            "Version",
-            "Architecture",
-            "Maintainer",
-            "Installed-Size",
-            "Depends",
-            "Homepage",
-            "Description",
-            "Breaks",
-            "Replaces",
-        ),
-        expected_stanza_sha256="857a49dde8bdecac49e9f6d6a00dac3f2b1b4dc0850d06b8cf7892bcaae387f4",
-    ),
-    HistoricalSerializationProfile(
-        name="libpixman",
-        version="0.46.4-1",
-        arch="aarch64",
-        sha256="93313b329ef4c1b9d927b9538738c1f2bfb52eff00917eb3772f0a7dfcdb4c6d",
-        field_order=(
-            "Package",
-            "Version",
-            "Architecture",
-            "Maintainer",
-            "Installed-Size",
-            "Homepage",
-            "Description",
-            "Breaks",
-            "Replaces",
-        ),
-        expected_stanza_sha256="b9b65133c47c124035a3c3e7e9b20cf880532ce25a49c65bdfe17d003c4167e2",
-    ),
-)
-HISTORICAL_SERIALIZATION_PROFILES_BY_TRIPLET = {
-    profile.identity_triplet: profile for profile in HISTORICAL_SERIALIZATION_PROFILES
-}
-HISTORICAL_SERIALIZATION_PROFILES_BY_IDENTITY = {
-    profile.identity_tuple: profile for profile in HISTORICAL_SERIALIZATION_PROFILES
-}
+    def authority_key(self) -> tuple[str, str, str, str, str, int]:
+        """Full immutable identity tuple used to look up authority entries."""
+        return (self.name, self.version, self.arch, self.sha256, self.object_path, self.size)
 
 
 def _normalized_manifest_path(path: str) -> str:
@@ -338,17 +204,114 @@ def _parse_selected_control_blocks(control_text: str) -> tuple[list[tuple[str, s
     return selected_blocks, identity
 
 
-def _historical_serialization_profile_for_entry(entry: ManifestEntry) -> HistoricalSerializationProfile | None:
-    triplet = (entry.name, entry.version, entry.arch)
-    profile = HISTORICAL_SERIALIZATION_PROFILES_BY_TRIPLET.get(triplet)
-    if profile is None:
-        return None
-    if profile.sha256 != entry.sha256:
+def load_authority(authority_path: Path) -> dict[tuple[str, str, str, str, str, int], dict]:
+    """Load historical serialization authority from JSON.
+
+    Returns a dict keyed by full identity tuple (name, version, arch, sha256,
+    object_path, size) mapping to authority records containing sequence,
+    selected_control_field_order, and expected_stanza_sha256.
+
+    Fail-closed: missing/corrupt/duplicate identity/malformed records raise
+    ManifestAuthorityError.
+    """
+    if not authority_path.is_file():
         raise ManifestAuthorityError(
-            f"{entry.object_path}: historical serialization profile identity mismatch: "
-            f"expected SHA-256 {profile.sha256}, got {entry.sha256}"
+            f"historical serialization authority not found: {authority_path}"
         )
-    return profile
+
+    try:
+        raw = json.loads(authority_path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError) as exc:
+        raise ManifestAuthorityError(
+            f"failed to parse authority file {authority_path}: {exc}"
+        ) from exc
+
+    if not isinstance(raw, dict) or "entries" not in raw:
+        raise ManifestAuthorityError(
+            f"authority file {authority_path}: missing top-level 'entries' list"
+        )
+
+    source = raw.get("source_packages", {})
+    if not isinstance(source, dict) or not all(
+        k in source for k in ("path", "sha256", "size", "stanza_count", "schema_version")
+    ):
+        raise ManifestAuthorityError(
+            f"authority file {authority_path}: malformed source_packages metadata"
+        )
+
+    authority: dict[tuple[str, str, str, str, str, int], dict] = {}
+    for i, entry in enumerate(raw["entries"]):
+        if not isinstance(entry, dict):
+            raise ManifestAuthorityError(
+                f"authority file {authority_path}: entry {i} is not a dict"
+            )
+        ident = entry.get("identity")
+        if not isinstance(ident, dict):
+            raise ManifestAuthorityError(
+                f"authority file {authority_path}: entry {i} missing or invalid 'identity'"
+            )
+        for key in ("name", "version", "arch", "sha256", "object_path", "size"):
+            if key not in ident:
+                raise ManifestAuthorityError(
+                    f"authority file {authority_path}: entry {i} identity missing '{key}'"
+                )
+        size = ident["size"]
+        if not isinstance(size, int) or size <= 0:
+            raise ManifestAuthorityError(
+                f"authority file {authority_path}: entry {i} identity 'size' must be positive int, got {size!r}"
+            )
+        key = (
+            str(ident["name"]),
+            str(ident["version"]),
+            str(ident["arch"]),
+            str(ident["sha256"]),
+            str(ident["object_path"]),
+            size,
+        )
+        if key in authority:
+            raise ManifestAuthorityError(
+                f"authority file {authority_path}: duplicate identity at entry {i}: "
+                f"{ident['name']} {ident['version']} {ident['arch']}"
+            )
+
+        field_order = entry.get("selected_control_field_order")
+        if not isinstance(field_order, list) or not field_order:
+            raise ManifestAuthorityError(
+                f"authority file {authority_path}: entry {i} missing or empty selected_control_field_order"
+            )
+        for field in field_order:
+            if field not in ALLOWED_CONTROL_FIELDS:
+                raise ManifestAuthorityError(
+                    f"authority file {authority_path}: entry {i} field {field!r} not in ALLOWED_CONTROL_FIELDS"
+                )
+
+        expected_sha = entry.get("expected_stanza_sha256")
+        if not isinstance(expected_sha, str) or len(expected_sha) != 64:
+            raise ManifestAuthorityError(
+                f"authority file {authority_path}: entry {i} invalid expected_stanza_sha256"
+            )
+
+        seq = entry.get("sequence")
+        if not isinstance(seq, int) or seq < 0:
+            raise ManifestAuthorityError(
+                f"authority file {authority_path}: entry {i} invalid sequence"
+            )
+
+        authority[key] = {
+            "sequence": seq,
+            "field_order": tuple(field_order),
+            "expected_stanza_sha256": expected_sha,
+        }
+
+    return authority
+
+
+def _authority_for_entry(
+    authority: dict[tuple[str, str, str, str, str, int], dict],
+    entry: ManifestEntry,
+) -> dict | None:
+    """Look up an authority record for the given manifest entry by full identity."""
+    return authority.get(entry.authority_key())
 
 
 def _render_selected_control_blocks(
@@ -366,46 +329,53 @@ def _render_selected_control_blocks(
     return ordered_lines
 
 
-def _validate_historical_profile_fields(
+def _validate_authority_fields(
     entry: ManifestEntry,
-    profile: HistoricalSerializationProfile,
+    authority_rec: dict,
     selected_blocks: list[tuple[str, str]],
 ) -> None:
+    """Validate that selected_blocks match authority expectations (missing/unexpected/duplicates)."""
     seen_fields = [field for field, _block in selected_blocks]
     if len(seen_fields) != len(set(seen_fields)):
         raise ManifestAuthorityError(
-            f"{entry.object_path}: historical serialization profile requires unique selected control fields"
+            f"{entry.object_path}: historical serialization authority requires unique selected control fields"
         )
     actual_fields = set(seen_fields)
-    expected_fields = set(profile.field_order)
-    missing_fields = [field for field in profile.field_order if field not in actual_fields]
+    expected_fields = set(authority_rec["field_order"])
+    missing_fields = [field for field in authority_rec["field_order"] if field not in actual_fields]
     unexpected_fields = [field for field in seen_fields if field not in expected_fields]
     if missing_fields:
         raise ManifestAuthorityError(
-            f"{entry.object_path}: historical serialization profile missing selected control fields: "
+            f"{entry.object_path}: historical serialization authority missing selected control fields: "
             + ", ".join(missing_fields)
         )
     if unexpected_fields:
         raise ManifestAuthorityError(
-            f"{entry.object_path}: historical serialization profile encountered unexpected selected control fields: "
+            f"{entry.object_path}: historical serialization authority encountered unexpected selected control fields: "
             + ", ".join(unexpected_fields)
         )
 
 
-def _enforce_historical_stanza_compatibility(
+def _verify_stanza_sha256(
     entry: ManifestEntry,
-    profile: HistoricalSerializationProfile,
+    authority_rec: dict,
     stanza_text: str,
 ) -> None:
+    """Verify the full rendered stanza SHA-256 matches the authority record."""
     stanza_sha256 = hashlib.sha256(stanza_text.encode("utf-8")).hexdigest()
-    if stanza_sha256 != profile.expected_stanza_sha256:
+    if stanza_sha256 != authority_rec["expected_stanza_sha256"]:
         raise ManifestAuthorityError(
-            f"{entry.object_path}: historical serialization compatibility mismatch: "
-            f"expected stanza SHA-256 {profile.expected_stanza_sha256}, got {stanza_sha256}"
+            f"{entry.object_path}: historical serialization authority stanza SHA-256 mismatch: "
+            f"expected {authority_rec['expected_stanza_sha256']}, got {stanza_sha256}"
         )
 
 
-def build_package_stanza(repo_root: Path, entry: ManifestEntry) -> str:
+def build_package_stanza(
+    repo_root: Path,
+    entry: ManifestEntry,
+    *,
+    authority: dict[tuple[str, str, str, str, str, int], dict] | None = None,
+) -> str:
     deb_path = repo_root / entry.object_path
     if not deb_path.is_file():
         raise ManifestAuthorityError(f"selected object missing: {entry.object_path}")
@@ -437,14 +407,14 @@ def build_package_stanza(repo_root: Path, entry: ManifestEntry) -> str:
             )
 
     md5sum = _hash_file(deb_path, "md5")
-    profile = _historical_serialization_profile_for_entry(entry)
-    if profile is None:
+    authority_rec = _authority_for_entry(authority, entry) if authority else None
+    if authority_rec is None:
         selected_lines = _render_selected_control_blocks(selected_blocks)
     else:
-        _validate_historical_profile_fields(entry, profile, selected_blocks)
+        _validate_authority_fields(entry, authority_rec, selected_blocks)
         selected_lines = _render_selected_control_blocks(
             selected_blocks,
-            field_order=profile.field_order,
+            field_order=authority_rec["field_order"],
         )
     stanza_lines = [
         *selected_lines,
@@ -455,8 +425,8 @@ def build_package_stanza(repo_root: Path, entry: ManifestEntry) -> str:
         "",
     ]
     stanza_text = "\n".join(stanza_lines) + "\n"
-    if profile is not None:
-        _enforce_historical_stanza_compatibility(entry, profile, stanza_text)
+    if authority_rec is not None:
+        _verify_stanza_sha256(entry, authority_rec, stanza_text)
     return stanza_text
 
 
@@ -575,56 +545,27 @@ def _parse_release_time(text: str) -> datetime:
     return parsed.replace(tzinfo=UTC)
 
 
-def _current_public_packages_path(repo_root: Path) -> Path:
-    return repo_root / "dists" / SUITE / COMPONENT / ARCHITECTURE / "Packages"
-
-
-def _current_public_package_order(repo_root: Path) -> list[str]:
-    packages_path = _current_public_packages_path(repo_root)
-    if not packages_path.is_file():
-        return []
-
-    package_order: list[str] = []
-    seen_names: set[str] = set()
-    for stanza in packages_path.read_text(encoding="utf-8").strip().split("\n\n"):
-        if not stanza.strip():
-            continue
-        package_name = None
-        for line in stanza.splitlines():
-            if line.startswith("Package: "):
-                package_name = line.split(": ", 1)[1]
-                break
-        if package_name is None:
-            raise ManifestAuthorityError(
-                f"{packages_path}: encountered stanza without Package field while deriving compatibility order"
-            )
-        if package_name in seen_names:
-            raise ManifestAuthorityError(
-                f"{packages_path}: duplicate Package stanza while deriving compatibility order: {package_name}"
-            )
-        seen_names.add(package_name)
-        package_order.append(package_name)
-    return package_order
-
-
-def _ordered_manifest_entries(entries: list[ManifestEntry], repo_root: Path) -> list[ManifestEntry]:
-    current_public_order = _current_public_package_order(repo_root)
-    if not current_public_order:
-        return entries
-
-    entries_by_name = {entry.name: entry for entry in entries}
-    ordered_entries: list[ManifestEntry] = []
-    ordered_names: set[str] = set()
-    for package_name in current_public_order:
-        entry = entries_by_name.get(package_name)
-        if entry is None:
-            continue
-        ordered_entries.append(entry)
-        ordered_names.add(package_name)
+def _ordered_manifest_entries(
+    entries: list[ManifestEntry],
+    authority: dict[tuple[str, str, str, str, str, int], dict],
+) -> list[ManifestEntry]:
+    """Order entries: authority-matched in authority sequence order, unmatched appended in manifest order."""
+    matched: list[tuple[int, ManifestEntry]] = []
+    unmatched: list[ManifestEntry] = []
+    seen_keys: set[tuple[str, str, str, str, str, int]] = set()
     for entry in entries:
-        if entry.name not in ordered_names:
-            ordered_entries.append(entry)
-    return ordered_entries
+        key = entry.authority_key()
+        if key in seen_keys:
+            continue
+        seen_keys.add(key)
+        rec = authority.get(key)
+        if rec is not None:
+            matched.append((rec["sequence"], entry))
+        else:
+            unmatched.append(entry)
+
+    matched.sort(key=lambda pair: pair[0])
+    return [entry for _seq, entry in matched] + unmatched
 
 
 def generate_repository(
@@ -633,10 +574,14 @@ def generate_repository(
     output_root: Path,
     *,
     release_time: datetime | None = None,
+    authority_path: Path | None = None,
 ) -> dict[str, object]:
+    if authority_path is None:
+        authority_path = repo_root / DEFAULT_AUTHORITY_PATH
+    authority = load_authority(authority_path)
     manifest_entries = load_manifest(manifest_path)
-    entries = _ordered_manifest_entries(manifest_entries, repo_root)
-    stanzas = [build_package_stanza(repo_root, entry) for entry in entries]
+    entries = _ordered_manifest_entries(manifest_entries, authority)
+    stanzas = [build_package_stanza(repo_root, entry, authority=authority) for entry in entries]
     release_time = release_time or datetime.now(UTC)
 
     dists_root = output_root / "dists" / SUITE

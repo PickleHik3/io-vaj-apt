@@ -23,7 +23,7 @@ pub = importlib.util.module_from_spec(_PUB_SPEC)
 sys.modules[_PUB_SPEC.name] = pub
 _PUB_SPEC.loader.exec_module(pub)
 
-from tests.test_generate_repo_manifest_authority import _build_deb, _write_manifest
+from tests.test_generate_repo_manifest_authority import _build_authority, _build_deb, _write_manifest
 
 
 class PublisherProvenanceSyntheticTests(unittest.TestCase):
@@ -55,6 +55,8 @@ class PublisherProvenanceSyntheticTests(unittest.TestCase):
             manifest,
             [("validpkg", "1.0", "aarch64", sha256, rel_path, str(size))],
         )
+        # Build authority before calling generate_repository (which requires it)
+        _build_authority(repo_root, manifest)
         gen.generate_repository(manifest, repo_root, metadata_root)
         return repo_dir, metadata_dir, repo_root, metadata_root, manifest
 
