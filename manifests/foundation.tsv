@@ -278,5 +278,5 @@ libjxl	0.11.2-1	aarch64	469bca1348fc9422129b95343faebd735d3ccc55f7d10e45353c4440
 libjxl-progs	0.11.2-1	aarch64	e7151731122719ac7d6232c458484cc1563dc40fa4fa175e9ade09b6b711a1a6	pool/main/l/libjxl-progs/libjxl-progs_0.11.2-1_aarch64.deb
 fribidi	1.0.16-1	aarch64	4c758a39f343e77f7956b176afe596ba90572f4cff92485f2cb927de0be856e9	pool/main/f/fribidi/fribidi_1.0.16-1_aarch64.deb
 imath	3.2.2	aarch64	ae467f0aceea78d77284a97bea6dc408ecbfca3daa083a67566892d344ef9031	pool/main/i/imath/imath_3.2.2_aarch64.deb
-openexr	3.4.4	aarch64	6b4d41b887c44c89caf7b9b7f5c12ab862c16bdaf7b4ceea13be15deae4dc655	pool/main/o/openexr/openexr_3.4.4_aarch64.deb
+openexr	3.4.4-1	aarch64	40337a5b0cb2df38d13102b9948b5619dc86bfb925b435c78c5faec67f0ccea9	pool/main/o/openexr/openexr_3.4.4-1_aarch64.deb
 svt-av1	4.1.0	aarch64	473098f59575070fc2d857e60009178cc0a23998f7d09c45e822defb8a1cfcc7	pool/main/s/svt-av1/svt-av1_4.1.0_aarch64.deb
