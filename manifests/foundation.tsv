@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
-# Generated: 2026-06-29T19:15:00Z
-# Package count: 250
+# Generated: 2026-06-30T00:00:00Z
+# Package count: 276
 # Columns: name version arch sha256 object-path
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb
@@ -260,3 +260,23 @@ dbus	1.16.2-3	aarch64	c07eb580a229200bb2043adb202020f808c55647a801384998c68443d9
 glib	2.88.1	aarch64	bba0bd0d642f80f98d6dfa7d202cd0e6f6ad9468d87bd60744985bfe6ce3454f	pool/main/g/glib/glib_2.88.1_aarch64.deb
 libgraphite	1.3.15	aarch64	99065401ef5d96ed9a520f680db3669d940ce7fe413de3bed45e570d3aaa17c5	pool/main/l/libgraphite/libgraphite_1.3.15_aarch64.deb
 libpixman	0.46.4-1	aarch64	93313b329ef4c1b9d927b9538738c1f2bfb52eff00917eb3772f0a7dfcdb4c6d	pool/main/l/libpixman/libpixman_0.46.4-1_aarch64.deb
+libandroid-execinfo	0.1-3	aarch64	fb93289fc6a541862226f6942ea60fb67535d08625835ca0f238571759a9a4aa	pool/main/l/libandroid-execinfo/libandroid-execinfo_0.1-3_aarch64.deb
+libandroid-spawn	0.3	aarch64	7ff5f0c6fcb6b717ef26eb36287054b0b02114b5913c78e1ebd06b151f8d0c83	pool/main/l/libandroid-spawn/libandroid-spawn_0.3_aarch64.deb
+libdrm	2.4.134	aarch64	b62b7ccc7cfa7d29e6e54173aaecf3c04c2054eed8877d228b75375e445b653e	pool/main/l/libdrm/libdrm_2.4.134_aarch64.deb
+libwayland	1.25.0	aarch64	91fc6f482c271ac4ae9c287db27bb9e1dd79761fa9b1f5c91afbe65fb3e0e656	pool/main/l/libwayland/libwayland_1.25.0_aarch64.deb
+harfbuzz	14.2.1	aarch64	87ef3a3ce4dbd57005dcd5231ad4dd3a71a86b39f91816cac03d9d63384c0169	pool/main/h/harfbuzz/harfbuzz_14.2.1_aarch64.deb
+harfbuzz-icu	14.2.1	aarch64	af67d73817341ff082baae5468ee34f804bc75aab12339e8893dc392c2cef343	pool/main/h/harfbuzz-icu/harfbuzz-icu_14.2.1_aarch64.deb
+harfbuzz-utils	14.2.1	aarch64	fbd928d5dbfdcddc6c9130082654d4579e66df563e5a023f56bfac28af7a85d9	pool/main/h/harfbuzz-utils/harfbuzz-utils_14.2.1_aarch64.deb
+libcairo	1.18.4-2	aarch64	cfff1d8594cb07661418dac98d035bd8225332fb6e17290f1251f9f868571111	pool/main/l/libcairo/libcairo_1.18.4-2_aarch64.deb
+pango	1.57.1	aarch64	9818db588541dc736815603bd8e8f676fb7692e6a69a1a4a81fe94374ffb73d1	pool/main/p/pango/pango_1.57.1_aarch64.deb
+gdk-pixbuf	2.44.6	aarch64	feb3dcf1675f6cb51296ba7288f749f59380cb20937d4411da68cfdb4845893e	pool/main/g/gdk-pixbuf/gdk-pixbuf_2.44.6_aarch64.deb
+libv4l	1.24.1-2	aarch64	a28e9d226801ee4992a1b3aeda063cc573f7468a6b0b01fa3fb30a28079dbc64	pool/main/l/libv4l/libv4l_1.24.1-2_aarch64.deb
+libass	0.17.5	aarch64	ac6c996efdde4fa4492d48927871011f42d71f378de4fda5ab90267c68771541	pool/main/l/libass/libass_0.17.5_aarch64.deb
+poppler	26.02.0	aarch64	86b610f8a12428b8fd629c06686d22f49161fc9b99142879bf88ff0153c06f6d	pool/main/p/poppler/poppler_26.02.0_aarch64.deb
+mc	4.8.33-2	aarch64	9f4469c02ffa2b395f7a1b5a6cb2a66b6774f63b95e41e872989b384ff384e31	pool/main/m/mc/mc_4.8.33-2_aarch64.deb
+libjxl	0.11.2-1	aarch64	469bca1348fc9422129b95343faebd735d3ccc55f7d10e45353c4440661b9d63	pool/main/l/libjxl/libjxl_0.11.2-1_aarch64.deb
+libjxl-progs	0.11.2-1	aarch64	e7151731122719ac7d6232c458484cc1563dc40fa4fa175e9ade09b6b711a1a6	pool/main/l/libjxl-progs/libjxl-progs_0.11.2-1_aarch64.deb
+fribidi	1.0.16-1	aarch64	4c758a39f343e77f7956b176afe596ba90572f4cff92485f2cb927de0be856e9	pool/main/f/fribidi/fribidi_1.0.16-1_aarch64.deb
+imath	3.2.2	aarch64	ae467f0aceea78d77284a97bea6dc408ecbfca3daa083a67566892d344ef9031	pool/main/i/imath/imath_3.2.2_aarch64.deb
+openexr	3.4.4	aarch64	6b4d41b887c44c89caf7b9b7f5c12ab862c16bdaf7b4ceea13be15deae4dc655	pool/main/o/openexr/openexr_3.4.4_aarch64.deb
+svt-av1	4.1.0	aarch64	473098f59575070fc2d857e60009178cc0a23998f7d09c45e822defb8a1cfcc7	pool/main/s/svt-av1/svt-av1_4.1.0_aarch64.deb
