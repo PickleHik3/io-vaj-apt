@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
 # Generated: 2026-06-30T00:00:00Z
-# Package count: 289
+# Package count: 315
 # Columns: name version arch sha256 object-path size
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb	1033296
@@ -293,3 +293,29 @@ openssh-sftp-server	10.3p1-1	aarch64	b8133c4cee5359885e76e7fbac489d3dba906653007
 pkg-config	0.29.2-3	aarch64	f303c33964f37bce7b26e818215158465f5cb2b07d4ba7f47dd9a4ea4a83b750	pool/main/p/pkg-config/pkg-config_0.29.2-3_aarch64.deb	32788
 taglib	2.3	aarch64	a7cdab65b4c6f1dfd245c9747f3db55be10cbd5de01d84b7d1f8c05f635eadb3	pool/main/t/taglib/taglib_2.3_aarch64.deb	463056
 xvidcore	1.3.7-1	aarch64	f5d56458b20924a3c09432c89d6ef5859e07a32ed28961f1dfd4bce1fd64623b	pool/main/x/xvidcore/xvidcore_1.3.7-1_aarch64.deb	125948
+glslang	16.3.0	aarch64	4e58bc2ec57e3aa2568176b19d01f3e537179b1848720da4d3ecacfd9786f318	pool/main/g/glslang/glslang_16.3.0_aarch64.deb	2466512
+luajit	1:2.1.1780076327+gb925b3e	aarch64	2888adba488281b827659bd96b972fc6f25fd23401a0c89f8b606a246d974eba	pool/main/l/luajit/luajit_1:2.1.1780076327+gb925b3e_aarch64.deb	290084
+luv	1.52.1-0-0	aarch64	4218923d191971a303787830660bbaa735c47d7e954c15c039c975a27df174de	pool/main/l/luv/luv_1.52.1-0-0_aarch64.deb	50664
+ocl-icd	2.3.5	aarch64	a3c6db9d7d4c0c6ced207175aecde07f6548d98b1587e3e23232e5b59287d23b	pool/main/o/ocl-icd/ocl-icd_2.3.5_aarch64.deb	104160
+openssh	10.3p1-1	aarch64	cba5ce024660fce2d0af570c90995b9fe18f236f3e0d2dd014fe1b40c8e4b381	pool/main/o/openssh/openssh_10.3p1-1_aarch64.deb	908860
+peaclock	0.4.3-9	aarch64	a7ba5074813bcb86e9648dfd037f97f3aaaa3006fe17980f51c3bde9cb99f0a7	pool/main/p/peaclock/peaclock_0.4.3-9_aarch64.deb	167128
+tree-sitter-bash	0.25.1-1	aarch64	87ebf98d3b35e2d4b6f65e80dbda546dd3abd984168eda96f04f38d2f57a7a2c	pool/main/t/tree-sitter-bash/tree-sitter-bash_0.25.1-1_aarch64.deb	126084
+tree-sitter-c	0.24.2	aarch64	fbf68a97287b5088a4f78d021fe79b5530168b8b01621a04d401e782e48f9f9a	pool/main/t/tree-sitter-c/tree-sitter-c_0.24.2_aarch64.deb	49364
+tree-sitter-go	0.25.0-1	aarch64	98b4eba8507747c642f869878fc28ab7f0501b2539326fb3fcd9dc296339f04f	pool/main/t/tree-sitter-go/tree-sitter-go_0.25.0-1_aarch64.deb	29920
+tree-sitter-html	0.23.2-1	aarch64	60c4a05a59656b04192db4dd0b9b481cae13cec0310f696d51a5bc96a07617e8	pool/main/t/tree-sitter-html/tree-sitter-html_0.23.2-1_aarch64.deb	9560
+tree-sitter-java	0.23.5-1	aarch64	88d3544a27fb0dadb6d8139f434abc20661727db04577d4f94a23666663eac51	pool/main/t/tree-sitter-java/tree-sitter-java_0.23.5-1_aarch64.deb	37280
+tree-sitter-javascript	0.25.0-1	aarch64	8bf83f70dc1d67a7572b99c9eabfd8e8817ba56f9a53f400898def04d7d8001c	pool/main/t/tree-sitter-javascript/tree-sitter-javascript_0.25.0-1_aarch64.deb	39948
+tree-sitter-json	0.24.8-1	aarch64	bd37702253a8ef4b9d87ffbcb60834ea77b180d8a957986f15f4344d60dd313c	pool/main/t/tree-sitter-json/tree-sitter-json_0.24.8-1_aarch64.deb	4836
+tree-sitter-lua	0.5.0-1	aarch64	fce4974601d1048afe000290380362c81da74eb38feeb0d642bf157756c02880	pool/main/t/tree-sitter-lua/tree-sitter-lua_0.5.0-1_aarch64.deb	13956
+tree-sitter-markdown	0.5.3-1	aarch64	31459cb166bf8808e79aa13a2baafc8d0aa76edfe5d01df7dc9d6119d2391813	pool/main/t/tree-sitter-markdown/tree-sitter-markdown_0.5.3-1_aarch64.deb	87488
+tree-sitter-parsers	0.26	all	fb06497ca06ec664927818b12f0e3d00717bddcfa298fe570ca3c36900164689	pool/main/t/tree-sitter-parsers/tree-sitter-parsers_0.26_all.deb	820
+tree-sitter-python	0.25.0-1	aarch64	a56ab771b5d77bfb3ff332ee67255d140a76a8a99e5320a8ecb49ee586410651	pool/main/t/tree-sitter-python/tree-sitter-python_0.25.0-1_aarch64.deb	49428
+tree-sitter-query	0.8.0-2	aarch64	04ca62b6c323a43408a116476d8033bad7205d5bdcdf12661c9de0d27e497db6	pool/main/t/tree-sitter-query/tree-sitter-query_0.8.0-2_aarch64.deb	6376
+tree-sitter-regex	0.25.0-1	aarch64	ff696ce8a63b678cb23e0b0341674c1dd983d457d75745b34e7e83bb861a913a	pool/main/t/tree-sitter-regex/tree-sitter-regex_0.25.0-1_aarch64.deb	7740
+tree-sitter-rust	0.24.2-1	aarch64	9489eec1cfeba93d0c60273bbb4e6394304b8a435e5ffad8552091fa22469d93	pool/main/t/tree-sitter-rust/tree-sitter-rust_0.24.2-1_aarch64.deb	77728
+tree-sitter-toml	0.7.0-1	aarch64	2627e0b06ffa552cc8392aa7b636bc224673b3ec584ce1cb826928817159a78e	pool/main/t/tree-sitter-toml/tree-sitter-toml_0.7.0-1_aarch64.deb	9576
+tree-sitter-vim	0.8.1-1	aarch64	fc38ef4237e90acf56b9c96664e4f4656b3dd379b602d27a358075a2fda0c82a	pool/main/t/tree-sitter-vim/tree-sitter-vim_0.8.1-1_aarch64.deb	111832
+tree-sitter-vimdoc	4.1.0-2	aarch64	34103988dbd75a8327847a46fc56e8c3a8fac5184ce311c9f56ec0eb66476e5f	pool/main/t/tree-sitter-vimdoc/tree-sitter-vimdoc_4.1.0-2_aarch64.deb	21192
+tree-sitter-xml	0.7.0-1	aarch64	8cc788e7bb27027dee16b120934c88a601f398bc3e720b952691ec2f085f6d8d	pool/main/t/tree-sitter-xml/tree-sitter-xml_0.7.0-1_aarch64.deb	15968
+tree-sitter-yaml	0.7.2-1	aarch64	2e94ff22efc521580569535051c7c3bf73b3f5984b091679e5040093607e7514	pool/main/t/tree-sitter-yaml/tree-sitter-yaml_0.7.2-1_aarch64.deb	28664
+vulkan-loader-generic	1.4.354	aarch64	c25929dc0a95c346da3e31b3dd68a40c4a5f9c61fc5513fd746ce7a50f7ce6a3	pool/main/v/vulkan-loader-generic/vulkan-loader-generic_1.4.354_aarch64.deb	128148
