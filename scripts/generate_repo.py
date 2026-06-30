@@ -15,6 +15,7 @@ import argparse
 import gzip
 import hashlib
 import io
+import json
 import os
 from dataclasses import dataclass
 from datetime import datetime, UTC
@@ -26,6 +27,9 @@ import tarfile
 SUITE = "stable"
 COMPONENT = "main"
 ARCHITECTURE = "binary-aarch64"
+PROVENANCE_FILENAME = "vaj-metadata-provenance.json"
+PROVENANCE_SCHEMA_VERSION = 1
+GENERATOR_IDENTITY = "vaj.manifest-authoritative-generator.v2"
 ALLOWED_CONTROL_FIELDS = {
     "Package",
     "Version",
@@ -55,6 +59,7 @@ class ManifestEntry:
     arch: str
     sha256: str
     object_path: str
+    size: int
 
     @property
     def expected_filename(self) -> str:
@@ -79,12 +84,22 @@ def load_manifest(manifest_path: Path) -> list[ManifestEntry]:
             if not line or line.startswith("#"):
                 continue
             parts = line.split("\t")
-            if len(parts) != 5:
+            if len(parts) != 6:
                 raise ManifestAuthorityError(
-                    f"{manifest_path}:{lineno}: expected 5 tab-separated columns, got {len(parts)}"
+                    f"{manifest_path}:{lineno}: expected 6 tab-separated columns, got {len(parts)}"
+                )
+            name, version, arch, sha256, object_path, size_text = parts
+            if not size_text.isdigit():
+                raise ManifestAuthorityError(
+                    f"{manifest_path}:{lineno}: size must be a positive integer byte count: {size_text!r}"
+                )
+            size = int(size_text)
+            if size <= 0:
+                raise ManifestAuthorityError(
+                    f"{manifest_path}:{lineno}: size must be greater than zero: {size}"
                 )
 
-            entry = ManifestEntry(*parts)
+            entry = ManifestEntry(name, version, arch, sha256, object_path, size)
             object_path = _normalized_manifest_path(entry.object_path)
             if object_path != entry.object_path:
                 raise ManifestAuthorityError(
@@ -126,6 +141,10 @@ def _hash_file(path: Path, algorithm: str) -> str:
     return digest.hexdigest()
 
 
+def manifest_digest(manifest_path: Path) -> str:
+    return _hash_file(manifest_path, "sha256")
+
+
 def _extract_control_text(deb_path: Path) -> str:
     result = subprocess.run(
         ["dpkg-deb", "--ctrl-tarfile", str(deb_path)],
@@ -165,6 +184,12 @@ def build_package_stanza(repo_root: Path, entry: ManifestEntry) -> str:
     if not deb_path.is_file():
         raise ManifestAuthorityError(f"selected object missing: {entry.object_path}")
 
+    actual_size = deb_path.stat().st_size
+    if actual_size != entry.size:
+        raise ManifestAuthorityError(
+            f"{entry.object_path}: size mismatch: manifest={entry.size}, actual={actual_size}"
+        )
+
     sha256 = _hash_file(deb_path, "sha256")
     if sha256 != entry.sha256:
         raise ManifestAuthorityError(
@@ -185,12 +210,11 @@ def build_package_stanza(repo_root: Path, entry: ManifestEntry) -> str:
                 f"{entry.object_path}: control {field} mismatch: expected={expected}, actual={actual}"
             )
 
-    size = deb_path.stat().st_size
     md5sum = _hash_file(deb_path, "md5")
     stanza_lines = [
         *selected_lines,
         f"Filename: {entry.object_path}",
-        f"Size: {size}",
+        f"Size: {entry.size}",
         f"SHA256: {sha256}",
         f"MD5sum: {md5sum}",
         "",
@@ -198,13 +222,13 @@ def build_package_stanza(repo_root: Path, entry: ManifestEntry) -> str:
     return "\n".join(stanza_lines) + "\n"
 
 
-def _release_text(packages_path: Path, packages_gz_path: Path) -> str:
+def _release_text(packages_path: Path, packages_gz_path: Path, release_time: datetime) -> str:
     lines = [
         "Origin: VAJ",
         "Label: VAJ Terminal",
         "Suite: stable",
         "Codename: stable",
-        f"Date: {datetime.now(UTC).strftime('%a, %d %b %Y %H:%M:%S UTC')}",
+        f"Date: {release_time.strftime('%a, %d %b %Y %H:%M:%S UTC')}",
         "Architectures: aarch64",
         "Components: main",
         "Description: VAJ Terminal Package Repository",
@@ -224,9 +248,105 @@ def _release_text(packages_path: Path, packages_gz_path: Path) -> str:
     return "\n".join(lines) + "\n"
 
 
-def generate_repository(manifest_path: Path, repo_root: Path, output_root: Path) -> dict[str, object]:
+def _canonical_gzip_bytes(payload: bytes) -> bytes:
+    buffer = io.BytesIO()
+    with gzip.GzipFile(fileobj=buffer, mode="wb", mtime=0, filename="") as handle:
+        handle.write(payload)
+    return buffer.getvalue()
+
+
+def generator_identity(repo_root: Path) -> dict[str, str | int]:
+    script_path = Path(__file__).resolve()
+    try:
+        script_rel_path = script_path.relative_to(repo_root).as_posix()
+    except ValueError:
+        script_rel_path = script_path.as_posix()
+    return {
+        "identity": GENERATOR_IDENTITY,
+        "schema_version": PROVENANCE_SCHEMA_VERSION,
+        "script_path": script_rel_path,
+        "script_sha256": _hash_file(script_path, "sha256"),
+    }
+
+
+def _packages_artifact_record(root: Path, path: Path) -> dict[str, str | int]:
+    return {
+        "path": path.relative_to(root).as_posix(),
+        "sha256": _hash_file(path, "sha256"),
+        "size": path.stat().st_size,
+    }
+
+
+def build_provenance_record(
+    manifest_path: Path,
+    repo_root: Path,
+    output_root: Path,
+    entries: list[ManifestEntry],
+    packages_path: Path,
+    packages_gz_path: Path,
+    release_path: Path,
+    release_time: datetime,
+) -> dict[str, object]:
+    return {
+        "schema_version": PROVENANCE_SCHEMA_VERSION,
+        "generator": generator_identity(repo_root),
+        "manifest": {
+            "path": manifest_path.relative_to(repo_root).as_posix(),
+            "sha256": manifest_digest(manifest_path),
+            "selected_package_count": len(entries),
+        },
+        "selected_packages": [
+            {
+                "name": entry.name,
+                "version": entry.version,
+                "arch": entry.arch,
+                "sha256": entry.sha256,
+                "object_path": entry.object_path,
+                "size": entry.size,
+            }
+            for entry in entries
+        ],
+        "artifacts": {
+            "Packages": _packages_artifact_record(output_root, packages_path),
+            "Packages.gz": _packages_artifact_record(output_root, packages_gz_path),
+            "Release": _packages_artifact_record(output_root, release_path),
+        },
+        "release_generation": {
+            "release_time_utc": release_time.strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "release_generated_by_shared_generator": True,
+            "inrelease_generated": False,
+            "release_gpg_generated": False,
+        },
+    }
+
+
+def write_provenance_record(output_root: Path, provenance: dict[str, object]) -> Path:
+    provenance_path = output_root / "dists" / SUITE / PROVENANCE_FILENAME
+    provenance_path.write_text(
+        json.dumps(provenance, sort_keys=True, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    return provenance_path
+
+
+def _parse_release_time(text: str) -> datetime:
+    try:
+        parsed = datetime.strptime(text, "%Y-%m-%dT%H:%M:%SZ")
+    except ValueError as exc:
+        raise ManifestAuthorityError(f"invalid release timestamp: {text!r}") from exc
+    return parsed.replace(tzinfo=UTC)
+
+
+def generate_repository(
+    manifest_path: Path,
+    repo_root: Path,
+    output_root: Path,
+    *,
+    release_time: datetime | None = None,
+) -> dict[str, object]:
     entries = load_manifest(manifest_path)
     stanzas = [build_package_stanza(repo_root, entry) for entry in entries]
+    release_time = release_time or datetime.now(UTC)
 
     dists_root = output_root / "dists" / SUITE
     packages_dir = dists_root / COMPONENT / ARCHITECTURE
@@ -238,15 +358,31 @@ def generate_repository(manifest_path: Path, repo_root: Path, output_root: Path)
 
     packages_content = "".join(stanzas)
     packages_path.write_text(packages_content, encoding="utf-8")
-    with gzip.open(packages_gz_path, "wb") as handle:
-        handle.write(packages_content.encode("utf-8"))
-    release_path.write_text(_release_text(packages_path, packages_gz_path), encoding="utf-8")
+    packages_bytes = packages_content.encode("utf-8")
+    packages_gz_path.write_bytes(_canonical_gzip_bytes(packages_bytes))
+    release_path.write_text(
+        _release_text(packages_path, packages_gz_path, release_time),
+        encoding="utf-8",
+    )
+    provenance = build_provenance_record(
+        manifest_path,
+        repo_root,
+        output_root,
+        entries,
+        packages_path,
+        packages_gz_path,
+        release_path,
+        release_time,
+    )
+    provenance_path = write_provenance_record(output_root, provenance)
 
     return {
         "package_count": len(entries),
         "packages_path": packages_path,
         "packages_gz_path": packages_gz_path,
         "release_path": release_path,
+        "provenance_path": provenance_path,
+        "manifest_sha256": provenance["manifest"]["sha256"],
     }
 
 
@@ -272,6 +408,10 @@ def parse_args() -> argparse.Namespace:
         default=str(repo_root),
         help="output workspace root that receives dists/",
     )
+    parser.add_argument(
+        "--release-timestamp",
+        help="UTC timestamp for deterministic Release generation (YYYY-MM-DDTHH:MM:SSZ)",
+    )
     return parser.parse_args()
 
 
@@ -281,7 +421,13 @@ def main() -> int:
     repo_root = Path(args.repo_root).resolve()
     output_root = Path(args.output_root).resolve()
 
-    result = generate_repository(manifest_path, repo_root, output_root)
+    release_time = _parse_release_time(args.release_timestamp) if args.release_timestamp else None
+    result = generate_repository(
+        manifest_path,
+        repo_root,
+        output_root,
+        release_time=release_time,
+    )
     print(
         f"[generate-repo] Generated {result['package_count']} package stanzas "
         f"from manifest {manifest_path}"
@@ -289,6 +435,7 @@ def main() -> int:
     print(f"[generate-repo] Wrote {result['packages_path']}")
     print(f"[generate-repo] Wrote {result['packages_gz_path']}")
     print(f"[generate-repo] Wrote {result['release_path']}")
+    print(f"[generate-repo] Wrote {result['provenance_path']}")
     return 0
 
 

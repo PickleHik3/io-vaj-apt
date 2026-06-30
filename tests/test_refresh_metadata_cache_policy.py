@@ -340,6 +340,10 @@ class TestMainDispatch(unittest.TestCase):
                 "publish-r2.py",
                 "--refresh-metadata-cache-policy",
                 "--dry-run",
+                "--repo-root",
+                tmp,
+                "--metadata-root",
+                tmp,
             ]
             try:
                 def deny(req, *a, **kw):
@@ -348,8 +352,14 @@ class TestMainDispatch(unittest.TestCase):
                     )
                 from io import StringIO
                 with patch("urllib.request.urlopen", deny):
-                    with redirect_stdout(StringIO()) as buf:
-                        rc = pub.main()
+                    with patch.object(pub, "validate_metadata_provenance", return_value={
+                        "manifest_sha256": "0" * 64,
+                        "package_count": 5,
+                        "provenance_path": "unused",
+                        "packages_path": "unused",
+                    }):
+                        with redirect_stdout(StringIO()) as buf:
+                            rc = pub.main()
                 self.assertEqual(rc, 0)
                 out = buf.getvalue()
                 for k in MUTABLE_METADATA:

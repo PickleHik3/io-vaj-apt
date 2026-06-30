@@ -185,7 +185,14 @@ class TestUploadOrder(unittest.TestCase):
             return 200
 
         orig_s3_put = pub.s3_put
+        orig_validate = pub.validate_metadata_provenance
         pub.s3_put = tracking_s3_put
+        pub.validate_metadata_provenance = lambda *args, **kwargs: {
+            "manifest_sha256": "0" * 64,
+            "package_count": 0,
+            "provenance_path": "unused",
+            "packages_path": "unused",
+        }
 
         env_keys = ["R2_BUCKET", "R2_S3_ENDPOINT", "AWS_REGION",
                      "AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY"]
@@ -240,6 +247,7 @@ class TestUploadOrder(unittest.TestCase):
                 )
         finally:
             pub.s3_put = orig_s3_put
+            pub.validate_metadata_provenance = orig_validate
             for k in env_keys:
                 v = saved.get(k)
                 if v is None:

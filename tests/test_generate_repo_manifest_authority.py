@@ -42,7 +42,7 @@ def _parse_packages(packages_path: Path) -> list[dict[str, str]]:
     return records
 
 
-def _write_manifest(manifest_path: Path, rows: list[tuple[str, str, str, str, str]]) -> None:
+def _write_manifest(manifest_path: Path, rows: list[tuple[str, ...]]) -> None:
     manifest_path.parent.mkdir(parents=True, exist_ok=True)
     with manifest_path.open("w", encoding="utf-8") as handle:
         handle.write("# test manifest\n")
@@ -103,7 +103,7 @@ class ManifestAuthoritySyntheticPoolTests(unittest.TestCase):
             manifest = repo_root / "manifests" / "foundation.tsv"
             _write_manifest(
                 manifest,
-                [("openexr", "3.4.4-1", "aarch64", new_sha, new_rel)],
+                [("openexr", "3.4.4-1", "aarch64", new_sha, new_rel, str((repo_root / new_rel).stat().st_size))],
             )
 
             result = gen.generate_repository(manifest, repo_root, output_root)
@@ -124,7 +124,7 @@ class ManifestAuthoritySyntheticPoolTests(unittest.TestCase):
             manifest = repo_root / "manifests" / "foundation.tsv"
             _write_manifest(
                 manifest,
-                [("hello", "2.0", "aarch64", kept_sha, kept_rel)],
+                [("hello", "2.0", "aarch64", kept_sha, kept_rel, str((repo_root / kept_rel).stat().st_size))],
             )
 
             result = gen.generate_repository(manifest, repo_root, output_root)
@@ -146,6 +146,7 @@ class ManifestAuthoritySyntheticPoolTests(unittest.TestCase):
                     "aarch64",
                     "0" * 64,
                     "pool/main/m/missingpkg/missingpkg_1.0_aarch64.deb",
+                    "1234",
                 )],
             )
 
@@ -162,7 +163,7 @@ class ManifestAuthoritySyntheticPoolTests(unittest.TestCase):
             wrong_sha = ("0" if sha256[0] != "0" else "1") + sha256[1:]
             _write_manifest(
                 manifest,
-                [("mismatchpkg", "1.0", "aarch64", wrong_sha, rel_path)],
+                [("mismatchpkg", "1.0", "aarch64", wrong_sha, rel_path, str((repo_root / rel_path).stat().st_size))],
             )
 
             with self.assertRaisesRegex(gen.ManifestAuthorityError, "SHA-256 mismatch"):
@@ -182,7 +183,7 @@ class ManifestAuthoritySyntheticPoolTests(unittest.TestCase):
             manifest = repo_root / "manifests" / "foundation.tsv"
             _write_manifest(
                 manifest,
-                [("wrongpkg", "1.0", "aarch64", sha256, rel_path)],
+                [("wrongpkg", "1.0", "aarch64", sha256, rel_path, str((repo_root / rel_path).stat().st_size))],
             )
 
             with self.assertRaisesRegex(gen.ManifestAuthorityError, "control Package mismatch"):
@@ -202,7 +203,7 @@ class ManifestAuthoritySyntheticPoolTests(unittest.TestCase):
             manifest = repo_root / "manifests" / "foundation.tsv"
             _write_manifest(
                 manifest,
-                [("archpkg", "1.0", "aarch64", sha256, rel_path)],
+                [("archpkg", "1.0", "aarch64", sha256, rel_path, str((repo_root / rel_path).stat().st_size))],
             )
 
             with self.assertRaisesRegex(gen.ManifestAuthorityError, "control Architecture mismatch"):
@@ -219,14 +220,70 @@ class ManifestAuthoritySyntheticPoolTests(unittest.TestCase):
             _write_manifest(
                 manifest,
                 [
-                    ("duppkg", "1.0", "aarch64", sha_a, rel_a),
-                    ("duppkg", "1.1", "aarch64", sha_b, rel_b),
+                    ("duppkg", "1.0", "aarch64", sha_a, rel_a, str((repo_root / rel_a).stat().st_size)),
+                    ("duppkg", "1.1", "aarch64", sha_b, rel_b, str((repo_root / rel_b).stat().st_size)),
                 ],
             )
 
             with self.assertRaisesRegex(gen.ManifestAuthorityError, "duplicate package selection"):
                 gen.generate_repository(manifest, repo_root, output_root)
             self.assertFalse((output_root / "dists").exists())
+
+    def test_size_mismatch_fails_before_metadata_generation(self):
+        with tempfile.TemporaryDirectory() as repo_str, tempfile.TemporaryDirectory() as output_str:
+            repo_root = Path(repo_str)
+            output_root = Path(output_str)
+            rel_path, sha256, size = _build_deb(repo_root, "sizepkg", "1.0")
+            manifest = repo_root / "manifests" / "foundation.tsv"
+            _write_manifest(
+                manifest,
+                [("sizepkg", "1.0", "aarch64", sha256, rel_path, str(size + 1))],
+            )
+
+            with self.assertRaisesRegex(gen.ManifestAuthorityError, "size mismatch"):
+                gen.generate_repository(manifest, repo_root, output_root)
+            self.assertFalse((output_root / "dists").exists())
+
+    def test_missing_size_authority_fails_closed(self):
+        with tempfile.TemporaryDirectory() as repo_str:
+            repo_root = Path(repo_str)
+            rel_path, sha256, _size = _build_deb(repo_root, "nosizepkg", "1.0")
+            manifest = repo_root / "manifests" / "foundation.tsv"
+            manifest.parent.mkdir(parents=True, exist_ok=True)
+            manifest.write_text(
+                "# test manifest\n"
+                f"nosizepkg\t1.0\taarch64\t{sha256}\t{rel_path}\n",
+                encoding="utf-8",
+            )
+
+            with self.assertRaisesRegex(gen.ManifestAuthorityError, "expected 6 tab-separated columns"):
+                gen.load_manifest(manifest)
+
+    def test_malformed_size_authority_fails_closed(self):
+        with tempfile.TemporaryDirectory() as repo_str:
+            repo_root = Path(repo_str)
+            rel_path, sha256, _size = _build_deb(repo_root, "badsizepkg", "1.0")
+            manifest = repo_root / "manifests" / "foundation.tsv"
+            _write_manifest(
+                manifest,
+                [("badsizepkg", "1.0", "aarch64", sha256, rel_path, "NaN")],
+            )
+
+            with self.assertRaisesRegex(gen.ManifestAuthorityError, "size must be a positive integer byte count"):
+                gen.load_manifest(manifest)
+
+    def test_zero_size_authority_fails_closed(self):
+        with tempfile.TemporaryDirectory() as repo_str:
+            repo_root = Path(repo_str)
+            rel_path, sha256, _size = _build_deb(repo_root, "zeropkg", "1.0")
+            manifest = repo_root / "manifests" / "foundation.tsv"
+            _write_manifest(
+                manifest,
+                [("zeropkg", "1.0", "aarch64", sha256, rel_path, "0")],
+            )
+
+            with self.assertRaisesRegex(gen.ManifestAuthorityError, "size must be greater than zero"):
+                gen.load_manifest(manifest)
 
 
 class ManifestAuthorityActiveManifestTests(unittest.TestCase):
@@ -253,6 +310,7 @@ class ManifestAuthorityActiveManifestTests(unittest.TestCase):
             self.assertEqual(record["Version"], entry.version)
             self.assertEqual(record["Architecture"], entry.arch)
             self.assertEqual(record["Filename"], entry.object_path)
+            self.assertEqual(int(record["Size"]), entry.size)
 
         versions = [record["Version"] for record in records if record["Package"] == "openexr"]
         self.assertEqual(versions, ["3.4.4-1"])
