@@ -1,0 +1,127 @@
+name: Publish APT wave
+
+# Central publish job. Build machines hand debs off as assets on a
+# `staging-*` prerelease; this workflow (the only holder of the GPG key and
+# R2 write credentials) stages them into the pool, regenerates + signs the
+# metadata, and uploads to Cloudflare R2.
+#
+# Required repository secrets:
+#   VAJ_GPG_PRIVATE_KEY_B64  base64 of the armored EDDSA archive private key
+#   VAJ_SIGNING_PASSPHRASE   archive signing passphrase
+#   AWS_ACCESS_KEY_ID        R2 S3 access key
+#   AWS_SECRET_ACCESS_KEY    R2 S3 secret key
+#   R2_S3_ENDPOINT           e.g. https://<account>.r2.cloudflarestorage.com
+#   R2_BUCKET                R2 bucket name (root mirrors repo root)
+
+on:
+  release:
+    types: [prereleased]
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: "staging-* release tag whose .deb assets to publish"
+        required: true
+
+# Never let two publishes race the pool/manifest.
+concurrency:
+  group: vaj-apt-publish
+  cancel-in-progress: false
+
+permissions:
+  contents: write   # download release assets, delete staging release, push manifest
+
+jobs:
+  publish:
+    # Only staging-* prereleases (or manual dispatch) trigger a publish.
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      startsWith(github.event.release.tag_name, 'staging-')
+    runs-on: ubuntu-latest
+    env:
+      AWS_REGION: auto
+      AWS_DEFAULT_REGION: auto
+      R2_S3_ENDPOINT: ${{ secrets.R2_S3_ENDPOINT }}
+      R2_BUCKET: ${{ secrets.R2_BUCKET }}
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      TAG: ${{ github.event.inputs.release_tag || github.event.release.tag_name }}
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          ref: io-vaj-package   # trunk + default branch; avoids detached HEAD on release event
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install apt tooling
+        run: sudo apt-get update && sudo apt-get install -y dpkg-dev gnupg
+
+      - name: Import signing key
+        run: |
+          GNUPGHOME="$(mktemp -d)"
+          chmod 700 "$GNUPGHOME"
+          echo "GNUPGHOME=$GNUPGHOME" >> "$GITHUB_ENV"
+          echo "${{ secrets.VAJ_GPG_PRIVATE_KEY_B64 }}" | base64 -d > "$RUNNER_TEMP/archive-key.asc"
+          gpg --batch --import "$RUNNER_TEMP/archive-key.asc"
+          rm -f "$RUNNER_TEMP/archive-key.asc"
+          umask 077
+          printf '%s' "${{ secrets.VAJ_SIGNING_PASSPHRASE }}" > "$RUNNER_TEMP/pass.txt"
+          echo "VAJ_SIGNING_PASSPHRASE_FILE=$RUNNER_TEMP/pass.txt" >> "$GITHUB_ENV"
+
+      - name: Download wave debs from staging release
+        run: |
+          mkdir -p incoming
+          gh release download "$TAG" --dir incoming --pattern '*.deb'
+          echo "Downloaded $(ls incoming/*.deb | wc -l) .deb files"
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Sync pool from R2
+        run: |
+          # Source of truth for pool objects; needed so generate_repo can read
+          # every manifest-selected .deb (it is manifest-authoritative).
+          aws s3 sync "s3://${R2_BUCKET}/pool" pool \
+            --endpoint-url "$R2_S3_ENDPOINT" --only-show-errors
+          echo "Pool now holds $(find pool -name '*.deb' | wc -l) .deb objects"
+
+      - name: Stage debs + append manifest
+        id: stage
+        run: |
+          out="$(python3 scripts/stage-debs.py incoming)"
+          echo "$out"
+          n="$(echo "$out" | sed -n 's/^STAGED=//p' | tail -1)"
+          echo "staged=${n:-0}" >> "$GITHUB_OUTPUT"
+
+      - name: Generate metadata
+        if: steps.stage.outputs.staged != '0'
+        run: python3 scripts/generate_repo.py
+
+      - name: Sign Release
+        if: steps.stage.outputs.staged != '0'
+        run: ./scripts/sign-release.sh
+
+      - name: Publish to R2
+        if: steps.stage.outputs.staged != '0'
+        run: python3 scripts/publish-r2.py --all
+
+      - name: Verify cache policy on mutable metadata
+        if: steps.stage.outputs.staged != '0'
+        run: python3 scripts/publish-r2.py --verify
+
+      - name: Commit updated manifest
+        if: steps.stage.outputs.staged != '0'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add manifests/foundation.tsv
+          git commit -m "Publish wave from ${TAG} (+${{ steps.stage.outputs.staged }} packages)"
+          git push origin HEAD:io-vaj-package
+
+      - name: Delete staging release
+        if: always()
+        run: gh release delete "$TAG" --cleanup-tag -y || true
+        env:
+          GH_TOKEN: ${{ github.token }}
