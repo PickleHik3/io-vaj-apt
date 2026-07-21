@@ -35,6 +35,11 @@ output/*.deb
 authenticate to GitHub with a plain PAT and hand debs off as release assets.
 Add a build machine = load an image + `gh auth login`. Nothing else.
 
+> **Additions only.** This flow publishes *new* package names. `stage-debs.py`
+> skips any name already in the manifest, so it cannot publish a new version of
+> an already-published package. To **upgrade** an existing package, see
+> `UPGRADING-PACKAGES.md` (manual manifest-row replacement + local publish).
+
 ## The three moving parts
 
 | File | Repo / location | Role |
