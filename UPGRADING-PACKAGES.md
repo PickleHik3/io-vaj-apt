@@ -92,6 +92,19 @@ root on the primary host.
    git add manifests/foundation.tsv && git commit -m "Publish upgrade wave: <pkgs>"
    ```
 
+## Upload gotchas (learned the hard way)
+
+- **Do not use `publish-r2.py --all` for an upgrade.** `--all` re-uploads the
+  entire 1600+ object allowlist (no skip), which is slow and fragile. Pass the
+  exact changed objects as positional args instead — pool objects first, then
+  `Packages`, `Packages.gz`, provenance, `Release`, `Release.gpg`, and
+  `InRelease` **last** (mandatory order). `publish-r2.py` sets the correct
+  `Cache-Control` on the mutable metadata keys automatically.
+- **IPv6 to R2 may hang.** On some hosts (WSL2) IPv6 egress to Cloudflare
+  stalls each request ~60s before timing out, so a publish appears to freeze.
+  `publish-r2.py` now forces IPv4 resolution by default (R2 always has A
+  records); set `PUBLISH_R2_ALLOW_IPV6=1` only on a genuine IPv6-only host.
+
 ## Cautions
 
 - **Dependency closure**: if the upgraded package needs a *newer* version of a

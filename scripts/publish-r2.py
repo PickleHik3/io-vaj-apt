@@ -11,9 +11,22 @@ Usage:
         | --refresh-metadata-cache-policy [--dry-run]
 """
 
-import argparse, gzip, hashlib, hmac, datetime, importlib.util, json, os, sys, tempfile, urllib.request, urllib.error
+import argparse, gzip, hashlib, hmac, datetime, importlib.util, json, os, socket, sys, tempfile, urllib.request, urllib.error
 from pathlib import Path
 from urllib.parse import quote
+
+# Cloudflare R2 S3 endpoints always publish A (IPv4) records. Some hosts
+# (notably WSL2) have broken IPv6 egress to Cloudflare that does not fail fast
+# but hangs each request until the socket timeout (~60s), then retries -- so a
+# publish stalls for many minutes instead of erroring. Force IPv4 resolution
+# unless a future IPv6-only host explicitly opts out with PUBLISH_R2_ALLOW_IPV6.
+if not os.environ.get("PUBLISH_R2_ALLOW_IPV6"):
+    _orig_getaddrinfo = socket.getaddrinfo
+
+    def _ipv4_only_getaddrinfo(host, port, family=0, *args, **kwargs):
+        return _orig_getaddrinfo(host, port, socket.AF_INET, *args, **kwargs)
+
+    socket.getaddrinfo = _ipv4_only_getaddrinfo
 
 MANIFEST_PATH = "manifests/foundation.tsv"
 _GENERATOR_MODULE_PATH = os.path.join(os.path.dirname(__file__), "generate_repo.py")
@@ -329,7 +342,20 @@ def sha256(data):
     return hashlib.sha256(data).hexdigest()
 
 
-def s3_put(bucket, key, endpoint, region, access_key, secret_key, data, content_type, cache_control=None):
+def s3_put(bucket, key, endpoint, region, access_key, secret_key, data, content_type, cache_control=None, _retries=4):
+    import time
+    for attempt in range(_retries + 1):
+        status = _s3_put_once(bucket, key, endpoint, region, access_key, secret_key, data, content_type, cache_control)
+        if status in (200, 201):
+            return status
+        if attempt < _retries:
+            wait = 2 ** attempt
+            print(f"  PUT {key}: got {status}, retrying in {wait}s (attempt {attempt+1}/{_retries})...", file=sys.stderr)
+            time.sleep(wait)
+    return status
+
+
+def _s3_put_once(bucket, key, endpoint, region, access_key, secret_key, data, content_type, cache_control=None):
     service = "s3"
     encoded_bucket = quote(bucket, safe="")
     encoded_key = quote(key, safe="/~")
@@ -376,6 +402,8 @@ def s3_put(bucket, key, endpoint, region, access_key, secret_key, data, content_
         return resp.status
     except urllib.error.HTTPError as e:
         return e.code
+    except urllib.error.URLError:
+        return 0
 
 
 def s3_head(bucket, key, endpoint, region, access_key, secret_key):
