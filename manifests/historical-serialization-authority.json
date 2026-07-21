@@ -2,9 +2,9 @@
   "schema_version": 1,
   "source_packages": {
     "path": "dists/stable/main/binary-aarch64/Packages",
-    "sha256": "2e5bd27c7dc738d8ef766424b3f18e26ef7cc49e47b25e8522b070c5bf886573",
-    "size": 129281,
-    "stanza_count": 289,
+    "sha256": "4b14d02e78176cfd0728632556d35aee55447a1234c3fee794451889c928e54d",
+    "size": 167162,
+    "stanza_count": 368,
     "schema_version": 1
   },
   "entries": [
