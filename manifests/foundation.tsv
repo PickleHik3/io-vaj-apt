@@ -165,7 +165,7 @@ termux-core	0.4.0-1	aarch64	82dee12170d56ea5e78735761b517ac2337f3eb56fda6f8ff8d4
 termux-exec	1:2.4.0-1	aarch64	a90e3db57156a0d25ec6d561b092bdddf93d0437508f4a4aaed1f57e01e1eb0c	pool/main/t/termux-exec/termux-exec_1:2.4.0-1_aarch64.deb	285960
 termux-keyring	3.13	all	1700d551bb2000ced5aa089e2712b760e217e90d2f434adf8a6a6cdb6c3ce988	pool/main/t/termux-keyring/termux-keyring_3.13_all.deb	39784
 termux-licenses	2.1	all	6d7e22b8ef1871d04ff47eda4b5c48903a01b66c0eb32484ce9c3bcc878a4dd0	pool/main/t/termux-licenses/termux-licenses_2.1_all.deb	52556
-termux-tools	1.46.0+really1.45.0-3	aarch64	05a237af0f0e48703561d90cd742c1797209e96ec12462a8caa068f89592682d	pool/main/t/termux-tools/termux-tools_1.46.0+really1.45.0-3_aarch64.deb	26392
+termux-tools	1.46.0+really1.45.0-4	aarch64	b4de7e31d9aa2e0a502d650e65e4c405d2271a2d0d39e73156608d80ab3b1b74	pool/main/t/termux-tools/termux-tools_1.46.0+really1.45.0-4_aarch64.deb	25680
 tk	8.6.14-1	aarch64	922c757950f31682f474ed8f2dafb75e90df27a57fd8aa45419dff8edf05ac33	pool/main/t/tk/tk_8.6.14-1_aarch64.deb	1754584
 tmux	3.7b	aarch64	18e6cb80a93fd96eba939abb25a925a7cfb05a076cd33bb2dce9ff3b93bfdff9	pool/main/t/tmux/tmux_3.7b_aarch64.deb	385964
 tor	0.4.9.10	aarch64	f3435fe4a37890e4d8b667f8ec32663fec725ec88c50fc6b91f3422bc627a39d	pool/main/t/tor/tor_0.4.9.10_aarch64.deb	3316884
