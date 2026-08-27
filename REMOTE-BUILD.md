@@ -44,9 +44,10 @@ Add a build machine = load an image + `gh auth login`. Nothing else.
 
 | File | Repo / location | Role |
 |---|---|---|
-| `remote-build.sh` | `termux-packages` @ `io-vaj-package` | Build machine: run the builder container, then `gh release create staging-<ts>` |
+| `remote-build.sh` | `termux-packages` @ `io-vaj-package` | Build machine: run the builder container, then `gh release create staging-<ts>` — in queue mode every `--handoff-every` minutes (default 60) plus a final pass, waiting for the previous staging release to be consumed first |
+| `build-all-queue.sh` | `termux-packages` @ `io-vaj-package` | Decides *what* to build from the live repo index: a package is skipped only when its published version equals the recipe's. `UPDATES_ONLY=1` restricts to already-published packages; `DRY_RUN=1` prints decisions |
 | `.github/workflows/publish.yml` | `io-vaj-apt` (default branch) | The only holder of secrets. Stages, signs, publishes, cleans up |
-| `scripts/stage-debs.py` | `io-vaj-apt` | Shared staging: copy debs → pool, append `foundation.tsv`. Used by CI **and** local `publish-wave-*.py` |
+| `scripts/stage-debs.py` | `io-vaj-apt` | Shared staging: copy debs → pool; **new** names are appended to `foundation.tsv`, **newer versions replace their row in place** (dpkg version order, never a downgrade, old pool object retained). Used by CI **and** local `publish-wave-*.py` |
 
 ## Why the CI job syncs the whole pool
 
@@ -75,14 +76,37 @@ cd termux-packages && git checkout io-vaj-package
 gh auth login          # PAT, repo scope — the only credential this box needs
 ```
 
+The container's `builder` user is UID 1001. If the host user is not 1001 (Azure's
+`azureuser` is 1000), the mounted checkout must be group-writable by gid 1001 or
+the build dies on `mkdir output: Permission denied`:
+
+```bash
+sudo groupadd -g 1001 builder; sudo usermod -aG builder "$USER"
+sudo chgrp -R 1001 . && sudo chmod -R g+w . && sudo find . -type d -exec chmod g+s {} +
+```
+
+The repo must be reachable from the build machine **without a Cloudflare
+challenge**: Bot Fight Mode on the `pathayam.xyz` zone answered Azure's IP with a
+managed challenge (`cf-mitigated: challenge`, HTTP 403) and every `-I` dependency
+download spun in 60 s retry loops. It is off; keep it off — apt clients cannot
+pass challenges either.
+
 Build + hand off:
 
 ```bash
-./remote-build.sh                       # full queue (~1,660 pkgs)
-./remote-build.sh build-tier1-libs.txt  # one tier
+UPDATES_ONLY=1 ./remote-build.sh        # rebuild every published package whose recipe moved
+./remote-build.sh                       # …plus every queued package never published yet
+./remote-build.sh build-tier1-libs.txt  # one tier (no index check — builds everything listed)
 ./remote-build.sh --pkgs zsh jq bc      # named packages (start here for a first test)
 ./remote-build.sh --pkgs zsh --no-publish   # build only, no staging release
+./remote-build.sh --pkgs tree --publish-all # hand off every deb already in output/
 ```
+
+Queue mode records `PASS`/`FAIL` per package in `output/remote-build.results`,
+still hands off the debs that did build, and exits non-zero if anything failed.
+Dependencies come from the repo with `-I`; a dependency version the repo lacks is
+built on the spot and handed off like any other deb, so a wave for one package
+routinely carries its stale dependencies (zsh 5.9.2 brought 33 of them).
 
 `remote-build.sh` refuses to start if the frozen image is absent or `gh` is
 unauthenticated. It creates a fresh `vaj-remote-builder` container each run
@@ -91,22 +115,36 @@ unauthenticated. It creates a fresh `vaj-remote-builder` container each run
 
 ## What CI does per staging release
 
-`publish.yml` fires on `release: prereleased` for `staging-*` tags (or manual
-`workflow_dispatch` with `release_tag`). Steps, in order:
+`publish.yml` fires on `release: published` for `staging-*` tags (or manual
+`workflow_dispatch` with `release_tag`). It must be `published`, not
+`prereleased`: `gh release create` with assets creates a draft and publishes it
+once the uploads finish, and GitHub does not fire `prereleased` for a draft that
+becomes a pre-release. Steps, in order:
 
-1. checkout `io-vaj-package`
+1. checkout `io-vaj-package`; fail fast if any of the six secrets is unset
 2. import GPG key from `VAJ_GPG_PRIVATE_KEY_B64` into an ephemeral `GNUPGHOME`;
    write passphrase to a temp file
 3. `gh release download` the `*.deb` assets → `incoming/`
-4. `aws s3 sync` pool ← R2
-5. `stage-debs.py incoming` → copies to pool, appends manifest, prints `STAGED=<n>`
+4. `aws s3 sync` pool ← R2 (≈5 GB, ~10 min; retried up to 4× — one object
+   failing with "Max Retries Exceeded" is normal)
+5. `stage-debs.py incoming` → copies to pool, appends new rows / replaces
+   upgraded rows, prints `STAGED=<n>` (new + upgraded)
 6. if `STAGED=0`, skip the rest
 7. `generate_repo.py` → `sign-release.sh` → `publish-r2.py --all` → `publish-r2.py --verify`
 8. commit updated `foundation.tsv` to `io-vaj-package`
-9. delete the `staging-*` release (always, even on failure)
+9. delete the `staging-*` release — **only on success**. A failed run leaves it
+   in place; fix the cause and re-run with `gh workflow run publish.yml -f
+   release_tag=staging-<ts>`.
 
-`concurrency: vaj-apt-publish` serializes runs — two build machines produce two
-staging releases that publish one after another; the pool/manifest never race.
+`concurrency: vaj-apt-publish` serializes runs, but GitHub keeps at most **one
+pending** run per group: a third staging release created while one publishes
+and one waits gets its run cancelled and sits unconsumed. `remote-build.sh`
+therefore waits for `gh release list` to show no `staging-*` release before
+creating the next one. A publish run takes ~20 min end to end.
+
+`publish-r2.py` compares the clearsigned `InRelease` payload with `Release`
+ignoring the trailing newline: gpg 2.4.4 (ubuntu-latest) drops it, gpg 2.4.9
+(primary host) keeps it.
 
 ## Required GitHub Actions secrets (repo: PickleHik3/io-vaj-apt)
 
@@ -128,10 +166,26 @@ unchanged. CI and local share one staging code path.
 ## First-run checklist
 
 1. `gh repo edit PickleHik3/io-vaj-apt --default-branch io-vaj-package` (done once)
-2. Set the six secrets above
+2. Set the six secrets above (done 2026-08-27)
 3. Load the image on one build machine, `gh auth login`
-4. `./remote-build.sh --pkgs zsh --no-publish` — confirm a deb builds
+4. `./remote-build.sh --pkgs tree --no-publish` — confirm a deb builds (pick a
+   package the container has not built; `zsh` pulls ~30 stale deps)
 5. `./remote-build.sh --pkgs zsh` — confirm the staging release appears and
    `publish.yml` runs green
 6. Verify `zsh` on `https://repo.pathayam.xyz` and the manifest commit landed
 7. Only then run larger waves
+
+## The Azure build machine (2026-08-27)
+
+Resource group `vaj-build` (eastus), VM `vaj-builder`, `Standard_E4as_v7`
+(4 vCPU / 32 GB — the trial subscription caps every family at 4 vCPU and offers
+only v7 SKUs in eastus), Ubuntu 24.04, 256 GB StandardSSD, user `azureuser`,
+SSH key from the primary host. Image, `gh` auth and the recipes are in place.
+Public IP: `az vm show -d -g vaj-build -n vaj-builder --query publicIps -o tsv`.
+
+- `~/run-queue.sh [args]` — detached wrapper: `UPDATES_ONLY=1 ./remote-build.sh`,
+  log in `~/queue-latest.log`, then `~/self-deallocate.sh` (managed identity +
+  ARM REST; a guest `shutdown` would keep billing). Launch with
+  `nohup ~/run-queue.sh > /dev/null 2>&1 &`.
+- Between runs: `az vm deallocate -g vaj-build -n vaj-builder` (~$0.23/h running,
+  only the disk when deallocated). Start again with `az vm start`.
