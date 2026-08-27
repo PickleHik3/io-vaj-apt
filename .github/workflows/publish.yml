@@ -79,7 +79,7 @@ jobs:
 
       - name: Import signing key
         run: |
-          GNUPGHOME="$(mktemp -d)"
+          export GNUPGHOME="$(mktemp -d)"   # export: the import below must land here, not in ~/.gnupg
           chmod 700 "$GNUPGHOME"
           echo "GNUPGHOME=$GNUPGHOME" >> "$GITHUB_ENV"
           echo "${{ secrets.VAJ_GPG_PRIVATE_KEY_B64 }}" | base64 -d > "$RUNNER_TEMP/archive-key.asc"
