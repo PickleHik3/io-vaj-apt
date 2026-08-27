@@ -128,7 +128,9 @@ becomes a pre-release. Steps, in order:
 4. `aws s3 sync` pool ← R2 (≈5 GB, ~10 min; retried up to 4× — one object
    failing with "Max Retries Exceeded" is normal)
 5. `stage-debs.py incoming` → copies to pool, appends new rows / replaces
-   upgraded rows, prints `STAGED=<n>` (new + upgraded)
+   upgraded rows, prints `STAGED=<n>` (new + upgraded). Name/version/arch come
+   from each deb's control file, never the filename: GitHub release assets
+   cannot contain `:`, so `foo_1:2.0_all.deb` arrives as `foo_1.2.0_all.deb`
 6. if `STAGED=0`, skip the rest
 7. `generate_repo.py` → `sign-release.sh` → `publish-r2.py --all` → `publish-r2.py --verify`
 8. commit updated `foundation.tsv` to `io-vaj-package`
