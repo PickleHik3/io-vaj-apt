@@ -101,8 +101,18 @@ jobs:
         run: |
           # Source of truth for pool objects; needed so generate_repo can read
           # every manifest-selected .deb (it is manifest-authoritative).
-          aws s3 sync "s3://${R2_BUCKET}/pool" pool \
-            --endpoint-url "$R2_S3_ENDPOINT" --only-show-errors
+          # ~5 GB over a hosted runner: a single object occasionally fails
+          # with "Max Retries Exceeded". sync is idempotent and resumes, so
+          # retry the whole command a few times with adaptive SDK retries.
+          export AWS_RETRY_MODE=adaptive AWS_MAX_ATTEMPTS=10
+          for attempt in 1 2 3 4; do
+            if aws s3 sync "s3://${R2_BUCKET}/pool" pool \
+                 --endpoint-url "$R2_S3_ENDPOINT" --only-show-errors; then
+              break
+            fi
+            [ "$attempt" -lt 4 ] || { echo "::error::pool sync failed after $attempt attempts"; exit 1; }
+            echo "pool sync attempt $attempt failed; retrying in 30s"; sleep 30
+          done
           echo "Pool now holds $(find pool -name '*.deb' | wc -l) .deb objects"
 
       - name: Stage debs + append manifest
