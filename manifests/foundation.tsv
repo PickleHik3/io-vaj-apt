@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
 # Generated: 2026-07-02T00:00:00Z
-# Package count: 1657
+# Package count: 1658
 # Columns: name version arch sha256 object-path size
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb	1033296
@@ -1661,3 +1661,4 @@ yasm	1.3.0-7	aarch64	7f8dbe5497a411849e558b7dcec590d9ee4d731276ff1251914ac2c33f6
 yazi	26.5.6	aarch64	1711ecebf2530ae432c059c7b591a26663de3466a14c15e7fd394f1cd6832fff	pool/main/y/yazi/yazi_26.5.6_aarch64.deb	6263672
 zlib-static	1.3.2	aarch64	7fbf2c991746865475c03680a21d8aeed70d74c7748cdf04a12ee45b1c9bbe59	pool/main/z/zlib-static/zlib-static_1.3.2_aarch64.deb	35480
 zopfli	1.0.3-5	aarch64	074fea094383d2f29498edb4072e952d1cf7b4f0e573cc96b9ab04dff64eb520	pool/main/z/zopfli/zopfli_1.0.3-5_aarch64.deb	22524
+tree	2.3.2	aarch64	df66b7ee658209eeea8477d38bf577b6c48c13784248a1311cd790041b162a3b	pool/main/t/tree/tree_2.3.2_aarch64.deb	35960
