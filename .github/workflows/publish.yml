@@ -15,7 +15,11 @@ name: Publish APT wave
 
 on:
   release:
-    types: [prereleased]
+    # `published`, not `prereleased`: `gh release create` with assets makes a
+    # draft first and publishes it once the uploads finish, and GitHub does
+    # not fire `prereleased` for a draft that becomes a pre-release -- only
+    # `published`. The `if:` below still restricts this to staging-* tags.
+    types: [published]
   workflow_dispatch:
     inputs:
       release_tag:
