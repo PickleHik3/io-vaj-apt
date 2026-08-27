@@ -191,3 +191,14 @@ Public IP: `az vm show -d -g vaj-build -n vaj-builder --query publicIps -o tsv`.
   `nohup ~/run-queue.sh > /dev/null 2>&1 &`.
 - Between runs: `az vm deallocate -g vaj-build -n vaj-builder` (~$0.23/h running,
   only the disk when deallocated). Start again with `az vm start`.
+- It builds with `io-vaj-phase0a-builder:c9cc6b28-ac272`: the frozen image plus
+  GNU Autoconf 2.72 (`termux-packages/scripts/vaj/Dockerfile.builder-ac272`).
+  Upstream's builder is Ubuntu 26.04 now and python 3.14 needs autoconf ≥ 2.72;
+  on the 24.04-based frozen image every package that build-depends on python
+  died at `autoreconf`. The frozen tag itself is untouched. More 24.04-vs-26.04
+  gaps may surface; the durable fix is a builder rebuilt from upstream's
+  current `scripts/Dockerfile` with the VAJ properties.
+- Stopping a run: kill `remote-build.sh` **by PID**, then `docker rm -f
+  vaj-remote-builder`. Killing only the `run-queue.sh` wrapper leaves the build
+  running and loses the auto-deallocate; a `pkill -f` pattern that also appears
+  in your own ssh command line kills your session.
