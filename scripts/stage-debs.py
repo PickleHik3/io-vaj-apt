@@ -33,6 +33,7 @@ import argparse
 import hashlib
 import re
 import shutil
+import subprocess
 import sys
 from pathlib import Path
 
@@ -127,11 +128,32 @@ def load_manifest_rows(manifest: Path) -> dict[str, list[str]]:
     return rows
 
 
-def parse_deb_filename(fname: str) -> tuple[str, str, str] | None:
-    parts = fname.removesuffix(".deb").split("_")
-    if len(parts) < 3:
+def read_control(deb: Path) -> tuple[str, str, str] | None:
+    """(Package, Version, Architecture) from the deb's control file.
+
+    Authoritative over the filename: GitHub release assets cannot contain ':',
+    so an epoch version like 1:2026.07.16 reaches CI as 1.2026.07.16 in the
+    name, which would compare as OLDER than the published 1:2026.05.14."""
+    try:
+        out = subprocess.run(
+            ["dpkg-deb", "-f", str(deb), "Package", "Version", "Architecture"],
+            check=True, capture_output=True, text=True).stdout
+    except (OSError, subprocess.CalledProcessError):
         return None
-    return parts[0], parts[1], parts[2]
+    fields = {}
+    for line in out.splitlines():
+        if ":" in line:
+            k, v = line.split(":", 1)
+            fields[k.strip()] = v.strip()
+    if not all(k in fields for k in ("Package", "Version", "Architecture")):
+        return None
+    return fields["Package"], fields["Version"], fields["Architecture"]
+
+
+def canonical_deb_name(name: str, ver: str, arch: str) -> str:
+    """Pool objects are named name_version_arch.deb with the epoch colon kept
+    (68 such objects already in the pool)."""
+    return f"{name}_{ver}_{arch}.deb"
 
 
 def classify_debs(deb_dir: Path, rows: dict[str, list[str]]):
@@ -140,9 +162,9 @@ def classify_debs(deb_dir: Path, rows: dict[str, list[str]]):
     new, upgrades, skipped, errors = [], [], [], []
     seen: dict[str, tuple] = {}
     for deb in sorted(deb_dir.glob("*.deb")):
-        parsed = parse_deb_filename(deb.name)
+        parsed = read_control(deb)
         if not parsed:
-            errors.append(f"Cannot parse filename (expect name_version_arch.deb): {deb.name}")
+            errors.append(f"Cannot read Package/Version/Architecture from control file: {deb.name}")
             continue
         name, ver, arch = parsed
         # two debs of the same name in one wave: keep the newest
@@ -216,7 +238,7 @@ def main() -> int:
     integrity_rows: list[str] = []
 
     for (src, pkg, ver, arch), kind in staged:
-        fname = src.name
+        fname = canonical_deb_name(pkg, ver, arch)   # not src.name: see read_control
         ppath = pool_path(pkg, fname)
         dest = repo_root / ppath
 
