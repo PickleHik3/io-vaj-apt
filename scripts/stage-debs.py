@@ -1,12 +1,20 @@
 #!/usr/bin/env python3
-"""stage-debs.py — Stage new .deb objects into the pool and append the manifest.
+"""stage-debs.py — Stage .deb objects into the pool and update the manifest.
 
 Shared staging step for both local publication (publish-wave-*.py) and the CI
 publish workflow. Does ONLY steps 1-3 of the canonical sequence:
 
-  1. Discover .deb files in <deb-dir> whose package name is not yet in the manifest
-  2. Compute sha256/size and copy each to pool/main/{first_char}/{pkg_name}/
-  3. Append entries to foundation.tsv and update the "# Package count:" header
+  1. Discover .deb files in <deb-dir>. For each package name:
+       - not in the manifest            -> NEW: append a row
+       - in the manifest, older version -> UPGRADE: replace the row in place
+                                           (the old pool object is retained;
+                                           the pool is immutable)
+       - same or newer version already  -> skip (never downgrade, never
+                                           replace an object of equal version)
+  2. Compute sha256/size and copy each staged deb to
+     pool/main/{first_char}/{pkg_name}/
+  3. Rewrite foundation.tsv (rows stay in place, no duplicate names) and
+     update the "# Package count:" header
 
 It intentionally does NOT generate metadata, sign, or publish — the caller
 chains generate_repo.py -> sign-release.sh -> publish-r2.py after this succeeds.
@@ -15,13 +23,15 @@ Usage:
     python3 scripts/stage-debs.py <deb-dir> [--repo-root DIR] [--manifest FILE]
                                             [--evidence TSV] [--dry-run]
 
-Exit codes: 0 = staged (or nothing new), 1 = error (e.g. unparseable filename).
-Prints the number of newly staged packages on the last line as "STAGED=<n>".
+Exit codes: 0 = staged (or nothing to do), 1 = error (e.g. unparseable filename).
+Prints the number of staged packages (new + upgraded) on the last line as
+"STAGED=<n>".
 """
 
 from __future__ import annotations
 import argparse
 import hashlib
+import re
 import shutil
 import sys
 from pathlib import Path
@@ -37,6 +47,63 @@ def sha256_file(path: Path) -> str:
     return h.hexdigest()
 
 
+# --- Debian version comparison (dpkg algorithm, Debian Policy 5.6.12) -------
+
+def _order(c: str) -> int:
+    if c == "~":
+        return -1
+    if c.isdigit():
+        return 0
+    if c.isalpha():
+        return ord(c)
+    return ord(c) + 256
+
+
+def _cmp_fragment(a: str, b: str) -> int:
+    while a or b:
+        # non-digit prefix
+        ma = re.match(r"[^0-9]*", a).group(0)
+        mb = re.match(r"[^0-9]*", b).group(0)
+        for i in range(max(len(ma), len(mb))):
+            oa = _order(ma[i]) if i < len(ma) else 0
+            ob = _order(mb[i]) if i < len(mb) else 0
+            if oa != ob:
+                return -1 if oa < ob else 1
+        a, b = a[len(ma):], b[len(mb):]
+        # digit run
+        da = re.match(r"[0-9]*", a).group(0)
+        db = re.match(r"[0-9]*", b).group(0)
+        na, nb = int(da or "0"), int(db or "0")
+        if na != nb:
+            return -1 if na < nb else 1
+        a, b = a[len(da):], b[len(db):]
+    return 0
+
+
+def _split_version(v: str) -> tuple[int, str, str]:
+    epoch = 0
+    if ":" in v:
+        e, v = v.split(":", 1)
+        epoch = int(e)
+    if "-" in v:
+        upstream, revision = v.rsplit("-", 1)
+    else:
+        upstream, revision = v, ""
+    return epoch, upstream, revision
+
+
+def compare_versions(a: str, b: str) -> int:
+    """Return -1 if a < b, 0 if equal, 1 if a > b, as dpkg --compare-versions."""
+    ea, ua, ra = _split_version(a)
+    eb, ub, rb = _split_version(b)
+    if ea != eb:
+        return -1 if ea < eb else 1
+    c = _cmp_fragment(ua, ub)
+    if c:
+        return c
+    return _cmp_fragment(ra, rb)
+
+
 def pkg_name_from_filename(fname: str) -> str:
     return fname.split("_")[0]
 
@@ -45,27 +112,57 @@ def pool_path(pkg_name: str, fname: str) -> str:
     return f"pool/main/{pkg_name[0]}/{pkg_name}/{fname}"
 
 
-def load_published_names(manifest: Path) -> set[str]:
-    """Return set of package names already in foundation.tsv."""
-    published: set[str] = set()
+def load_manifest_rows(manifest: Path) -> dict[str, list[str]]:
+    """Return name -> [name, version, arch, sha256, object_path, size] for every
+    data row in foundation.tsv."""
+    rows: dict[str, list[str]] = {}
     with open(manifest, encoding="utf-8") as f:
         for line in f:
-            line = line.strip()
-            if not line or line.startswith("#"):
+            line = line.rstrip("\n")
+            if not line.strip() or line.startswith("#"):
                 continue
             parts = line.split("\t")
-            if parts:
-                published.add(parts[0])
-    return published
+            if parts and parts[0]:
+                rows[parts[0]] = parts
+    return rows
 
 
-def discover_new_debs(deb_dir: Path, published_names: set[str]) -> list[Path]:
-    """Sorted .deb paths in deb_dir whose package name is not yet published."""
-    new = []
+def parse_deb_filename(fname: str) -> tuple[str, str, str] | None:
+    parts = fname.removesuffix(".deb").split("_")
+    if len(parts) < 3:
+        return None
+    return parts[0], parts[1], parts[2]
+
+
+def classify_debs(deb_dir: Path, rows: dict[str, list[str]]):
+    """Sort incoming debs into (new, upgrades, skipped, errors).
+    new/upgrades: list of (Path, name, version, arch); skipped: list of str."""
+    new, upgrades, skipped, errors = [], [], [], []
+    seen: dict[str, tuple] = {}
     for deb in sorted(deb_dir.glob("*.deb")):
-        if pkg_name_from_filename(deb.name) not in published_names:
-            new.append(deb)
-    return new
+        parsed = parse_deb_filename(deb.name)
+        if not parsed:
+            errors.append(f"Cannot parse filename (expect name_version_arch.deb): {deb.name}")
+            continue
+        name, ver, arch = parsed
+        # two debs of the same name in one wave: keep the newest
+        if name in seen and compare_versions(ver, seen[name][2]) <= 0:
+            skipped.append(f"{deb.name}: superseded by {seen[name][0].name} in the same wave")
+            continue
+        seen[name] = (deb, name, ver, arch)
+    for deb, name, ver, arch in seen.values():
+        if name not in rows:
+            new.append((deb, name, ver, arch))
+            continue
+        published = rows[name][1]
+        c = compare_versions(ver, published)
+        if c > 0:
+            upgrades.append((deb, name, ver, arch))
+        elif c == 0:
+            skipped.append(f"{deb.name}: {published} already published")
+        else:
+            skipped.append(f"{deb.name}: OLDER than published {published}; not downgrading")
+    return new, upgrades, skipped, errors
 
 
 def main() -> int:
@@ -96,60 +193,61 @@ def main() -> int:
     print(f"Source dir: {deb_dir}")
     print(f"Manifest:   {manifest}")
 
-    published = load_published_names(manifest)
-    new_debs = discover_new_debs(deb_dir, published)
-    print(f"Already published: {len(published)}")
+    rows = load_manifest_rows(manifest)
+    new_debs, upgrade_debs, skipped, errors = classify_debs(deb_dir, rows)
+    print(f"Already published: {len(rows)}")
     print(f"New to stage:      {len(new_debs)}")
-
-    if not new_debs:
-        print("Nothing new to stage.")
-        print("STAGED=0")
-        return 0
-
-    # --- Step 1+2: integrity + copy to pool ---
-    new_entries: list[tuple] = []
-    integrity_rows: list[str] = []
-    errors: list[str] = []
-
-    for src in new_debs:
-        fname = src.name
-        pkg = pkg_name_from_filename(fname)
-        ppath = pool_path(pkg, fname)
-        dest = repo_root / ppath
-
-        parts = fname.removesuffix(".deb").split("_")
-        if len(parts) < 3:
-            errors.append(f"Cannot parse filename (expect name_version_arch.deb): {fname}")
-            continue
-        ver, arch = parts[1], parts[2]
-
-        if not args.dry_run:
-            dest.parent.mkdir(parents=True, exist_ok=True)
-            if not dest.exists():
-                shutil.copy2(src, dest)
-                print(f"  staged: {ppath}")
-            else:
-                print(f"  exists: {ppath}")
-            sha = sha256_file(dest)
-            size = dest.stat().st_size
-        else:
-            print(f"  would stage: {ppath}")
-            sha = sha256_file(src)
-            size = src.stat().st_size
-
-        new_entries.append((pkg, ver, arch, sha, ppath, size))
-        integrity_rows.append(f"{pkg}\t{ver}\t{arch}\t{size}\t{sha}\t{ppath}")
-
+    print(f"Upgrades to stage: {len(upgrade_debs)}")
+    for msg in skipped:
+        print(f"  skip: {msg}")
     if errors:
         for e in errors:
             print(f"ERROR: {e}", file=sys.stderr)
         return 1
 
-    # --- Step 3: append manifest + bump count ---
+    staged = [(d, "new") for d in new_debs] + [(d, "upgrade") for d in upgrade_debs]
+    if not staged:
+        print("Nothing to stage.")
+        print("STAGED=0")
+        return 0
+
+    # --- Step 1+2: integrity + copy to pool ---
+    entries: list[tuple] = []   # (kind, pkg, ver, arch, sha, ppath, size)
+    integrity_rows: list[str] = []
+
+    for (src, pkg, ver, arch), kind in staged:
+        fname = src.name
+        ppath = pool_path(pkg, fname)
+        dest = repo_root / ppath
+
+        if not args.dry_run:
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            if not dest.exists():
+                shutil.copy2(src, dest)
+                print(f"  staged ({kind}): {ppath}")
+            else:
+                print(f"  exists ({kind}): {ppath}")
+            sha = sha256_file(dest)
+            size = dest.stat().st_size
+        else:
+            print(f"  would stage ({kind}): {ppath}")
+            sha = sha256_file(src)
+            size = src.stat().st_size
+
+        if kind == "upgrade":
+            print(f"    {pkg}: {rows[pkg][1]} -> {ver}")
+        entries.append((kind, pkg, ver, arch, sha, ppath, size))
+        integrity_rows.append(f"{pkg}\t{ver}\t{arch}\t{size}\t{sha}\t{ppath}")
+
+    # --- Step 3: rewrite manifest (replace upgraded rows in place, append new) ---
     if not args.dry_run:
+        replacements = {pkg: (pkg, ver, arch, sha, ppath, str(size))
+                        for kind, pkg, ver, arch, sha, ppath, size in entries if kind == "upgrade"}
+        appended = [(pkg, ver, arch, sha, ppath, str(size))
+                    for kind, pkg, ver, arch, sha, ppath, size in entries if kind == "new"]
         lines = manifest.read_text(encoding="utf-8").splitlines(keepends=True)
         existing_count = sum(1 for l in lines if l.strip() and not l.startswith("#"))
-        new_total = existing_count + len(new_entries)
+        new_total = existing_count + len(appended)
 
         updated = []
         saw_count = False
@@ -157,19 +255,25 @@ def main() -> int:
             if line.startswith("# Package count:"):
                 updated.append(f"# Package count: {new_total}\n")
                 saw_count = True
-            else:
-                updated.append(line)
+                continue
+            if line.strip() and not line.startswith("#"):
+                name = line.split("\t", 1)[0]
+                if name in replacements:
+                    updated.append("\t".join(replacements[name]) + "\n")
+                    continue
+            updated.append(line)
         if not saw_count:
             print("WARNING: no '# Package count:' header found; count not written", file=sys.stderr)
 
         content = "".join(updated)
         if not content.endswith("\n"):
             content += "\n"
-        for pkg, ver, arch, sha, ppath, size in new_entries:
+        for row in appended:
             # column order: name version arch sha256 object-path size
-            content += f"{pkg}\t{ver}\t{arch}\t{sha}\t{ppath}\t{size}\n"
+            content += "\t".join(row) + "\n"
         manifest.write_text(content, encoding="utf-8")
-        print(f"\nManifest updated: {existing_count} -> {new_total} packages")
+        print(f"\nManifest updated: {existing_count} -> {new_total} packages "
+              f"({len(appended)} new, {len(replacements)} upgraded)")
 
     if args.evidence:
         ev = Path(args.evidence)
@@ -179,7 +283,7 @@ def main() -> int:
             f.write("\n".join(integrity_rows) + "\n")
         print(f"Integrity TSV: {ev}")
 
-    print(f"STAGED={len(new_entries)}")
+    print(f"STAGED={len(entries)}")
     return 0
 
 
