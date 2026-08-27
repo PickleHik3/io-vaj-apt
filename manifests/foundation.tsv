@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
 # Generated: 2026-07-02T00:00:00Z
-# Package count: 1658
+# Package count: 1659
 # Columns: name version arch sha256 object-path size
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb	1033296
@@ -19,7 +19,7 @@ command-not-found	3.4.1-15	aarch64	60e6dde1cdd6078b506c2dd44099c2175eed8964fe7a8
 coreutils	9.11-1	aarch64	2ff6bb950130a573b85b4f853d19fc277341a92fa8ea25fab8f4745effba63a4	pool/main/c/coreutils/coreutils_9.11-1_aarch64.deb	813800
 curl	8.21.0	aarch64	1e2e1734995b46dbc68f8878e0c8e8f4c25172399ca816bba4ffbaf09a8785c8	pool/main/c/curl/curl_8.21.0_aarch64.deb	242588
 dash	0.5.12-2	aarch64	a44120b3027756832eb0c027dd5bc001e9460ac88eb3089e0b55d350b28e1ab3	pool/main/d/dash/dash_0.5.12-2_aarch64.deb	65828
-db	18.1.40-5	aarch64	7aa853c75c811bb87dc1902f1cc2aee2ffaeeba05ea727f49c9a4e9d6d93bf4e	pool/main/d/db/db_18.1.40-5_aarch64.deb	40204
+db	18.1.40-6	aarch64	f737b4797b579d463998e88d898b00e91e6dbc02f809f572102c1c0938fff601	pool/main/d/db/db_18.1.40-6_aarch64.deb	40152
 debianutils	5.23.2-1	aarch64	2974b8e936ac9330fd33459d44405b2cedd1e993b1dd7128926f5ee0503db54b	pool/main/d/debianutils/debianutils_5.23.2-1_aarch64.deb	16752
 dialog	1.3-20260721-0	aarch64	097aa0ce673930e017d0c8ecef14863a72b18ee024a0ddaa529a3bac50ec76f7	pool/main/d/dialog/dialog_1.3-20260721-0_aarch64.deb	100728
 diffutils	3.12-2	aarch64	8a66a107164a7cdb13fbf9f516c57663374218e3f70f794858b3acf061d5a8b0	pool/main/d/diffutils/diffutils_3.12-2_aarch64.deb	162796
@@ -41,7 +41,7 @@ giflib-utils	5.2.2-2	aarch64	f9c0e232562e83fd541b5281331f84437635a79b4666bae3da1
 gawk	5.3.2	aarch64	b194a09534713a56a529df2bcef83b573055f921fa04bac6a7fadfe02c548864	pool/main/g/gawk/gawk_5.3.2_aarch64.deb	872828
 gdbm	1.26-1	aarch64	bb816a64bd0ea0fb55383a30531aa326a31b48bf9c91cb0df37ece48e5cfbbbd	pool/main/g/gdbm/gdbm_1.26-1_aarch64.deb	150292
 gnupg	2.5.17	aarch64	555458b45da02f93fa9e3a2e49685e49660957528f27fbb1b05f2a2367c140a6	pool/main/g/gnupg/gnupg_2.5.17_aarch64.deb	1409220
-gnutls	3.8.13	aarch64	a5ee4a0e7c65ad68fcc202fd6766cb8f80cdedc059e1077735ce63cb4c6a497a	pool/main/g/gnutls/gnutls_3.8.13_aarch64.deb	175712
+gnutls	3.8.13-1	aarch64	6ccf2fa269dcbf718b4cb66f63ede5b64f044e60c9ee92217d05a15ed563dd51	pool/main/g/gnutls/gnutls_3.8.13-1_aarch64.deb	185304
 gpgv	2.5.17	aarch64	e56c567e45cd184827136cb46e76b1f0187326886d6c446acd96cdfb249e0b0e	pool/main/g/gpgv/gpgv_2.5.17_aarch64.deb	188324
 grep	3.12-3	aarch64	60836595ee88afd6e0b09291b4ff62159120c1058ebae84d0654dcfe79af5594	pool/main/g/grep/grep_3.12-3_aarch64.deb	128336
 gzip	1.14-1	aarch64	d74e5e676fa8a72b32b01f244f4dd6a9edbee574589634fd1888fa370f10340c	pool/main/g/gzip/gzip_1.14-1_aarch64.deb	87628
@@ -63,7 +63,7 @@ libcap-ng	2:0.9.5	aarch64	c7b643d5ba82243e0ef5aae351af1e9e4737b073aa37695da1a3a4
 libcrypt	0.2-6	aarch64	0870ed43076ff9331c7c1ac8f858c544d97fd24d6e2ab3ef28c4c73841f0c70d	pool/main/l/libcrypt/libcrypt_0.2-6_aarch64.deb	8812
 libcurl	8.21.0	aarch64	a6e6e437aea4fadaaac7cff61ca4fc7406b3c1f6a8cebc3b7526f22243eee89a	pool/main/l/libcurl/libcurl_8.21.0_aarch64.deb	1017240
 libdeflate	1.25	aarch64	368118c5a329432be330002c0e3ad42f15d9e35347f3ea3b6fc7191ef035c680	pool/main/l/libdeflate/libdeflate_1.25_aarch64.deb	57700
-libdb	18.1.40-5	aarch64	8d313573f2398a9167dee2517f25f944422099ca373132308370c65046da396e	pool/main/l/libdb/libdb_18.1.40-5_aarch64.deb	509500
+libdb	18.1.40-6	aarch64	75b4513895e87d0f6c425d54544c91df0a1e9596464de1ac5fb9c2180f54dac7	pool/main/l/libdb/libdb_18.1.40-6_aarch64.deb	499488
 libevent	2.1.13	aarch64	0347080c266a7606bb727533058579557ebb6488510cedf921ced5a70c1502b2	pool/main/l/libevent/libevent_2.1.13_aarch64.deb	202640
 libexpat	2.8.3	aarch64	fc6138818d7b26cf39901479e15424057f246b4658e74e413bb6a188c24cd6a2	pool/main/l/libexpat/libexpat_2.8.3_aarch64.deb	96280
 libfdisk	2.42.1-4	aarch64	005e161afe2c52aafc2e6dfcc26e5462d51ee56dd37266879a82319874fae288	pool/main/l/libfdisk/libfdisk_2.42.1-4_aarch64.deb	159600
@@ -71,14 +71,14 @@ libffi	3.5.2	aarch64	dd56137565486de3adb6c0f94faccb9848e12dd4153f77a621669415512
 libflac	1.5.0-1	aarch64	f6a87a8e9454ac6207d3535e7b2ee88a6c0113149bed176d07c642f4662a6139	pool/main/l/libflac/libflac_1.5.0-1_aarch64.deb	203192
 libgcrypt	1.12.2	aarch64	583cc2a986f725c9287ff03e03f4320d0df72779914865906200fe938bd42955	pool/main/l/libgcrypt/libgcrypt_1.12.2_aarch64.deb	512664
 libgmp	6.3.0-2	aarch64	48aff3e0b7d77e7d55ecf738f4fd629c464e3007f7c5bd488e2d29b710e69c3d	pool/main/l/libgmp/libgmp_6.3.0-2_aarch64.deb	328108
-libgnutls	3.8.13	aarch64	f92af51b04be755dc6ebeb7feea4d74898baf042da62661288297f872dba6a8d	pool/main/l/libgnutls/libgnutls_3.8.13_aarch64.deb	752724
+libgnutls	3.8.13-1	aarch64	b9328694a0eaf8edbf81a90353e4f53e048f47d7884faf1c7ca619f4b6802e20	pool/main/l/libgnutls/libgnutls_3.8.13-1_aarch64.deb	776956
 libgpg-error	1.61	aarch64	cac61f8307f405a395c8787424350360a3564251decfbb0dfc6027e1d77139f6	pool/main/l/libgpg-error/libgpg-error_1.61_aarch64.deb	121352
 libiconv	1.18-1	aarch64	15d21d70dc7c72c9a7d28e1260999318eac46a2a875972ea504a1d693117cfdd	pool/main/l/libiconv/libiconv_1.18-1_aarch64.deb	562492
 libicu	78.3	aarch64	147ca641ce1efd4bb4a4d950bd6c9169a0ce71f369a84d311eaddbd4d36af337	pool/main/l/libicu/libicu_78.3_aarch64.deb	10210248
 libidn2	2.3.8-1	aarch64	f0e6d7fb0abddf5f866d98b3268bca9049ce702ed4018347d37745dcfb6c84e3	pool/main/l/libidn2/libidn2_2.3.8-1_aarch64.deb	105044
 libjpeg-turbo	3.1.4.1	aarch64	5849ce3685defb718e5967e91a2d8bec7ea7cc4f18564e937a10c123f615eaee	pool/main/l/libjpeg-turbo/libjpeg-turbo_3.1.4.1_aarch64.deb	385224
 libjpeg-turbo-progs	3.1.4.1	aarch64	e879358a3565fa087fb59f1469287aa321a3dbc95a3f4cb3939a5440947a9688	pool/main/l/libjpeg-turbo-progs/libjpeg-turbo-progs_3.1.4.1_aarch64.deb	98076
-libksba	1.8.0	aarch64	f88f98fbc6548debe9ff9a082eb558fdecd9b9b86e8ef43303c5aca890b910b0	pool/main/l/libksba/libksba_1.8.0_aarch64.deb	107032
+libksba	1.8.1	aarch64	10993f0bd4f75367a163512f117fe9f2f7396347a66831c24c75179dc207e0a9	pool/main/l/libksba/libksba_1.8.1_aarch64.deb	107004
 liblz4	1.10.0-1	aarch64	261026f95896c8746da87a18772f3df2ed287366dfad6aede90a796df650ccde	pool/main/l/liblz4/liblz4_1.10.0-1_aarch64.deb	86352
 liblzo	2.10-5	aarch64	728abeb6c07e8409123262773ac982c695b13aeabd9cf7a3c35d758dd0912e43	pool/main/l/liblzo/liblzo_2.10-5_aarch64.deb	69564
 liblzma	5.8.3	aarch64	5f6fbc4426d53c5aac41f5167181737594a1030043138a4716f1365cc30cde4e	pool/main/l/liblzma/liblzma_5.8.3_aarch64.deb	193092
@@ -103,7 +103,7 @@ libssh2	1.11.1-2	aarch64	e901c9c703a9474de0d111ed8fd8dbc3f0953cd174300837b31eed7
 libtalloc	2.4.3	aarch64	19b63c822e078a62f21e400d3250b081c66e0cd7431e93236b7ab9755cde36e2	pool/main/l/libtalloc/libtalloc_2.4.3_aarch64.deb	33104
 libtirpc	1.3.7-1	aarch64	405064f7b95898580da442e8d36af47453dcb4f60cb25d441ef73013c1a477a5	pool/main/l/libtirpc/libtirpc_1.3.7-1_aarch64.deb	123964
 littlecms	2.19.1	aarch64	04fbcb422ade708df8ad94f15cb6631d7bb2ed35389c305755d2898cdc26dd22	pool/main/l/littlecms/littlecms_2.19.1_aarch64.deb	143916
-libunbound	1.25.1	aarch64	ed6c279c47e98fac53f6602f762f711e7c6fe507aa5d6538305fb277913d1b01	pool/main/l/libunbound/libunbound_1.25.1_aarch64.deb	384812
+libunbound	1.26.0	aarch64	0ede3e3bb87fbc4526434b9bb2cb74e49bf162bee3dc6816e20ccfd92714bb1c	pool/main/l/libunbound/libunbound_1.26.0_aarch64.deb	385556
 libunistring	1.4.2	aarch64	33664789762b25a28cef71ca4350fe44dfc25f7befbd68ef4571730385911911	pool/main/l/libunistring/libunistring_1.4.2_aarch64.deb	566508
 libusb	1.0.30	aarch64	63bc738cea29228f9b8468e404e120bd0fe8492224e67967c31937632d6cf4e5	pool/main/l/libusb/libusb_1.0.30_aarch64.deb	59772
 libuuid	2.42.1-4	aarch64	2e192128beb97aa6eb9ede2d02ec21f1307be16b61012345b2e2276e90de6151	pool/main/l/libuuid/libuuid_2.42.1-4_aarch64.deb	15416
@@ -140,14 +140,14 @@ patch	2.8-1	aarch64	e501c5a73242a1cf32b0b07c0e6504226a336879a6048d1bfa84d92ce8e3
 pcre2	10.47	aarch64	89e6122c398cdece71534ef688bd157b19d88d8ff6e2e7acc7827b0da3066dae	pool/main/p/pcre2/pcre2_10.47_aarch64.deb	960436
 pcre2grep	10.47	aarch64	4906b0bd22bcf3ed90bdda46be37169fa1c5a14e2d153609456fcea52b4ad1ee	pool/main/p/pcre2grep/pcre2grep_10.47_aarch64.deb	34108
 perl	5.42.2	aarch64	e0ae57dc931c062f36c314a13bb5a6aec99fa0a93ccb586a1b9739ad64761d0e	pool/main/p/perl/perl_5.42.2_aarch64.deb	15406376
-pinentry	1.3.2-2	aarch64	acfc39712cb9d96d3303fb0bc7be527c3406fb3e352d27c44f311781e723b653	pool/main/p/pinentry/pinentry_1.3.2-2_aarch64.deb	47308
+pinentry	1.3.3	aarch64	17cd32eb6b0a2d9206eb32f8f7f24f0b9ce878b8349d3745ecb2f4c39c66bc2f	pool/main/p/pinentry/pinentry_1.3.3_aarch64.deb	47312
 procps	3.3.17-6	aarch64	7ab15a14ec29c8259c5134c7d94f22c671c3b3cfe451039f2fd78db828aae21f	pool/main/p/procps/procps_3.3.17-6_aarch64.deb	143128
 psmisc	23.7-1	aarch64	471ae6ef743004448eee75f93d0d4dad0aae09920d6622a61e25ea7f49b44502	pool/main/p/psmisc/psmisc_23.7-1_aarch64.deb	93316
 python	3.14.6-1	aarch64	dc8ff5732845be28b009358b9633463874e3e98e883ff8bd0c83642fc1526ccd	pool/main/p/python/python_3.14.6-1_aarch64.deb	4814100
 python-ensurepip-wheels	3.14.6-1	all	38b92118e056b4328d3196789782c1e37ae81d9f0313bebe562618c9742f52ae	pool/main/p/python-ensurepip-wheels/python-ensurepip-wheels_3.14.6-1_all.deb	1740092
 python-tkinter	3.14.6-1	aarch64	9a5e869af01bda4614b1f60c166d6b6479054d8f98c7fde6b00501887ccaabf6	pool/main/p/python-tkinter/python-tkinter_3.14.6-1_aarch64.deb	507056
 python-xcbgen	1.17.0-3	all	fb03b8f4ee0dcfbffbcd05a0ec8d26eb12eae9cd012969263b3c2e2c12d6b5bc	pool/main/p/python-xcbgen/python-xcbgen_1.17.0-3_all.deb	15180
-pyunbound	1.25.1	aarch64	8dc6ac127c81d04555db41b2f945c5d2d8e1ae04dcbeed5f44eb003a5062596a	pool/main/p/pyunbound/pyunbound_1.25.1_aarch64.deb	776
+pyunbound	1.26.0	aarch64	f9718a682fd306a3d216d1a21647bc25ab80942a9491dce14c220d8e9a40fdea	pool/main/p/pyunbound/pyunbound_1.26.0_aarch64.deb	784
 pzstd	1.5.7-1	aarch64	63e782a135cc586eaa7618389c6b8ff405e07d2eb8753949398ee541f09adb56	pool/main/p/pzstd/pzstd_1.5.7-1_aarch64.deb	42032
 readline	8.3.3	aarch64	fbf33185ad4dc5aca8e208df90483d001fed0badd75c7c8cfdfe9137ee78723e	pool/main/r/readline/readline_8.3.3_aarch64.deb	294108
 resolv-conf	1.3	aarch64	22ce7aef56d8cb529db1b6899418e8b54106660d630f0a84ce6e3b5c3c20ffff	pool/main/r/resolv-conf/resolv-conf_1.3_aarch64.deb	996
@@ -155,7 +155,7 @@ scdaemon	2.5.17	aarch64	a205fa67063c09b58de04ad2c0ae9af517b8337fd9b1d584fb9e2d4d
 sed	4.9-2	aarch64	5e90ae9eb65532e75f5feb9684b2b92dccfb5371fb9f054d643a47adbc8a5e6c	pool/main/s/sed/sed_4.9-2_aarch64.deb	118384
 speexdsp	1.2.1-1	aarch64	1dd1097d21b5fdbeac6fc04bf480ae8cdb3e09a1e5bea093fcbda4d25461a9ec	pool/main/s/speexdsp/speexdsp_1.2.1-1_aarch64.deb	37308
 sqlite	3.53.4	aarch64	59b3dd609494015483f52dfcf0ed0d0c171e3c5dbfd4b1268a57edb228a26235	pool/main/s/sqlite/sqlite_3.53.4_aarch64.deb	658760
-swig	4.4.1	aarch64	a85c56f8d462e64fec26dc1f3a6583207122efd17eadece17cfc3d26ecc0fac9	pool/main/s/swig/swig_4.4.1_aarch64.deb	926180
+swig	4.5.0	aarch64	ba7318a4887a9fd94f32419602a28afbf1e869ccedd4993e75c349b9a05dc685	pool/main/s/swig/swig_4.5.0_aarch64.deb	947244
 tar	1.35-3	aarch64	72e6a6ab0630fe900b99966395cfac1f48888be7baab56594af75a2fb7b99145	pool/main/t/tar/tar_1.35-3_aarch64.deb	345464
 tcl	8.6.16	aarch64	a5c88ab1ca724e757a1afadd62beb4abbc39b01bbda0dc6ff65d9fac6e4c0f87	pool/main/t/tcl/tcl_8.6.16_aarch64.deb	2262008
 termux-am	0.8.0-2	all	ceab6d9dfaeb2ab728d5ce7621150c44cb7e5cfff8d4798c9572d7cae14c119c	pool/main/t/termux-am/termux-am_0.8.0-2_all.deb	577076
@@ -164,13 +164,13 @@ termux-api	0.59.1-2	aarch64	4b3de3bd4d3b824cf63ecbb24c323e69e61e2171323b9c30f033
 termux-core	0.4.0-1	aarch64	82dee12170d56ea5e78735761b517ac2337f3eb56fda6f8ff8d486baad1a5c74	pool/main/t/termux-core/termux-core_0.4.0-1_aarch64.deb	198676
 termux-exec	1:2.5.0-1	aarch64	c39940044841761415a79b9b6317d5f6385cc92c948ad6d0296221f0b095822c	pool/main/t/termux-exec/termux-exec_1:2.5.0-1_aarch64.deb	286364
 termux-keyring	3.13	all	1700d551bb2000ced5aa089e2712b760e217e90d2f434adf8a6a6cdb6c3ce988	pool/main/t/termux-keyring/termux-keyring_3.13_all.deb	39784
-termux-licenses	2.1	all	6d7e22b8ef1871d04ff47eda4b5c48903a01b66c0eb32484ce9c3bcc878a4dd0	pool/main/t/termux-licenses/termux-licenses_2.1_all.deb	52556
+termux-licenses	2.2	all	0aa41a220da696f68bb4501eb68f3d563f25ee1f932317f946598dbe9a679f88	pool/main/t/termux-licenses/termux-licenses_2.2_all.deb	52256
 termux-tools	1.46.0+really1.45.0-5	aarch64	5093481f316e3cef01ea82268896dd26dba946b4d6cd39798a743d3f7583c046	pool/main/t/termux-tools/termux-tools_1.46.0+really1.45.0-5_aarch64.deb	25836
 tk	8.6.14-1	aarch64	922c757950f31682f474ed8f2dafb75e90df27a57fd8aa45419dff8edf05ac33	pool/main/t/tk/tk_8.6.14-1_aarch64.deb	1754584
 tmux	3.7b	aarch64	18e6cb80a93fd96eba939abb25a925a7cfb05a076cd33bb2dce9ff3b93bfdff9	pool/main/t/tmux/tmux_3.7b_aarch64.deb	385964
-tor	0.4.9.10	aarch64	f3435fe4a37890e4d8b667f8ec32663fec725ec88c50fc6b91f3422bc627a39d	pool/main/t/tor/tor_0.4.9.10_aarch64.deb	3316884
+tor	0.4.9.11	aarch64	88906c283c7b3131a0ad6475d062ce360b6933503361a35899c519c0fbbc3a1c	pool/main/t/tor/tor_0.4.9.11_aarch64.deb	3325052
 ttf-dejavu	2.37-8	all	d8d1b07911919f9ddf50bb8b06539214d32d133a197ad0c58c6ff3833437e99d	pool/main/t/ttf-dejavu/ttf-dejavu_2.37-8_all.deb	2460480
-unbound	1.25.1	aarch64	a06cc555440e2512685f22dcf829e2608e903575a55189f3c022d52f114e4c56	pool/main/u/unbound/unbound_1.25.1_aarch64.deb	647736
+unbound	1.26.0	aarch64	e531a96f28703ff1f6055ae2e968a48dcac08788c6d23400640e0e4bae1a88ac	pool/main/u/unbound/unbound_1.26.0_aarch64.deb	654996
 unzip	6.0-10	aarch64	f7f76c79c50ea60cd9fb543f997098b74afec35e52d1f91bcfb16f8978c98983	pool/main/u/unzip/unzip_6.0-10_aarch64.deb	116760
 utf8cpp	1:4.1.1	all	715f9c8d200bb0d02a4a6c83f67c85d5dc34a846135fe031d7cf5a343eefd71f	pool/main/u/utf8cpp/utf8cpp_1:4.1.1_all.deb	10488
 util-linux	2.42.1-4	aarch64	af4c0f24bb629894ca629c7564c010a4379a267a6dc0cc472c3070d730ac08fc	pool/main/u/util-linux/util-linux_2.42.1-4_aarch64.deb	787788
@@ -203,12 +203,12 @@ utf8proc	2.11.3	aarch64	e82065a6f4fc2a1555b09adbbcfb6ac5366e8ff0300168aa01d5d20a
 autoconf	2.73	all	e5630025148596e8984cc1142954f7a99999016aa2c09ae46441abcc76ef7c35	pool/main/a/autoconf/autoconf_2.73_all.deb	624696
 automake	1.18.1	all	1e3b09d24577ca3e8b17905eeecc22e7de4d3dd319cf7c98cbbf37b248e62494	pool/main/a/automake/automake_1.18.1_all.deb	576568
 bison	3.8.2-4	aarch64	b5682cbc1129ec3f19039baf7cfe4813e67fbbc6f59031a23444d153f2730678	pool/main/b/bison/bison_3.8.2-4_aarch64.deb	535072
-bsdtar	3.8.8	aarch64	39cd100de5e5d35c53397d4d4303ecff9c6016d8577dea7f106bf1a126cda16f	pool/main/b/bsdtar/bsdtar_3.8.8_aarch64.deb	350900
+bsdtar	3.8.9	aarch64	a0e3b908c2415ea5ca47888f07ec8c320847270972d8478f01c6a535bcb5a11f	pool/main/b/bsdtar/bsdtar_3.8.9_aarch64.deb	351908
 busybox	1.38.0-1	aarch64	1ce03e318844053d5aa0552bfd100cfd00b25de7e7eff09f81b90092a5b4ca22	pool/main/b/busybox/busybox_1.38.0-1_aarch64.deb	472032
 gettext	1.0	aarch64	6462507d6650368cd61ad0a4f60f16e772eae02a5ab25e6eb1594d2737fbdceb	pool/main/g/gettext/gettext_1.0_aarch64.deb	3009456
 gpgme	2.1.0	aarch64	d7d92a3ad91b495045a44a69694055611c5fe93894b2882b9508546c52d63543	pool/main/g/gpgme/gpgme_2.1.0_aarch64.deb	263748
 gpgmepp	2.1.0	aarch64	e3b3d354844796889fdc102aae12743c4056b3af73eea5a3dfb2cc5f3c9474e7	pool/main/g/gpgmepp/gpgmepp_2.1.0_aarch64.deb	129252
-libarchive	3.8.8	aarch64	8ba39a79a35b1cc9bcdd938252b3dee3143c81e0389b6e3d693e93c640feb826	pool/main/l/libarchive/libarchive_3.8.8_aarch64.deb	393092
+libarchive	3.8.9	aarch64	cb6a278e628e1d766aaa302c166e277f025ef997247b0c7640f913d598990a14	pool/main/l/libarchive/libarchive_3.8.9_aarch64.deb	394396
 libltdl	2.6.2	aarch64	4255888c78434082dc8a7b937e993a1759dc139e4524bf7759554c46f30983e7	pool/main/l/libltdl/libltdl_2.6.2_aarch64.deb	18020
 libtool	2.6.2	aarch64	8d6f3219e9023513ffe174d5d9ce543d70f234394fe0a51e89e3c24ed1ba6f44	pool/main/l/libtool/libtool_2.6.2_aarch64.deb	401368
 texinfo	7.3	aarch64	81e64842b46b88962e7cbdeb25717b3da1df71215e23514ff6c248eecacdc749	pool/main/t/texinfo/texinfo_7.3_aarch64.deb	1212116
@@ -319,10 +319,10 @@ tree-sitter-vimdoc	4.1.0-2	aarch64	34103988dbd75a8327847a46fc56e8c3a8fac5184ce31
 tree-sitter-xml	0.7.0-1	aarch64	8cc788e7bb27027dee16b120934c88a601f398bc3e720b952691ec2f085f6d8d	pool/main/t/tree-sitter-xml/tree-sitter-xml_0.7.0-1_aarch64.deb	15968
 tree-sitter-yaml	0.7.2-1	aarch64	2e94ff22efc521580569535051c7c3bf73b3f5984b091679e5040093607e7514	pool/main/t/tree-sitter-yaml/tree-sitter-yaml_0.7.2-1_aarch64.deb	28664
 vulkan-loader-generic	1.4.360	aarch64	21972bd8fb0c7d0ee4870fdffbf6e04cb59d0e2b2f1ce524ddaf660b57155ce4	pool/main/v/vulkan-loader-generic/vulkan-loader-generic_1.4.360_aarch64.deb	152616
-clang	21.1.8-2	aarch64	4c248b8da3d5ad5baddf69fddb3c0fced319cf7c9222347be0d9459dddc00284	pool/main/c/clang/clang_21.1.8-2_aarch64.deb	30469692
-lld	21.1.8-2	aarch64	3086a7e5063af90b47ef5da9e090004a68f764f1bd6f654f5cb29284648bc505	pool/main/l/lld/lld_21.1.8-2_aarch64.deb	2812776
-llvm	21.1.8-2	aarch64	5d4a7f46faf398793a2a31f95b6b47bc60ef37137397b9eca151c17b3af011da	pool/main/l/llvm/llvm_21.1.8-2_aarch64.deb	14813972
-libcompiler-rt	21.1.8-2	aarch64	83f0e3be7a5e068ccc4f06f086ca7e6f98e97ffc79d9c6491467c56b13f4990f	pool/main/l/libcompiler-rt/libcompiler-rt_21.1.8-2_aarch64.deb	2706900
+clang	21.1.8-3	aarch64	4cf4c4a5c7079022cb0f85dd362f6c1e33438423a2aca72e294b203208ea08fa	pool/main/c/clang/clang_21.1.8-3_aarch64.deb	30428984
+lld	21.1.8-3	aarch64	d05e4e3c836ea019bcdaa4908c563adaaafc3bff712fdad332dc0c9a55fdbcaf	pool/main/l/lld/lld_21.1.8-3_aarch64.deb	2812332
+llvm	21.1.8-3	aarch64	4505c3b2974bf26a4cbb90f3292972cf9954a1246de03380e2754cda681d8144	pool/main/l/llvm/llvm_21.1.8-3_aarch64.deb	14763536
+libcompiler-rt	21.1.8-3	aarch64	5609aed6d5221b83d2f864284ba1175ad8f03aab1c60aa70ba76bc302e737b8c	pool/main/l/libcompiler-rt/libcompiler-rt_21.1.8-3_aarch64.deb	2705804
 spirv-llvm-translator	21.1.7	aarch64	ffe2f867c61fcd808b8d3cb8cf07af7202a1137a98b7ea724624b8348fc74ee2	pool/main/s/spirv-llvm-translator/spirv-llvm-translator_21.1.7_aarch64.deb	1533332
 rust	1.96.0	aarch64	399a2c4e90e01f2fc8c119b82053d7761f19f84f01328ead0b2f1bf266c0c5b0	pool/main/r/rust/rust_1.96.0_aarch64.deb	121167924
 rust-std-aarch64-linux-android	1.96.0	aarch64	16edc41c43dbc9f08970039c33c1ab58161a567ba01ad8b10bb020abeaff696c	pool/main/r/rust-std-aarch64-linux-android/rust-std-aarch64-linux-android_1.96.0_aarch64.deb	4777248
@@ -453,7 +453,7 @@ aspell	0.60.8.2	aarch64	1a165572da5ae5c8e57048efa8774127bb98726e5de9dcdc6c60a6fa
 aspnetcore-runtime-9.0	9.0.17	aarch64	b70c6b38b8eefda6eab7265268587c207a5f8046a1fef09a9ae8a5d8c29abdbd	pool/main/a/aspnetcore-runtime-9.0/aspnetcore-runtime-9.0_9.0.17_aarch64.deb	2792988
 aspnetcore-runtime-dbg-9.0	9.0.17	aarch64	6d507fbbb2d159c036095070b55864ad285ba09fecbd06ba532198a528f63b98	pool/main/a/aspnetcore-runtime-dbg-9.0/aspnetcore-runtime-dbg-9.0_9.0.17_aarch64.deb	1501988
 aspnetcore-targeting-pack-9.0	9.0.17	aarch64	60dc5a6e3bbcd622efc14993905b43949f4a2be07d83c441d7fda0b48cb1a185	pool/main/a/aspnetcore-targeting-pack-9.0/aspnetcore-targeting-pack-9.0_9.0.17_aarch64.deb	1739924
-assimp	6.0.5	aarch64	6d89cafd24876f0dbe68bafb6047f7ebed29a7a4d7b6142c828a1557106f3e22	pool/main/a/assimp/assimp_6.0.5_aarch64.deb	2240456
+assimp	6.0.5-1	aarch64	ac27a14a7690a69387db491fae8c7889c707581123e974f8fafeec56b1b5faf4	pool/main/a/assimp/assimp_6.0.5-1_aarch64.deb	2241196
 asymptote	3.12	aarch64	c93266be6398d2c52bee122a4c98b182025acbfc2473b777077361619e6d05b3	pool/main/a/asymptote/asymptote_3.12_aarch64.deb	2030048
 at	3.2.5-2	aarch64	0ea5b82e7a4c4c2a7d6ff366840f2568ab6fe416334ee3d3d41baabbdb4e2d8b	pool/main/a/at/at_3.2.5-2_aarch64.deb	31832
 atomicparsley	1:20240608.083822.1ed9031-1	aarch64	36926aaae9fcd9082fa8bcd07f0aacca7b13d1d58ddf48c84f34df9a6de0eaf0	pool/main/a/atomicparsley/atomicparsley_1:20240608.083822.1ed9031-1_aarch64.deb	108000
@@ -475,7 +475,7 @@ b3sum	1.8.5	aarch64	42689ffcc05552568a8dda24bfeb3ac6176dffc1c72608c05469be364977
 babl	0.1.126	aarch64	66e9a2ce77621b9adc90f03526e021199543d41b166009314381b650c88f0dea	pool/main/b/babl/babl_0.1.126_aarch64.deb	250692
 barcode	0.99-5	aarch64	a9a9beb36dc2b094a6def9385969b61df3015669c208f0bdb23a93d23ca5e3a9	pool/main/b/barcode/barcode_0.99-5_aarch64.deb	6281900
 base16384	2.3.2-1	aarch64	f4c10733fbbf26594d71393ca29f18d3a30c99be7ce359b381e7bcf753e8dba4	pool/main/b/base16384/base16384_2.3.2-1_aarch64.deb	17208
-bash-completion	2.17.0-2	all	25be22b33a9ed7e7ba2121876a158d94dbee5aa85adb45c1d22558b7bb3c2dec	pool/main/b/bash-completion/bash-completion_2.17.0-2_all.deb	188176
+bash-completion	2.18.0	all	35ad107b9a2e6a32cbfc824840d898a4958ef2e69af2c565575dc3fe092fcec7	pool/main/b/bash-completion/bash-completion_2.18.0_all.deb	194212
 bastet-static	0.43.2-13	aarch64	07b6357b3b2e7c152579c6398ca15059bf3fe55b096604e8fffd7df1e2dcd023	pool/main/b/bastet-static/bastet-static_0.43.2-13_aarch64.deb	8544
 bastet	0.43.2-13	aarch64	f8684f107445471168598945ea6bf520ddb187b334ff4cc8f98c99689484ff03	pool/main/b/bastet/bastet_0.43.2-13_aarch64.deb	113060
 bat	0.26.1-1	aarch64	f8203302243d350fe81a13a925e1f1f32c82d1103b7dadd5f3ce34d1003d9a40	pool/main/b/bat/bat_0.26.1-1_aarch64.deb	3807708
@@ -507,9 +507,9 @@ bmon	4.0-4	aarch64	b1762ff1cdfd874c5cf82bf433a9710869cc64223265caee6e98c0510ddfb
 boinc	8.2.9	aarch64	6a1caad1f95678573b63a0d75218d0722717a5a31cd37cb8ea232a87cb9bc31c	pool/main/b/boinc/boinc_8.2.9_aarch64.deb	2780884
 boinctui	2.7.2	aarch64	6530ffd1b463da5d6efecc05d039a54ea5e341141165e77641f9252e8c4fffc4	pool/main/b/boinctui/boinctui_2.7.2_aarch64.deb	85712
 bombadillo	2.4.0-3	aarch64	bde2be7bd510261a6775307d2f5b691cacded1135af78b208b9214b1ced18a86	pool/main/b/bombadillo/bombadillo_2.4.0-3_aarch64.deb	1964968
-boost-headers	1:1.90.0-1	all	3c1deba802cfc570af660382e1be36c8bf2becf35fffa5a42668f4e4814374d6	pool/main/b/boost-headers/boost-headers_1:1.90.0-1_all.deb	10640220
-boost-static	1:1.90.0-1	aarch64	c43dee2200f8f30a5424e5d486cbf36ab73b3667b0c7636863880f3482c211c3	pool/main/b/boost-static/boost-static_1:1.90.0-1_aarch64.deb	2986176
-boost	1:1.90.0-1	aarch64	214697151396fc0cfe5e2e126a8a04c92c0f91810ec4fa4f939641d2b022a3f2	pool/main/b/boost/boost_1:1.90.0-1_aarch64.deb	1451076
+boost-headers	1:1.91.0	all	9a59b87ef12ad9dee114a6da7ecd09e90dec8c0f52a8c6cc574b1c3cd903cfb6	pool/main/b/boost-headers/boost-headers_1:1.91.0_all.deb	10945572
+boost-static	1:1.91.0	aarch64	1185bb35c35623295dc35f3b0b53480b6158d7034dafd93669f9987e5c2e9a14	pool/main/b/boost-static/boost-static_1:1.91.0_aarch64.deb	2902812
+boost	1:1.91.0	aarch64	239f9a2ed3d71478db997980d2383536d390412ed1cf48d7121d20f423749f0c	pool/main/b/boost/boost_1:1.91.0_aarch64.deb	1406660
 bore-static	0.6.0-1	aarch64	0640d209673e3061ab4e79084014eb4687a88c353b66e798a60d9a2307ef64d5	pool/main/b/bore-static/bore-static_0.6.0-1_aarch64.deb	265664
 bore	0.6.0-1	aarch64	6e820fd3622df67ad959160b6d4a96fda18eadd2d3927fb28d182d7f58dcd6fe	pool/main/b/bore/bore_0.6.0-1_aarch64.deb	966732
 borgbackup	1.4.4-1	aarch64	07034f98b619cb1a6ccca071ae13b34a97438a06c342c9650ef87449e4578277	pool/main/b/borgbackup/borgbackup_1.4.4-1_aarch64.deb	1116964
@@ -593,9 +593,9 @@ clipp	1.2.3-1	all	ba0a91f8cae54f460851bea1251e3c4c446e357c1a16d7b9347e91162ebf22
 cloneit	20250722	aarch64	fa37ea900ebaba2b9d52ca312cb039f2ddada7c1318bc37b9bb587377226bb9b	pool/main/c/cloneit/cloneit_20250722_aarch64.deb	1345640
 cloudflared	2026.6.1	aarch64	ee359f687d82ec223deca37987b9a195f3cb608dea7592eceb6f2dccba5405e9	pool/main/c/cloudflared/cloudflared_2026.6.1_aarch64.deb	6468396
 clpeak	1.1.7	aarch64	ab6721c2863e6e3cde6b0ca40a634c9cd66bd6ef3e7cd5f601a9054b44a4db3e	pool/main/c/clpeak/clpeak_1.1.7_aarch64.deb	51380
-cmake-curses-gui	4.3.4	aarch64	fee4b3ec78aab50856918f5eeb02b02df112e54bc91d1957fa04d2d62486e7c5	pool/main/c/cmake-curses-gui/cmake-curses-gui_4.3.4_aarch64.deb	2388660
+cmake-curses-gui	4.4.3	aarch64	f670823a22ce7acf8d954ca8898f1c2cf165d2ec4a700aa04a52a6acad41ff08	pool/main/c/cmake-curses-gui/cmake-curses-gui_4.4.3_aarch64.deb	2471608
 cmake-static	4.3.4	aarch64	5bedd3187afa054b841a21e196f424ef59e504d04af1f8a5c31a862032d9c615	pool/main/c/cmake-static/cmake-static_4.3.4_aarch64.deb	1033116
-cmake	4.3.4	aarch64	678054c1b0559b4c096605fb4862a98e101cab02bed9cb040e03c300fbd49787	pool/main/c/cmake/cmake_4.3.4_aarch64.deb	12084608
+cmake	4.4.3	aarch64	7bd769ccc0fc69947ac72d08fd2c480b733bde3fd579578e72e87d40b094f3c5	pool/main/c/cmake/cmake_4.4.3_aarch64.deb	10508912
 cmark-static	0.31.2	aarch64	7cc0f9740fbbd04c025c41aee94cf87cb56cef3cdf1503141026549e1b926387	pool/main/c/cmark-static/cmark-static_0.31.2_aarch64.deb	64348
 cmark	0.31.2	aarch64	a5b26171fad24b4a8bc543a02f6b57d61a4d5736f225ce8b05de8ffd89467632	pool/main/c/cmark/cmark_0.31.2_aarch64.deb	76556
 cmatrix	2.0-1	aarch64	99f2c5531f31449833f4f5aed0238198aa38c930a686c71a7db494434c11dd68	pool/main/c/cmatrix/cmatrix_2.0-1_aarch64.deb	7648
@@ -835,8 +835,8 @@ gdbm-static	1.26-1	aarch64	4de8da55cfcb8ccca3c3b494a91ee9abaa775990691e5392c3aa5
 gdbserver	16.3-3	aarch64	c03b39d8bd62a8030dde0ad6b076850e7afec86ada0f7e028cb1b545d914e3ca	pool/main/g/gdbserver/gdbserver_16.3-3_aarch64.deb	215248
 geoip2-database	20191221-2	all	157b87e64dba592cd86062e6b8a6b0b1940fc6c1584716e294bf4cd461bf530a	pool/main/g/geoip2-database/geoip2-database_20191221-2_all.deb	23194428
 gettext-static	1.0	aarch64	7725d72f5b0a94e3c7f10308505d16d869bbc912e7c400ffe46e05996d5d8f32	pool/main/g/gettext-static/gettext-static_1.0_aarch64.deb	837308
-gflags-static	2.3.0	aarch64	9df7bba10b744e07f0d16d64bee8e01fa482b46eeb9f942f16c882cdb5e9c729	pool/main/g/gflags-static/gflags-static_2.3.0_aarch64.deb	60032
-gflags	2.3.0	aarch64	2879853bd20316567ae849c7e4f9b6485000816b3fc98ee82358b82ebc526b53	pool/main/g/gflags/gflags_2.3.0_aarch64.deb	79700
+gflags-static	2.3.1	aarch64	f2f606c41328fbf1037eedb0881d3c41f5d4d934ff3bb5dad76a3f2a27a826d7	pool/main/g/gflags-static/gflags-static_2.3.1_aarch64.deb	60064
+gflags	2.3.1	aarch64	f71eabfbf7d6e2fddc84a61600c192a1e1ecb630e55a0c4130b49221e6cbd2e6	pool/main/g/gflags/gflags_2.3.1_aarch64.deb	79580
 ghostscript	10.07.1	aarch64	1d804050506cafada76ab2cc9fae3def7a4e27af2b0c2020d77b9be01906448f	pool/main/g/ghostscript/ghostscript_10.07.1_aarch64.deb	20459524
 giflib-static	5.2.2-2	aarch64	d0285817f4b71fd6307648e1a717f6c3aa0f9eab582ae683cd0835fc631d345d	pool/main/g/giflib-static/giflib-static_5.2.2-2_aarch64.deb	14972
 git-gitk	2.54.0	aarch64	b2b4214b130c66ea46d90b92bf8941227f9ef87ebb906d2317bc9cd39bdbab65	pool/main/g/git-gitk/git-gitk_2.54.0_aarch64.deb	143636
@@ -917,10 +917,10 @@ libandroid-wordexp	0.1-1	aarch64	9804c52a0ffc226a97dffcb09fca4ab1a64c154e1bd8667
 libao-static	1.2.2-8	aarch64	4ccfb1e72d6ae81bc1ed795fba549057096c2c58ec49567af7a1c234933f047e	pool/main/l/libao-static/libao-static_1.2.2-8_aarch64.deb	22356
 libao	1.2.2-8	aarch64	48ff8bfbbc5f6ffb3ad261049b63004ace92142f09c782833dd9c87878b68951	pool/main/l/libao/libao_1.2.2-8_aarch64.deb	40128
 libaom-static	3.14.1	aarch64	31a1e92d71e21b62901a73f0e6e2b84242d00790105237ac916ca56f57f7ae52	pool/main/l/libaom-static/libaom-static_3.14.1_aarch64.deb	2209376
-libapt-pkg-perl	0.1.40-14	aarch64	0d23e157725b8a1522e96c6468a4717a2d85506f9422fc9603a7a80f342856da	pool/main/l/libapt-pkg-perl/libapt-pkg-perl_0.1.40-14_aarch64.deb	66180
-libarchive-static	3.8.8	aarch64	405c869d6f0d3be46759eb0517d2ed0191f888d85e7858bc5d5da741a3c47ea7	pool/main/l/libarchive-static/libarchive-static_3.8.8_aarch64.deb	361836
+libapt-pkg-perl	0.1.43	aarch64	14ae8ce0693a946da4dece3f9293d62bf9d46b933aca07a2d830136eda5b466b	pool/main/l/libapt-pkg-perl/libapt-pkg-perl_0.1.43_aarch64.deb	66188
+libarchive-static	3.8.9	aarch64	bfaa73b9fb930392205d8241f2d9c62116ba02f6347931f7f9d0e34c447e1697	pool/main/l/libarchive-static/libarchive-static_3.8.9_aarch64.deb	362872
 libarrow-cpp	24.0.0	aarch64	0f214788ef62c1660f566506dc46a2382d4d3b19050edaaa1df96370f14d044c	pool/main/l/libarrow-cpp/libarrow-cpp_24.0.0_aarch64.deb	6491704
-libasio	1.36.0	all	08ffd7ea53a27dd64c6dfd0452acb7599a9d7a1cd383cd976f4f1f8b434372f7	pool/main/l/libasio/libasio_1.36.0_all.deb	393860
+libasio	1.36.0-1	all	56d6209b85c09c414519a8531f89d1b06833e7dadc4e29d54c9826eb2805fc65	pool/main/l/libasio/libasio_1.36.0-1_all.deb	393896
 libasm-static	0.193-1	aarch64	3898e721c0bbdefa749a6321b81711de1ea8d58970ed370472cb632ed8f46ff0	pool/main/l/libasm-static/libasm-static_0.193-1_aarch64.deb	13212
 libasm	0.193-1	aarch64	3255f0ca6c040b1f6f56723ca07cdf700fab93adbaa8f03eb24969992451a614	pool/main/l/libasm/libasm_0.193-1_aarch64.deb	13344
 libass-static	0.17.5	aarch64	25979844691ad763e518ffef72034a62bf9c7754f39ebd597d47500ee550d82d	pool/main/l/libass-static/libass-static_0.17.5_aarch64.deb	86584
@@ -939,7 +939,7 @@ libbsd	0.11.7-3	aarch64	8ddd068fa87d5e1facfc91254a719dfaacbbe0ece1ed2c01b5eb565c
 libbullet	3.25-2	aarch64	ad5f10e0ba9fb70aa506412072507a9773c0f6664d2afcde23d5adb5ccf45b8b	pool/main/l/libbullet/libbullet_3.25-2_aarch64.deb	1341960
 libburn-static	1.5.8	aarch64	efa7f5283ccc819b21cd63c8c8209036a3dca19daf84db8d21b2262f826bb490	pool/main/l/libburn-static/libburn-static_1.5.8_aarch64.deb	385580
 libburn	1.5.8	aarch64	360473a60b910afd65945da8b95dcc35e4f82c933a3b3caeab897bc448e005c6	pool/main/l/libburn/libburn_1.5.8_aarch64.deb	249236
-libc++utilities	5.34.1	aarch64	d0bca22e3cbe974cf4276ed63bd50efa5538d6fbc99517f5cd46c6f9c962bb78	pool/main/l/libc++utilities/libc++utilities_5.34.1_aarch64.deb	158068
+libc++utilities	5.35.0	aarch64	0294f5de9d3dd647ab6122077df25cea0877e5834d503b069d7c2fcd3e7b1083	pool/main/l/libc++utilities/libc++utilities_5.35.0_aarch64.deb	159304
 libc-client-static	2007f-4	aarch64	9366436a7dfb9c0dbceda15c2ffd99763fb1eb49cabbdb8aa929cf9398501a41	pool/main/l/libc-client-static/libc-client-static_2007f-4_aarch64.deb	395360
 libc-client	2007f-4	aarch64	a5899949a48ef997d10248f906880c28c8c62df5fffca11eb0d9ab1ec32f4af8	pool/main/l/libc-client/libc-client_2007f-4_aarch64.deb	398412
 libcaca-static	0.99.beta20-3	aarch64	151bdfd1c6076187d632d397c69d228b125e0f8b058424bc7d0820a4e5997232	pool/main/l/libcaca-static/libcaca-static_0.99.beta20-3_aarch64.deb	303672
@@ -982,8 +982,8 @@ libczmq-static	4.2.1-4	aarch64	f75ce444bb9f74324760db6d46a24aa98cecf648e78b130b2
 libczmq	4.2.1-4	aarch64	a509bc6d721cff4299f582dfdc0d7a81a613be32c4f803cedf924e12cd171ca8	pool/main/l/libczmq/libczmq_4.2.1-4_aarch64.deb	361252
 libdaemon-static	0.14-1	aarch64	c1cb30d5081de55e9fde656c6e3358ca84d7570806c8d1fe5c97ae0a28629adc	pool/main/l/libdaemon-static/libdaemon-static_0.14-1_aarch64.deb	10516
 libdaemon	0.14-1	aarch64	0184f7c1dac047f99e57198730fb275bf5fe37caec5b7aecd79bd13e372efc90	pool/main/l/libdaemon/libdaemon_0.14-1_aarch64.deb	16944
-libdart	6.16.7	aarch64	bfe217d5010ea2d3f94359a1c34f22a4b10dc11050a8ec61cd3476e0d489a9ba	pool/main/l/libdart/libdart_6.16.7_aarch64.deb	11628352
-libdb-static	18.1.40-5	aarch64	f738124391025106a8a89dcdc933b7fe21902251ed1227278f26c3e087a786bb	pool/main/l/libdb-static/libdb-static_18.1.40-5_aarch64.deb	482728
+libdart	6.19.4	aarch64	f56567e15b8dfc9fac420338c4379078a265e7a5599964dc89bf83fd0b4e52ed	pool/main/l/libdart/libdart_6.19.4_aarch64.deb	11325676
+libdb-static	18.1.40-6	aarch64	63f260d0c6b135c193eedcb789585ad4e6900ab3bb6d2e397f732ea857a87d78	pool/main/l/libdb-static/libdb-static_18.1.40-6_aarch64.deb	482968
 libdebuginfod	0.193-1	aarch64	8d03a59e4208343c93ee789967dc78c25fe93dc859e0e9ee1955686e734bb320	pool/main/l/libdebuginfod/libdebuginfod_0.193-1_aarch64.deb	20412
 libdeflate-static	1.25	aarch64	f89da52329489290e3c80f318ffac956cc3183ed3a5d12efd35692bbd2d862f4	pool/main/l/libdeflate-static/libdeflate-static_1.25_aarch64.deb	45232
 libdevil	1.8.0-7	aarch64	8ae6c44604c6aa30f923c93e506814f9f762e7b140646b1eafe9e12037721489	pool/main/l/libdevil/libdevil_1.8.0-7_aarch64.deb	233224
@@ -1013,8 +1013,8 @@ libenet-static	1.3.18-1	aarch64	811aed7b3667ac1b6390ae8d45bdbe20043bdf8ab43f377b
 libenet	1.3.18-1	aarch64	b17e60192f4c68af0a90ef1f6f4e45991ad5420a7b6f66e25a8d4f1a77d09153	pool/main/l/libenet/libenet_1.3.18-1_aarch64.deb	27328
 libepoxy	1.5.10-3	aarch64	b4cb5d9a5ac15654a057675bab990c30f5e0748d4f3fe3b8631e3ae67066db62	pool/main/l/libepoxy/libepoxy_1.5.10-3_aarch64.deb	298676
 libesqlite3	3.49.1.20250307	aarch64	07f667f8c7b0868d66681066e105658d61ed24f964a2503a422da22fe7dce37e	pool/main/l/libesqlite3/libesqlite3_3.49.1.20250307_aarch64.deb	608000
-libetonyek-static	0.1.13	aarch64	5ecc0635475a6e725cabe0569bbef0198ae6cf71104973232a1aa5ae58f8e91b	pool/main/l/libetonyek-static/libetonyek-static_0.1.13_aarch64.deb	1531708
-libetonyek	0.1.13	aarch64	89ffefc98e96d9a5f7e5aada69617e30cf0eb43ca8f6009206b2c134c06afc16	pool/main/l/libetonyek/libetonyek_0.1.13_aarch64.deb	489956
+libetonyek-static	0.1.13-1	aarch64	e0b1e0f857265d0b431f45cffb63057d2f263152c1cc44e146f4f24079924975	pool/main/l/libetonyek-static/libetonyek-static_0.1.13-1_aarch64.deb	1520564
+libetonyek	0.1.13-1	aarch64	520f8b698de1e1f3ccba83b5f6b54810aa03a20cacd1e167418c31735d66ab3d	pool/main/l/libetonyek/libetonyek_0.1.13-1_aarch64.deb	492152
 libev-static	4.33-2	aarch64	fc2aa13649c866d41bf5c9f0fc01b2e3d1be07b653862aede893744136d2cb24	pool/main/l/libev-static/libev-static_4.33-2_aarch64.deb	21100
 libev	4.33-2	aarch64	9dc026b0c273479c91890b6bdbf901422c578253f43c1a1e257646172578a2ca	pool/main/l/libev/libev_4.33-2_aarch64.deb	114440
 libexif-static	0.6.22	aarch64	8454274590fa08210a169d3e699bfff8f38edc0c55cfaf8ed74ba4853184d07f	pool/main/l/libexif-static/libexif-static_0.6.22_aarch64.deb	155852
@@ -1053,7 +1053,7 @@ libgmime-static	3.2.15-2	aarch64	5e66be78615a50df5d4095fc968cf42782a49c0d76b821b
 libgmime	3.2.15-2	aarch64	fb37d51b8ccde20cc3e2ac100bce04d2f5fe7c2976b76cb049920154ddb72d9a	pool/main/l/libgmime/libgmime_3.2.15-2_aarch64.deb	252052
 libgmp-static	6.3.0-2	aarch64	959219f321b244f80eecfa2c07a0c7af8f15d82e3a4a2b8f44d83d82bb39cb23	pool/main/l/libgmp-static/libgmp-static_6.3.0-2_aarch64.deb	226516
 libgnt	2.14.4-2	aarch64	4c24cb47edaf5f9e03ecae8a71f82caff27dbd48b1dcb1af332f48970caed9de	pool/main/l/libgnt/libgnt_2.14.4-2_aarch64.deb	96244
-libgnutls-static	3.8.13	aarch64	3d8c9da7fd6dac7544f80e877445d9fc538ab9633b353e2b9944bb5e4b009728	pool/main/l/libgnutls-static/libgnutls-static_3.8.13_aarch64.deb	805868
+libgnutls-static	3.8.13-1	aarch64	f7fd20784add12bb5e0b29eb9d302f0f9509c2224f2588717a341527fb8e7c55	pool/main/l/libgnutls-static/libgnutls-static_3.8.13-1_aarch64.deb	839596
 libgpg-error-static	1.61	aarch64	d98faae7be84662e5f49a4eeca6e48039c67596e28ed6d93f142b2278bbd3f0d	pool/main/l/libgpg-error-static/libgpg-error-static_1.61_aarch64.deb	65904
 libgrpc	1.81.1	aarch64	963e628465e7d0ad56a4ea106cb9bae5616808878a2f294bf9d94fafca4f0085	pool/main/l/libgrpc/libgrpc_1.81.1_aarch64.deb	5478088
 libgsasl-static	2.2.4	aarch64	32dd9500107dae64e81c580164e7edc97eb3ac019cea90e6398d12191faa0d7d	pool/main/l/libgsasl-static/libgsasl-static_2.2.4_aarch64.deb	69012
@@ -1113,15 +1113,15 @@ libknot-static	3.2.4-2	aarch64	dec0098e3c45da3a894eb1d95de71a60fe661aa55799c254a
 libknot	3.2.4-2	aarch64	8c04b5aab3d933cd01dbf72658fc043516b3d3f1bcb2e8bb1737024af244d478	pool/main/l/libknot/libknot_3.2.4-2_aarch64.deb	237216
 libkokkos-static	5.2.1	aarch64	ba5657c0f51969affc6f401c8434beb210780d182ed048e81d1f4665da4fd476	pool/main/l/libkokkos-static/libkokkos-static_5.2.1_aarch64.deb	1396
 libkokkos	5.2.1	aarch64	1094e600d10196145892925a71867c272884768206f46882e41ab2e8233a5f6c	pool/main/l/libkokkos/libkokkos_5.2.1_aarch64.deb	613052
-libksba-static	1.8.0	aarch64	a5623640d164d43e5e42a6523df47d074fa7966858e30c91e38c7fae03b2c956	pool/main/l/libksba-static/libksba-static_1.8.0_aarch64.deb	92668
+libksba-static	1.8.1	aarch64	c2793b92cdae95206dc61f7979cdc2e8d4309719f3ccb593e12600abdb350621	pool/main/l/libksba-static/libksba-static_1.8.1_aarch64.deb	92700
 liblangtag-static	0.6.7-2	aarch64	178667626b5efb0770181a746577b8fe0d8340b121d31e67ebf72e810f3803d7	pool/main/l/liblangtag-static/liblangtag-static_0.6.7-2_aarch64.deb	52092
 liblangtag	0.6.7-2	aarch64	883e9a9777c913371df1882ad34bf8df564cb808a12e29ced707abd1f9cf6d22	pool/main/l/liblangtag/liblangtag_0.6.7-2_aarch64.deb	244896
 liblightning-static	2.2.3-1	aarch64	6500a9096dad8ef4a81eed6b255e68f44718ae64b2b2ceb0c6686d040fd80a63	pool/main/l/liblightning-static/liblightning-static_2.2.3-1_aarch64.deb	48944
 liblightning	2.2.3-1	aarch64	eb6be1cdb33b955a1bb352532a7ef2161d6723ca223cd60881d340177a94a567	pool/main/l/liblightning/liblightning_2.2.3-1_aarch64.deb	75808
 libliquid-dsp-static	1.7.0-2	aarch64	6ffb26c889e3d32e88125ab3ee5b7bcf0d2c116f7dfd92edc9641b43143ca9b5	pool/main/l/libliquid-dsp-static/libliquid-dsp-static_1.7.0-2_aarch64.deb	286748
 libliquid-dsp	1.7.0-2	aarch64	d556be7809a854daffad13b9abfc66aa9604f3403937af7a788e8c71af64f163	pool/main/l/libliquid-dsp/libliquid-dsp_1.7.0-2_aarch64.deb	317724
-libllvm-static	21.1.8-2	aarch64	1629c2a5ae19604f54cc4db5eb8b0eb9ad55bf2c3e197180a6669d6d0363adaf	pool/main/l/libllvm-static/libllvm-static_21.1.8-2_aarch64.deb	87681092
-libllvm	21.1.8-2	aarch64	a06f60410efd6ecc33f878790c48fa04801c189fd7803c1074158fb931ffdf53	pool/main/l/libllvm/libllvm_21.1.8-2_aarch64.deb	30439252
+libllvm-static	21.1.8-3	aarch64	9349aaf77580267a8a25816d31553e2543f07c37f36107bd7cbe320d0a2998c9	pool/main/l/libllvm-static/libllvm-static_21.1.8-3_aarch64.deb	87697716
+libllvm	21.1.8-3	aarch64	bf6b5ca5b9db8b06e2d7eadeb3485ea6c2d0c88f96976f1c2f9eb686ccdf08fe	pool/main/l/libllvm/libllvm_21.1.8-3_aarch64.deb	30448956
 liblmdb-static	0.9.35	aarch64	b62d89e8e4ff12537f4edc5edf911c63dec30dbb9f8d8e0321814ef18652a479	pool/main/l/liblmdb-static/liblmdb-static_0.9.35_aarch64.deb	108620
 liblmdb	0.9.35	aarch64	499613908ecadbe251a53eacc8b3eb9ed47c40c4276cf5e55252a736799d003c	pool/main/l/liblmdb/liblmdb_0.9.35_aarch64.deb	77872
 liblo-static	0.36	aarch64	807a09a3198b5a4a9dbab537deccd6dcdfca1f3b59dd8beffd12a61b1eda47b7	pool/main/l/liblo-static/liblo-static_0.36_aarch64.deb	26616
@@ -1153,8 +1153,8 @@ libmesode-static	0.10.1-5	aarch64	4e440446197c4f888a373aee7750bc562a9a5a689e35c4
 libmesode	0.10.1-5	aarch64	db3fa4927d609bef5603534e2a1dd7078b17aec2019779e95f4afa7843bf1561	pool/main/l/libmesode/libmesode_0.10.1-5_aarch64.deb	38464
 libmhash-static	0.9.9.9-4	aarch64	10ae651a46222f8f1cdd9273dbc607cc69ad7fb24a6c1684d4168a370237ff4d	pool/main/l/libmhash-static/libmhash-static_0.9.9.9-4_aarch64.deb	87980
 libmhash	0.9.9.9-4	aarch64	94a6fc0c74cb005a685620cedb7cf35eeedee0e4fae47f7f96dcc8ce48a380e8	pool/main/l/libmhash/libmhash_0.9.9.9-4_aarch64.deb	97712
-libmicrohttpd-static	1.0.5	aarch64	e305a5907bc72b4960d1a088d121cfb7e844129b14c7c0a9738625d0febb1157	pool/main/l/libmicrohttpd-static/libmicrohttpd-static_1.0.5_aarch64.deb	75328
-libmicrohttpd	1.0.5	aarch64	4ddda099181cb2ec980d79f30a7cbbd63d78f0c8906cfb7bc4b07627f2f5e62d	pool/main/l/libmicrohttpd/libmicrohttpd_1.0.5_aarch64.deb	205500
+libmicrohttpd-static	1.0.10	aarch64	17d4b4ba620235ef827bd1919a463fb3d006fca35a595979d897c357bb513d51	pool/main/l/libmicrohttpd-static/libmicrohttpd-static_1.0.10_aarch64.deb	76780
+libmicrohttpd	1.0.10	aarch64	7b6ff2001b1e51982521b033c16ae12111984a69fe225f608747110f4cfe8422	pool/main/l/libmicrohttpd/libmicrohttpd_1.0.10_aarch64.deb	219524
 libminizip-ng-static	4.2.2	aarch64	1acc7ef3dab876f4ce4a6dac1bd3f689f6ebfd32ac761d00e1ee2162593aa4f0	pool/main/l/libminizip-ng-static/libminizip-ng-static_4.2.2_aarch64.deb	10748
 libminizip-ng	4.2.2	aarch64	649e78fd961391ada9159e10e8a908e25b97f465784b5a89e8b7e7426b0eb610	pool/main/l/libminizip-ng/libminizip-ng_4.2.2_aarch64.deb	63400
 libminizip-static	1.3.2-1	aarch64	484f1e26f6bb0358089d80898f487630e606bda6bf83fc4cbf47633073c30f3b	pool/main/l/libminizip-static/libminizip-static_1.3.2-1_aarch64.deb	18540
@@ -1175,7 +1175,7 @@ libmpeg2	0.5.1-2	aarch64	a0b1d05dd8fa68eccd1d4ca550e18fb4b1185808505c6d8913a5e24
 libmpfr-static	4.2.1-1	aarch64	deb87a826d02e2e0bdae4ce62ba30ab0b3d1d593d323d286a099fffd9b41a3d4	pool/main/l/libmpfr-static/libmpfr-static_4.2.1-1_aarch64.deb	207908
 libmpg123-static	1.33.3	aarch64	b9ed1851399101df7ba68596f24afd1ada06f59f858586479ae987a1b64f7ea1	pool/main/l/libmpg123-static/libmpg123-static_1.33.3_aarch64.deb	151144
 libmpg123	1.33.3	aarch64	688c2007a920ef2e2bac9393411aefdd12357c19b67bf7b2d6fd414ff8105460	pool/main/l/libmpg123/libmpg123_1.33.3_aarch64.deb	176908
-libmsgpack-cxx	8.0.0	aarch64	7a922bb8a7e148697207cc691f5e4492c7bdac1ce755c9ba851207a738c00f29	pool/main/l/libmsgpack-cxx/libmsgpack-cxx_8.0.0_aarch64.deb	192748
+libmsgpack-cxx	9.0.0	aarch64	b9d1e2cabb8c503d06bd4b18cff1c1100fbd5e83d65b0f56184611463e5db010	pool/main/l/libmsgpack-cxx/libmsgpack-cxx_9.0.0_aarch64.deb	192716
 libmsgpack-static	7.0.1	aarch64	0be40e79799fb98e459927c8f665210a389f1bbfcfa7c68fe60511a97f445ba3	pool/main/l/libmsgpack-static/libmsgpack-static_7.0.1_aarch64.deb	10596
 libmuparser	2.3.5-2	aarch64	1273aae3606480ae451fe2eafbe6b7061294c95d0abdcc15171a8cd044c6c364	pool/main/l/libmuparser/libmuparser_2.3.5-2_aarch64.deb	359784
 libmypaint-static	1.6.1-2	aarch64	6ab914ca3cf9ff20c0da33c3d1c85107b586f59b61acc0d395e06de64a5b022b	pool/main/l/libmypaint-static/libmypaint-static_1.6.1-2_aarch64.deb	39396
@@ -1192,7 +1192,7 @@ libnewt-static	0.52.25-1	aarch64	8f19f85c46faaa7a2fabf7e0c3de95d035f20adcbd77682
 libnewt	0.52.25-1	aarch64	a6b13de640c4427a9a2c2f6e27b1c2644acd7077f8a49dc11382b76f52339289	pool/main/l/libnewt/libnewt_0.52.25-1_aarch64.deb	32436
 libnfc-static	1.8.0-2	aarch64	bf13b2516286ad2dc7169ab1cc195cc0c1844a44b2ea4fbd06ed49f30d8a2b94	pool/main/l/libnfc-static/libnfc-static_1.8.0-2_aarch64.deb	67240
 libnfc	1.8.0-2	aarch64	252be8c4b66830abd8cc772fed04740ba6e2b0eff1e834f99ad9b518f7ac07e5	pool/main/l/libnfc/libnfc_1.8.0-2_aarch64.deb	132752
-libnfs	6.0.2-2	aarch64	a9d09a3d23fe5db8dec47cccc45cf3105fc6ba07572fca1d9c0132599e6e0ce4	pool/main/l/libnfs/libnfs_6.0.2-2_aarch64.deb	164896
+libnfs	7.0.0	aarch64	9fc79f3131f8c83ff90f2f395c26142c4154d6ddf9c5d6085a986db6d2a7d39d	pool/main/l/libnfs/libnfs_7.0.0_aarch64.deb	173232
 libnftnl-static	1.3.1	aarch64	c26be4fbe9ca6a6720b800fd933116da9aeec2094e01ef3670f421c2cdd35544	pool/main/l/libnftnl-static/libnftnl-static_1.3.1_aarch64.deb	64824
 libnftnl	1.3.1	aarch64	acc0f2a354fa4302386eebd3e6e3546585d91792314c463fcdee30574a54774b	pool/main/l/libnftnl/libnftnl_1.3.1_aarch64.deb	56740
 libnghttp2-static	1.70.0	aarch64	2f51bf849616233cae146d235aa210493d701f7fe3afe08abfe0dddb4f2d29f0	pool/main/l/libnghttp2-static/libnghttp2-static_1.70.0_aarch64.deb	64128
@@ -1210,8 +1210,8 @@ libntl-static	11.5.1-1	aarch64	54924604d1deb69c720f52b59d66b98e80687f364c08aa24c
 libntl	11.5.1-1	aarch64	e98748a2bfae4da818c3514ba7df0ad7e9cf44394e9deaf05ee56f50bf6fbbd8	pool/main/l/libntl/libntl_11.5.1-1_aarch64.deb	2009076
 libobjc2	2.3-1	aarch64	c2168943cada5d309f233de2ff516761fb86dd86597fb204fe2a9f2cf804c2aa	pool/main/l/libobjc2/libobjc2_2.3-1_aarch64.deb	86980
 libode	0.16.6-2	aarch64	1172e56c9d49bcc7fc021102a49fe03502b3fabe354f07e91816b7dc1c896b92	pool/main/l/libode/libode_0.16.6-2_aarch64.deb	355484
-libodfgen-static	0.1.8-4	aarch64	7c94693f936f8ffa7fcaa82f12f64ba903397c211c8b94ce7517f81fefdeebbf	pool/main/l/libodfgen-static/libodfgen-static_0.1.8-4_aarch64.deb	345492
-libodfgen	0.1.8-4	aarch64	1745e49f0d76a9ec0c4271b2f642acaf2d59ef7a741c0c484c42844ce7af52a4	pool/main/l/libodfgen/libodfgen_0.1.8-4_aarch64.deb	359540
+libodfgen-static	0.1.8-5	aarch64	0802b28a07ae1b891afc0f2f14c4730b2898d1a786315dc28adf719f5ef067ab	pool/main/l/libodfgen-static/libodfgen-static_0.1.8-5_aarch64.deb	347004
+libodfgen	0.1.8-5	aarch64	4429115a0fb1a70cc03b2d5ac8a81cf5f26ad54106354e9de49cd3857cd1f6c7	pool/main/l/libodfgen/libodfgen_0.1.8-5_aarch64.deb	196592
 libogg-static	1.3.6-1	aarch64	c20e71033996b1dcbccce25eddde31bad2e01e44e8fc884fb8e838ba712249dd	pool/main/l/libogg-static/libogg-static_1.3.6-1_aarch64.deb	16588
 liboggz	1.1.3-1	aarch64	2abae60caa183228e24446285cb87c84b5b019c02f90859c954c485c71ea08d2	pool/main/l/liboggz/liboggz_1.1.3-1_aarch64.deb	92848
 libolm-static	3.2.16-2	aarch64	13921a985333eed3c54b2e42f11fd695865cda8ded8c3565b14827337ccdc7ad	pool/main/l/libolm-static/libolm-static_3.2.16-2_aarch64.deb	59528
@@ -1228,14 +1228,14 @@ libopusenc-static	0.2.1-4	aarch64	6bd3acdd23214fdf405bcbe4402862564ef28944b5e842
 libopusenc	0.2.1-4	aarch64	a5eac9471cf5f40c15d63e51bcddac3f5387bea8ce9b796bbf0c2bbf3ffccb85	pool/main/l/libopusenc/libopusenc_0.2.1-4_aarch64.deb	197848
 liborc	0.4.42	aarch64	b7a66b4c7c55ef884b5d17eee19e738d92f94135c40047db112e2e8500e24934	pool/main/l/liborc/liborc_0.4.42_aarch64.deb	267864
 libosmium-static	2.23.1	all	4c6cbeba27bfea3127c6040bdf9f2964eb52914926aa529b206e551431239706	pool/main/l/libosmium-static/libosmium-static_2.23.1_all.deb	22512
-libosmium	2.23.1	all	8fefef5a2e29cd2cadc12473e1d7927888ff12834a966e1f4e6fe84e0d0f1944	pool/main/l/libosmium/libosmium_2.23.1_all.deb	197756
+libosmium	2.23.1-1	all	81b1414edb248be26240006a71c90eb791952c48822539a3f89e0af3ecf9cb32	pool/main/l/libosmium/libosmium_2.23.1-1_all.deb	175020
 libosmpbf-static	1.5.1-4	aarch64	2811f13ef0fdca422cdca6512fb6d056872321cd232fa1fb120bdd27e567b49d	pool/main/l/libosmpbf-static/libosmpbf-static_1.5.1-4_aarch64.deb	28296
 libosmpbf	1.5.1-4	aarch64	1c7245eda65e35c38257827830ba2fe7f09087c61434c4d6ff9e5daecfe4546d	pool/main/l/libosmpbf/libosmpbf_1.5.1-4_aarch64.deb	73432
 libotr-static	4.1.1-3	aarch64	c474066ff0fa6a39875c723bcf27b147134037bafeaab71506563df94d47788e	pool/main/l/libotr-static/libotr-static_4.1.1-3_aarch64.deb	36816
 libotr	4.1.1-3	aarch64	5a02c32e5f608093f0d72312dcf92865061eb70a4c7431870e7d211fcd861b4b	pool/main/l/libotr/libotr_4.1.1-3_aarch64.deb	68816
 libp11	0.4.20	aarch64	cab9ce34a3d1acfd04832bf119768b4cafa4cb5897a95c89c3f6a253d76687e2	pool/main/l/libp11/libp11_0.4.20_aarch64.deb	86812
 libp8-platform	2.2.0	aarch64	9d7c0622983bf4e02085c31e33f63b97dd37f9cc9c03d2cc4444d1a6e949cc00	pool/main/l/libp8-platform/libp8-platform_2.2.0_aarch64.deb	68152
-libpagmo	2.19.1-5	aarch64	db2a0bf1b41d86837e994447f84a10d02e57ad7af1af5f0d1372361fb029cb3a	pool/main/l/libpagmo/libpagmo_2.19.1-5_aarch64.deb	4156724
+libpagmo	2.19.1-6	aarch64	7981f88ef9df62b76af6cbe703986f23dc88f679c3fbc13c5fa614dcddd15008	pool/main/l/libpagmo/libpagmo_2.19.1-6_aarch64.deb	4156732
 libpangomm-1.4	2.46.4-1	aarch64	504d81917ac8a89d0a76cf5a196fcca3846e5939cbb3fa1f040860ca42f0c75a	pool/main/l/libpangomm-1.4/libpangomm-1.4_2.46.4-1_aarch64.deb	97396
 libpangomm-2.48	2.56.1-1	aarch64	55ef291b29f47f9608d47ba283f9b572316566b7fd6f8408dfccbf69697c6251	pool/main/l/libpangomm-2.48/libpangomm-2.48_2.56.1-1_aarch64.deb	156052
 libpano13-static	2.9.23-1	aarch64	5e35d7f1e90ebf53306e6b672d952427db39100799ee665ab1ec8a64f9593ffa	pool/main/l/libpano13-static/libpano13-static_2.9.23-1_aarch64.deb	198908
@@ -1258,7 +1258,7 @@ libpngwriter-static	0.7.0-1	aarch64	00f0a75785758f4ef29bc031b23c4d0522b5d1d730e0
 libpngwriter	0.7.0-1	aarch64	d0b09f6ab674d21a55efa499f2f99851d12df22172d34d84db5e2064457fc52d	pool/main/l/libpngwriter/libpngwriter_0.7.0-1_aarch64.deb	13032
 libpoco-static	1.15.3	aarch64	368a5d20aed45e4191377ee164b236ef9734813b5f945eeddd5e46074c192e62	pool/main/l/libpoco-static/libpoco-static_1.15.3_aarch64.deb	1594176
 libpoco	1.15.3	aarch64	1dd907092679a26bd52e31d3a18cc0505653115b47795d83b725d7202e5c567d	pool/main/l/libpoco/libpoco_1.15.3_aarch64.deb	17476840
-libpolly	21.1.8-2	aarch64	04d21d5a50917a9db45c40efc0158263f9e2462a4d92c94830e43ef935a4cc87	pool/main/l/libpolly/libpolly_21.1.8-2_aarch64.deb	1226312
+libpolly	21.1.8-3	aarch64	0c28db9ef98dcfea22c3c51952f531b192ebfa65847fca5356df53f8004f43e7	pool/main/l/libpolly/libpolly_21.1.8-3_aarch64.deb	1224724
 libpopt-static	1.19-3	aarch64	79b7a23efef2ba2494c3b60ad9a3767e3d6df642576fce5e5e6ea878ddfc436a	pool/main/l/libpopt-static/libpopt-static_1.19-3_aarch64.deb	18268
 libpopt	1.19-3	aarch64	9cda75498f6bc92e419637f8e4b122f4d6603958eeab984628b4e43fd34a3a48	pool/main/l/libpopt/libpopt_1.19-3_aarch64.deb	33604
 libprotobuf-c-static	1.5.2-4	aarch64	a5389434484856da9f69590d7e7af881393cb213cac2142112152d947d7833f8	pool/main/l/libprotobuf-c-static/libprotobuf-c-static_1.5.2-4_aarch64.deb	11952
@@ -1281,9 +1281,9 @@ libre2	2025-11-05-2	aarch64	69a187d9affc9a96d7261b564e0a40cb67c60f8148aec05773a9
 libregexp-assemble-perl	0.38-9	all	97ec60fd3c07256220dd89f7ff8541fe79a256f7da46ab5cb804af0ec875b4f2	pool/main/l/libregexp-assemble-perl/libregexp-assemble-perl_0.38-9_all.deb	52320
 libretls-static	3.8.1-1	aarch64	40b78df3f2a5d84a27982f573bcee951d5e34924a0cdbe0d04ef45d92cddd97a	pool/main/l/libretls-static/libretls-static_3.8.1-1_aarch64.deb	183136
 libretls	3.8.1-1	aarch64	5e2fc9209721a7cf8c9cf8e90605ade36a9cde7c729d2b2a69f24ccf021e2f96	pool/main/l/libretls/libretls_3.8.1-1_aarch64.deb	216616
-librevenge-static	0.0.5-3	aarch64	880bf49b36170b496f6df17255f3df55e0d2d8452a4d583214a1cede0c59a179	pool/main/l/librevenge-static/librevenge-static_0.0.5-3_aarch64.deb	237000
-librevenge	0.0.5-3	aarch64	7c3ff49d48c94077970124afea9f8e2b268b9871ebf5c05a498b58e9bbcc61d7	pool/main/l/librevenge/librevenge_0.0.5-3_aarch64.deb	168096
-librime	1.17.0	aarch64	1efe5cacc32a7185ea0089780104679c20accab1d9b7cf76be59c813e48a572f	pool/main/l/librime/librime_1.17.0_aarch64.deb	645700
+librevenge-static	0.0.5-4	aarch64	44ee3faf31dcb2301bacf2da3a828b9c45dab373da980f86d30457d9c0529db2	pool/main/l/librevenge-static/librevenge-static_0.0.5-4_aarch64.deb	237840
+librevenge	0.0.5-4	aarch64	d78f2028620e03f6b69f7bb2b6a744bbe314efa8653e3ae23687d48e89f76420	pool/main/l/librevenge/librevenge_0.0.5-4_aarch64.deb	167788
+librime	1.17.0-1	aarch64	8e67d21ca000d6194c465a846946e9769c2bc8ca8bc1a7603ebab49348057cf7	pool/main/l/librime/librime_1.17.0-1_aarch64.deb	646848
 librinutils	0.10.3	aarch64	044b6536755fc2c8ba058d885a0fcf5d4a85c5805c0034a6f437404b8d28b52e	pool/main/l/librinutils/librinutils_0.10.3_aarch64.deb	6104
 librnnoise-static	0.2-1	aarch64	37314c18f94496db16c59daf43ce74a4309d4eaf921a6f5ca741375ec49ecb0f	pool/main/l/librnnoise-static/librnnoise-static_0.2-1_aarch64.deb	1190380
 librnnoise	0.2-1	aarch64	054691f0f469c1866e2388309b6d9fa9c931e691e9dc512c4aff33774998b7b6	pool/main/l/librnnoise/librnnoise_0.2-1_aarch64.deb	1313516
@@ -1386,7 +1386,7 @@ libuchardet	0.0.8-2	aarch64	e4380747d479ec61568ae988b676fec8881def13355d11d36692
 libucontext-static	1.5	aarch64	c6d2f4a1d59ab6d3b75862fc699e4ad325d183baba5f77fc11c587d8694be6e2	pool/main/l/libucontext-static/libucontext-static_1.5_aarch64.deb	4260
 libucontext	1.5	aarch64	268c65c05a4bdeef25cd041a5874f35580e1b78c1f1e9576a5eb472136116446	pool/main/l/libucontext/libucontext_1.5_aarch64.deb	3288
 libudfread-static	1.2.0	aarch64	f6846b7b7f5257e12dc1d5893df6d1add35eaf7926850d229046008cbcaaf438	pool/main/l/libudfread-static/libudfread-static_1.2.0_aarch64.deb	36232
-libunbound-static	1.25.1	aarch64	f9f185cd8320287f7fdee59103043dbb543523f450e0a3c6adcf7c5ef460fd6e	pool/main/l/libunbound-static/libunbound-static_1.25.1_aarch64.deb	462148
+libunbound-static	1.26.0	aarch64	4148748da78cc36470db184d2b0cead39af918d703820c8bf47f004569bfb9a3	pool/main/l/libunbound-static/libunbound-static_1.26.0_aarch64.deb	463700
 libunistring-static	1.4.2	aarch64	96b478001d18692469699f7c842cfa449208efb2a8fc9e2216b1b4f95f83cd5f	pool/main/l/libunistring-static/libunistring-static_1.4.2_aarch64.deb	482992
 libunqlite	1.1.9-1	aarch64	cfc98b7260353d5e2040abcd039b86b9492851a89946fbe411c9980842cb9150	pool/main/l/libunqlite/libunqlite_1.1.9-1_aarch64.deb	186960
 liburcu-static	0.15.6	aarch64	58b8cb5250d5123741608722ff84df39aa1696eca726023e2e0752e5cfd6c2bb	pool/main/l/liburcu-static/liburcu-static_0.15.6_aarch64.deb	44868
@@ -1400,8 +1400,8 @@ libv4l-static	1.24.1-2	aarch64	9f4d8c87ce7cf2d0cf780ba4746ce8119cfc1ef7bcdb7558e
 libvbisam-static	2.0-3	aarch64	8608b37368e70902a4d7c98f57a37666a8e059c129aad93e2e8036965b6bebd7	pool/main/l/libvbisam-static/libvbisam-static_2.0-3_aarch64.deb	42968
 libvbisam	2.0-3	aarch64	39089b3eadcf9bd00d19c35c0811ca3fd2ce13900a9c51d8b0dd6f087485be1d	pool/main/l/libvbisam/libvbisam_2.0-3_aarch64.deb	39084
 libvigra	1.12.4	aarch64	b09b2be9b7c0b2d6224f891eebeb29267b5da21b6f674ef6907b884fa1b10f99	pool/main/l/libvigra/libvigra_1.12.4_aarch64.deb	1791832
-libvisio-static	0.1.10	aarch64	403a74381938c289c7ed848f9b478dcebc9dfda855b38e46b0054773cfb9ee89	pool/main/l/libvisio-static/libvisio-static_0.1.10_aarch64.deb	365232
-libvisio	0.1.10	aarch64	8aeb9ba35d88e84a3ebf4549b1694c2fbef8256b6966d38fac5cf70af57f2373	pool/main/l/libvisio/libvisio_0.1.10_aarch64.deb	177640
+libvisio-static	0.1.10-1	aarch64	8b390dda1672350c55aa66ee2afc30a52648039be2f8d5fff5b264412fa05c45	pool/main/l/libvisio-static/libvisio-static_0.1.10-1_aarch64.deb	365452
+libvisio	0.1.10-1	aarch64	b8796a3c797635275795b465ce0d4104d78d41893af32b795dfaaf8fff7f6898	pool/main/l/libvisio/libvisio_0.1.10-1_aarch64.deb	177804
 libvmaf-static	3.2.0	aarch64	9683ca53471ab58a8bd701e82dbf380e8d4da58a7461adcb0425be3db720a98e	pool/main/l/libvmaf-static/libvmaf-static_3.2.0_aarch64.deb	443596
 libvo-amrwbenc-static	0.1.3-2	aarch64	0be6c8f3b69d844e1e3a2a28af05830273600da0190172ddd9b8965966983eeb	pool/main/l/libvo-amrwbenc-static/libvo-amrwbenc-static_0.1.3-2_aarch64.deb	58240
 libvoikko-static	4.3.3-2	aarch64	c64eb54e9ca395836953952d151c148eb9a49841ac8f2185ab35b6eff027d4b9	pool/main/l/libvoikko-static/libvoikko-static_4.3.3-2_aarch64.deb	177716
@@ -1416,9 +1416,9 @@ libwayland-cross-scanner	1.25.0	all	cd9e2796eba0b654ca4c50550794102c93d3dfb93764
 libwayland-protocols	1.49	all	82f84f02d42fe90d1a1908227ea54d9c673d10bed93cac94635f9356caefa003	pool/main/l/libwayland-protocols/libwayland-protocols_1.49_all.deb	131248
 libwebsockets	5.0.0-1	aarch64	4e54ef64203945bebaf5aac5707718a02f5b1dcf0d6881a27cfc65a89d6cd2ee	pool/main/l/libwebsockets/libwebsockets_5.0.0-1_aarch64.deb	497008
 libwolfssl	5.9.2	aarch64	238fac43831fc54ad6498b4832cadc40a26fba8bb40521bef5d7793ead8d6c12	pool/main/l/libwolfssl/libwolfssl_5.9.2_aarch64.deb	830192
-libwpd	0.10.3-3	aarch64	91a621b0e6b36d5b7e89a30c13f27ee6fb09f9efb26418d41b8fe4b4ff44b603	pool/main/l/libwpd/libwpd_0.10.3-3_aarch64.deb	159660
-libwpg-static	0.3.4-3	aarch64	841157983d363ef1ffc8ce896e19e66a616ac7b768783d0a16fb83c84dce96a5	pool/main/l/libwpg-static/libwpg-static_0.3.4-3_aarch64.deb	59352
-libwpg	0.3.4-3	aarch64	6f2c7306db30f7fa956d20da7bfc7e115f09b92e200738459d64103aecde9a09	pool/main/l/libwpg/libwpg_0.3.4-3_aarch64.deb	144992
+libwpd	0.10.3-4	aarch64	802fb60daec2aa66eb707529026509e16613f3e3de1be2e987fcb0712c3f9cc2	pool/main/l/libwpd/libwpd_0.10.3-4_aarch64.deb	159772
+libwpg-static	0.3.4-4	aarch64	a1bfd2c7194b330a4405990a4c5283ec5c410929c39c2ece1d1d55c4fcbf4bc1	pool/main/l/libwpg-static/libwpg-static_0.3.4-4_aarch64.deb	59196
+libwpg	0.3.4-4	aarch64	5165878a15e6759f5f0ec5a0cc5b015f89f094428df21db129f7af778a20f4ff	pool/main/l/libwpg/libwpg_0.3.4-4_aarch64.deb	56524
 libwps	0.4.14-2	aarch64	ebc65d51de53330de425e205d2a01f98897c71950d8937d148a08d44cf04bc1d	pool/main/l/libwps/libwps_0.4.14-2_aarch64.deb	554296
 libwren	0.4.0-4	aarch64	7c6d51921807dd30cd60151209d8505490317ecfd2363c31b32aff05aa54cfca	pool/main/l/libwren/libwren_0.4.0-4_aarch64.deb	76868
 libwslay	1.1.1-2	aarch64	6ae9954ee2886d93cc2fcaf44a0920752cbb7944670fa59774b386c6035b8075	pool/main/l/libwslay/libwslay_1.1.1-2_aarch64.deb	64240
@@ -1477,8 +1477,8 @@ libzxing-cpp	3.1.1	aarch64	fed1fffc633405ad08f20b1d06a17b09dda404f213f0e743977f1
 littlecms-static	2.19.1	aarch64	af5a6687a04f2cf9f9ce2bb1c00e1b87e59c1a3c86659f3369cd6acf61400cb6	pool/main/l/littlecms-static/littlecms-static_2.19.1_aarch64.deb	146432
 littlecms-utils	2.19.1	aarch64	2392956130a600c443276d5cc2ed0ec9074b94a525ba604767173cde0a4c3ea7	pool/main/l/littlecms-utils/littlecms-utils_2.19.1_aarch64.deb	35472
 llbuild	6.2.1	aarch64	7aa83c67475eddde9bb5e74cc8f2b7f16db284c70fe0cab571b34ef73c9b569e	pool/main/l/llbuild/llbuild_6.2.1_aarch64.deb	486272
-lldb	21.1.8-2	aarch64	06618b4a79b86be90599465d09f93f15fbb39297cf1842b103b704e56df61d48	pool/main/l/lldb/lldb_21.1.8-2_aarch64.deb	5799584
-llvm-tools	21.1.8-2	aarch64	42009f46e2bf77a39c7a2cb3ae710d936f9430c02df2a51ceabea31ad6e5ab96	pool/main/l/llvm-tools/llvm-tools_21.1.8-2_aarch64.deb	2473180
+lldb	21.1.8-3	aarch64	d519ba54655512da1efd0a86d14112c5548bbf55f6cb247c0f8e1262a503a099	pool/main/l/lldb/lldb_21.1.8-3_aarch64.deb	5479604
+llvm-tools	21.1.8-3	aarch64	bfc3e2c029a9bbdb395413a8d3a2da00a03635e43c39b9359a5299c91b67ab89	pool/main/l/llvm-tools/llvm-tools_21.1.8-3_aarch64.deb	2376892
 lua-lpeg	1.1.0-6	aarch64	b53999c1265931a6e70d0df8c878afe8c01cb08beab5a11287a9d4e89df07f32	pool/main/l/lua-lpeg/lua-lpeg_1.1.0-6_aarch64.deb	26504
 lua51-static	5.1.5-8	aarch64	1a1cc8e2891f90a56c13416b4a78e4b0ab2648ed9ad14c7121f352dc02e7a8a8	pool/main/l/lua51-static/lua51-static_5.1.5-8_aarch64.deb	75324
 lua52-lpeg	1.1.0-6	aarch64	23be87e07d8b00b7930a120d0fb57f0cd4fab52e942fa3087c514aae2f7a3bf1	pool/main/l/lua52-lpeg/lua52-lpeg_1.1.0-6_aarch64.deb	21564
@@ -1504,7 +1504,7 @@ mercury	22.01.8-1	aarch64	c371e7d1d770d60d0c92ed02414a70489a1975c9bc01e54e4dcc9f
 mesa-dev	26.0.6-1	all	105fdde828a59b81e744f2f7ceb1e7b5939092a67b31e26444bbf4612a60f225	pool/main/m/mesa-dev/mesa-dev_26.0.6-1_all.deb	25348
 mesa-opencl-icd-rusticl	26.0.6-1	aarch64	273e76786081d4ed384c7a6199109c3635a3a48adeb94ab77ee4252b2adab116	pool/main/m/mesa-opencl-icd-rusticl/mesa-opencl-icd-rusticl_26.0.6-1_aarch64.deb	3213344
 mesa-vulkan-icd-freedreno	26.0.6-1	aarch64	eba2335b17798d1c4db97894c250ce56da05e472b6ef77047664344db28723e9	pool/main/m/mesa-vulkan-icd-freedreno/mesa-vulkan-icd-freedreno_26.0.6-1_aarch64.deb	1778492
-mlir	21.1.8-2	aarch64	fda850e9488b8c1d1f180aa05ad37b94b966730ace549c2a204988e0f63ab694	pool/main/m/mlir/mlir_21.1.8-2_aarch64.deb	29754764
+mlir	21.1.8-3	aarch64	65e26fe264f8614d288c527de76983748c395ece85440aed4881f4c620399b59	pool/main/m/mlir/mlir_21.1.8-3_aarch64.deb	29690908
 mosquitto	2.1.2	aarch64	930ed3791653146502740a6646150641f3b1f75e5dad221ff495250481a68cec	pool/main/m/mosquitto/mosquitto_2.1.2_aarch64.deb	304444
 mpg123	1.33.3	aarch64	9c6ab2f21af0fa7edfb736c285c689baa4a8bf66cb57f7a8143629e925ed5aea	pool/main/m/mpg123/mpg123_1.33.3_aarch64.deb	93856
 nasm	2.16.03-1	aarch64	7a96a1ea90ffc1a59c2c3fc92b564cfb5e6c2f647900df82b49a848eb06edea3	pool/main/n/nasm/nasm_2.16.03-1_aarch64.deb	301944
@@ -1662,3 +1662,4 @@ yazi	26.5.6	aarch64	1711ecebf2530ae432c059c7b591a26663de3466a14c15e7fd394f1cd683
 zlib-static	1.3.2	aarch64	7fbf2c991746865475c03680a21d8aeed70d74c7748cdf04a12ee45b1c9bbe59	pool/main/z/zlib-static/zlib-static_1.3.2_aarch64.deb	35480
 zopfli	1.0.3-5	aarch64	074fea094383d2f29498edb4072e952d1cf7b4f0e573cc96b9ab04dff64eb520	pool/main/z/zopfli/zopfli_1.0.3-5_aarch64.deb	22524
 tree	2.3.2	aarch64	df66b7ee658209eeea8477d38bf577b6c48c13784248a1311cd790041b162a3b	pool/main/t/tree/tree_2.3.2_aarch64.deb	35960
+p11-kit	0.26.5	aarch64	beda6d41fc8eadf4de088ee0a4d437dd84b299477183a82ec69e6e3eb6d501ae	pool/main/p/p11-kit/p11-kit_0.26.5_aarch64.deb	470788
