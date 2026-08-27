@@ -222,7 +222,11 @@ def _validate_inrelease_matches_release(metadata_root):
     signed_body = signed_body.replace("\n- -", "\n-")
     with open(release_path, "r", encoding="utf-8") as handle:
         release_text = handle.read()
-    if signed_body != release_text:
+    # gpg versions differ on whether the payload's final newline is kept
+    # before the signature block (2.4.9 keeps it, 2.4.4 on the CI runner
+    # consumes it as the separator). The trailing newline carries no
+    # content, so compare without it.
+    if signed_body.rstrip("\n") != release_text.rstrip("\n"):
         raise RuntimeError("InRelease payload does not match Release")
 
 
