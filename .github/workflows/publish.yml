@@ -63,6 +63,20 @@ jobs:
       - name: Install apt tooling
         run: sudo apt-get update && sudo apt-get install -y dpkg-dev gnupg
 
+      - name: Check required secrets
+        run: |
+          missing=()
+          [ -n "${{ secrets.VAJ_GPG_PRIVATE_KEY_B64 }}" ] || missing+=(VAJ_GPG_PRIVATE_KEY_B64)
+          [ -n "${{ secrets.VAJ_SIGNING_PASSPHRASE }}" ] || missing+=(VAJ_SIGNING_PASSPHRASE)
+          [ -n "$AWS_ACCESS_KEY_ID" ]     || missing+=(AWS_ACCESS_KEY_ID)
+          [ -n "$AWS_SECRET_ACCESS_KEY" ] || missing+=(AWS_SECRET_ACCESS_KEY)
+          [ -n "$R2_S3_ENDPOINT" ]        || missing+=(R2_S3_ENDPOINT)
+          [ -n "$R2_BUCKET" ]             || missing+=(R2_BUCKET)
+          if [ ${#missing[@]} -gt 0 ]; then
+            echo "::error::repository secrets not set: ${missing[*]} -- see the header of this workflow"
+            exit 1
+          fi
+
       - name: Import signing key
         run: |
           GNUPGHOME="$(mktemp -d)"
@@ -124,8 +138,10 @@ jobs:
           git commit -m "Publish wave from ${TAG} (+${{ steps.stage.outputs.staged }} packages)"
           git push origin HEAD:io-vaj-package
 
+      # Only after everything above succeeded: a failed run must leave the
+      # staging release in place so it can be re-dispatched once the cause
+      # is fixed, instead of silently discarding a build machine's work.
       - name: Delete staging release
-        if: always()
         run: gh release delete "$TAG" --cleanup-tag -y || true
         env:
           GH_TOKEN: ${{ github.token }}
