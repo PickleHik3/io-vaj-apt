@@ -146,7 +146,16 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add manifests/foundation.tsv
           git commit -m "Publish wave from ${TAG} (+${{ steps.stage.outputs.staged }} packages)"
-          git push origin HEAD:io-vaj-package
+          # Anything pushed to the branch during the ~20 min run (docs, script
+          # fixes) makes a plain push non-fast-forward. Only this job edits the
+          # manifest, so rebasing onto the current tip is conflict-free.
+          for attempt in 1 2 3; do
+            git fetch origin io-vaj-package
+            git rebase origin/io-vaj-package
+            git push origin HEAD:io-vaj-package && break
+            [ "$attempt" -lt 3 ] || { echo "::error::manifest push failed after $attempt attempts"; exit 1; }
+            sleep 10
+          done
 
       # Only after everything above succeeded: a failed run must leave the
       # staging release in place so it can be re-dispatched once the cause
