@@ -327,7 +327,7 @@ spirv-llvm-translator	21.1.10	aarch64	6cdc7938639b21a2a78efe7b1adf46bfa46541c517
 rust	1.96.0	aarch64	399a2c4e90e01f2fc8c119b82053d7761f19f84f01328ead0b2f1bf266c0c5b0	pool/main/r/rust/rust_1.96.0_aarch64.deb	121167924
 rust-std-aarch64-linux-android	1.96.0	aarch64	16edc41c43dbc9f08970039c33c1ab58161a567ba01ad8b10bb020abeaff696c	pool/main/r/rust-std-aarch64-linux-android/rust-std-aarch64-linux-android_1.96.0_aarch64.deb	4777248
 golang	3:1.27.0	aarch64	93ce8cd9b25e221739d51025a29c6a2c16aa64407d0e5b40574150836fed33f5	pool/main/g/golang/golang_3:1.27.0_aarch64.deb	37225688
-nodejs	26.3.1	aarch64	d3a7d799e9ea3a4b66cdac61e38783b53dacb24f17e9a236c237047d7b39aa85	pool/main/n/nodejs/nodejs_26.3.1_aarch64.deb	10263272
+nodejs	26.4.0-1	aarch64	a30454f250996d7cb2bcbb80e6578fa908f3d2f6af7c45b73be565e02ae528d0	pool/main/n/nodejs/nodejs_26.4.0-1_aarch64.deb	10344676
 nodejs-lts	24.17.0	aarch64	6a6879d53b69ad41b91d9be06fe8f5f494adba42ac4694b6a9cc7207f36e20e3	pool/main/n/nodejs-lts/nodejs-lts_24.17.0_aarch64.deb	9700832
 libopenmpt	0.8.9	aarch64	ef91d4b40dd010ab7b13fb65425ca28615e1b55d9f6f0542fc608815e2136d4f	pool/main/l/libopenmpt/libopenmpt_0.8.9_aarch64.deb	543268
 openmpt123	0.8.9	aarch64	21507a0243b29c64ba0085101f119e8571b4f86e4c0619bee3250696ead0f760	pool/main/o/openmpt123/openmpt123_0.8.9_aarch64.deb	97140
