@@ -272,7 +272,7 @@ pango	1.58.2	aarch64	4be007a7e6c55b3c24355bcc8b4078ab725652e2eda988d45235e777872
 gdk-pixbuf	2.44.8	aarch64	322b0d12e2cc5df6224bcbc61c8eebb681260f27445e547279338062fa3a6fef	pool/main/g/gdk-pixbuf/gdk-pixbuf_2.44.8_aarch64.deb	153320
 libv4l	1.24.1-2	aarch64	a28e9d226801ee4992a1b3aeda063cc573f7468a6b0b01fa3fb30a28079dbc64	pool/main/l/libv4l/libv4l_1.24.1-2_aarch64.deb	93288
 libass	0.17.5	aarch64	ac6c996efdde4fa4492d48927871011f42d71f378de4fda5ab90267c68771541	pool/main/l/libass/libass_0.17.5_aarch64.deb	85376
-poppler	26.02.0	aarch64	86b610f8a12428b8fd629c06686d22f49161fc9b99142879bf88ff0153c06f6d	pool/main/p/poppler/poppler_26.02.0_aarch64.deb	1293900
+poppler	26.02.0-1	aarch64	d5c14b3fdc667853497398aa903a6a4588b5e3f184101ed385c5bd0fc5547fb8	pool/main/p/poppler/poppler_26.02.0-1_aarch64.deb	1291676
 mc	4.8.33-2	aarch64	9f4469c02ffa2b395f7a1b5a6cb2a66b6774f63b95e41e872989b384ff384e31	pool/main/m/mc/mc_4.8.33-2_aarch64.deb	616156
 libjxl	0.12.0	aarch64	27b8b1ff6a22e4104cbba4a93da50edd1cb2da984493330eeefbf2a6dc1cf5e9	pool/main/l/libjxl/libjxl_0.12.0_aarch64.deb	1485832
 libjxl-progs	0.12.0	aarch64	07753a5bfcf334d789e0da7c0a198afff56c76bb57ad1004591620b7ed8ed347	pool/main/l/libjxl-progs/libjxl-progs_0.12.0_aarch64.deb	553368
@@ -280,7 +280,7 @@ fribidi	1.0.16-1	aarch64	4c758a39f343e77f7956b176afe596ba90572f4cff92485f2cb927d
 imath	3.2.2	aarch64	ae467f0aceea78d77284a97bea6dc408ecbfca3daa083a67566892d344ef9031	pool/main/i/imath/imath_3.2.2_aarch64.deb	122196
 openexr	3.4.4-1	aarch64	40337a5b0cb2df38d13102b9948b5619dc86bfb925b435c78c5faec67f0ccea9	pool/main/o/openexr/openexr_3.4.4-1_aarch64.deb	849556
 svt-av1	4.2.0	aarch64	cf2b5ef86d26dd7c369b7f960ff34daa74ea7389ddf748e3c80e958b43adde7c	pool/main/s/svt-av1/svt-av1_4.2.0_aarch64.deb	1489536
-proot	5.1.107.86	aarch64	af37f12a57674e4cd7879c6a41e6adaaf84db0597cf7f774aaac1da4da6fbb05	pool/main/p/proot/proot_5.1.107.86_aarch64.deb	94376
+proot	5.1.107.92	aarch64	e3f304ccf589c07200503a53daf9e26d62575c39e6068627af3005c472b70b36	pool/main/p/proot/proot_5.1.107.92_aarch64.deb	97356
 runit	2.1.2-4	aarch64	a87e22f4f50a3aedf8f7bb9e3d97ed073f3d0c0c6855317490f8d445a40c8e0a	pool/main/r/runit/runit_2.1.2-4_aarch64.deb	52924
 termux-auth	1.5.0-1	aarch64	d38bd8434ed9c38331fb6c2e413ce2f69ddd62673b660a0f3781d7bb5c38d3f5	pool/main/t/termux-auth/termux-auth_1.5.0-1_aarch64.deb	6988
 termux-services	0.13-1	all	40e350971d28989aa8d083d4b2c497b23f2c968e5b2ff642208e101202e04e81	pool/main/t/termux-services/termux-services_0.13-1_all.deb	1920
@@ -289,7 +289,7 @@ libexif	0.6.22	aarch64	4888b83026237db4f0bbe586e542ad1a71ae8663591a9ffb289b0dad0
 libopencore-amr	0.1.6-1	aarch64	5b7930344a2ec61511b88e3ea5e62055005aaae63cfc1ebfdb459fc8d295a5fd	pool/main/l/libopencore-amr/libopencore-amr_0.1.6-1_aarch64.deb	111668
 libvo-amrwbenc	0.1.3-2	aarch64	cf5b63281ce5997f5ef5c5bfd7f23591255ea5abd0d08676c69b37a43c4d6721	pool/main/l/libvo-amrwbenc/libvo-amrwbenc_0.1.3-2_aarch64.deb	52348
 libxshmfence	1.3.3-1	aarch64	ca10097aa32e7ed9faa806383073f93e6683ad5bbb63a3c62851cf12f5e3a72d	pool/main/l/libxshmfence/libxshmfence_1.3.3-1_aarch64.deb	4564
-openssh-sftp-server	10.4p1	aarch64	953f5f4583fe50ab29108634e5e4d50d02258e269fb2258f690f229766c6573d	pool/main/o/openssh-sftp-server/openssh-sftp-server_10.4p1_aarch64.deb	56384
+openssh-sftp-server	10.5p1	aarch64	c774292f1056a3ece8ae4ec4a01d80864a03a52860b0add9304356821afd124a	pool/main/o/openssh-sftp-server/openssh-sftp-server_10.5p1_aarch64.deb	56380
 pkg-config	0.29.2-3	aarch64	f303c33964f37bce7b26e818215158465f5cb2b07d4ba7f47dd9a4ea4a83b750	pool/main/p/pkg-config/pkg-config_0.29.2-3_aarch64.deb	32788
 taglib	2.3.1	aarch64	78875552022ed799bc1d1e8f83b0bbb3bf3c8b7e123883b7e65761cd160dfdff	pool/main/t/taglib/taglib_2.3.1_aarch64.deb	463548
 xvidcore	1.3.7-1	aarch64	f5d56458b20924a3c09432c89d6ef5859e07a32ed28961f1dfd4bce1fd64623b	pool/main/x/xvidcore/xvidcore_1.3.7-1_aarch64.deb	125948
@@ -297,7 +297,7 @@ glslang	16.5.0	aarch64	48506102b2d95fc51069dfdc92af5282c184064ca8cdac9b9684f5ab9
 luajit	1:2.1.1787165859+g1ee778a	aarch64	47c53683d5dae8e1911dd6fad496025c8c51db069f86513388cce3fb66ece482	pool/main/l/luajit/luajit_1:2.1.1787165859+g1ee778a_aarch64.deb	293200
 luv	1.52.1-0-0	aarch64	4218923d191971a303787830660bbaa735c47d7e954c15c039c975a27df174de	pool/main/l/luv/luv_1.52.1-0-0_aarch64.deb	50664
 ocl-icd	2.3.5	aarch64	a3c6db9d7d4c0c6ced207175aecde07f6548d98b1587e3e23232e5b59287d23b	pool/main/o/ocl-icd/ocl-icd_2.3.5_aarch64.deb	104160
-openssh	10.4p1	aarch64	cfec57828a88edd8be818ecb16caf951b677c77b3d47d5dd834229666fe927f0	pool/main/o/openssh/openssh_10.4p1_aarch64.deb	960352
+openssh	10.5p1	aarch64	0ed13989aedd22c05b7c59ffdb407cdc6cbf7dffdeabff0c94486a0d28521061	pool/main/o/openssh/openssh_10.5p1_aarch64.deb	964052
 peaclock	0.4.3-9	aarch64	a7ba5074813bcb86e9648dfd037f97f3aaaa3006fe17980f51c3bde9cb99f0a7	pool/main/p/peaclock/peaclock_0.4.3-9_aarch64.deb	167128
 tree-sitter-bash	0.25.1-1	aarch64	87ebf98d3b35e2d4b6f65e80dbda546dd3abd984168eda96f04f38d2f57a7a2c	pool/main/t/tree-sitter-bash/tree-sitter-bash_0.25.1-1_aarch64.deb	126084
 tree-sitter-c	0.24.2	aarch64	fbf68a97287b5088a4f78d021fe79b5530168b8b01621a04d401e782e48f9f9a	pool/main/t/tree-sitter-c/tree-sitter-c_0.24.2_aarch64.deb	49364
@@ -328,7 +328,7 @@ rust	1.96.0	aarch64	399a2c4e90e01f2fc8c119b82053d7761f19f84f01328ead0b2f1bf266c0
 rust-std-aarch64-linux-android	1.96.0	aarch64	16edc41c43dbc9f08970039c33c1ab58161a567ba01ad8b10bb020abeaff696c	pool/main/r/rust-std-aarch64-linux-android/rust-std-aarch64-linux-android_1.96.0_aarch64.deb	4777248
 golang	3:1.27.0	aarch64	93ce8cd9b25e221739d51025a29c6a2c16aa64407d0e5b40574150836fed33f5	pool/main/g/golang/golang_3:1.27.0_aarch64.deb	37225688
 nodejs	26.4.0-1	aarch64	a30454f250996d7cb2bcbb80e6578fa908f3d2f6af7c45b73be565e02ae528d0	pool/main/n/nodejs/nodejs_26.4.0-1_aarch64.deb	10344676
-nodejs-lts	24.17.0	aarch64	6a6879d53b69ad41b91d9be06fe8f5f494adba42ac4694b6a9cc7207f36e20e3	pool/main/n/nodejs-lts/nodejs-lts_24.17.0_aarch64.deb	9700832
+nodejs-lts	24.18.0-1	aarch64	e7b65018f831667ab6ed034c8e1a257252cad62d6b041594a1cda8e20de84de8	pool/main/n/nodejs-lts/nodejs-lts_24.18.0-1_aarch64.deb	9738812
 libopenmpt	0.8.9	aarch64	ef91d4b40dd010ab7b13fb65425ca28615e1b55d9f6f0542fc608815e2136d4f	pool/main/l/libopenmpt/libopenmpt_0.8.9_aarch64.deb	543268
 openmpt123	0.8.9	aarch64	21507a0243b29c64ba0085101f119e8571b4f86e4c0619bee3250696ead0f760	pool/main/o/openmpt123/openmpt123_0.8.9_aarch64.deb	97140
 libplacebo	7.360.1	aarch64	fb2f189180cb72d3cd64fcf65e32dbdc665fb49262918af5e842aea72429ae19	pool/main/l/libplacebo/libplacebo_7.360.1_aarch64.deb	417576
@@ -349,8 +349,8 @@ aichat	0.30.0-1	aarch64	42f1d9bcdc20e39c1b97f6cf918899209a8e794bb946161283c38799
 chroma-visualizer	0.0.0+g3c32e7d	aarch64	116d2e511cf3a4798687ab4a5439d6a19425b01a1944f7bb5c607307ca9d382b	pool/main/c/chroma-visualizer/chroma-visualizer_0.0.0+g3c32e7d_aarch64.deb	1989148
 chezmoi	2.72.0	aarch64	3432fbf706699fb2a13e846c3f375448db57c791c533c8e2efda44dcbc852c50	pool/main/c/chezmoi/chezmoi_2.72.0_aarch64.deb	10386484
 gh	2.98.0	aarch64	c12d5c64daa2688920c732308ece557278b9e4e7d5cb9d3fa1eaeb4d79cd7300	pool/main/g/gh/gh_2.98.0_aarch64.deb	9921236
-oh-my-posh	29.18.0	aarch64	cd3bfc84422e74e61c114bf5c1a0ec4f2ff48c552697dd0a06f5028205de897b	pool/main/o/oh-my-posh/oh-my-posh_29.18.0_aarch64.deb	4766068
-npm	11.17.0	all	5139986c42fdb4b7d5165c023dd27a0bb7d3b5d60b2e1b3ff3567571189a4157	pool/main/n/npm/npm_11.17.0_all.deb	2002932
+oh-my-posh	30.9.0	aarch64	266f65fe7c7cc4e5cc4f769b14eeca585326278397836241153c06e18108891e	pool/main/o/oh-my-posh/oh-my-posh_30.9.0_aarch64.deb	3770844
+npm	11.19.1	all	33a3cdff145c8bd1d0f677fa3b2fa6cd9719e4667381ec17d27f4edd9e38d007	pool/main/n/npm/npm_11.19.1_all.deb	2024396
 yt-dlp-ejs	0.8.0	all	a2f55f8960013b37304d2b934ca9daeb4258b00715e0e7ca719c228ad4a5635f	pool/main/y/yt-dlp-ejs/yt-dlp-ejs_0.8.0_all.deb	46220
 libavif	1.4.2	aarch64	f9aab8759997de968fd885684ffaeceef03492fb9004a000d7c070eded502a00	pool/main/l/libavif/libavif_1.4.2_aarch64.deb	388188
 libheif	1.23.2	aarch64	245dcc9882181983f3ae7da8ca5af9995367c14a02fdfecdc1c3f5bdbc9bea01	pool/main/l/libheif/libheif_1.23.2_aarch64.deb	579156
@@ -364,10 +364,10 @@ jellyfin-ffmpeg	10.11.11	aarch64	44e15c67aa35a25d503714169c32bdf3a5286749c57e047
 timg	1.6.3-2	aarch64	950df543e6b95f14146021c9878a1d2c6314aba9d5e0f3602acd1355c4299912	pool/main/t/timg/timg_1.6.3-2_aarch64.deb	93580
 kew	4.2.7	aarch64	f2f3d09331126803842777f6e1aec749dd7944effea9755aeaaca776d62cb54e	pool/main/k/kew/kew_4.2.7_aarch64.deb	406952
 alsa-plugins	1.2.12-1	aarch64	1985e8582aae009dbc4541d20e459097cd14d416afe341e0c6321663b3d406fc	pool/main/a/alsa-plugins/alsa-plugins_1.2.12-1_aarch64.deb	33624
-proot-distro	5.4.1	all	b0c4387fc252c080021935eee5d02a07e5c58ac8fd20a115190db851bbfd77a4	pool/main/p/proot-distro/proot-distro_5.4.1_all.deb	146984
-python-brotli	1.2.0-1	aarch64	9ea71936b8d5f1baf899723d40bddd8e1e5266012bc5cb9327c6e297a658277b	pool/main/p/python-brotli/python-brotli_1.2.0-1_aarch64.deb	280456
-python-pycryptodomex	3.23.0-3	aarch64	0d4b9dbff6c049eb1dca776f4a98eab87def7d8feb30ff1c7c457594ea31e784	pool/main/p/python-pycryptodomex/python-pycryptodomex_3.23.0-3_aarch64.deb	1065356
-python-yt-dlp	2026.06.09	aarch64	29b116bab7826dc46860db8970c06b57443de46535ed99baaacfd34578035275	pool/main/p/python-yt-dlp/python-yt-dlp_2026.06.09_aarch64.deb	1730128
+proot-distro	5.8.0	all	5ac7ac218e0ce477a6a700b6edcd66a9f1cdadeb6b7b0537b2181f4f1fe8deb6	pool/main/p/proot-distro/proot-distro_5.8.0_all.deb	266072
+python-brotli	1.2.0-2	aarch64	0854140ba193404ee9d7807128b6c06c93d26a13346e1145a984d29191b6a97c	pool/main/p/python-brotli/python-brotli_1.2.0-2_aarch64.deb	282140
+python-pycryptodomex	3.23.0-4	aarch64	5a5c31945a154508d5dc79ce2557ae97fe1f60bc9ecc11454c6f21195051b52f	pool/main/p/python-pycryptodomex/python-pycryptodomex_3.23.0-4_aarch64.deb	1066292
+python-yt-dlp	2026.08.19	aarch64	e7fccf657018836eb3d414c53eddab46157ccb0a36bcf2eb83ce055e87f31113	pool/main/p/python-yt-dlp/python-yt-dlp_2026.08.19_aarch64.deb	1739744
 openjdk-21	21.0.12	aarch64	8c09ef7b27b40a7602e51af3f8b3fab2954215eae350759405239f1fe77484ed	pool/main/o/openjdk-21/openjdk-21_21.0.12_aarch64.deb	106120836
 tree-sitter-css	0.25.0-1	aarch64	051d5daf4a80c451e512aa7d98e2ec4390e4f81bebdc9551840aa3f906670bc1	pool/main/t/tree-sitter-css/tree-sitter-css_0.25.0-1_aarch64.deb	18936
 tree-sitter-latex	0.6.0-1	aarch64	1d91e4394ce02d308e9381906b6f27b96c8afee35638d439e27f094b6071a86b	pool/main/t/tree-sitter-latex/tree-sitter-latex_0.6.0-1_aarch64.deb	95432
@@ -1562,7 +1562,7 @@ pulseaudio-glib	17.0-4	aarch64	84f6ff24acebef8141af277abe7972ee3ae9b03bcd072da68
 pulseaudio	17.0-4	aarch64	a460c420b21dbddf1de7df5fef28a8918ec9160759e85b994e5337bec8644313	pool/main/p/pulseaudio/pulseaudio_17.0-4_aarch64.deb	849160
 pycairo	1.29.1	aarch64	a373f3362ef7c27643e1266693f422cc8fc7e18efd6710a338a39172fd45206b	pool/main/p/pycairo/pycairo_1.29.1_aarch64.deb	89108
 pygobject	3.56.3-1	aarch64	e694ce29e5670b411220c89261d8285f11cd04eb6a560f508f12bbba7fbd0082	pool/main/p/pygobject/pygobject_3.56.3-1_aarch64.deb	154468
-python-lxml	6.1.1	aarch64	f504c32227027bdf1d0595d375f858f39f91f8a6fc33823dd2588305039dbd46	pool/main/p/python-lxml/python-lxml_6.1.1_aarch64.deb	1004624
+python-lxml	6.1.2	aarch64	aad131c6f5a5c0bcf1a424a1b9d5ad5fcc3b9340986bec2232b843570e84c9dc	pool/main/p/python-lxml/python-lxml_6.1.2_aarch64.deb	1052428
 python-numpy-static	2.4.4-1	aarch64	63606e3d03afee11524d9d350c1923193e6f45d84cb84f53131078d923722858	pool/main/p/python-numpy-static/python-numpy-static_2.4.4-1_aarch64.deb	46596
 python-numpy	2.4.4-1	aarch64	eb1f125afcf594931167052de6aca95f75db07027136ea69d2d85e55fa169267	pool/main/p/python-numpy/python-numpy_2.4.4-1_aarch64.deb	3515416
 python-pip	26.2.1	all	62b1f94b93e5fe45f67e5250ddd6f19ec43062bc03bb124c9d1f474e6602c245	pool/main/p/python-pip/python-pip_26.2.1_all.deb	1190172
