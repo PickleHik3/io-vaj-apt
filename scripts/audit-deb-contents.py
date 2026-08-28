@@ -82,6 +82,9 @@ def main() -> int:
 
     bad = []
     for deb in debs:
+        if not deb.is_file():
+            print(f"SKIP {deb}: not found (pool not synced?)", file=sys.stderr)
+            continue
         name = deb_name(deb)
         total = foreign = 0
         who: Counter = Counter()

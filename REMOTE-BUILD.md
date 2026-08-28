@@ -159,6 +159,24 @@ ignoring the trailing newline: gpg 2.4.4 (ubuntu-latest) drops it, gpg 2.4.9
 | `R2_S3_ENDPOINT` | `~/.config/vaj-apt/r2.env` |
 | `R2_BUCKET` | `~/.config/vaj-apt/r2.env` |
 
+## Payload integrity: no foreign files
+
+Builds must be **serial** (`build-all-queue.sh` uses `MAX_JOBS=1`). The build
+system collects a package's payload as "everything in the prefix newer than the
+timestamp", so two builds sharing one prefix leak into each other. The old
+primary-host queue ran concurrently and produced 279 contaminated debs out of
+1,656 (`audits/2026-08-28-contaminated-debs.tsv`; e.g. arpack-ng shipping all of
+ruby, 145 debs shipping dash's `bin/sh` and therefore uninstallable). Check any
+deb or the whole pool against upstream Termux's `Contents-aarch64` with:
+
+```bash
+python3 scripts/audit-deb-contents.py incoming/          # or pool/
+```
+
+Remediation was a VAJ revision bump on the affected recipes so the index-driven
+queue rebuilds them. Wiring this script into `publish.yml` as a gate on
+`incoming/` is the obvious next hardening step.
+
 ## Local publish still works
 
 `stage-debs.py` is the extracted staging step; local `publish-wave-*.py` and the
