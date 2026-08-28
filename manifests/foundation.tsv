@@ -1646,7 +1646,7 @@ vulkan-headers	1.4.360	all	320163b3e8c42f4099fe395d721bef03a01e8a7fca92a83a937b7
 vulkan-icd	0.1	all	04842428cc8258d0cbb71f6750b4a937ea685ea375a1af65b1ba1c26b7e6d17c	pool/main/v/vulkan-icd/vulkan-icd_0.1_all.deb	720
 vulkan-loader-android	29-1	aarch64	bde1d2b87030cec6fd5e3530650dab5e79ad58c7e9116318af0a9cfdb6119d5f	pool/main/v/vulkan-loader-android/vulkan-loader-android_29-1_aarch64.deb	5012
 vulkan-loader	0.0.3	all	7768507ab84f12c2acad21826261022a334d70e61460468348c6f0d4b6e2ce9d	pool/main/v/vulkan-loader/vulkan-loader_0.0.3_all.deb	708
-wasi-libc	33	all	198e561223322733d2c48d5957ddf57f529660bc9e27fd05c4d4f72f5b91c4bc	pool/main/w/wasi-libc/wasi-libc_33_all.deb	46868156
+wasi-libc	34	all	f34e5c50850e7c4094fd1575f797b4f2cdfe8a61d327f58134a637af23ba2e01	pool/main/w/wasi-libc/wasi-libc_34_all.deb	77552444
 wavpack	5.9.0-1	aarch64	6bb589a4506147760607d57f3eabe6ddcebd062ecf5d3b0cbd8b04172ab61ef0	pool/main/w/wavpack/wavpack_5.9.0-1_aarch64.deb	85632
 wget	1.25.0-1	aarch64	c5b052dcdcf6e5d4e675d7c15e06c1fdf3538aca0ef9f51ef29b3f6b64813bdb	pool/main/w/wget/wget_1.25.0-1_aarch64.deb	282380
 whiptail	0.52.25-1	aarch64	5471333afd3711c66a52bb85a77706ab65bd596b497f4af2649bcb89afa7b814	pool/main/w/whiptail/whiptail_0.52.25-1_aarch64.deb	13108
