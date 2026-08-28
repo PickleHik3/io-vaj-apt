@@ -191,13 +191,19 @@ Public IP: `az vm show -d -g vaj-build -n vaj-builder --query publicIps -o tsv`.
   `nohup ~/run-queue.sh > /dev/null 2>&1 &`.
 - Between runs: `az vm deallocate -g vaj-build -n vaj-builder` (~$0.23/h running,
   only the disk when deallocated). Start again with `az vm start`.
-- It builds with `io-vaj-phase0a-builder:c9cc6b28-ac272`: the frozen image plus
-  GNU Autoconf 2.72 (`termux-packages/scripts/vaj/Dockerfile.builder-ac272`).
-  Upstream's builder is Ubuntu 26.04 now and python 3.14 needs autoconf ≥ 2.72;
-  on the 24.04-based frozen image every package that build-depends on python
-  died at `autoreconf`. The frozen tag itself is untouched. More 24.04-vs-26.04
-  gaps may surface; the durable fix is a builder rebuilt from upstream's
-  current `scripts/Dockerfile` with the VAJ properties.
+- It builds with **`io-vaj-builder:<recipes-sha>`** (`:latest` alias): upstream's
+  current `scripts/Dockerfile` (`FROM ubuntu:26.04`) built at the merged recipes
+  tree, builder UID 1001, no VAJ patches (the VAJ identity lives in the mounted
+  recipes' `scripts/properties.sh`). The frozen 24.04 image
+  `io-vaj-phase0a-builder:c9cc6b28` is kept but no longer usable for current
+  recipes: python 3.14 needs autoconf ≥ 2.72 and every meson/GIR package fails
+  with `Unhandled introspection XML tag 'pointer'` on its host
+  gobject-introspection. (`c9cc6b28-ac272`, frozen + autoconf 2.72, was an
+  interim step; superseded.) Rebuild after a recipes merge that touches
+  `scripts/setup-ubuntu.sh` or `scripts/Dockerfile`:
+  `docker build -t io-vaj-builder:$(git rev-parse --short HEAD) -t io-vaj-builder:latest -f scripts/Dockerfile scripts/`
+- Every package build is bounded by `PKG_TIMEOUT` (default 8 h); `dotnet9.0` is
+  in `build-exclusions.txt` (its source build hangs on a zombie MSBuild server).
 - Stopping a run: kill `remote-build.sh` **by PID**, then `docker rm -f
   vaj-remote-builder`. Killing only the `run-queue.sh` wrapper leaves the build
   running and loses the auto-deallocate; a `pkill -f` pattern that also appears
