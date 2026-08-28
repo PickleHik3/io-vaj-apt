@@ -172,7 +172,7 @@ tor	0.4.9.11	aarch64	88906c283c7b3131a0ad6475d062ce360b6933503361a35899c519c0fbb
 ttf-dejavu	2.37-8	all	d8d1b07911919f9ddf50bb8b06539214d32d133a197ad0c58c6ff3833437e99d	pool/main/t/ttf-dejavu/ttf-dejavu_2.37-8_all.deb	2460480
 unbound	1.26.0	aarch64	e531a96f28703ff1f6055ae2e968a48dcac08788c6d23400640e0e4bae1a88ac	pool/main/u/unbound/unbound_1.26.0_aarch64.deb	654996
 unzip	6.0-10	aarch64	f7f76c79c50ea60cd9fb543f997098b74afec35e52d1f91bcfb16f8978c98983	pool/main/u/unzip/unzip_6.0-10_aarch64.deb	116760
-utf8cpp	1:4.1.1	all	715f9c8d200bb0d02a4a6c83f67c85d5dc34a846135fe031d7cf5a343eefd71f	pool/main/u/utf8cpp/utf8cpp_1:4.1.1_all.deb	10488
+utf8cpp	1:4.2.0	all	7bf808fbcf72fb8d6d2e6d8ca870fe6e79f05709fb84740aea216b3950cd8f73	pool/main/u/utf8cpp/utf8cpp_1:4.2.0_all.deb	10496
 util-linux	2.42.1-4	aarch64	af4c0f24bb629894ca629c7564c010a4379a267a6dc0cc472c3070d730ac08fc	pool/main/u/util-linux/util-linux_2.42.1-4_aarch64.deb	787788
 uuid-utils	2.42.1-4	aarch64	bbf60f4c1148952161070de3422a768bb87927a36b4a738b575ff05e5efc68a8	pool/main/u/uuid-utils/uuid-utils_2.42.1-4_aarch64.deb	41780
 xcb-proto	1.17.0-3	all	165e97c1f203533ca2fbfc414d8424ef5e72a97f7f073111037f9c5d58da967f	pool/main/x/xcb-proto/xcb-proto_1.17.0-3_all.deb	78600
@@ -291,7 +291,7 @@ libvo-amrwbenc	0.1.3-2	aarch64	cf5b63281ce5997f5ef5c5bfd7f23591255ea5abd0d08676c
 libxshmfence	1.3.3-1	aarch64	ca10097aa32e7ed9faa806383073f93e6683ad5bbb63a3c62851cf12f5e3a72d	pool/main/l/libxshmfence/libxshmfence_1.3.3-1_aarch64.deb	4564
 openssh-sftp-server	10.4p1	aarch64	953f5f4583fe50ab29108634e5e4d50d02258e269fb2258f690f229766c6573d	pool/main/o/openssh-sftp-server/openssh-sftp-server_10.4p1_aarch64.deb	56384
 pkg-config	0.29.2-3	aarch64	f303c33964f37bce7b26e818215158465f5cb2b07d4ba7f47dd9a4ea4a83b750	pool/main/p/pkg-config/pkg-config_0.29.2-3_aarch64.deb	32788
-taglib	2.3	aarch64	a7cdab65b4c6f1dfd245c9747f3db55be10cbd5de01d84b7d1f8c05f635eadb3	pool/main/t/taglib/taglib_2.3_aarch64.deb	463056
+taglib	2.3.1	aarch64	78875552022ed799bc1d1e8f83b0bbb3bf3c8b7e123883b7e65761cd160dfdff	pool/main/t/taglib/taglib_2.3.1_aarch64.deb	463548
 xvidcore	1.3.7-1	aarch64	f5d56458b20924a3c09432c89d6ef5859e07a32ed28961f1dfd4bce1fd64623b	pool/main/x/xvidcore/xvidcore_1.3.7-1_aarch64.deb	125948
 glslang	16.5.0	aarch64	48506102b2d95fc51069dfdc92af5282c184064ca8cdac9b9684f5ab9dbd944c	pool/main/g/glslang/glslang_16.5.0_aarch64.deb	2530484
 luajit	1:2.1.1780076327+gb925b3e	aarch64	2888adba488281b827659bd96b972fc6f25fd23401a0c89f8b606a246d974eba	pool/main/l/luajit/luajit_1:2.1.1780076327+gb925b3e_aarch64.deb	290084
@@ -323,7 +323,7 @@ clang	21.1.8-3	aarch64	4cf4c4a5c7079022cb0f85dd362f6c1e33438423a2aca72e294b20320
 lld	21.1.8-3	aarch64	d05e4e3c836ea019bcdaa4908c563adaaafc3bff712fdad332dc0c9a55fdbcaf	pool/main/l/lld/lld_21.1.8-3_aarch64.deb	2812332
 llvm	21.1.8-3	aarch64	4505c3b2974bf26a4cbb90f3292972cf9954a1246de03380e2754cda681d8144	pool/main/l/llvm/llvm_21.1.8-3_aarch64.deb	14763536
 libcompiler-rt	21.1.8-3	aarch64	5609aed6d5221b83d2f864284ba1175ad8f03aab1c60aa70ba76bc302e737b8c	pool/main/l/libcompiler-rt/libcompiler-rt_21.1.8-3_aarch64.deb	2705804
-spirv-llvm-translator	21.1.7	aarch64	ffe2f867c61fcd808b8d3cb8cf07af7202a1137a98b7ea724624b8348fc74ee2	pool/main/s/spirv-llvm-translator/spirv-llvm-translator_21.1.7_aarch64.deb	1533332
+spirv-llvm-translator	21.1.10	aarch64	6cdc7938639b21a2a78efe7b1adf46bfa46541c51789f79e2ed808629b9b651d	pool/main/s/spirv-llvm-translator/spirv-llvm-translator_21.1.10_aarch64.deb	1541824
 rust	1.96.0	aarch64	399a2c4e90e01f2fc8c119b82053d7761f19f84f01328ead0b2f1bf266c0c5b0	pool/main/r/rust/rust_1.96.0_aarch64.deb	121167924
 rust-std-aarch64-linux-android	1.96.0	aarch64	16edc41c43dbc9f08970039c33c1ab58161a567ba01ad8b10bb020abeaff696c	pool/main/r/rust-std-aarch64-linux-android/rust-std-aarch64-linux-android_1.96.0_aarch64.deb	4777248
 golang	3:1.27.0	aarch64	93ce8cd9b25e221739d51025a29c6a2c16aa64407d0e5b40574150836fed33f5	pool/main/g/golang/golang_3:1.27.0_aarch64.deb	37225688
@@ -362,7 +362,7 @@ ffmpeg	8.1.2	aarch64	30920a084bf396707104c414c547959ed2559164d8d8a04841e3f0cf968
 jellyfin-server	10.11.11	aarch64	63168fab2f5fedd1efc9359d4e9cfc0d48ffa2dff674cc4173d20eb083402767	pool/main/j/jellyfin-server/jellyfin-server_10.11.11_aarch64.deb	43959500
 jellyfin-ffmpeg	10.11.11	aarch64	44e15c67aa35a25d503714169c32bdf3a5286749c57e0470a3d93cd2618097dc	pool/main/j/jellyfin-ffmpeg/jellyfin-ffmpeg_10.11.11_aarch64.deb	8229252
 timg	1.6.3-2	aarch64	950df543e6b95f14146021c9878a1d2c6314aba9d5e0f3602acd1355c4299912	pool/main/t/timg/timg_1.6.3-2_aarch64.deb	93580
-kew	4.0.0-1	aarch64	5ee658e585d0758af8725690c4df663444a45b4bb3e5d66291524d23427fd40f	pool/main/k/kew/kew_4.0.0-1_aarch64.deb	326724
+kew	4.2.7	aarch64	f2f3d09331126803842777f6e1aec749dd7944effea9755aeaaca776d62cb54e	pool/main/k/kew/kew_4.2.7_aarch64.deb	406952
 alsa-plugins	1.2.12-1	aarch64	1985e8582aae009dbc4541d20e459097cd14d416afe341e0c6321663b3d406fc	pool/main/a/alsa-plugins/alsa-plugins_1.2.12-1_aarch64.deb	33624
 proot-distro	5.4.1	all	b0c4387fc252c080021935eee5d02a07e5c58ac8fd20a115190db851bbfd77a4	pool/main/p/proot-distro/proot-distro_5.4.1_all.deb	146984
 python-brotli	1.2.0-1	aarch64	9ea71936b8d5f1baf899723d40bddd8e1e5266012bc5cb9327c6e297a658277b	pool/main/p/python-brotli/python-brotli_1.2.0-1_aarch64.deb	280456
