@@ -341,8 +341,8 @@ rav1e	0.8.1	aarch64	c622f6c93cc395cc0624956cd7da27d7b8f7e29962ebf04cbee74ba46950
 librsvg	2.62.3	aarch64	da048561a23ba45d0f708811a3fd00ba414268cda09586b46c4afc32e09c262d	pool/main/l/librsvg/librsvg_2.62.3_aarch64.deb	5351068
 ripgrep	15.2.0	aarch64	4e021e443101b92303dee6de1250d803b5c2ae43a742aa9cca70ec9b2a166a79	pool/main/r/ripgrep/ripgrep_15.2.0_aarch64.deb	1213284
 fd	10.5.0	aarch64	0630763d5833ea44a2b46b7556d15dc1345efadf9794e03472c17ac0939d5699	pool/main/f/fd/fd_10.5.0_aarch64.deb	953956
-starship	1.25.1	aarch64	33c043877a4ba8e44f93130f56a3a7112cc2970427c81629af4f5642a63e82f6	pool/main/s/starship/starship_1.25.1_aarch64.deb	3171084
-tealdeer	1.8.1	aarch64	bc9b40f2614ec546545a13a6e41dee499817d85bac83ae04b535999851f19b50	pool/main/t/tealdeer/tealdeer_1.8.1_aarch64.deb	1144360
+starship	1.26.0	aarch64	6391ba3827ce88d63567c1cb571265cb3350a231f1bcf24a622827ec41727994	pool/main/s/starship/starship_1.26.0_aarch64.deb	3293880
+tealdeer	1.9.0	aarch64	3e7e45bf05d93441a61d60ef4f97c9d4bdb4184b93b3b13b0900ec746e4f2116	pool/main/t/tealdeer/tealdeer_1.9.0_aarch64.deb	1201836
 zoxide	0.10.0	aarch64	948e9c4ef36137d97b66e13758b1076d2a58006fe6a6829c1b60267ef7ff1bfc	pool/main/z/zoxide/zoxide_0.10.0_aarch64.deb	373012
 eza	0.23.5	aarch64	efaa79648291a5399bb1c38046fb5a7d33b901e37bae0ddbc6fed231445981af	pool/main/e/eza/eza_0.23.5_aarch64.deb	598968
 aichat	0.30.0-1	aarch64	42f1d9bcdc20e39c1b97f6cf918899209a8e794bb946161283c38799e130fd6f	pool/main/a/aichat/aichat_0.30.0-1_aarch64.deb	4012244
@@ -351,7 +351,7 @@ chezmoi	2.72.0	aarch64	3432fbf706699fb2a13e846c3f375448db57c791c533c8e2efda44dcb
 gh	2.98.0	aarch64	c12d5c64daa2688920c732308ece557278b9e4e7d5cb9d3fa1eaeb4d79cd7300	pool/main/g/gh/gh_2.98.0_aarch64.deb	9921236
 oh-my-posh	30.9.0	aarch64	266f65fe7c7cc4e5cc4f769b14eeca585326278397836241153c06e18108891e	pool/main/o/oh-my-posh/oh-my-posh_30.9.0_aarch64.deb	3770844
 npm	11.19.1	all	33a3cdff145c8bd1d0f677fa3b2fa6cd9719e4667381ec17d27f4edd9e38d007	pool/main/n/npm/npm_11.19.1_all.deb	2024396
-yt-dlp-ejs	0.8.0	all	a2f55f8960013b37304d2b934ca9daeb4258b00715e0e7ca719c228ad4a5635f	pool/main/y/yt-dlp-ejs/yt-dlp-ejs_0.8.0_all.deb	46220
+yt-dlp-ejs	0.8.0-1	all	a979863ccb07d7bdf74b09f3da0028eb8f1abc2f6164fe63f483b76b11f06fde	pool/main/y/yt-dlp-ejs/yt-dlp-ejs_0.8.0-1_all.deb	46240
 libavif	1.4.2	aarch64	f9aab8759997de968fd885684ffaeceef03492fb9004a000d7c070eded502a00	pool/main/l/libavif/libavif_1.4.2_aarch64.deb	388188
 libheif	1.23.2	aarch64	245dcc9882181983f3ae7da8ca5af9995367c14a02fdfecdc1c3f5bdbc9bea01	pool/main/l/libheif/libheif_1.23.2_aarch64.deb	579156
 libgd	1:2.3.3-7	aarch64	c75c43c1ca02f3c69339b6e2b15fc86382477b8be0efa80359bd4f398b78b9c1	pool/main/l/libgd/libgd_1:2.3.3-7_aarch64.deb	125848
