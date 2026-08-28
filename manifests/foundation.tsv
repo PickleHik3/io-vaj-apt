@@ -347,7 +347,7 @@ zoxide	0.10.0	aarch64	948e9c4ef36137d97b66e13758b1076d2a58006fe6a6829c1b60267ef7
 eza	0.23.4	aarch64	0d0a62080caab039984a8d2defc318aad29039eb5d27d50b121d847b3ac05d0e	pool/main/e/eza/eza_0.23.4_aarch64.deb	477820
 aichat	0.30.0-1	aarch64	42f1d9bcdc20e39c1b97f6cf918899209a8e794bb946161283c38799e130fd6f	pool/main/a/aichat/aichat_0.30.0-1_aarch64.deb	4012244
 chroma-visualizer	0.0.0+g3c32e7d	aarch64	116d2e511cf3a4798687ab4a5439d6a19425b01a1944f7bb5c607307ca9d382b	pool/main/c/chroma-visualizer/chroma-visualizer_0.0.0+g3c32e7d_aarch64.deb	1989148
-chezmoi	2.70.5	aarch64	9bb2e5ff44c70a372db5c71d8145af9f26c8977c3ef634e6d156c0aae2055a55	pool/main/c/chezmoi/chezmoi_2.70.5_aarch64.deb	11280796
+chezmoi	2.72.0	aarch64	3432fbf706699fb2a13e846c3f375448db57c791c533c8e2efda44dcbc852c50	pool/main/c/chezmoi/chezmoi_2.72.0_aarch64.deb	10386484
 gh	2.96.0	aarch64	5cc63e9c2c2aef4ddc503ab657ff3b5419c2ecf1d9ab67531c2fad580cf31dc1	pool/main/g/gh/gh_2.96.0_aarch64.deb	9548856
 oh-my-posh	29.18.0	aarch64	cd3bfc84422e74e61c114bf5c1a0ec4f2ff48c552697dd0a06f5028205de897b	pool/main/o/oh-my-posh/oh-my-posh_29.18.0_aarch64.deb	4766068
 npm	11.17.0	all	5139986c42fdb4b7d5165c023dd27a0bb7d3b5d60b2e1b3ff3567571189a4157	pool/main/n/npm/npm_11.17.0_all.deb	2002932
@@ -810,7 +810,7 @@ fmt	1:11.2.0	aarch64	f78e7bed1be949f2214bd7e34b721fe103e0e522bb267a3f50607f1303e
 fontconfig-static	2.18.3	aarch64	c365e038682b9afa97bfcf33fb3765e95268a2608a0b339728deff1a27715a87	pool/main/f/fontconfig-static/fontconfig-static_2.18.3_aarch64.deb	135580
 forestdb-dump	1.2-2	aarch64	02e2c377e51ecc09353024c5838b2dcea43c35dafd9c4d13c620aac982dfacb4	pool/main/f/forestdb-dump/forestdb-dump_1.2-2_aarch64.deb	106176
 forgejo-static	15.0.2	aarch64	cbe5dd583156c1cc5536e5267ab7281d44dd91c70c0e544235119f104169b3ef	pool/main/f/forgejo-static/forgejo-static_15.0.2_aarch64.deb	4612364
-forgejo	15.0.2	aarch64	3296fad3fed9cda93496c0a5d50b26665529d81da478916608a620b9584e7084	pool/main/f/forgejo/forgejo_15.0.2_aarch64.deb	78962572
+forgejo	16.0.3	aarch64	3076b349cec417a27246e2faafca7e09cf32ad4a1d55e568685387c49174e644	pool/main/f/forgejo/forgejo_16.0.3_aarch64.deb	35010604
 fortune	1.2-2	aarch64	5f9021dca48a81b64703bb65a9497b405e0e7670e257570aaee57b25581707a8	pool/main/f/fortune/fortune_1.2-2_aarch64.deb	817700
 fossil	2.28	aarch64	84971b0cfa208d06b79b4da8a25f1b4c4ead7e58febdf8f1f5250a1638c87ec4	pool/main/f/fossil/fossil_2.28_aarch64.deb	1707400
 freecell-solver	6.16.0	aarch64	e2e83a406da769e2a16ac82896b6b8608fc9e6e50e1cef3e6e2ae0aa40f1d388	pool/main/f/freecell-solver/freecell-solver_6.16.0_aarch64.deb	173520
@@ -819,11 +819,11 @@ freeimage-static	3.18.0-7	aarch64	61808d5c4a5897d0af6b953910bf2eccc1f840adab6cf7
 freeimage	3.18.0-7	aarch64	9b8b8342ebea792b0ae6f8102555ee9dbdf9f632ccbbdae85663e0952deaa181	pool/main/f/freeimage/freeimage_3.18.0-7_aarch64.deb	1832300
 freetype-static	2.14.3	aarch64	773612537ef39694501326fc4322df0060483d7a246838aee12b6c8d93cc2562	pool/main/f/freetype-static/freetype-static_2.14.3_aarch64.deb	301924
 frei0r-plugins	3.2.1	aarch64	b8061652cfafa1f01ed8a5c9038060e4df339b0b34bbbd19bac614ff03e4fcc5	pool/main/f/frei0r-plugins/frei0r-plugins_3.2.1_aarch64.deb	520688
-fresh-editor	0.4.1-1	aarch64	aa6b0271e7b477dab8dc96b2389d9f52260c25f4a55fc2a969b9469f00c23af9	pool/main/f/fresh-editor/fresh-editor_0.4.1-1_aarch64.deb	23966652
+fresh-editor	0.4.10	aarch64	4012eb6a710ed5bc15374592a6cdc43584f636afca1d6ae5cddd868430f026ed	pool/main/f/fresh-editor/fresh-editor_0.4.10_aarch64.deb	10589640
 fribidi-static	1.0.16-1	aarch64	c7e6e7f4115edbaa7b8d8457107417ffed88e36e89fc1772db82909bd10768b2	pool/main/f/fribidi-static/fribidi-static_1.0.16-1_aarch64.deb	19912
 frobtads	2.0-5	aarch64	fb96b275a42d9e91952c24406a0930c1691a38d761ac444ff2d945e1c250dfcb	pool/main/f/frobtads/frobtads_2.0-5_aarch64.deb	2057196
-frp	0.69.1	aarch64	43ff5b2ce294473a74ffa7701b369ca2a17c120a4bd8173701e85aa6a83cd54b	pool/main/f/frp/frp_0.69.1_aarch64.deb	9522856
-fselect	0.10.1	aarch64	a1043eb95fbb63bfa0a4bb036e2238bf00a57907c6ebdd0078ccfd54dab7383c	pool/main/f/fselect/fselect_0.10.1_aarch64.deb	1769128
+frp	0.71.0	aarch64	7dc69e8a3adad3881b20dc1c1b48e0470fbb8005e48561143d8518b33bee8cfa	pool/main/f/frp/frp_0.71.0_aarch64.deb	9781976
+fselect	0.10.2	aarch64	c2006eefce2bcb52cad8e63b69f13ae2f67b3e3f67004900d1b6a622f9c57ed5	pool/main/f/fselect/fselect_0.10.2_aarch64.deb	1960004
 g-ir-scanner	1.86.0-1	aarch64	dc9860b07627ac9165f2e310ab7fc061e86d90be3b8efdcd13e40de29754aeb9	pool/main/g/g-ir-scanner/g-ir-scanner_1.86.0-1_aarch64.deb	130468
 game-music-emu-static	0.6.5	aarch64	e280039dceed0b1b0a8230b9c92d73ad29529412b668c0787664f27298cd87c0	pool/main/g/game-music-emu-static/game-music-emu-static_0.6.5_aarch64.deb	156768
 gauche-static	0.9.15-3	aarch64	85b6aebbd646ab051ff9ee3dd28b0f0bb82ae6a5aeb06b347241e3f45ae936e6	pool/main/g/gauche-static/gauche-static_0.9.15-3_aarch64.deb	11283100
