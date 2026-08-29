@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
 # Generated: 2026-07-02T00:00:00Z
-# Package count: 1679
+# Package count: 1720
 # Columns: name version arch sha256 object-path size
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb	1033296
@@ -600,7 +600,7 @@ cmark-static	0.31.2	aarch64	7cc0f9740fbbd04c025c41aee94cf87cb56cef3cdf1503141026
 cmark	0.31.2-1	aarch64	b138144d9917379c27796373fa70b388e5ebce428b5866f2f9b3bb443519620b	pool/main/c/cmark/cmark_0.31.2-1_aarch64.deb	78684
 cmatrix	2.0-1	aarch64	99f2c5531f31449833f4f5aed0238198aa38c930a686c71a7db494434c11dd68	pool/main/c/cmatrix/cmatrix_2.0-1_aarch64.deb	7648
 cmocka	2.0.2	aarch64	933fa279bd0c06ff07e82115590886113aa97e922491b70411e469e53b2d5c9f	pool/main/c/cmocka/cmocka_2.0.2_aarch64.deb	48532
-cmus	2.12.0-7	aarch64	50a0f80637bc7aa7a7eff8222a6fd1ab871257a99c42b4232369ddb863f5ae56	pool/main/c/cmus/cmus_2.12.0-7_aarch64.deb	197108
+cmus	2.12.0-8	aarch64	35e6d543519fda096e93fed8f3657fea5a81243d66000824822ada21c06cccc6	pool/main/c/cmus/cmus_2.12.0-8_aarch64.deb	192896
 cmusfm	0.5.0-1	aarch64	70fb0579b3cc0e6fc8887ac0d44714bd4d5237a7919f0ba7c112e528aace91b5	pool/main/c/cmusfm/cmusfm_0.5.0-1_aarch64.deb	11332
 codecrypt	1.8-11	aarch64	4b9a42ff04351f0f8f25f88eb9140f65746ffc553853123f2d94331568229fb5	pool/main/c/codecrypt/codecrypt_1.8-11_aarch64.deb	128848
 coinor-cbc-static	2.10.13-1	aarch64	a5fe36afbe07fdf1cf921e729113b88125547f681bfe605260b927396d5a6b4d	pool/main/c/coinor-cbc-static/coinor-cbc-static_2.10.13-1_aarch64.deb	726608
@@ -1683,3 +1683,44 @@ aidl	16.0.0.4-1	aarch64	05e0c76c6b65927c95f97d0753f3488df93c621104bb2330c47c7305
 autossh	1.4g-4	aarch64	a52dd3cf9be261d68597d47357ed3343bcdb415520c1c9ab2d37aeb3e62d2dd0	pool/main/a/autossh/autossh_1.4g-4_aarch64.deb	22460
 cabin	0.17.0	aarch64	c74b5045435ad395177cb279de45aca9bfad341f4726a4f1ed143d411f6aae6c	pool/main/c/cabin/cabin_0.17.0_aarch64.deb	2936424
 sysprop	16.0.0.4-1	aarch64	a06e682266c60fdcdd56c6942fefdcf693a547dd755cd2af33b5f94c98970fe9	pool/main/s/sysprop/sysprop_16.0.0.4-1_aarch64.deb	96668
+clvk	0.0.20260707.165306	aarch64	712d5bab7bdfb22850e68ef88129b5bc827d7722530d93a368df0ba344a9e49a	pool/main/c/clvk/clvk_0.0.20260707.165306_aarch64.deb	20224076
+dnstop	2022.10.19-1	aarch64	cb3c45260030b636a064ab5c24636a8d1066453bb26943665ddf32820bed0fb7	pool/main/d/dnstop/dnstop_2022.10.19-1_aarch64.deb	31852
+emacs	31.1-1	aarch64	231215c2143ae476a21fb6d324944ae7c728cdf2893b8c11b10d64323ece4658	pool/main/e/emacs/emacs_31.1-1_aarch64.deb	46040624
+emmylua-ls	0.25.1	aarch64	5361ed98ca6a4bafd51b3aacf94acc08833ed0adc8f7857594b8f17e3570bf79	pool/main/e/emmylua-ls/emmylua-ls_0.25.1_aarch64.deb	10270312
+exiftool	13.59-1	all	150b9ab591bbe3f1d6777a525c9f1ef49261f1379bdb2aeee80c16d0d3744678	pool/main/e/exiftool/exiftool_13.59-1_all.deb	3896348
+exiv2	2:0.28.8	aarch64	027df74aec3d66a4880e75c9d04464adc558404455b92655ec2b9482764079d9	pool/main/e/exiv2/exiv2_2:0.28.8_aarch64.deb	985320
+fsmon	1.8.8-1	aarch64	e6526e79f94f64034c17f92f507d0928413c1d9979a66f56b488bcdb6d512196	pool/main/f/fsmon/fsmon_1.8.8-1_aarch64.deb	10176
+fwknop-static	2.6.11-2	aarch64	49831e3cdc3ecd6c5dee34b10fe1e58ad55c48fc4efba589987d78d9e6742992	pool/main/f/fwknop-static/fwknop-static_2.6.11-2_aarch64.deb	35048
+fwknop	2.6.11-2	aarch64	47ba55d7212ebff3501f31fbf01da4d08ee1b17f35cfe4a3eb752768ab234448	pool/main/f/fwknop/fwknop_2.6.11-2_aarch64.deb	99236
+fx	39.2.0	aarch64	472e68edc74e18ccf5f6e85a57bf85acb05a7a12e3422311b55008119d9eb38b	pool/main/f/fx/fx_39.2.0_aarch64.deb	3293884
+fzf	0.74.3	aarch64	48dde4c7155534a1232bb7dcae45eb115b024819425e6e2af50ee48f0a94f34b	pool/main/f/fzf/fzf_0.74.3_aarch64.deb	1601980
+fzy	1.1-1	aarch64	126768fd3fab89ef93d098ee6898f0cd57838fafba47f47134482b46d62c9352	pool/main/f/fzy/fzy_1.1-1_aarch64.deb	12796
+gap-packages	4.16.1	all	0d7134602205493fed761b0e18805f45424deb44005c492c4a7d8d72e2696a19	pool/main/g/gap-packages/gap-packages_4.16.1_all.deb	95116284
+gap	4.16.1	aarch64	eea9effbb4962b863a26e0f876ad887bad730de0f38087bec9ccd9c7986352c0	pool/main/g/gap/gap_4.16.1_aarch64.deb	21349344
+garage	2.3.0-1	aarch64	5121edf91dbea84e17d8d4337ee0c4fa9da3c03946dc860e0b6949b05f90195e	pool/main/g/garage/garage_2.3.0-1_aarch64.deb	8309424
+gatling	0.16-2	aarch64	5d612589340b223bad1b47801d9b5bef172491e242aa08982d86c29ada34f1bf	pool/main/g/gatling/gatling_0.16-2_aarch64.deb	107464
+gbt	2.0.0-6	aarch64	062e357e1eb5a51bc15280112164460257833cf0de7ce3c25ce56486e5d099fa	pool/main/g/gbt/gbt_2.0.0-6_aarch64.deb	787172
+gcab	1.6-1	aarch64	f32a7e34ef1ef420b6e0f38bcf7a7670781b405b25cc6b18395e30e44664319b	pool/main/g/gcab/gcab_1.6-1_aarch64.deb	36480
+gcal	4.1-4	aarch64	4c3590711271a8a4fa5e06ddee95ae00e2ce733c1051252118e75c1e8ea51e55	pool/main/g/gcal/gcal_4.1-4_aarch64.deb	548348
+gdu	5.36.1	aarch64	3182d9e317f636840562c33fbf9df3ffb4738eed726ff0988e2bee7a5c777bb3	pool/main/g/gdu/gdu_5.36.1_aarch64.deb	5887148
+geckodriver	0.37.1	aarch64	c86645e47b43633ece96e778162051046a27e4a9f930c0ca193f49153e32824d	pool/main/g/geckodriver/geckodriver_0.37.1_aarch64.deb	1433808
+gecode	6.4.0	aarch64	878753fe6d52541272e4b2b65f1eaaca4e3d2d4c71f4acba123776e01bf09c3d	pool/main/g/gecode/gecode_6.4.0_aarch64.deb	2687072
+gegl	0.4.70	aarch64	81029659c138e46163dae0fbd8ea033ec052adffbe1a9b1d3f0fbbca2dc000ab	pool/main/g/gegl/gegl_0.4.70_aarch64.deb	1294868
+gengetopt	2.23-4	aarch64	aa28bbe17082045698e75ca8ba6a61ae4c2352e87400cbbc903b1b96916ee271	pool/main/g/gengetopt/gengetopt_2.23-4_aarch64.deb	190088
+geographiclib	2.7	aarch64	6c2f340c3bfb4ec9b11edb512d20d5ea2183a09e9d8d8c0c7e463681c06c8e19	pool/main/g/geographiclib/geographiclib_2.7_aarch64.deb	618624
+germanium	1.2.3-3	aarch64	7d57b5c17ec7d6779a0e78e209b4c959c362b49901eb370c0fa63135e26b1c0e	pool/main/g/germanium/germanium_1.2.3-3_aarch64.deb	2057080
+getconf	0.6-1	aarch64	8d825a2e678b555cc47fb454c68cb3876bd1942fdacc4c1795065af5aaa822e6	pool/main/g/getconf/getconf_0.6-1_aarch64.deb	6596
+gexiv2	0.14.6-1	aarch64	6e2ede244d4d4976295c24a0bfb2fdcbd0867a65fb1cb780d6917537b0537a40	pool/main/g/gexiv2/gexiv2_0.14.6-1_aarch64.deb	90168
+gifsicle	1.96-1	aarch64	fa445c26e3c8dd67702821ac589bd2c7f4ea70d34d7a918f8645ec649b0fb1f0	pool/main/g/gifsicle/gifsicle_1.96-1_aarch64.deb	112344
+gifski	1.34.0-2	aarch64	796808d022d3dcc553015d28781debd7bad8879f27ac8309e9162dfa8c1582b1	pool/main/g/gifski/gifski_1.34.0-2_aarch64.deb	505816
+git-crypt	0.8.0	aarch64	24c487e1a89f7db1d663ad642b242baa92eb16d2ac40701f754cbecaa541717e	pool/main/g/git-crypt/git-crypt_0.8.0_aarch64.deb	59760
+git-delta	0.19.2	aarch64	c6dc8d9934c61b98ee0e48d357cdefb11e7f1b3d23a5e921fffb472de4e91569	pool/main/g/git-delta/git-delta_0.19.2_aarch64.deb	2126664
+git-extras	7.5.0	aarch64	60461deb80cfadbaa5156d2d4cc0a41f0fdea42d995c16a3dae3a70aad276c2b	pool/main/g/git-extras/git-extras_7.5.0_aarch64.deb	105996
+git-lfs	3.7.1	aarch64	45f199375d679638995da3920bf726e186bf41ea19906c0ac0feb4854f465542	pool/main/g/git-lfs/git-lfs_3.7.1_aarch64.deb	3739012
+git-sizer	1.5.0-5	aarch64	ef2870e179fc5a3113cbcbf703de2a3a002250a8b2303ce935156cb401103335	pool/main/g/git-sizer/git-sizer_1.5.0-5_aarch64.deb	1152796
+git-town	24.0.0	aarch64	83b31d196b2bb9e0a85e9c4b98b27f8f79bb246764e4597995d8b258f4205a49	pool/main/g/git-town/git-town_24.0.0_aarch64.deb	5052660
+gitea	1.27.2	aarch64	d57090099aa80c2f5bbd5d81fac2dc0d0a5029605e45af55114e6d81bc37a1f9	pool/main/g/gitea/gitea_1.27.2_aarch64.deb	32742348
+gitflow-avh	1.12.3-9	all	0103c1b58df3d215c2e773e9114b800f0dabb73114a7a01cda2172c1521bac89	pool/main/g/gitflow-avh/gitflow-avh_1.12.3-9_all.deb	31448
+gitoxide	0.58.0	aarch64	694dba2f6cbf2ac8a175931e8629579951ec0d88d801807ecdee3ef682648ca0	pool/main/g/gitoxide/gitoxide_0.58.0_aarch64.deb	8789264
+json-glib	1.10.8	aarch64	1ad8ca9ee809d7e21ad00c719fa97fc02c39b4c9025b17d501d564c6874e2328	pool/main/j/json-glib/json-glib_1.10.8_aarch64.deb	92068
+libowfat	0.33-1	aarch64	a140dc05e52447a8dc20fc6eb31134ca103db0e7fb7a6e30f65c4157bdd7ed58	pool/main/l/libowfat/libowfat_0.33-1_aarch64.deb	282876
