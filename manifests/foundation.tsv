@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
 # Generated: 2026-07-02T00:00:00Z
-# Package count: 1768
+# Package count: 1770
 # Columns: name version arch sha256 object-path size
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb	1033296
@@ -403,7 +403,7 @@ alsa-utils	1.2.16-1	aarch64	ef8a77ce0c415487e6938ce34fefdfe102943afca6d66a1cb146
 amber	0.6.1-1	aarch64	fe20ac4eaa8a17d9085e628042e11c60ad2e7d9e684bd66e9cd66b1ca21aa18e	pool/main/a/amber/amber_0.6.1-1_aarch64.deb	903036
 amfora	1.11.0-2	aarch64	fd46fa4eb6977fc1d6535899c293b24130cee85cf67b43f5b49b5f20ca459827	pool/main/a/amfora/amfora_1.11.0-2_aarch64.deb	4264992
 android-tools	36.0.1+really35.0.2	aarch64	8eac9fbeb3d2c9e3cf6c15043aa196204bf15e6934dd639c3dbf2e77d3bc7c54	pool/main/a/android-tools/android-tools_36.0.1+really35.0.2_aarch64.deb	1975268
-fastfetch	2.65.2	aarch64	ee8e2825e33e9f540b49357a33d11ae7ae336a0fc8b8e9893ebe4227d2154932	pool/main/f/fastfetch/vaj1/fastfetch_2.65.2_aarch64.deb	546524
+fastfetch	2.67.0-2	aarch64	9e8341f232d7931b6ebbf8ead245b54c214fa0519a4642b27cc0db24a4415687	pool/main/f/fastfetch/fastfetch_2.67.0-2_aarch64.deb	575104
 anewer	0.2.1	aarch64	90c1a4e617681f3629083f507686a2808eb46540404e150460dab2291157394c	pool/main/a/anewer/anewer_0.2.1_aarch64.deb	278124
 angband	4.2.6-1	aarch64	36c7550354175e5e5d3e3933f1f9c992896305df14e2ca5722a21cab29510141	pool/main/a/angband/angband_4.2.6-1_aarch64.deb	20419812
 angle-grinder	0.19.6-2	aarch64	66c63d994fc0fdc6aabb0fe024151a7ab91bb6fb34d326ddba9949c34d5c27f0	pool/main/a/angle-grinder/angle-grinder_0.19.6-2_aarch64.deb	1163440
@@ -744,7 +744,7 @@ electric-fence	2.2.7-1	aarch64	24933a83ea25beb9010711dc4948170b19e8edd9acf784786
 elfutils	0.193-1	aarch64	7d3e293f9406e6a0c637cfee90964e072d31cae1ad268b52993fca064d1984b2	pool/main/e/elfutils/elfutils_0.193-1_aarch64.deb	444504
 elinks	0.20.0	aarch64	731c4d3d021209baf0ffb7479d18a7082817defabd017b7762528cf835c40f18	pool/main/e/elinks/elinks_0.20.0_aarch64.deb	417836
 elixir	1.20.3	all	0c3f2c1300cee17e77ec97d9657a15b3ed4526e09682ede935e143421d6c5005	pool/main/e/elixir/elixir_1.20.3_all.deb	6819080
-eltclsh	1.20-1	aarch64	397006d5c5518b469e9768ceb5cd34caac3963925df144b5e9743dc3caa1f5f0	pool/main/e/eltclsh/eltclsh_1.20-1_aarch64.deb	31048
+eltclsh	1.20-2	aarch64	f60d42e87a093efd9f173ecf9b292b1a0c064a765e5118c6488ed8784a5a1f41	pool/main/e/eltclsh/eltclsh_1.20-2_aarch64.deb	31028
 elvish	0.21.0-1	aarch64	8d7097a9d2515e9cc184215beb39bd6a789332c0d08b71e736c011edbdb2c7c7	pool/main/e/elvish/elvish_0.21.0-1_aarch64.deb	2063408
 emscripten-binaryen	6.0.8	aarch64	fb08a308b7fe43059d66a38aaa77767e9838345ce837a828c3ef6e981fa725bd	pool/main/e/emscripten-binaryen/emscripten-binaryen_6.0.8_aarch64.deb	3743220
 emscripten-llvm	6.0.8	aarch64	a4cf39561b614c377b141e5277f5cb8a8fe2a6fbc130092c77cfb336d9bce98b	pool/main/e/emscripten-llvm/emscripten-llvm_6.0.8_aarch64.deb	36567128
@@ -758,8 +758,8 @@ entr	5.8	aarch64	925cd60bb70189e93a61cab89464707ae2f603e4bd39abeb1a39f1d2dab828a
 erlang-doc	29.0.5	all	cd2ad3be04a9be2ca50241613e99a554de193677e46b56b608c206777f105da5	pool/main/e/erlang-doc/erlang-doc_29.0.5_all.deb	18724136
 erlang	29.0.5	aarch64	28720d2ab24cf25d91e70f560675c65a56670082f82856283399b3c943d0a305	pool/main/e/erlang/erlang_29.0.5_aarch64.deb	46744600
 esbuild	0.28.2	aarch64	49e0ae2dad4bc242dac024b41d1507be26ce367bdc5f9a8eea6c8e2b51edfad5	pool/main/e/esbuild/esbuild_0.28.2_aarch64.deb	3263752
-espeak-static	1.52.0-1	aarch64	c2b2093e4457dbf321adea81d409c42dde03af4e322499cc3b545bfda817a36f	pool/main/e/espeak-static/espeak-static_1.52.0-1_aarch64.deb	205040
-espeak	1.52.0-1	aarch64	187bd8c94c1bc017cadfbdb34eee622a7e620687fd4b4a3aa335d35e0d5a61a7	pool/main/e/espeak/espeak_1.52.0-1_aarch64.deb	8846100
+espeak-static	1.52.0-2	aarch64	c3ee1c928e7578745028656b9c1469634a7dd1acf25eac8ef874b1e0b034ed85	pool/main/e/espeak-static/espeak-static_1.52.0-2_aarch64.deb	205224
+espeak	1.52.0-2	aarch64	7b97b316fc9458ea98472a5548dd473346929950328b63fcabac3606a92bfac2	pool/main/e/espeak/espeak_1.52.0-2_aarch64.deb	8850148
 et	7.0.0	aarch64	8055515f816ff6921ca5c53df314082b8fb61f5ab92392ffdf672421f5069850	pool/main/e/et/et_7.0.0_aarch64.deb	785000
 etsh	5.4.0-2	aarch64	bb39ce44314f3e62790d5081362a30b18ffe4120ff2a256931aabdbc979319fb	pool/main/e/etsh/etsh_5.4.0-2_aarch64.deb	76776
 exercism	3.5.8	aarch64	95bfb60a83b6c49827d6a87a2e72a13c80adea600aac606ebb663c66f62a5870	pool/main/e/exercism/exercism_3.5.8_aarch64.deb	3196488
@@ -794,8 +794,8 @@ ffsend	0.2.77-2	aarch64	d6259d4ab59405175d0ee300565a0ca0dbb9b469605a37e9e0ef631e
 fftw-static	3.3.11	aarch64	17a9de9e670a9a00f3b5779d04a8e6d8acf44bcee9bbde373e3ee706a76a0e04	pool/main/f/fftw-static/fftw-static_3.3.11_aarch64.deb	993492
 figlet	2.2.5-3	aarch64	c7de1872db2fe7c355f99db004a0c3d413166d67ff694f9aa9838e918b3eb2b0	pool/main/f/figlet/figlet_2.2.5-3_aarch64.deb	89584
 file-static	5.48-1	aarch64	587d2484a58c3d8a3c159617c9f356f098492889287b0284be6771523d3c7055	pool/main/f/file-static/file-static_5.48-1_aarch64.deb	69716
-finch-static	2.14.14-2	aarch64	76c463243acf6d588dcbb3ce016c5facd7fe4322331036b7ee6bd54dd0828ea4	pool/main/f/finch-static/finch-static_2.14.14-2_aarch64.deb	2781404
-finch	2.14.14-2	aarch64	c7486441c2c90e9f187dac06f8e63ec88bae3035400c1900429408c5e79be39a	pool/main/f/finch/finch_2.14.14-2_aarch64.deb	874356
+finch-static	2.14.14-3	aarch64	60745fa2f4ddfe4c90054731c783c84de48b872fd9253c37fd240a353c0df9d9	pool/main/f/finch-static/finch-static_2.14.14-3_aarch64.deb	2779808
+finch	2.14.14-3	aarch64	c40fda42f54cd482fbec46ed3e1127a7bdb632be1fd90d1ae6360258006b3d29	pool/main/f/finch/finch_2.14.14-3_aarch64.deb	874948
 findomain-static	10.0.1-1	aarch64	d72872a5f473e8cdd64b1c1d00f855fd6acc251857f8984ed248b72e611bb318	pool/main/f/findomain-static/findomain-static_10.0.1-1_aarch64.deb	1923276
 findomain	10.0.1-2	aarch64	ea605619dee021727cd055820cf75ad0584a969385e4501d26908912b595cc64	pool/main/f/findomain/findomain_10.0.1-2_aarch64.deb	3762020
 flac	1.5.0-2	aarch64	c6e652296a68368c1faa79219670bc284f50f730957f0be3e5e1696871acb796	pool/main/f/flac/flac_1.5.0-2_aarch64.deb	104856
@@ -1460,7 +1460,7 @@ libxt	1.3.1-2	aarch64	6afe2e8c4fc07cc7943fd54f7f0a24e24273a7b20594d62ac1f7a9c688
 libxtst-static	1.2.5-2	aarch64	8e64c9f91280e1d2490ed1e8f563f4477b60e1e664f46a6c21a727a158349b93	pool/main/l/libxtst-static/libxtst-static_1.2.5-2_aarch64.deb	8636
 libxtst	1.2.5-2	aarch64	6d1866e0a2c1139f23bb352ea9ab4c77e9bb9c5ffdce89bc4bd18d645e94b85c	pool/main/l/libxtst/libxtst_1.2.5-2_aarch64.deb	25684
 libxv	1.0.13-2	aarch64	e7c64fbe5816eddd566fe60f7022493c32678abeceb220f18ad3f543ca8b335f	pool/main/l/libxv/libxv_1.0.13-2_aarch64.deb	31744
-libxxf86vm	1.1.7	aarch64	f971008d08614bc49bfe757390fa6a227c6996e0ed5298b3b2dd156cf08d471b	pool/main/l/libxxf86vm/libxxf86vm_1.1.7_aarch64.deb	13308
+libxxf86vm	1.1.7-1	aarch64	f8561702afdc59bb913000f60e5cb22a7e87b4db636fd29697df0fd5462e87c7	pool/main/l/libxxf86vm/libxxf86vm_1.1.7-1_aarch64.deb	13284
 libyaml-cpp	0.9.0	aarch64	d9965512491f967004e7afd55fc41909647e5fe39398c8f90ac2f8f9a9c598a4	pool/main/l/libyaml-cpp/libyaml-cpp_0.9.0_aarch64.deb	122548
 libyaml-static	0.2.5-5	aarch64	1fa0c30b9ef15cd1d4cc79c45d46946fd88ca9bd137d2f059dd1ca45c4866ed7	pool/main/l/libyaml-static/libyaml-static_0.2.5-5_aarch64.deb	42952
 libyaml	0.2.5-5	aarch64	d13c79c6d702319841637b3ce429417317c1ce02334325c4c23f676108e67e3d	pool/main/l/libyaml/libyaml_0.2.5-5_aarch64.deb	46316
@@ -1772,3 +1772,5 @@ libvips	8.18.6	aarch64	22f379f20aeb2fbc6eb736363f453b6a9b7e90c2eb8c0f7261c3707d3
 mpd	0.24.14	aarch64	0ebf7ae8fea4a03383d7cb0a758d98e2260403dc093c48f1e694f4eec49111a6	pool/main/m/mpd/mpd_0.24.14_aarch64.deb	2800296
 openal-soft	1.25.2-1	aarch64	0b719507a690951a43bcb4d63f3646e39ff6b090a2dd253299a0f3f96547a375	pool/main/o/openal-soft/openal-soft_1.25.2-1_aarch64.deb	793164
 yarn	1.22.22	all	a48c2ff6ad8354407e58b608213305e08f941a711e325498078efe6106de4c8a	pool/main/y/yarn/yarn_1.22.22_all.deb	895632
+dmtx-utils	0.7.6-2	aarch64	60feed96912716e50f5e8096748ac440c8789a447053c1fdb214cebfba2b58c8	pool/main/d/dmtx-utils/dmtx-utils_0.7.6-2_aarch64.deb	18292
+dte	1.11.1-2	aarch64	36edde67abd6e7ccbc0c8362eade4d8d0c3ad1bb4c1e4ffb05f2690baea975ee	pool/main/d/dte/dte_1.11.1-2_aarch64.deb	145916
