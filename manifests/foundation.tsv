@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
 # Generated: 2026-07-02T00:00:00Z
-# Package count: 1817
+# Package count: 1880
 # Columns: name version arch sha256 object-path size
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb	1033296
@@ -135,7 +135,7 @@ nettle	4.0+really3.10.2	aarch64	b7d7ab32fcbcca8fb5fc11a9a8b0c5079bebbbfc0b586947
 openjpeg	2.5.4	aarch64	1d29e2de9b86d67b2e9e9a1f926f5cd157e024f3cae9d9b320b39772e34523bc	pool/main/o/openjpeg/openjpeg_2.5.4_aarch64.deb	150436
 openssl	1:3.6.3	aarch64	8b9112c1d70097bcfd6f0f019bfa1b3e86923e3451332277a18998b5082ce6fd	pool/main/o/openssl/openssl_1:3.6.3_aarch64.deb	2477928
 openssl-tool	1:3.6.3	aarch64	0bebce111e9a4c9dac27892138f33f25d109ab311fbb3ec3485ae06e1fd88066	pool/main/o/openssl-tool/openssl-tool_1:3.6.3_aarch64.deb	277060
-opusfile	0.12-4	aarch64	5169094ea749c82c84fd3661b5d1d762c7c41a723fbd11cc52cd9a3c077792d8	pool/main/o/opusfile/opusfile_0.12-4_aarch64.deb	42872
+opusfile	0.12-5	aarch64	4f3b9b0e039608831105224939529a9fc4abc75a6be2a0518803cb510c60ca05	pool/main/o/opusfile/opusfile_0.12-5_aarch64.deb	42948
 patch	2.8-1	aarch64	e501c5a73242a1cf32b0b07c0e6504226a336879a6048d1bfa84d92ce8e35b8c	pool/main/p/patch/patch_2.8-1_aarch64.deb	74028
 pcre2	10.47	aarch64	89e6122c398cdece71534ef688bd157b19d88d8ff6e2e7acc7827b0da3066dae	pool/main/p/pcre2/pcre2_10.47_aarch64.deb	960436
 pcre2grep	10.47	aarch64	4906b0bd22bcf3ed90bdda46be37169fa1c5a14e2d153609456fcea52b4ad1ee	pool/main/p/pcre2grep/pcre2grep_10.47_aarch64.deb	34108
@@ -1534,7 +1534,7 @@ openjpeg-tools	2.5.4	aarch64	652bbbe307c54880d2cb6a06a272df164a431351bf5deca1837
 openldap-static	2.7.0	aarch64	0b7004f172a7126141cce9c8fd29623e61813e30801034cd22aab7eff5b17f8e	pool/main/o/openldap-static/openldap-static_2.7.0_aarch64.deb	159812
 openldap	2.7.0	aarch64	1d3f7f56814fc550897aedafc2d62f78101f530995e7c34b3a2b3258041b57df	pool/main/o/openldap/openldap_2.7.0_aarch64.deb	1137652
 openssl-static	1:3.6.3	aarch64	66e56b081a451e3568b2189b1067f4f2526513c840fcb58caa951b018eafe7d2	pool/main/o/openssl-static/openssl-static_1:3.6.3_aarch64.deb	2640384
-opusfile-static	0.12-4	aarch64	d3cc319490df66d110c701872a359dc0db401eec0efd2d05a2f6709b5387efac	pool/main/o/opusfile-static/opusfile-static_0.12-4_aarch64.deb	21340
+opusfile-static	0.12-5	aarch64	669f0b8763f5ed9f57aece4bab9157ee6c44cd61eff8a6c11b0610a057ac12a2	pool/main/o/opusfile-static/opusfile-static_0.12-5_aarch64.deb	21368
 pcaudiolib-static	1.3-1	aarch64	ea008aa867dec3f78b3cd8a6b698a3980804c3419f76ff8525dcd22577195be6	pool/main/p/pcaudiolib-static/pcaudiolib-static_1.3-1_aarch64.deb	4896
 pcaudiolib	1.3-1	aarch64	f5cff9cf8d5545857716dd26464d7df667a46cd180de1cf4aa7c9f12457fc639	pool/main/p/pcaudiolib/pcaudiolib_1.3-1_aarch64.deb	5600
 pcre-static	8.45-2	aarch64	745f7c6bbb38150776fb69f1f3ca5cd0b82498aecaaf9ea131be3b179b1dbd5c	pool/main/p/pcre-static/pcre-static_8.45-2_aarch64.deb	135228
@@ -1821,3 +1821,66 @@ onigmo-static	6.2.0-1	aarch64	7420ee5a9efc1bb19710f4977a810895b3d1c75a63df6c3f88
 onigmo	6.2.0-1	aarch64	d8ecd347ddac19834792ac32359f35373c30ddfe12827153415cf449789850b1	pool/main/o/onigmo/onigmo_6.2.0-1_aarch64.deb	120796
 openh264	2.6.0-1	aarch64	97568e3f7a3c4c9836258294d16a6209f1265b7fb17f05a88d7adbec70370686	pool/main/o/openh264/openh264_2.6.0-1_aarch64.deb	309980
 simdjson	4.6.9	aarch64	cd813d0e35f5f9a328f9611bdec6ee147f1a850b1d63d865dea3445e023eb0ea	pool/main/s/simdjson/simdjson_4.6.9_aarch64.deb	268296
+hunspell-ru	20210731	all	c49f9c62e5f17da7d86bacb3041e0a20794f666dd2f35352b7638fe85d4c8206	pool/main/h/hunspell-ru/hunspell-ru_20210731_all.deb	461848
+hut	0.8.0-1	aarch64	9d2ae9f8c297718fcbf55c3ed3fad0db8aa4ac0dc7595712d9c01284d4e12805	pool/main/h/hut/hut_0.8.0-1_aarch64.deb	2515036
+hwdata	0.410	aarch64	eb307fb5dcb072a1ed47344de18b8be59fe2b5eeac30e3c904c01be3a597c74f	pool/main/h/hwdata/hwdata_0.410_aarch64.deb	1693568
+hydroxide	0.2.32	aarch64	d63ed49a9dfaa7bbde4dfad24d04a0c0e4d37c558d5907ce79cac9d38a7b3312	pool/main/h/hydroxide/hydroxide_0.2.32_aarch64.deb	3042264
+hyperfine	1.20.0	aarch64	06c7029068849529b46526d708a2b52a163568018d07b394a95367b651657256	pool/main/h/hyperfine/hyperfine_1.20.0_aarch64.deb	438452
+hz	0.10.6	aarch64	a4b968b69aaafcc1dafc77272023d9f229331a787dcaba0468aea4a1ee5e2fb9	pool/main/h/hz/hz_0.10.6_aarch64.deb	3786300
+i2pd-static	2.61.0	aarch64	95df1b1aa1c44dd923770a979581c5bdefd472f5129044c848f193fca83233ab	pool/main/i/i2pd-static/i2pd-static_2.61.0_aarch64.deb	2234448
+i2pd	2.61.0	aarch64	241527294d6adc4a14f82f64852adc1c2bf5857a20bead0d1474e27d7ff2ab8a	pool/main/i/i2pd/i2pd_2.61.0_aarch64.deb	1171548
+iat	0.1.7	aarch64	aa52ed37634a6b01b2ca76bf157fbccd32d1a6fbd19de3491e9f1d61e18e48d4	pool/main/i/iat/iat_0.1.7_aarch64.deb	24288
+icecast	2.5.0	aarch64	30ca1f99615a6cfee28772d6b9eddda5b62ac6692c3f4f256a4dadd6786ec187	pool/main/i/icecast/icecast_2.5.0_aarch64.deb	596120
+id3lib-static	3.8.3-4	aarch64	f198c6ff64e85972a1275fdfebcf6af89d4f542470f9120093102e7d0d3d7f4a	pool/main/i/id3lib-static/id3lib-static_3.8.3-4_aarch64.deb	131024
+id3lib	3.8.3-4	aarch64	31a78aa3ed1068dd6629abe26a47310d9075e342125ee6d044f558558996a771	pool/main/i/id3lib/id3lib_3.8.3-4_aarch64.deb	102244
+id3v2	0.1.12-2	aarch64	b9a83b106dcaa1a476f8796b0b19b196ee760dbd9ef839c7628deb3d3eb4e4f4	pool/main/i/id3v2/id3v2_0.1.12-2_aarch64.deb	26168
+indent	2.2.13-1	aarch64	e9863d4eeb576828f4d0517d8098a5a00eb3c48b370dab2519c1cf58fce1d859	pool/main/i/indent/indent_2.2.13-1_aarch64.deb	47616
+influxdb	1.8.10-4	aarch64	85d416cb6413f080c866aab7808c7b098a47e7f4ef8233d6f017370d2e8a733e	pool/main/i/influxdb/influxdb_1.8.10-4_aarch64.deb	26595384
+innoextract	1.9-11	aarch64	5734cbcd7cf27a494a55582ef9b5e0a5aeb4eb701d7d054829396a954c50013f	pool/main/i/innoextract/innoextract_1.9-11_aarch64.deb	163792
+inotify-tools-static	4.25.9.0	aarch64	abf12ca2217d43429c9347d4eeab84fb8d692c38a798e48b9f55fd5a3b623b3a	pool/main/i/inotify-tools-static/inotify-tools-static_4.25.9.0_aarch64.deb	14756
+inotify-tools	4.25.9.0	aarch64	f084877ba7b7b5c1ea710c3fa1545dc79831f3d73eb7f45204558c0851458a78	pool/main/i/inotify-tools/inotify-tools_4.25.9.0_aarch64.deb	36412
+intltool	0.51.0-4	all	89bb12d17dcd4d0988644e79ee1f894476f50cd84187cc8506fa908b9fbbf8a1	pool/main/i/intltool/intltool_0.51.0-4_all.deb	37236
+ipcalc	0.51	aarch64	d176c54123c85290527f65f235c6a16b2b040a1048f9ffc066700d9353fdc9b3	pool/main/i/ipcalc/ipcalc_0.51_aarch64.deb	10012
+iperf3-static	3.21	aarch64	55a22aca26c5c9a73388ce133519739a3b2c23df85905c994d342037989828b5	pool/main/i/iperf3-static/iperf3-static_3.21_aarch64.deb	71444
+iperf3	3.21	aarch64	aba32365dce88f7e609dc9b05b7f2db1bf2df20d82904a4c8a6e6beee9714737	pool/main/i/iperf3/iperf3_3.21_aarch64.deb	83172
+ipmitool	1.8.19-1	aarch64	968d44584db25552685660f64e553b302dbd5ab16a2fbfbb86f6e0dc2c721a48	pool/main/i/ipmitool/ipmitool_1.8.19-1_aarch64.deb	383168
+iproute2	7.2.0	aarch64	31139977d17f6b9cf2c6d45d2a46d999c9a61ec4768e3206ea217e64ea08c056	pool/main/i/iproute2/iproute2_7.2.0_aarch64.deb	864504
+ipv6calc	4.4.0	aarch64	eeeb0d90566efb5052b658fe1992ddc7ac44f6ea87647fb4f5265f2bd278bd20	pool/main/i/ipv6calc/ipv6calc_4.4.0_aarch64.deb	1061072
+ipv6toolkit	2022.09.30-4	aarch64	fc65a769d4623285a5d52517e1ba0a97cf4e57e13c088659c6cbdbb1075226af	pool/main/i/ipv6toolkit/ipv6toolkit_2022.09.30-4_aarch64.deb	758052
+ircd-irc2	2.11.2p3-3	aarch64	057ca92112f7331be33d20fe37fb94cf2bba04c1d88ee1d709daf375c8145f64	pool/main/i/ircd-irc2/ircd-irc2_2.11.2p3-3_aarch64.deb	149980
+ired	0.6-3	aarch64	889a257ceff367109dcf6b42810018641998f1e20df20659cc9a2bbcf6ef2104	pool/main/i/ired/ired_0.6-3_aarch64.deb	15096
+irssi	1.4.5-5	aarch64	4d79b46e6b34446ecb20195859b679ef4ae20c52333d827b3d67cac0831957ed	pool/main/i/irssi/irssi_1.4.5-5_aarch64.deb	537144
+isync	1.5.1-1	aarch64	4dfe21d234266fa512233de66cc043e455f5097a7a2ad3fa6044e98b4a4655b3	pool/main/i/isync/isync_1.5.1-1_aarch64.deb	100548
+iverilog-static	12.0-1	aarch64	fa818bd41e11dee6ee459b613fe308d0e3cad74b86fb0aeb0fc4b7fa7074b2a2	pool/main/i/iverilog-static/iverilog-static_12.0-1_aarch64.deb	16096
+iverilog	12.0-1	aarch64	4cf03c317f0ea549ab38d29b2b3065f7dd072f30f0e2518776dcd690b9f0dbf0	pool/main/i/iverilog/iverilog_12.0-1_aarch64.deb	1513244
+jack-example-tools	4-1	aarch64	623fae0fa409811271762f3e118f78c35b02a040a7e644b92df01c4636257cd7	pool/main/j/jack-example-tools/jack-example-tools_4-1_aarch64.deb	83608
+jack2	1.9.22-2	aarch64	40a15582adc7050d097a51107ab8e7521100f2d87fde712294a45b415059d65e	pool/main/j/jack2/jack2_1.9.22-2_aarch64.deb	375728
+jack	0.0.1	all	b9ec4d273f7b112c0f5df368f5aae363efdca45d369a98701cdf7508fb2a69e9	pool/main/j/jack/jack_0.0.1_all.deb	712
+jadx-x	1.5.5	all	24651c121502eea1099e9313defb0513f18922a14d89e017a70b950bca42551b	pool/main/j/jadx-x/jadx-x_1.5.5_all.deb	3308
+jadx	1.5.5	all	c26c96043dcfc8fe4311500000933db459e6dbc1059ffdf5a22b34ff26077f75	pool/main/j/jadx/jadx_1.5.5_all.deb	57735192
+jbig2enc-static	1:0.32	aarch64	96357ba91ef383b677bdfd6d044750cda78b18d699dc58c7b16f0d0a1acc77e6	pool/main/j/jbig2enc-static/jbig2enc-static_1:0.32_aarch64.deb	71756
+jbig2enc	1:0.32	aarch64	555ec7dcb26abc41a03902113855bebb52d3d8f7635591e50f864300a795f6ca	pool/main/j/jbig2enc/jbig2enc_1:0.32_aarch64.deb	56724
+jcal-static	0.5.1-1	aarch64	6cc9d0d2298a53a50c322e044ac2e3a479facbf564392bf050ecc6427931f1a1	pool/main/j/jcal-static/jcal-static_0.5.1-1_aarch64.deb	8412
+jcal	0.5.1-1	aarch64	d48b1dfa34f8c98b9d28ee73c6915a65c148f868d4fbae234491a6c8d8e55447	pool/main/j/jcal/jcal_0.5.1-1_aarch64.deb	39268
+jfrog-cli	2.122.0	aarch64	f1650ad4451d10ab233f5cbb6d9375422a3df0d55763319e05a693881a2cabf2	pool/main/j/jfrog-cli/jfrog-cli_2.122.0_aarch64.deb	19425320
+jftui	0.7.5	aarch64	509de5d6e4ca0fbaaa9d4cd4aec0438aa31bf0958b53513b5ba560f752cc1b69	pool/main/j/jftui/jftui_0.7.5_aarch64.deb	44908
+jhead	3.08-1	aarch64	2f56b5152ea9d459481b2224a4c334bd96bc6df35dd5227e92503cdd8c6a7e90	pool/main/j/jhead/jhead_3.08-1_aarch64.deb	42244
+jigdo	0.8.2-1	aarch64	60d5a094e39c7324f1d9e3aa48ba97c671cf5ea6be07c339147999420c5bcc19	pool/main/j/jigdo/jigdo_0.8.2-1_aarch64.deb	122236
+jira-go	1.0.28-3	aarch64	f153d24d28fdf7d17ffa91ccef11495f100a09d982dd2241fa7e02d3784e14ae	pool/main/j/jira-go/jira-go_1.0.28-3_aarch64.deb	3131604
+jless	0.9.0-1	aarch64	1825948a39f9fe6eedae519c8d808e6a007db0a44ee73fb290250934901a34db	pool/main/j/jless/jless_0.9.0-1_aarch64.deb	680452
+jo	1.9-1	aarch64	cfde522cf7f4b0084cb86b477ae9c404ddc44cc215411b968d76f42d2e3ffe11	pool/main/j/jo/jo_1.9-1_aarch64.deb	17180
+joe	4.6-5	aarch64	808edea8dc65eadfceae5db3325a6a7e05c3086ef8389e35770bb787a2a0a427	pool/main/j/joe/joe_4.6-5_aarch64.deb	448016
+jp2a	1.3.3	aarch64	c772d165f43f43943399cb0eb0a6439da0ae4fe2bfd7aef8701deb08a2269af8	pool/main/j/jp2a/jp2a_1.3.3_aarch64.deb	23284
+jpegoptim	1.5.6	aarch64	449b164a21ded069f8e93711183b781f5de8329c5a35da1031d2422d032581c6	pool/main/j/jpegoptim/jpegoptim_1.5.6_aarch64.deb	20088
+jq-lsp	0.1.18	aarch64	5a03d76ddfa0363fe06ba064a16ed414f40bfcfc8c1b688ae159b48bcf0e46fc	pool/main/j/jq-lsp/jq-lsp_0.1.18_aarch64.deb	1323980
+jql	8.1.2	aarch64	1afc49253e644045692e07a54ffcceede462209b202a669c8f1d21f5b785f9f1	pool/main/j/jql/jql_8.1.2_aarch64.deb	356676
+jump	0.51.0-3	aarch64	3db7b6870169ec0fd4b82a9e1efd9699bea1b7b5cc1779d021ce69b5e752e450	pool/main/j/jump/jump_0.51.0-3_aarch64.deb	1106012
+jupp	3.1jupp41-4	aarch64	0de5ada028692e960f5859380c947e7c476450f880c205982458244f0cb7837c	pool/main/j/jupp/jupp_3.1jupp41-4_aarch64.deb	162592
+just	1.58.0	aarch64	6cd3e142fc626c76f78c41486aac2b01764bbe715e2be4843c3c3c99b0cef530	pool/main/j/just/just_1.58.0_aarch64.deb	1406756
+jython	2.7.5b1	all	9d871e8cf7d4de0e3d07e1b3b5bf68d9bc5ceaf1c90ae3eb90ce15bc6f595644	pool/main/j/jython/jython_2.7.5b1_all.deb	55008064
+media-types	14.0.0	all	34257b0e50bf4a5e9485aa31be875019ce49135e37f68acd66e3517cf6c0566a	pool/main/m/media-types/media-types_14.0.0_all.deb	19672
+miniupnpc-static	2.3.3-1	aarch64	aa3ab99c4f562d33e34bf4f4a029973ef4c5c0dfa56235be3d1bb13ba1d4a1bd	pool/main/m/miniupnpc-static/miniupnpc-static_2.3.3-1_aarch64.deb	22500
+miniupnpc	2.3.3-1	aarch64	d2673258189deaf1f3514f05fd4873810b070732afc421570b0df14c1f60c840	pool/main/m/miniupnpc/miniupnpc_2.3.3-1_aarch64.deb	50812
+mpv	0.41.0-2	aarch64	5d87792ec60191106884b806368820ef4e8f0c1aed918318ac2e3eac58d4917b	pool/main/m/mpv/mpv_0.41.0-2_aarch64.deb	1053700
+python-pipcl	12	all	444ad8492e2001c9d62602e2d18a6146d0566a881b661fabc07a10128ecab970	pool/main/p/python-pipcl/python-pipcl_12_all.deb	48796
+tesseract	5.5.3	aarch64	6f386858da0e5c6846577ec5f419f8771e5ffe841890ae02fbec52de0ab99617	pool/main/t/tesseract/tesseract_5.5.3_aarch64.deb	9715144
