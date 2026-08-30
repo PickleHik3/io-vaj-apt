@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
 # Generated: 2026-07-02T00:00:00Z
-# Package count: 2275
+# Package count: 2285
 # Columns: name version arch sha256 object-path size
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb	1033296
@@ -2279,3 +2279,13 @@ python-pynvim	0.6.0-3	all	8cfa60cc9f1e4c34b9f46613355ae6dafe925f9638c83ef504c8e2
 python-pyppmd	1.3.1-1	aarch64	6358b42994fbae42cdee0f4146c0cb6920f91210d8ac733cbe677c986afeebd9	pool/main/p/python-pyppmd/python-pyppmd_1.3.1-1_aarch64.deb	36876
 python-tflite-runtime	2.20.0-4	aarch64	73330aeb169825b593c83df87a628d78b34d9dfec175eccc80714ba958387c87	pool/main/p/python-tflite-runtime/python-tflite-runtime_2.20.0-4_aarch64.deb	1526796
 python-tldp	0.7.5-8	all	9486d09c53c2dac7fd189ed001f254177b6533f678d5826bf2f77ce9bc9b4fb8	pool/main/p/python-tldp/python-tldp_0.7.5-8_all.deb	34432
+python-torch-static	2.11.0-2	aarch64	07cc43f28cb692d4f8f84cbde94f162cc37961e9ffeb40716133f1a741f19d1c	pool/main/p/python-torch-static/python-torch-static_2.11.0-2_aarch64.deb	1857312
+python-torch	2.11.0-2	aarch64	953f81ba9d4947ba7f372d2a0025d33557d91854263acf976bc5bdc3e4cb093b	pool/main/p/python-torch/python-torch_2.11.0-2_aarch64.deb	35553072
+python-torchaudio	2.11.0-2	aarch64	f4d58bc02b5ffd0e6fabd631e5492c10cc4272f6751b38d14b37f8a85ea343ef	pool/main/p/python-torchaudio/python-torchaudio_2.11.0-2_aarch64.deb	215584
+python-torchcodec	0.11.0-2	aarch64	bd58bbec39eff16cdb66c9c8e4b674b7f881fd07cf6b4ec31ef9b8ef434df525	pool/main/p/python-torchcodec/python-torchcodec_0.11.0-2_aarch64.deb	353684
+python-torchvision	0.28.0	aarch64	b2b6a47f6fa19200bcb2591970bf1a2c3e05e331c58bc11a8789c071eae2363b	pool/main/p/python-torchvision/python-torchvision_0.28.0_aarch64.deb	495956
+python-trash-cli	0.24.5.26-1	aarch64	cffc3344ea02c24de99fffec01b96f6c8b730924bba75a8a110a6e6481e299e2	pool/main/p/python-trash-cli/python-trash-cli_0.24.5.26-1_aarch64.deb	60088
+python-xlib	0.33-4	all	23e5bfec97b4f89126dc459c184edbf76d2370fce7cb9e611925bb20c15baa9d	pool/main/p/python-xlib/python-xlib_0.33-4_all.deb	122804
+q-dns-client	0.19.12	aarch64	4334f3151b6b6411fe2755e0734656fdba26926596aada7a33dbcf216ebb9a97	pool/main/q/q-dns-client/q-dns-client_0.19.12_aarch64.deb	3124820
+qalc-static	5.12.0	aarch64	dc1199c518f3c9a46865e8bd23cd6d894db5182b3dc85c64a35ced7b620483cc	pool/main/q/qalc-static/qalc-static_5.12.0_aarch64.deb	1768320
+qalc	5.12.0	aarch64	24e863bedf37ee931d03091d488fa9dce85ec16e73e3750576a73c21ebbcb4ae	pool/main/q/qalc/qalc_5.12.0_aarch64.deb	1720200
