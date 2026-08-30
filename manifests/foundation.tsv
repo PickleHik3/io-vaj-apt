@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
 # Generated: 2026-07-02T00:00:00Z
-# Package count: 2158
+# Package count: 2160
 # Columns: name version arch sha256 object-path size
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb	1033296
@@ -2162,3 +2162,5 @@ vim	9.2.1000	aarch64	912edc17561172e2eecee12324107105e4271ff2b3fdee666091fd0e930
 xmlsec-static	1.3.12	aarch64	dd3a32ccda4c937bcec9570007e38caf31c6e99be20b9d7a2c3c6be2fa78ae32	pool/main/x/xmlsec-static/xmlsec-static_1.3.12_aarch64.deb	315164
 xmlsec	1.3.12	aarch64	c5d3ade8456958e7d9931d773f7b979c1e42f2e98d32dd6c056c21efc6b5d592	pool/main/x/xmlsec/xmlsec_1.3.12_aarch64.deb	459008
 xxd	9.2.1000	aarch64	9b304ed239c405b234780e7b94e151b592682f543a272100fd0ae5f9e9f717d4	pool/main/x/xxd/xxd_9.2.1000_aarch64.deb	13492
+openmpi-static	4.1.5-1	aarch64	f06e59393fc941ac6dad42e0b53940e4ca6ae429746d5a9a6b3696af3c6ad60f	pool/main/o/openmpi-static/openmpi-static_4.1.5-1_aarch64.deb	1902456
+openmpi	4.1.5-1	aarch64	1ef1c286fd4b933ddd1b169b94289c4f44cdce2753ae987074ce5df7a212ed01	pool/main/o/openmpi/openmpi_4.1.5-1_aarch64.deb	2038152
