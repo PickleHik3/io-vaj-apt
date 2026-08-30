@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
 # Generated: 2026-07-02T00:00:00Z
-# Package count: 1880
+# Package count: 1931
 # Columns: name version arch sha256 object-path size
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb	1033296
@@ -868,7 +868,7 @@ gsf-tools	1.14.58	aarch64	ac92c7f9d9c52a0fb2259b7ad10db0152ba0cdc0fade528c3aaa97
 gsl-static	2.8-1	aarch64	fdbcd10e211fce50b11604af1ab6747cdc06ba9ef0a41f5a7a6ed2cd79ee5d23	pool/main/g/gsl-static/gsl-static_2.8-1_aarch64.deb	908712
 gsl	2.8-1	aarch64	e5ae9e8dcbb7b1962d126926368d358c3463fda19bc79352551fd2a6847ad726	pool/main/g/gsl/gsl_2.8-1_aarch64.deb	1236284
 gst-plugins-base-static	1.28.4	aarch64	937dc873a2b947eda832b7acab838b571b17b656ce70c4d68edf03ec8b4c6673	pool/main/g/gst-plugins-base-static/gst-plugins-base-static_1.28.4_aarch64.deb	174464
-gst-plugins-base	1.28.6	aarch64	826183f715aaa3ef42c4925dba360ce3b52de1ba6771c1f37eec7eb10c3b8316	pool/main/g/gst-plugins-base/gst-plugins-base_1.28.6_aarch64.deb	2014652
+gst-plugins-base	1.28.6-1	aarch64	c86c93c99859e4e9890b2f326a4c0596a4de8239e897a663fdc3c9f6a9765bff	pool/main/g/gst-plugins-base/gst-plugins-base_1.28.6-1_aarch64.deb	2015716
 gstreamer-static	1.28.4	aarch64	87dbc9fc5701476b8931e3863ed51a1c5e7022582e2188f11b31164a1f78208c	pool/main/g/gstreamer-static/gstreamer-static_1.28.4_aarch64.deb	3700620
 gstreamer	1.28.6	aarch64	d1d2efcc083708a41a5ff91821f650c65b4ef40355d6fc506122bed83f74fb34	pool/main/g/gstreamer/gstreamer_1.28.6_aarch64.deb	1344616
 guile-static	3.0.11-2	aarch64	e94c53836451a2efc83b04bdb5b7f015d3fb7489b7356971460d439f9df5b8b2	pool/main/g/guile-static/guile-static_3.0.11-2_aarch64.deb	1469816
@@ -1884,3 +1884,54 @@ miniupnpc	2.3.3-1	aarch64	d2673258189deaf1f3514f05fd4873810b070732afc421570b0df1
 mpv	0.41.0-2	aarch64	5d87792ec60191106884b806368820ef4e8f0c1aed918318ac2e3eac58d4917b	pool/main/m/mpv/mpv_0.41.0-2_aarch64.deb	1053700
 python-pipcl	12	all	444ad8492e2001c9d62602e2d18a6146d0566a881b661fabc07a10128ecab970	pool/main/p/python-pipcl/python-pipcl_12_all.deb	48796
 tesseract	5.5.3	aarch64	6f386858da0e5c6846577ec5f419f8771e5ffe841890ae02fbec52de0ab99617	pool/main/t/tesseract/tesseract_5.5.3_aarch64.deb	9715144
+frotz	2.55-2	aarch64	0077a4bc50b10edd112325350470fff8e97c02781e7bdbecbf4f4ad8d6e7d5ef	pool/main/f/frotz/frotz_2.55-2_aarch64.deb	65416
+gst-libav	1.28.6	aarch64	9a9b24516213d69939358a146dd6fab229d8e97c2cb8fedfbab21cd3e0cdb69e	pool/main/g/gst-libav/gst-libav_1.28.6_aarch64.deb	77768
+gst-plugins-bad	1.28.6	aarch64	db0f9eb81425037fde5c351153c136dcf3591f6b8dfba6c3e4cfe9ee74f24482	pool/main/g/gst-plugins-bad/gst-plugins-bad_1.28.6_aarch64.deb	2098932
+gst-plugins-good	1.28.6	aarch64	24246acecd991d54e480c3c0e86b295733d74274c7edfdf8cad5ec1d880efc8d	pool/main/g/gst-plugins-good/gst-plugins-good_1.28.6_aarch64.deb	1515648
+gst-plugins-ugly	1.28.6	aarch64	42779c4f84ad7f88bac73753247d98650680a325c306e9a74580e5875927012d	pool/main/g/gst-plugins-ugly/gst-plugins-ugly_1.28.6_aarch64.deb	77972
+gst-python	1.28.6	aarch64	7cf3fb1c99664b4cb626939467b0a383a63c04b66331e15cc82692e46eec50d3	pool/main/g/gst-python/gst-python_1.28.6_aarch64.deb	27820
+hunspell-fr	20260830	all	e16bb81fde493e07b444bcee07719648bb4a17f6ed1beedafdeb888652de59d6	pool/main/h/hunspell-fr/hunspell-fr_20260830_all.deb	284516
+hunspell-hu	20260830	all	99fee98ff88846c9d96b074242b5521e103f83c73f099330b83d860fdcd88db5	pool/main/h/hunspell-hu/hunspell-hu_20260830_all.deb	642768
+hunspell-nl	20260830	all	2e2543029d09fb04499fef60bcfea039de43068a7629107c4eefa24a8a8f7763	pool/main/h/hunspell-nl/hunspell-nl_20260830_all.deb	698636
+ices	2.0.3-1	aarch64	1c88b483c83e8ae8ee1b6de3069161a66e4ad54a7788f6c6633f1121f1f6b96e	pool/main/i/ices/ices_2.0.3-1_aarch64.deb	42048
+inxi	3.3.41-1-0	all	b077d213e991ecc7e74775fc89cadd5fd9e26430f00b6ebe65e179f06cabb75e	pool/main/i/inxi/inxi_3.3.41-1-0_all.deb	352124
+k9s	0.51.0	aarch64	60d1fdfd74aef6bfe2e992ec3aeebd5104ece18e8c41d34121b1bac43a1a4561	pool/main/k/k9s/k9s_0.51.0_aarch64.deb	25052540
+kakoune-lsp	21.0.2	aarch64	834d6728838cc366d7dc55a2346d2e0aa2c58c1fcb6bc96d6243288b7a56c461	pool/main/k/kakoune-lsp/kakoune-lsp_21.0.2_aarch64.deb	2100668
+kakoune	2026.05.21-1	aarch64	9b62aa6b7d66d17e9bc16c934957c6d8671dc424f23bc22c24474663e75c5259	pool/main/k/kakoune/kakoune_2026.05.21-1_aarch64.deb	716380
+keybase	6.6.3	aarch64	2f5298f0f6ff2d1b1bbf9789f9ab53cdd981435d94ac47788dfdf848730eeb89	pool/main/k/keybase/keybase_6.6.3_aarch64.deb	31056828
+keychain	3.0.3	all	b2ab1f1d637d348a2c34fe4b5f46313ceef1ac24cfd3fca9a28383f37d1875b6	pool/main/k/keychain/keychain_3.0.3_all.deb	308652
+kibi	0.3.3-1	aarch64	f7db6a58fc10edab9fd51c539e2461733ea815c240a6704e5eef5cd189096144	pool/main/k/kibi/kibi_0.3.3-1_aarch64.deb	193720
+kiwix-tools	3.8.2	aarch64	a5b008e9083cb738670993b0ac3d18858ba0007febd88e138814c6ecd661711c	pool/main/k/kiwix-tools/kiwix-tools_3.8.2_aarch64.deb	41316
+knockd	0.8.2-2	aarch64	3112d22aa83d9643062371e6439ce21c125c5314a107949007630b0cc82b44b0	pool/main/k/knockd/knockd_0.8.2-2_aarch64.deb	29444
+kona	20211225-1	aarch64	7ff5d0ef982218263324fda3dcb7228a1b0f0a76b6295018612250821839a822	pool/main/k/kona/kona_20211225-1_aarch64.deb	85820
+kubecolor	0.7.1	aarch64	d3d7493daa4618a50af8dc7a9191c3afaf535dcb33134c082e461cd3d24ccb47	pool/main/k/kubecolor/kubecolor_0.7.1_aarch64.deb	2008860
+kubectl	1.37.0	aarch64	3580db5d2628bdde74cb84eb55fcc0b1e78a09596eeb227a07394d1d91cb52b7	pool/main/k/kubectl/kubectl_1.37.0_aarch64.deb	10815952
+kubelogin	1.36.3	aarch64	af67a9b9e8425dab38f3d2fd7ae6c923de7116356aee74c5d63ca5beedde2502	pool/main/k/kubelogin/kubelogin_1.36.3_aarch64.deb	4138496
+kubo	0.43.0-1	aarch64	abd4af6e3eb0ae2e7e65dff559b839f4ffd18f9cf87fd4e79dbe69f2b9d5de8c	pool/main/k/kubo/kubo_0.43.0-1_aarch64.deb	14873480
+lastpass-cli	1.6.1-4	aarch64	b99bd690ac297b2064770c0dfb7f56a364a1af0aa899f67efec96281fe13862e	pool/main/l/lastpass-cli/lastpass-cli_1.6.1-4_aarch64.deb	69700
+lazygit	0.64.1	aarch64	f83f39fefb1068f53f814ba8484a41a8d6e217593062a0ff4b43f235c0cae431	pool/main/l/lazygit/lazygit_0.64.1_aarch64.deb	4840260
+lcal	2.1.0-1	aarch64	57a2f8987ff16e27b70ebd1b6b4ed36c6297c517f72e96d32c961ca78addca04	pool/main/l/lcal/lcal_2.1.0-1_aarch64.deb	22184
+ledger	3.4.1-4	aarch64	551eabc90c770aeffb1bac66e84e8fe8f4a6127e75c4f63fcdd62d24d9390d9a	pool/main/l/ledger/ledger_3.4.1-4_aarch64.deb	1303924
+lego	5.4.0	aarch64	671b735be7cdd2ff6a3c5544f7eadcee4e5f3755ade15f9f5c33fc68f6306b20	pool/main/l/lego/lego_5.4.0_aarch64.deb	13239520
+lesspipe	2.27-1	all	74b1330bc273c1121c9b8a186d26cd033a83d87789185e24cfc181d87670d7bb	pool/main/l/lesspipe/lesspipe_2.27-1_all.deb	19896
+lexbor	3.0.0	aarch64	fb960ee0879564c297ebea57c7fdcdbf21ce5cae19ccdfe8aea8b61ab2cd41cb	pool/main/l/lexbor/lexbor_3.0.0_aarch64.deb	966800
+lexter	1.0.3-5	aarch64	efee4442ecd2583f4ea91fb436af5f9f4b7000d1cebc20a434e03132feb1aedc	pool/main/l/lexter/lexter_1.0.3-5_aarch64.deb	168356
+lf	42	aarch64	309250655bf8eebbeaa2189d93c60042ae6f3bd2a856b39e55caa94e6a1ef707	pool/main/l/lf/lf_42_aarch64.deb	1802428
+lftp-static	4.9.2-7	aarch64	80a026a9bf53ab0a3e36ad10f7e7f09db81114125c76465714471774ddf5608a	pool/main/l/lftp-static/lftp-static_4.9.2-7_aarch64.deb	356572
+lftp	4.9.2-7	aarch64	a8437d97d387f5ac4f763f74212f6c599d1046faeba90746b82a3055f645864c	pool/main/l/lftp/lftp_4.9.2-7_aarch64.deb	501536
+lgogdownloader	3.18-4	aarch64	8d8c0f0b9a9f994579a7782757759f1642f68608e39f3712da743c2b0c7ba60d	pool/main/l/lgogdownloader/lgogdownloader_3.18-4_aarch64.deb	397624
+lhasa-static	0.6.0	aarch64	8c82d1f28a2805e58055c96a0e3843910ac0f8b79345c73780d466a16f5489d2	pool/main/l/lhasa-static/lhasa-static_0.6.0_aarch64.deb	20084
+lhasa	0.6.0	aarch64	eac8f35e2f3d93044d481d1a415c1734343979666b467415ee4dd11207c7c1e4	pool/main/l/lhasa/lhasa_0.6.0_aarch64.deb	34480
+lighttpd	1.4.85	aarch64	98943866829de1e87edbbb9c06cb3f827c24ea9fca8a378cd64bd707340c821c	pool/main/l/lighttpd/lighttpd_1.4.85_aarch64.deb	263268
+lilv	0.28.0	aarch64	410229e54c1462759a1b6cbf80af9db465a2ffcef47e6f22c4dde0c6e39e2465	pool/main/l/lilv/lilv_0.28.0_aarch64.deb	62224
+lilypond	2.26.0	aarch64	2df42d8199e03e73764261b64780f422857958ac9c97a8238be3669fbb918029	pool/main/l/lilypond/lilypond_2.26.0_aarch64.deb	2260908
+links	2.29-2	aarch64	29dda5fa46445c55cb5fec5781ae27d6510af7446ed21b128d93dce097c0bb0a	pool/main/l/links/links_2.29-2_aarch64.deb	2885896
+lipl	0.1.3-1	aarch64	27b94e2dd94a22b9d76a92f96c8b39c24b2c27401e71b7349526d234569ea669	pool/main/l/lipl/lipl_0.1.3-1_aarch64.deb	341448
+litespeedtest	0.15.0-3	aarch64	7e126c53861fac389a38fede5bc94ae24b501455fa3a84c9c832d6da4d57da4f	pool/main/l/litespeedtest/litespeedtest_0.15.0-3_aarch64.deb	5686272
+llama-cpp-backend-opencl	0.0.0-b10516-0	aarch64	c0f59b396c5c2bdca7226a5554627744694a0972c38d9f639611bf016ce2358a	pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b10516-0_aarch64.deb	352424
+llama-cpp-backend-vulkan	0.0.0-b10516-0	aarch64	1727dda099f0cec85c1ffb594d7ae24a9f28a2bb9f706e0fad7945e4be607a34	pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b10516-0_aarch64.deb	3821980
+llama-cpp	0.0.0-b10516-0	aarch64	c1e22eed05b82605550ce4f5c8537896c744f8510fd0df0b778a86b03d56f9b7	pool/main/l/llama-cpp/llama-cpp_0.0.0-b10516-0_aarch64.deb	7027048
+lnav	0.14.0	aarch64	f5b201047ed9740350d1eeb8051ae88484875f2d034f07ad04d5882948a9589c	pool/main/l/lnav/lnav_0.14.0_aarch64.deb	2647272
+luvi	1:2.15.0-2	aarch64	172275ce0133e62b5da8980e2d14bd017b43da0e41f16250198a77c4c4e57762	pool/main/l/luvi/luvi_1:2.15.0-2_aarch64.deb	161000
+sratom	0.6.22	aarch64	c481521248e1cb79cc7ae98ef4da5d6ba1203f84ea07c8ac52d98ef57ae6ed84	pool/main/s/sratom/sratom_0.6.22_aarch64.deb	11664
+tex-gyre	2.501-2	all	fe1bf8ff58000da44c424239c039c45f192c6ce026e91ab47996d6b9664fdf61	pool/main/t/tex-gyre/tex-gyre_2.501-2_all.deb	1530952
