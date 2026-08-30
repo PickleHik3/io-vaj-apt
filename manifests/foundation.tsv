@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
 # Generated: 2026-07-02T00:00:00Z
-# Package count: 2259
+# Package count: 2275
 # Columns: name version arch sha256 object-path size
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb	1033296
@@ -2263,3 +2263,19 @@ pueue	4.0.4	aarch64	e580fd0ce737fae4fe46b6204ead5ec09ab2cbac9d8abd339bc714eaed52
 pup	0.4.0-7	aarch64	fcd21a3abfd516852888d7a969521c82998a2c2f8cb71510e08aa9f3928c9dbc	pool/main/p/pup/pup_0.4.0-7_aarch64.deb	1271492
 pure-ftpd	1.0.54	aarch64	dae74cbb508536a70a4f1f2a7c56d91a170461e61974c5593bb0e96e24f77c09	pool/main/p/pure-ftpd/pure-ftpd_1.0.54_aarch64.deb	133652
 pwgen	2.08-2	aarch64	f0a13a267107df3a5f5abc612e579c4c858addf70f786b19207248cece17857e	pool/main/p/pwgen/pwgen_2.08-2_aarch64.deb	12104
+pyrefly	1.2.0	aarch64	3bb27a4f7d4e68d6ed06899e1ac2b2a26a774083ab6e4c9bff8a7f38b54ca802	pool/main/p/pyrefly/pyrefly_1.2.0_aarch64.deb	9116512
+python-apsw	3.53.4.0	aarch64	70dcfc4604bfe31edc1c3f41fa2036a563a32230d08cde492f21760ba5c50114	pool/main/p/python-apsw/python-apsw_3.53.4.0_aarch64.deb	748052
+python-bcrypt	5.0.0-3	aarch64	67b9963c7369aec930e34e643a9522681e4e920c78cdf4f7cd7da3d98ec3bb1a	pool/main/p/python-bcrypt/python-bcrypt_5.0.0-3_aarch64.deb	182576
+python-cmake	4.4.0	aarch64	5e95e9d6054234628e365cba455d3a1100e215a68596a63252d8e4fcdf35ad07	pool/main/p/python-cmake/python-cmake_4.4.0_aarch64.deb	9148
+python-cryptography	50.0.1	aarch64	a598ddf9f323ee303343cc3959f45498cdd2248704ea367b5cb39decc9c3b020	pool/main/p/python-cryptography/python-cryptography_50.0.1_aarch64.deb	1134400
+python-greenlet	3.5.5	aarch64	6d00bba10f1996106eec738e05210461c382df54ec4671a5a474238b9663bc59	pool/main/p/python-greenlet/python-greenlet_3.5.5_aarch64.deb	175488
+python-grpcio	1.83.0	aarch64	ff5ceaaf8f0e77e96f54f9300811eab2332298939aef77880489dfafa4bff15b	pool/main/p/python-grpcio/python-grpcio_1.83.0_aarch64.deb	3851188
+python-lameenc	1.8.4-1	aarch64	f4c65dfbaa68c6300b02c15a61b8272cfc6959559c747910a6acbb19093704f2	pool/main/p/python-lameenc/python-lameenc_1.8.4-1_aarch64.deb	8900
+python-libsass	0.23.0-3	aarch64	4043b6282d9e567cd8921718d0f2850f9ef3716e976e210f74e28680a8c754a0	pool/main/p/python-libsass/python-libsass_0.23.0-3_aarch64.deb	32624
+python-llvmlite	0.48.0-3	aarch64	cb3ca599706f6455302a3c5d17daadf1609378376afb8b873b1e4d11e810ecf7	pool/main/p/python-llvmlite/python-llvmlite_0.48.0-3_aarch64.deb	22047740
+python-msgpack	1.2.1-2	aarch64	ba9bbb668a8e226bca12340422006b00e89b69fa720c364c1a0d0e9f20429869	pool/main/p/python-msgpack/python-msgpack_1.2.1-2_aarch64.deb	58140
+python-psutil	7.2.2-2	aarch64	ae0b1b61057be4781d4a3855e229bcb81e4a58cfed84c4e3216e650712821707	pool/main/p/python-psutil/python-psutil_7.2.2-2_aarch64.deb	82612
+python-pynvim	0.6.0-3	all	8cfa60cc9f1e4c34b9f46613355ae6dafe925f9638c83ef504c8e2a496a9fde4	pool/main/p/python-pynvim/python-pynvim_0.6.0-3_all.deb	34860
+python-pyppmd	1.3.1-1	aarch64	6358b42994fbae42cdee0f4146c0cb6920f91210d8ac733cbe677c986afeebd9	pool/main/p/python-pyppmd/python-pyppmd_1.3.1-1_aarch64.deb	36876
+python-tflite-runtime	2.20.0-4	aarch64	73330aeb169825b593c83df87a628d78b34d9dfec175eccc80714ba958387c87	pool/main/p/python-tflite-runtime/python-tflite-runtime_2.20.0-4_aarch64.deb	1526796
+python-tldp	0.7.5-8	all	9486d09c53c2dac7fd189ed001f254177b6533f678d5826bf2f77ce9bc9b4fb8	pool/main/p/python-tldp/python-tldp_0.7.5-8_all.deb	34432
