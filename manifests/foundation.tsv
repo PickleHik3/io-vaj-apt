@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
 # Generated: 2026-07-02T00:00:00Z
-# Package count: 2285
+# Package count: 2370
 # Columns: name version arch sha256 object-path size
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb	1033296
@@ -2289,3 +2289,88 @@ python-xlib	0.33-4	all	23e5bfec97b4f89126dc459c184edbf76d2370fce7cb9e611925bb20c
 q-dns-client	0.19.12	aarch64	4334f3151b6b6411fe2755e0734656fdba26926596aada7a33dbcf216ebb9a97	pool/main/q/q-dns-client/q-dns-client_0.19.12_aarch64.deb	3124820
 qalc-static	5.12.0	aarch64	dc1199c518f3c9a46865e8bd23cd6d894db5182b3dc85c64a35ced7b620483cc	pool/main/q/qalc-static/qalc-static_5.12.0_aarch64.deb	1768320
 qalc	5.12.0	aarch64	24e863bedf37ee931d03091d488fa9dce85ec16e73e3750576a73c21ebbcb4ae	pool/main/q/qalc/qalc_5.12.0_aarch64.deb	1720200
+python-ruff	0.16.4	aarch64	39a053fbd56ba5ac16dbfc17b3c50e646d41f69c5fd525dd10f40a6250793e47	pool/main/p/python-ruff/python-ruff_0.16.4_aarch64.deb	52660
+qemu-common	1:11.0.3	aarch64	aa8f8fc05f2131bf71c77f91da5fcdb7496bc101b1a08f19db1769e36c94303f	pool/main/q/qemu-common/qemu-common_1:11.0.3_aarch64.deb	21066884
+qemu-system-aarch64-headless	1:11.0.3	aarch64	40cc582cafb04634d1a8cef413babac5bbe1c7af209e0f4feca5743750270e71	pool/main/q/qemu-system-aarch64-headless/qemu-system-aarch64-headless_1:11.0.3_aarch64.deb	3662388
+qemu-system-arm-headless	1:11.0.3	aarch64	974190aa4d6d71e049faedbaa43c5c145131d9d4c03358a7da3ba8a41a88a3b9	pool/main/q/qemu-system-arm-headless/qemu-system-arm-headless_1:11.0.3_aarch64.deb	3182252
+qemu-system-i386-headless	1:11.0.3	aarch64	132b753aa513b7ac3078697017ed48302346be003063c890c4b840aef70e8f2a	pool/main/q/qemu-system-i386-headless/qemu-system-i386-headless_1:11.0.3_aarch64.deb	2643072
+qemu-system-m68k-headless	1:11.0.3	aarch64	cbaf18b142db4594f9aaa5d7b3c909fd32ebbd33830dac078a0dcd61a436c177	pool/main/q/qemu-system-m68k-headless/qemu-system-m68k-headless_1:11.0.3_aarch64.deb	1805172
+qemu-system-ppc-headless	1:11.0.3	aarch64	8ac13e642ff2f28d51968c68495ae8e24f77377ac62090556254687c5c741d93	pool/main/q/qemu-system-ppc-headless/qemu-system-ppc-headless_1:11.0.3_aarch64.deb	2598952
+qemu-system-ppc64-headless	1:11.0.3	aarch64	13ad0fb5ba8ffe7ad3793bf93c758035fcbe7239483ee09cc96c2c3543192f98	pool/main/q/qemu-system-ppc64-headless/qemu-system-ppc64-headless_1:11.0.3_aarch64.deb	2858368
+qemu-system-riscv32-headless	1:11.0.3	aarch64	4f5be7eb0b36a6a28a61dc2c9f9772bf597f2a51766b7aafcf0437794c666ac2	pool/main/q/qemu-system-riscv32-headless/qemu-system-riscv32-headless_1:11.0.3_aarch64.deb	2521296
+qemu-system-riscv64-headless	1:11.0.3	aarch64	ffcbf18934bf87c9c27425d8bbb09b56664bbc7d6497514c60eb735dbd21f2af	pool/main/q/qemu-system-riscv64-headless/qemu-system-riscv64-headless_1:11.0.3_aarch64.deb	2543724
+qemu-system-x86-64-headless	1:11.0.3	aarch64	56e0688ab94acd3dafd5efd211ce18e737abbed0bed239b977d0cb61b4b908a5	pool/main/q/qemu-system-x86-64-headless/qemu-system-x86-64-headless_1:11.0.3_aarch64.deb	2647348
+qemu-user-aarch64	1:11.0.3	aarch64	e917f81f0fb03bf5ab6577f353870c8be3e10154902d5cd0f43135910b442173	pool/main/q/qemu-user-aarch64/qemu-user-aarch64_1:11.0.3_aarch64.deb	1004548
+qemu-user-arm	1:11.0.3	aarch64	f52e4a2a380545c3b97b39efcee19ee6405f8af6fd462ec70f74f026eccc8dad	pool/main/q/qemu-user-arm/qemu-user-arm_1:11.0.3_aarch64.deb	685620
+qemu-user-i386	1:11.0.3	aarch64	dfcb11de34d47e5e0d393159613f70710df553320041516c341c67a51159aa52	pool/main/q/qemu-user-i386/qemu-user-i386_1:11.0.3_aarch64.deb	574124
+qemu-user-m68k	1:11.0.3	aarch64	528ce41aafbf3936d4ef8da8b12d9fbba427a7141c1c7eef5a5c1b5f9c0cc9f1	pool/main/q/qemu-user-m68k/qemu-user-m68k_1:11.0.3_aarch64.deb	498112
+qemu-user-ppc64	1:11.0.3	aarch64	daf525dd3ef6190e49bf5d46c2c95b922b6b2a955acafb3812462448887611a6	pool/main/q/qemu-user-ppc64/qemu-user-ppc64_1:11.0.3_aarch64.deb	626744
+qemu-user-ppc	1:11.0.3	aarch64	63b3948922144d9fe6bdce4e5cedd7dc4eb13fb28f896beece4cb362f2b0faaf	pool/main/q/qemu-user-ppc/qemu-user-ppc_1:11.0.3_aarch64.deb	613940
+qemu-user-riscv32	1:11.0.3	aarch64	e755b20528d17a01d82dbcadcc1593f135fb672007444d486eaf9f3c7bf62486	pool/main/q/qemu-user-riscv32/qemu-user-riscv32_1:11.0.3_aarch64.deb	587772
+qemu-user-riscv64	1:11.0.3	aarch64	9047b9a7fe50418723dc82819abc53c431835c3a72edb6fd83b6fdcdeef10c15	pool/main/q/qemu-user-riscv64/qemu-user-riscv64_1:11.0.3_aarch64.deb	593352
+qemu-user-x86-64	1:11.0.3	aarch64	f18acd8b19f886f05df8ddbf3bfd3eb73ce9ebaa538a56dc57f530d09304271c	pool/main/q/qemu-user-x86-64/qemu-user-x86-64_1:11.0.3_aarch64.deb	570000
+qemu-utils	1:11.0.3	aarch64	c1567a885f6b7deb55b990dc1c8b5a9ff31d36991e9f0c0d61d508d6a3082a54	pool/main/q/qemu-utils/qemu-utils_1:11.0.3_aarch64.deb	966428
+qpdf	12.4.0	aarch64	b5425763abbfdb6b71b02f8caa0fe4bd1cbb5a907951a203dca87fb81d869a09	pool/main/q/qpdf/qpdf_12.4.0_aarch64.deb	893312
+qrsspig	0.8.0-8	aarch64	3150687e73402e25f8e4bc74a08a2c07bb4fa754782b1ea2e89ec82ec2f01bcb	pool/main/q/qrsspig/qrsspig_0.8.0-8_aarch64.deb	399040
+quick-lint-js	3.2.0-1	aarch64	1805e8c0542e4876ab40a9457cbf92a54a20daf2ca02854e998f96d152d4b99d	pool/main/q/quick-lint-js/quick-lint-js_3.2.0-1_aarch64.deb	246252
+rabbitmq-server	4.3.5	all	fbd24f830e88a223d33d11dd41a0076486fed0b884e0ae30b678b2cd00efad16	pool/main/r/rabbitmq-server/rabbitmq-server_4.3.5_all.deb	30967168
+racket-static	9.3	aarch64	b134c3a9b98a4da3e0495d1930ec24d136e6df0e3987c0fa18a4d92e76ca75a4	pool/main/r/racket-static/racket-static_9.3_aarch64.deb	1084260
+racket	9.3	aarch64	60bfe609bdcd4cc2466be0c5823d8bc27e744acbb5408968728f95959b02acc0	pool/main/r/racket/racket_9.3_aarch64.deb	5792312
+radare2	6.2.0	aarch64	f25994fc36ff8377f9613e01d3ca24d45820bfe13f474891356306714675b3a6	pool/main/r/radare2/radare2_6.2.0_aarch64.deb	7901700
+rage	0.11.2	aarch64	8e6af2823a39fd16b9af6e4694985f573f6f09a0ff2525208abb113abd229079	pool/main/r/rage/rage_0.11.2_aarch64.deb	1299296
+ragel-static	7.0.4-1	aarch64	36dc6e91cebb5b14f0a8ca868373f7f64f7e96fd8b454decf4ebafb06642c363	pool/main/r/ragel-static/ragel-static_7.0.4-1_aarch64.deb	65320
+ragel	7.0.4-1	aarch64	a1bbb74198a138af5600fdf8a64f875f68bf32dc691535c270f1a4befda02c2a	pool/main/r/ragel/ragel_7.0.4-1_aarch64.deb	608296
+railway-cli	5.30.4	aarch64	f427394dfac55d00a5b051ff4ddd1a6b210c5846cd43225e72ea0149fbf8cc0b	pool/main/r/railway-cli/railway-cli_5.30.4_aarch64.deb	4744496
+range-v3	0.12.0	aarch64	453c610305707361f89fe3c6ddde91dfc537ae9081d75efe978419feb9fc79e6	pool/main/r/range-v3/range-v3_0.12.0_aarch64.deb	204028
+ranger	1.9.4-2	all	66ba3a5d44fe3c3c43c0030d19bdd1d3a6807c94df29bc4f9e2c9db2083c5a70	pool/main/r/ranger/ranger_1.9.4-2_all.deb	200004
+ratt	2023.02.02-3	aarch64	bcd6c2ecb12b9710553233c1a19cb292dd40f6d647d8c9000630f5967d06a1a2	pool/main/r/ratt/ratt_2023.02.02-3_aarch64.deb	3085368
+rbw	1.15.0	aarch64	865361ded4ec83522e34a80749b38efbdb4242cc50aafe1e5958def9a1f8cc33	pool/main/r/rbw/rbw_1.15.0_aarch64.deb	2889540
+rc	1.7.4-2	aarch64	bc904f7ed29a4d863fbbd4ae6b8a119d499779b89a0a9daab94f84cff9661dad	pool/main/r/rc/rc_1.7.4-2_aarch64.deb	50200
+rclone	1.75.0	aarch64	41d83cf6ed5236f30a4057a38f6ce4aa56602344e50bf2d84157cdd83a9e41b4	pool/main/r/rclone/rclone_1.75.0_aarch64.deb	19563352
+rcm	1.3.6	all	dfe014a31436b09c3b298d2578b388e80a9680bb3581952e34647f3b93bb904e	pool/main/r/rcm/rcm_1.3.6_all.deb	20196
+rcs	5.10.1-1	aarch64	8ce781092d874adb46589bcfb1f321b54a7ba071a4179fa85e379bb05fa7f853	pool/main/r/rcs/rcs_5.10.1-1_aarch64.deb	166292
+rdfind	1.8.0	aarch64	a76cea3c577a3905cdbf14b3a054a22655ecc654981e07bc7408aebfc59e8fb7	pool/main/r/rdfind/rdfind_1.8.0_aarch64.deb	41880
+rdiff-backup	2.2.6-6	aarch64	8737653fe1522b6a1171079e3991b0b49cda7790f25f5598a17b34867da5d983	pool/main/r/rdiff-backup/rdiff-backup_2.2.6-6_aarch64.deb	265192
+rdircd	2023.02.07-3	all	097fb4bded8ba276eb69aa895b54270244c8244816814cf4490395202547c47d	pool/main/r/rdircd/rdircd_2023.02.07-3_all.deb	51824
+rdrview	1:0.1.5-1	aarch64	cfb02d94d2751e065a2c1c306af255aa023ddbe9d85074f193bdd0aa1d2ea10c	pool/main/r/rdrview/rdrview_1:0.1.5-1_aarch64.deb	23276
+re2c	4.5.1	aarch64	480bfb434f9ecc2f4c4ed54896ea777a764fb3e67bd9bab37776ede5d0ee9084	pool/main/r/re2c/re2c_4.5.1_aarch64.deb	874620
+recode-static	3.7.15-1	aarch64	15a60bea67727238e7bb74fda6202eb9076fc04d6bf8e6d19ba4369e0c9b2532	pool/main/r/recode-static/recode-static_3.7.15-1_aarch64.deb	248444
+recode	3.7.15-1	aarch64	b84c94a24136dd0f7c66c019dd968e13f5748ccc341a15c57d5b9fbf25333146	pool/main/r/recode/recode_3.7.15-1_aarch64.deb	324648
+redir	3.3-3	aarch64	db8d8363f037c062efaf71220bf5d17d70eac11f0ef0b61006db76eceaecbec5	pool/main/r/redir/redir_3.3-3_aarch64.deb	13736
+redis	1:8.8.1-1	aarch64	98af7472ecfe4bb4bd85571c1a9d42e0a03142340e13e86ec8e12da9eda0e73e	pool/main/r/redis/redis_1:8.8.1-1_aarch64.deb	1055912
+remind	1:06.03.01	aarch64	15a7289e0800d890d4af7b92985b86edafb14ef35f5a5fb11328d0b3b05def92	pool/main/r/remind/remind_1:06.03.01_aarch64.deb	313172
+reptyr	0.10.0-1	aarch64	66e478bbe1c5865692f5dace208d308cf2a322711a25c3fb20385895d582c5bf	pool/main/r/reptyr/reptyr_0.10.0-1_aarch64.deb	15528
+restic-server	0.14.0-1	aarch64	f811a0823234f95686ba040b9c7af0e461f09fe4084d4f15e32e75b249a1272c	pool/main/r/restic-server/restic-server_0.14.0-1_aarch64.deb	3244532
+restic	0.19.1	aarch64	421152a26592fdc9c907e11c73e2b9cf78a8900b2f8b60cd3bde1f44942cf5e9	pool/main/r/restic/restic_0.19.1_aarch64.deb	9240932
+restish	2.3.0	aarch64	519175be0d5c8f158fbedfba1cf07821132cae827cfa3f3abd1666adb4fa3abd	pool/main/r/restish/restish_2.3.0_aarch64.deb	7099460
+rgbds	1.0.3	aarch64	384b7b001f1354020f25bd199777eb814be243fc8a43f06dadb8e3b07f790704	pool/main/r/rgbds/rgbds_1.0.3_aarch64.deb	308980
+rig	1.11-2	aarch64	ead8a76ac0fbf1d71982d886b1fc6501ba468639690cc8462371fe5dc19bf7a1	pool/main/r/rig/rig_1.11-2_aarch64.deb	31704
+rinetd	1:0.73-2	aarch64	05f6e5bf90e673a61f5e03d1c8e1a3d55f1c0658c38979ca60d014cd04e46d3a	pool/main/r/rinetd/rinetd_1:0.73-2_aarch64.deb	15056
+rip2	0.9.6	aarch64	4fd9445b4fb3fd1a2a410c05b9f9e58893ee4e4070f3f4f1389cf0a17fcf05cb	pool/main/r/rip2/rip2_0.9.6_aarch64.deb	402240
+ripgrep-all	1:0.10.10-1	aarch64	574cb2588b49f34632234dc5f1c59f49e8dc36840bc170c244666f49fe6a05e1	pool/main/r/ripgrep-all/ripgrep-all_1:0.10.10-1_aarch64.deb	3399408
+rirc	0.1.7-2	aarch64	8923628f9ca8f27d0729d7202c321c36a2e6a13bb7b7d2ad7233ef45851e7ccd	pool/main/r/rirc/rirc_0.1.7-2_aarch64.deb	46648
+rizin	0.9.1-1	aarch64	3e108daf3dbd3b98058d85424d05777af21e3926c680b3f267f3ce058513ce68	pool/main/r/rizin/rizin_0.9.1-1_aarch64.deb	6072380
+rlwrap	0.48	aarch64	c90d1b1581eed7d29c983d0ee934b1d5e3fa4160cc2c40368a7fc4095d8e4f1c	pool/main/r/rlwrap/rlwrap_0.48_aarch64.deb	95556
+rmpc	0.11.0	aarch64	f0c9812d7424b3a094340b658cf0b27c08a29079c4a72ad676f14b410a026b13	pool/main/r/rmpc/rmpc_0.11.0_aarch64.deb	3101008
+rnr	0.5.1	aarch64	277bc6586051eb98778c6e235946b564e4544fc64a4f689160631d9d03e47f45	pool/main/r/rnr/rnr_0.5.1_aarch64.deb	961516
+robotfindskitten	2022.05.21-1	aarch64	011bbcb6c7cc2cc9b2b987b4f164397dafb35263c009efad0494cb82947b5047	pool/main/r/robotfindskitten/robotfindskitten_2022.05.21-1_aarch64.deb	26084
+root-repo	2.4-2	all	c86ba508134d5fa25ebdecb88c5b0c17a9ec5423381d924040f724067ca0cc47	pool/main/r/root-repo/root-repo_2.4-2_all.deb	1216
+rp-pppoe	4.0-1	aarch64	26402357bd9900c62649d175ad3e1775c1be85bcfe50f13fb66faea1af8229cc	pool/main/r/rp-pppoe/rp-pppoe_4.0-1_aarch64.deb	67332
+rq	1.0.4-2	aarch64	d9764db583f6ebc267c17924a7e097049206fa3c2f9eceb34811cb610ecbc771	pool/main/r/rq/rq_1.0.4-2_aarch64.deb	930764
+rsgain	3.7	aarch64	6a653439ed05aa5e143924a64f50e813bc9d54dd192bda94a7f385838e55a295	pool/main/r/rsgain/rsgain_3.7_aarch64.deb	94148
+rsnapshot	1.5.1	all	b371589990f6ea2bfab28e922b16a5c31178e1f9b498bee2ea101aa67dab5c88	pool/main/r/rsnapshot/rsnapshot_1.5.1_all.deb	68748
+rtmpdump-static	2.6-1	aarch64	e69edf121e77b909687dd6c83615c7f5ecc57e58c81f45d044e1aef1126528e9	pool/main/r/rtmpdump-static/rtmpdump-static_2.6-1_aarch64.deb	51096
+rtmpdump	2.6-1	aarch64	f8319c59117ff9a34defbc692bfb44dfea3e8161fe3dad47c4cbf50a5b7f409c	pool/main/r/rtmpdump/rtmpdump_2.6-1_aarch64.deb	86536
+rtorrent	0.16.21	aarch64	26897044309d0b39e463a5e513a6e23cdb0413358b0343b8cf08692bf79fc2fb	pool/main/r/rtorrent/rtorrent_0.16.21_aarch64.deb	436040
+rubiks-cube	1.2-1	aarch64	c112482dadf5716db9d7453d513d5460ddb0afd8facf6dc0bdc7ab52beae73e7	pool/main/r/rubiks-cube/rubiks-cube_1.2-1_aarch64.deb	20132
+ruff	0.16.4	aarch64	327a407c6a280e9f2da26e6d0223dd427b9c1affaf1d751402fa7558baaf92a4	pool/main/r/ruff/ruff_0.16.4_aarch64.deb	6137376
+rush	0.9.0	aarch64	df6b675893ea3b090a2b1cea766054488db044dea97bc4dad61bc6fa9a3607c8	pool/main/r/rush/rush_0.9.0_aarch64.deb	2572488
+rustscan	2.4.1-1	aarch64	629f58113b8a8a8d6e2a8640ab14c617d9cb2f50fa2600db85a02a21dc0d0f94	pool/main/r/rustscan/rustscan_2.4.1-1_aarch64.deb	1464528
+rxfetch	2023.01.07	all	1d132490512fcf367423cf6add98d8f54986cc1cb9e9795a157445b39ff67d1f	pool/main/r/rxfetch/rxfetch_2023.01.07_all.deb	3904
+samba	4.16.11-6	aarch64	8c5df3b348559a92d9258f6c506ad157c3e5da7dc255606411289d01476c9cab	pool/main/s/samba/samba_4.16.11-6_aarch64.deb	6445236
+samefile	2.15-6	aarch64	efc67c0d4bbd5f370cf37ea85fe3d01e8e2944cb660d5a73f1b012dc1dfbd1a1	pool/main/s/samefile/samefile_2.15-6_aarch64.deb	12864
+samurai	1.3	aarch64	36de847c7031d43f49985a7378a649e8dcd6eaca7e7b1eb0bedcf262efae596b	pool/main/s/samurai/samurai_1.3_aarch64.deb	23424
+sassc	3.6.2-1	aarch64	a66e5d88df9e4d08d804f0000524ddd8d10ef1786028a900078ca2137c547eca	pool/main/s/sassc/sassc_3.6.2-1_aarch64.deb	6148
+sc-im	0.8.5-4	aarch64	2d15511145695ac43a9f104e6741e41f21cc9092a3d7808a88a49645a71b1cda	pool/main/s/sc-im/sc-im_0.8.5-4_aarch64.deb	158488
+scc	4.0.0	aarch64	ba14d91d14e020d7cd02110c09329d3665535929a06b334430cc06945e572c2a	pool/main/s/scc/scc_4.0.0_aarch64.deb	4613472
+strace	7.2	aarch64	ee3745a66352e0be0e0ecdbeba5c5c20a0be90b7aa16d380f75fbc37d6bd8073	pool/main/s/strace/strace_7.2_aarch64.deb	420112
