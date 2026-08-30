@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
 # Generated: 2026-07-02T00:00:00Z
-# Package count: 2119
+# Package count: 2158
 # Columns: name version arch sha256 object-path size
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb	1033296
@@ -2123,3 +2123,42 @@ nudoku	8.0.1	aarch64	0ada0c61d00bb8feaf4af531f4923bbe8d3b6241845635916699c0f270f
 python-apt	3.1.0-2	aarch64	5cf1b4e53ce2c90e6e26c8a8725bc57ccb3824a79752a21ccfb918cf2a190a0c	pool/main/p/python-apt/python-apt_3.1.0-2_aarch64.deb	166256
 stfl-static	0.24-7	aarch64	2cb98b2f1d7a3e87a17b8d096b76b1b08f80fd2b6b2f15c57e4c8a6b37789614	pool/main/s/stfl-static/stfl-static_0.24-7_aarch64.deb	28264
 stfl	0.24-7	aarch64	e7fa46a40c6eddf2676a348a8c0a6541437b1cd4d4c83bb15330046ad151f7ad	pool/main/s/stfl/stfl_0.24-7_aarch64.deb	24344
+nushell	0.115.1	aarch64	a025f0f8a94fadf2deb118c37d83986ede921aa41efe51f31d281f9e10ca0c38	pool/main/n/nushell/nushell_0.115.1_aarch64.deb	10594384
+nyancat	1.5.2-1	aarch64	6a313257555c3455daf62d946a37f66167da8c1e398918706d537ed02aa5a79e	pool/main/n/nyancat/nyancat_1.5.2-1_aarch64.deb	10528
+nzbget	26.0-1	aarch64	cf2f65ee485cbb2506e8a4e068e68fef28b7c8e16846d6d2884a5648a8478f8b	pool/main/n/nzbget/nzbget_26.0-1_aarch64.deb	4505536
+oathtool-static	2.6.12-2	aarch64	3ca48b11404e357d3231d13c28bde5152c29514a58006334ebe7eb276235a832	pool/main/o/oathtool-static/oathtool-static_2.6.12-2_aarch64.deb	54020
+oathtool	2.6.12-2	aarch64	7085244cbe9c9991a9b6bba941317c67f1e5a770983da4cea7c44f28990927a1	pool/main/o/oathtool/oathtool_2.6.12-2_aarch64.deb	180864
+ocrad-static	0.29-1	aarch64	5255df2b984653a0c6c82b5d28510475bfad7510f045e6f539057cc622b14a36	pool/main/o/ocrad-static/ocrad-static_0.29-1_aarch64.deb	148620
+ocrad	0.29-1	aarch64	ab056611956ce5586d805d0467de78a6b69dfa6e101473e44c73a4df36919697	pool/main/o/ocrad/ocrad_0.29-1_aarch64.deb	111124
+octave-static	2:11.3.0	aarch64	729b4d22e7b6f2cfcf09fdca937acfd52f56f5e582c742baafb9e1b44273fb71	pool/main/o/octave-static/octave-static_2:11.3.0_aarch64.deb	8572424
+octave	2:11.3.0	aarch64	000dc08fe93883a34dfb7f904f6fa68e81ccc186c85bbf6940513977f9be7a08	pool/main/o/octave/octave_2:11.3.0_aarch64.deb	13227388
+odt2txt	0.5-5	aarch64	a5c9d74ee27f34d693ab23dde9e49e1a01add1c7b4ea472a49d5d3bf43a37ae8	pool/main/o/odt2txt/odt2txt_0.5-5_aarch64.deb	9520
+oidn	2.4.1	aarch64	984f200557dfcd920779d8d9ee11f3e01a6e6f19b3d73b990f921600736d412d	pool/main/o/oidn/oidn_2.4.1_aarch64.deb	49241856
+okc-agents	0.1.2-2	aarch64	c9ebfa95676a8f79a2dd3339b21051ccfc93552a161d6c1d95382fa677f08efb	pool/main/o/okc-agents/okc-agents_0.1.2-2_aarch64.deb	755392
+ol	2.7	aarch64	91ebc3fe645b7f8d1009c2f2b6aa5808d7773670b49802b82217a58a205e94f8	pool/main/o/ol/ol_2.7_aarch64.deb	427588
+oleo	1.99.16-10	aarch64	4461d19a687d3dae73d97a980caf7a60a35307902f454c92aff18d656493a590	pool/main/o/oleo/oleo_1.99.16-10_aarch64.deb	213456
+ollama-backend-vulkan	0.31.1	aarch64	071675ba39cee872c8d6404b7c355a8f5402443f9f13fa86b94351d8cfbf36eb	pool/main/o/ollama-backend-vulkan/ollama-backend-vulkan_0.31.1_aarch64.deb	3487516
+ollama	0.31.1	aarch64	937a30522bd201a6132f3d082f8b3f4fd4b7aa69d41fa75784c1359d415ec70d	pool/main/o/ollama/ollama_0.31.1_aarch64.deb	11669948
+oma	1.27.8	aarch64	5836a4d057f6d67cd60b1b937e167697d947f4244fecef3d6d1ffe7ce2fea116	pool/main/o/oma/oma_1.27.8_aarch64.deb	4925424
+onefetch	2.27.1	aarch64	f3332f5de9a8001b26977d3331347267b280bbb2909debaa1bc7a8e5b697b1d2	pool/main/o/onefetch/onefetch_2.27.1_aarch64.deb	4286300
+onnxruntime	1.29.0	aarch64	a56251ee89bd2567350ffb9774c7eb53a826cd7db8927179d65074290a3347e4	pool/main/o/onnxruntime/onnxruntime_1.29.0_aarch64.deb	4808784
+oorexx-static	4.2.0-4	aarch64	943ba0cdd666693bc91db8d0ef3afcb122c1442926e159ea34b4135596749798	pool/main/o/oorexx-static/oorexx-static_4.2.0-4_aarch64.deb	667512
+oorexx	4.2.0-4	aarch64	c135daf42a6f00cd1bcc20dd8f3799ba81bb59c65f845e629c5ca83f783cde34	pool/main/o/oorexx/oorexx_4.2.0-4_aarch64.deb	645704
+open-adventure	1.22	aarch64	4efa2aed72597b96f472aa074505ea5d66a300cacddd185a0916cef170add487	pool/main/o/open-adventure/open-adventure_1.22_aarch64.deb	47392
+openbabel-static	3.2.0-2	aarch64	a42618b8becb121b3f6d556a81beae39b37b6561d85808e5cf82431b50201b74	pool/main/o/openbabel-static/openbabel-static_3.2.0-2_aarch64.deb	2538872
+openbabel	3.2.0-2	aarch64	6ddbf13f50dee711d3d7f4e1fbf9ebd628c5c7b9968b00d3af6566b99d9d67ad	pool/main/o/openbabel/openbabel_3.2.0-2_aarch64.deb	12503268
+opencl-vendor-driver	0.3-1	aarch64	97a5b8bb2de82f7a6d1fb5378e167bc5a19fc333f256479a1c211e7c9b914326	pool/main/o/opencl-vendor-driver/opencl-vendor-driver_0.3-1_aarch64.deb	2584
+opencolorio	2.5.2	aarch64	419e81178af24d7f3e2a869d75a799bd581e408a584bef020e4cf463c902e064	pool/main/o/opencolorio/opencolorio_2.5.2_aarch64.deb	1170888
+portaudio-static	19.07.00-3	aarch64	4c220c150c1f28d7d85ba5f1ba94b2423824932176281256ab6a98e6953702de	pool/main/p/portaudio-static/portaudio-static_19.07.00-3_aarch64.deb	40616
+portaudio	19.07.00-3	aarch64	97bc01cda5f5b3efdcb19bffe8dc424cfe29f373d373be3bbee459454c1ab895	pool/main/p/portaudio/portaudio_19.07.00-3_aarch64.deb	61736
+pystring	1.1.4-1	aarch64	876d3ec32421ec68616956ccc16ac3f17e5096e320eb19760924be48eaa9624a	pool/main/p/pystring/pystring_1.1.4-1_aarch64.deb	36168
+python-onnxruntime	1.29.0	aarch64	88a1179107af0f5b5cb74cc7da1a529b05e0b8b23976609d87d2ac8efd44a3fb	pool/main/p/python-onnxruntime/python-onnxruntime_1.29.0_aarch64.deb	5609612
+qrupdate-ng	2:1.1.5	aarch64	24646fad4122c6a7e824e584ae88420f8d73e6e045a0ef5e5d3d00c7d967b2b0	pool/main/q/qrupdate-ng/qrupdate-ng_2:1.1.5_aarch64.deb	154420
+suitesparse-static	2:7.14.0	aarch64	5e6a14d7e2a5da7100161eca772c891377afa9fa12e765573aa410b4e6b3cb01	pool/main/s/suitesparse-static/suitesparse-static_2:7.14.0_aarch64.deb	1323188
+suitesparse	2:7.14.0	aarch64	7f8991cf1979719d84534f9cfd0122a8a444a6174733ba38ea89690b926b25c5	pool/main/s/suitesparse/suitesparse_2:7.14.0_aarch64.deb	7424200
+sundials-static	2:7.8.0	aarch64	b399c4913c6688b77a5991c149bfc4da222fef6830fff33eb75e01f2b85ff086	pool/main/s/sundials-static/sundials-static_2:7.8.0_aarch64.deb	493328
+sundials	2:7.8.0	aarch64	043c9adf816a3dc06a8265cb1f015b181cb1b716fabd8076dcaebc57f09b8ba4	pool/main/s/sundials/sundials_2:7.8.0_aarch64.deb	792024
+vim	9.2.1000	aarch64	912edc17561172e2eecee12324107105e4271ff2b3fdee666091fd0e93016cdb	pool/main/v/vim/vim_9.2.1000_aarch64.deb	6797680
+xmlsec-static	1.3.12	aarch64	dd3a32ccda4c937bcec9570007e38caf31c6e99be20b9d7a2c3c6be2fa78ae32	pool/main/x/xmlsec-static/xmlsec-static_1.3.12_aarch64.deb	315164
+xmlsec	1.3.12	aarch64	c5d3ade8456958e7d9931d773f7b979c1e42f2e98d32dd6c056c21efc6b5d592	pool/main/x/xmlsec/xmlsec_1.3.12_aarch64.deb	459008
+xxd	9.2.1000	aarch64	9b304ed239c405b234780e7b94e151b592682f543a272100fd0ae5f9e9f717d4	pool/main/x/xxd/xxd_9.2.1000_aarch64.deb	13492
