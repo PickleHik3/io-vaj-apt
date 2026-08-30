@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
 # Generated: 2026-07-02T00:00:00Z
-# Package count: 2039
+# Package count: 2119
 # Columns: name version arch sha256 object-path size
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb	1033296
@@ -2043,3 +2043,83 @@ mktorrent	1.1-p20210130-1	aarch64	ed580153791ce209fcb58c876a1c33413fde63585e9441
 mlocate	0.26-6	aarch64	630b5afc0d3ede7b8cf4c309bf0edb3694304788454c2d78332286e64dd8c0c8	pool/main/m/mlocate/mlocate_0.26-6_aarch64.deb	38348
 mold	2.42.0	aarch64	d1a5e7ed65f7c48c2f826e5b3d289fbf02922a781ca97d9782628314e360bd1d	pool/main/m/mold/mold_2.42.0_aarch64.deb	1861116
 monero	0.18.5.1-2	aarch64	25549aba95e33082e70497bc942f07e8b0069c37120c366a1b581981289672cb	pool/main/m/monero/monero_0.18.5.1-2_aarch64.deb	14487548
+mono-libs	6.14.1-2	all	d85be95c08bc9207c4c221d877aa8f2754e041065265d97330701bb157cd4ddf	pool/main/m/mono-libs/mono-libs_6.14.1-2_all.deb	46719492
+mono-static	6.14.1-2	aarch64	4dac7af23440435659f92f0138ad615e10d8259371cedf255c7048296399f23c	pool/main/m/mono-static/mono-static_6.14.1-2_aarch64.deb	7533176
+mono	6.14.1-2	aarch64	621a5763922706d4eddab2d7e22795efec516772757c3de4009d24de410e30c6	pool/main/m/mono/mono_6.14.1-2_aarch64.deb	2154920
+monolith	2.10.1-1	aarch64	a27367ac7accbca196631d9cc9c3f86d9032d8cc570442897932da9a94433af4	pool/main/m/monolith/monolith_2.10.1-1_aarch64.deb	1510756
+moon-buggy	1.1.0	aarch64	fa7ac5ea0207c8d7748052776ce4b9a58826277aa827e3e844ea1ee624d79b96	pool/main/m/moon-buggy/moon-buggy_1.1.0_aarch64.deb	36384
+moor	2.18.0	aarch64	2feafcbafeb30727244e7ee75dd0fcf7bac8ae75c3970962e3abb591a1e9d3ea	pool/main/m/moor/moor_2.18.0_aarch64.deb	4465372
+mop	2025.03.17-1	aarch64	4c428b26cd997fe60ecd1fddd6e29c6983df6c5b538b06a71f0825d4799b59f6	pool/main/m/mop/mop_2025.03.17-1_aarch64.deb	2483252
+moreutils	0.70-1	aarch64	02b4063f8e2e2f8c1b39063a13d53b99536080424d233409124b6aacd64d76a7	pool/main/m/moreutils/moreutils_0.70-1_aarch64.deb	39860
+moria	5.7.15-7	aarch64	081e9a8f135a26d9cbe0bd4cd9dbbc9c494c9fa870bd1f653bd13de3b22e56ca	pool/main/m/moria/moria_5.7.15-7_aarch64.deb	218468
+morse2ascii	0.2.1-1	aarch64	cdf636665a86b7bb0fd6b4987973b56d993d8c4c861e531e0193800400550b78	pool/main/m/morse2ascii/morse2ascii_0.2.1-1_aarch64.deb	30348
+mosh-perl	1.4.0-17	aarch64	ab15a1c9e238069447277b64c6270b3d19db117b0d55e04d50c4c3908fcbb2b1	pool/main/m/mosh-perl/mosh-perl_1.4.0-17_aarch64.deb	6632
+mosh	1.4.0-17	aarch64	1dcab876dea5cf440672705e55fa38081dcf685e2a30c5bae748bff05de7fe44	pool/main/m/mosh/mosh_1.4.0-17_aarch64.deb	152640
+most	5.2.0-4	aarch64	ea9a4d4e2191ee42a9527805e186ca948c751b9741bc2cf297f2b50b3373af5f	pool/main/m/most/most_5.2.0-4_aarch64.deb	47284
+mp3cat-go	4.2.2-3	aarch64	8decc533ad82deb44af690aa31a880041c7cf62a6f89d4a3bcca519de30ebf5b	pool/main/m/mp3cat-go/mp3cat-go_4.2.2-3_aarch64.deb	583496
+mp3cat	0.5-2	aarch64	4dc7a29630cdf75de9c5e224668cc27a9681e8ef85cbad1cbbf512ca40164b5a	pool/main/m/mp3cat/mp3cat_0.5-2_aarch64.deb	6504
+mp3gain	1.6.2-2	aarch64	0be8bf4b42bf17918ae4b571ebfc18241a4eef1af8645513036d029ffd4c95eb	pool/main/m/mp3gain/mp3gain_1.6.2-2_aarch64.deb	26784
+mp3splt	2.6.2-2	aarch64	4af1b9052f91baba314a700aa868e46ad5b6f8b0db9d735d3357706df776a8c8	pool/main/m/mp3splt/mp3splt_2.6.2-2_aarch64.deb	28876
+mp3wrap	0.5-2	aarch64	c4e5d80dce4aa498ed163838d8fa53cbe6f6f27a89f059f20695b465b47ee8e6	pool/main/m/mp3wrap/mp3wrap_0.5-2_aarch64.deb	7068
+mpc	0.35-2	aarch64	eba795b1f354c4a1db1c0805af2450500de241e8e0b989a1d2c562e26f9f00ea	pool/main/m/mpc/mpc_0.35-2_aarch64.deb	71136
+mpdscribble	0.26-1	aarch64	8bf678b82bfc4bcbba868cb9444bd6470b4b1bf569da995329d8b7cc53041af0	pool/main/m/mpdscribble/mpdscribble_0.26-1_aarch64.deb	71756
+mruby-static	4.0.0	aarch64	33024e5582d639a8e54b6891a8275d86f0dbffea37e33abd59336fad06433be7	pool/main/m/mruby-static/mruby-static_4.0.0_aarch64.deb	456036
+mruby	4.0.0	aarch64	30fd0101a26c945412ecd7624cee4ecdb3c3380141d825fc490dbe7bbe071169	pool/main/m/mruby/mruby_4.0.0_aarch64.deb	589740
+ms-gsl	5.0.0	aarch64	e479a165d7707132bfaa8d2e0c2827e6c609988b365cbe17b6d94614aa26aad9	pool/main/m/ms-gsl/ms-gsl_5.0.0_aarch64.deb	19136
+msedit	2.0.0-1	aarch64	3c9140f5f8a82593721e5556af5ae621199a74bdb403869657442f17a9442c6d	pool/main/m/msedit/msedit_2.0.0-1_aarch64.deb	211104
+msmtp	1.8.34	aarch64	7396f4e88a7c478161489ad65d2ec47f78b889b0a6c37757fc87e769cac2b6c0	pool/main/m/msmtp/msmtp_1.8.34_aarch64.deb	86032
+mtd-utils	2.3.1	aarch64	3d1519893dd13a7bf23e93d1709b12b5170b4d380382cd323c2c2f9057a88f6b	pool/main/m/mtd-utils/mtd-utils_2.3.1_aarch64.deb	352068
+mtools	4.0.49-1	aarch64	f2fb840ed64c638165544dd13adabaaf2017402b07352e5a2a055004d3dbbd8f	pool/main/m/mtools/mtools_4.0.49-1_aarch64.deb	137804
+mujs-static	1.3.9	aarch64	e812902e2acab666dca40301908466c8a8d6b084de1cc74d5e23a95bd642e08d	pool/main/m/mujs-static/mujs-static_1.3.9_aarch64.deb	120768
+mujs	1.3.9	aarch64	ea352f9e27e0ad43a140053eaa871a36c042139c71da88df947c1d8c7ffd63c7	pool/main/m/mujs/mujs_1.3.9_aarch64.deb	140832
+multitail	7.1.5-2	aarch64	21c83a1b2c6f491ed0b9b834ef7d746573b5b69fd77f9cf30a7c08b8e2716103	pool/main/m/multitail/multitail_7.1.5-2_aarch64.deb	121944
+mutt	2.4.1	aarch64	2a30ea4e467c34c09b6aad0607146b2d41ca90dada4aed3e08968a456b0db88f	pool/main/m/mutt/mutt_2.4.1_aarch64.deb	1262520
+myman	0.7.1-6	aarch64	6c6d3f90b23777480189a20c4203954fb774396d720e4ca126f5aaab990fe942	pool/main/m/myman/myman_0.7.1-6_aarch64.deb	639044
+mypaint-brushes	2.0.2	all	313289e7b3f1242a735fc032b6c92aa909ef21b37ff91f91baf42f84af090af3	pool/main/m/mypaint-brushes/mypaint-brushes_2.0.2_all.deb	1478820
+myrepos	1.20180726-4	all	0cd6898d4415fc1fa61db18a70ffb1677839f3ebb2d750eadb897cbc38bfe6ba	pool/main/m/myrepos/myrepos_1.20180726-4_all.deb	40664
+n-t-roff-sc	7.16-1.2.0-0	aarch64	24df1f9fd3e7f86bdc61c9f3a982d50144649409466a292945a080018a248a6a	pool/main/n/n-t-roff-sc/n-t-roff-sc_7.16-1.2.0-0_aarch64.deb	147636
+n2n	3.1.1-1	aarch64	dee99fdb63ae430754b23bded1a41dbe1a371f4b2dca2de38ea8a2a2ca27bde8	pool/main/n/n2n/n2n_3.1.1-1_aarch64.deb	126488
+nala	0.16.0-3	all	e526b575232418f9afd3a3aa61ecf79a391fd3e29a940ced81e1a272af77b294	pool/main/n/nala/nala_0.16.0-3_all.deb	95288
+nali	0.8.1-1	aarch64	39569c048f5569a7e653a1824231815b0f6bb66969ed16169fbe46db682bfece	pool/main/n/nali/nali_0.8.1-1_aarch64.deb	3549076
+natpmpc-static	20230423-2	aarch64	3779bf3fc83c4a30268f39a448854edbccb2891ef2aa9ff079e708dc1bc7588b	pool/main/n/natpmpc-static/natpmpc-static_20230423-2_aarch64.deb	3828
+natpmpc	20230423-2	aarch64	33bff13e04371b283e351fb99b13470f2c99f84577911118fc7871ab9bd59648	pool/main/n/natpmpc/natpmpc_20230423-2_aarch64.deb	9884
+navi	2.24.0-1	aarch64	c35887c82480a33955e43d2cdfc6fd7fd9a70ae2cde3fd7c8b3625e5c7f8741b	pool/main/n/navi/navi_2.24.0-1_aarch64.deb	964172
+navidrome	0.63.2	aarch64	14f7d27a4f718fe024150779c1919c55f2d62802603b92adff80bda5a1a68503	pool/main/n/navidrome/navidrome_0.63.2_aarch64.deb	16359800
+ncdc	1.25-1	aarch64	8d87b1fc5d180c4525b1c1612a90fff465cf14605901a95c46e5cc45e3c710ca	pool/main/n/ncdc/ncdc_1.25-1_aarch64.deb	163860
+ncdu2	2.9.2-1	aarch64	781d44be1ede020396c9679004a8f57a8bb1103a50c17ddfa5622f646f7fe4b9	pool/main/n/ncdu2/ncdu2_2.9.2-1_aarch64.deb	309264
+ncdu	1.22-1	aarch64	1b0000feccd4dbb959bf54e1464177e5098ed7be5030cfd434e48b859ea9b7ed	pool/main/n/ncdu/ncdu_1.22-1_aarch64.deb	37004
+ncftp	3.3.0-1	aarch64	7f2891e577e9fd504a5296514dcd103b7fc9d3ef50475c286b7b6ff1258e9f0e	pool/main/n/ncftp/ncftp_3.3.0-1_aarch64.deb	235436
+ncmpcpp	0.10.1-9	aarch64	e2ae93e33954a5041dd91a14c630457d5afcd9a742357d742dad661348c5a733	pool/main/n/ncmpcpp/ncmpcpp_0.10.1-9_aarch64.deb	516584
+ncompress	5.0-1	aarch64	5c8475c74e692fa7a4ed8714ef94b0dacf49b82a5fec23e2da32978fbfc0d3df	pool/main/n/ncompress/ncompress_5.0-1_aarch64.deb	11864
+ncpamixer	1.3.11	aarch64	0e1499778b4fc6941c6646938b4affd86bfa97aed1dcceba2a3c9a15e42fb9c9	pool/main/n/ncpamixer/ncpamixer_1.3.11_aarch64.deb	41880
+ncspot	1.4.0	aarch64	ed2512f14741047fbe6592a586c556a4888823318c5ccf774756a3d90c7bc9b5	pool/main/n/ncspot/ncspot_1.4.0_aarch64.deb	2924208
+ne	3.3.4-3	aarch64	b42d50406ddd8b1ea713e137a25fe4a94d0af839036e7e76ee805145af020ac3	pool/main/n/ne/ne_3.3.4-3_aarch64.deb	400900
+nelua	2024.01.13-1	aarch64	55ad82a2d3c51e30a5e93e1e294abefad954eae5eb86578632d8fea70321e91d	pool/main/n/nelua/nelua_2024.01.13-1_aarch64.deb	387984
+neocmakelsp	0.11.0	aarch64	37a6e82ddeea31c10bfc549ed8a657307d0c2537c9000a88a63d823a4c2413b2	pool/main/n/neocmakelsp/neocmakelsp_0.11.0_aarch64.deb	1893356
+neofetch	7.1.0-1	all	86547eda028ab7ea3d8b9a62ac48bc498d6d37d44b732c78ad7137eef295f424	pool/main/n/neofetch/neofetch_7.1.0-1_all.deb	80156
+neovim-nightly	0.13.0~dev-1430+g6eb36bcb2d-0	aarch64	01f3c15bee71e8e6a90faede7b6bef3cb69cf1a8dcc1f49415792ae1b3b2f41a	pool/main/n/neovim-nightly/neovim-nightly_0.13.0~dev-1430+g6eb36bcb2d-0_aarch64.deb	6119980
+nerdfix	0.4.2-1	aarch64	51cdf1e5c31403520a9f492538dfba60d244611688bf56b8cecd7b94c15013b9	pool/main/n/nerdfix/nerdfix_0.4.2-1_aarch64.deb	954888
+net-snmp-static	5.9.5.2	aarch64	3eb62da60e82d7739a354f870226934b4efa54c86142cef055d69a05e91c6b52	pool/main/n/net-snmp-static/net-snmp-static_5.9.5.2_aarch64.deb	819060
+net-snmp	5.9.5.2	aarch64	dd334a7a799edc1e5105847d3538eaba129ff86798985182df3760d00c4f316e	pool/main/n/net-snmp/net-snmp_5.9.5.2_aarch64.deb	1390264
+netcat-openbsd	1.238-1-1	aarch64	e259e85ba58f773df8d4cd9684c08e64ff5ab0a29a98a1989eb12a9d8b938d10	pool/main/n/netcat-openbsd/netcat-openbsd_1.238-1-1_aarch64.deb	21276
+netsed	1.4	aarch64	a3074bb0b920cce7f65ac0ebb5eda78ba83773cf70fd3b9ee3f3c0b0fa755661	pool/main/n/netsed/netsed_1.4_aarch64.deb	8100
+newsraft	0.37	aarch64	b1254ec9affe89449a095fe51fb05a367327461f9f344da9468d5e741527f78b	pool/main/n/newsraft/newsraft_0.37_aarch64.deb	105852
+nginx	1.31.4	aarch64	1cfcaf3abfa81ff42cd692e2d593e131d8dcee7d7e6ee3a4143c43d9376ee812	pool/main/n/nginx/nginx_1.31.4_aarch64.deb	445960
+ngircd	28	aarch64	68da9b1cb1380af8d7daccb6faabdce28d47ba04639c90c2c82c53982b82f6c2	pool/main/n/ngircd/ngircd_28_aarch64.deb	173972
+ngspice	47	aarch64	bbfddb54b251b7a3b4fd276cc810d67b07fa424466834b95e8941394710c0bf3	pool/main/n/ngspice/ngspice_47_aarch64.deb	2075516
+nim	2.2.6	aarch64	7036aff6d3adbb1e7ff2986fa52f05d314adaaaa91081b46ef6911f7d830dc20	pool/main/n/nim/nim_2.2.6_aarch64.deb	5539828
+ninvaders	0.1.2-3	aarch64	f6a478f4acbac2cf71edcc639de98bf44b2192ee8c9782f21acc74168d6b4005	pool/main/n/ninvaders/ninvaders_0.1.2-3_aarch64.deb	12956
+nmap	7.991	aarch64	d4af78fcc122e5acf55c611d8cdafe38d2332d5b5b6deebb149ac57be3b9aa89	pool/main/n/nmap/nmap_7.991_aarch64.deb	5153544
+nmh	1.8-2	aarch64	a09f9ce2748e55cfc169119c9642c5f3216432900550a671943aebea1efb84b8	pool/main/n/nmh/nmh_1.8-2_aarch64.deb	1055496
+nmon	16s	aarch64	9aedfd8676884fae9f4170f7f1797ddcba086c9aa022f0ec82225bd0bb0f9ce0	pool/main/n/nmon/nmon_16s_aarch64.deb	52312
+nnn	5.3	aarch64	47efb6fb09ad733c1bbf472b7dfd63f60205ccb5be3937f3360a03989b4728a1	pool/main/n/nnn/nnn_5.3_aarch64.deb	70304
+no-more-secrets	1.0.1-3	aarch64	2b82ae926f944a5fd9ae139694b80015f84503c2c9c90824bd0e6de38e73391d	pool/main/n/no-more-secrets/no-more-secrets_1.0.1-3_aarch64.deb	14560
+notcurses-data	3.0.17-2	all	3b50b022d3c93a6ab1a955bc63361e8f46879631fff6d5e4d2a04206506e42f1	pool/main/n/notcurses-data/notcurses-data_3.0.17-2_all.deb	5903960
+notcurses-tools	3.0.17-2	aarch64	f2dccf28f15e76ce2206a5fcf979077a0109ad46765f2bde03ad7bcbb2e0b7c8	pool/main/n/notcurses-tools/notcurses-tools_3.0.17-2_aarch64.deb	416712
+notcurses	3.0.17-2	aarch64	7a4c35e1cd03b383c2b862affd59f05a70e13299100e830f13b4295f743a273f	pool/main/n/notcurses/notcurses_3.0.17-2_aarch64.deb	318556
+npush	0.7-2	aarch64	f8fe6f230853e4fd7a135a0d3b64955185698bb33edcaa75d03a4bc30aca0a55	pool/main/n/npush/npush_0.7-2_aarch64.deb	26636
+nsnake	3.0.1-7	aarch64	b260a71b95a22eed64bc71f03cca6f5dac4171cb780415da244c38dc1394462b	pool/main/n/nsnake/nsnake_3.0.1-7_aarch64.deb	79972
+nudoku	8.0.1	aarch64	0ada0c61d00bb8feaf4af531f4923bbe8d3b6241845635916699c0f270f96169	pool/main/n/nudoku/nudoku_8.0.1_aarch64.deb	12316
+python-apt	3.1.0-2	aarch64	5cf1b4e53ce2c90e6e26c8a8725bc57ccb3824a79752a21ccfb918cf2a190a0c	pool/main/p/python-apt/python-apt_3.1.0-2_aarch64.deb	166256
+stfl-static	0.24-7	aarch64	2cb98b2f1d7a3e87a17b8d096b76b1b08f80fd2b6b2f15c57e4c8a6b37789614	pool/main/s/stfl-static/stfl-static_0.24-7_aarch64.deb	28264
+stfl	0.24-7	aarch64	e7fa46a40c6eddf2676a348a8c0a6541437b1cd4d4c83bb15330046ad151f7ad	pool/main/s/stfl/stfl_0.24-7_aarch64.deb	24344
