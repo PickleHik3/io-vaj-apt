@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
 # Generated: 2026-07-02T00:00:00Z
-# Package count: 2678
+# Package count: 2690
 # Columns: name version arch sha256 object-path size
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb	1033296
@@ -278,7 +278,7 @@ libjxl	0.12.0	aarch64	27b8b1ff6a22e4104cbba4a93da50edd1cb2da984493330eeefbf2a6dc
 libjxl-progs	0.12.0	aarch64	07753a5bfcf334d789e0da7c0a198afff56c76bb57ad1004591620b7ed8ed347	pool/main/l/libjxl-progs/libjxl-progs_0.12.0_aarch64.deb	553368
 fribidi	1.0.16-1	aarch64	4c758a39f343e77f7956b176afe596ba90572f4cff92485f2cb927de0be856e9	pool/main/f/fribidi/fribidi_1.0.16-1_aarch64.deb	64412
 imath	3.2.2	aarch64	ae467f0aceea78d77284a97bea6dc408ecbfca3daa083a67566892d344ef9031	pool/main/i/imath/imath_3.2.2_aarch64.deb	122196
-openexr	3.4.4-1	aarch64	40337a5b0cb2df38d13102b9948b5619dc86bfb925b435c78c5faec67f0ccea9	pool/main/o/openexr/openexr_3.4.4-1_aarch64.deb	849556
+openexr	3.4.4-2	aarch64	0f431862c043abef9d6bf1b196a4baa38a4b0ca7dedd4601706c4238e1edd857	pool/main/o/openexr/openexr_3.4.4-2_aarch64.deb	861292
 svt-av1	4.2.0	aarch64	cf2b5ef86d26dd7c369b7f960ff34daa74ea7389ddf748e3c80e958b43adde7c	pool/main/s/svt-av1/svt-av1_4.2.0_aarch64.deb	1489536
 proot	5.1.107.92	aarch64	e3f304ccf589c07200503a53daf9e26d62575c39e6068627af3005c472b70b36	pool/main/p/proot/proot_5.1.107.92_aarch64.deb	97356
 runit	2.1.2-4	aarch64	a87e22f4f50a3aedf8f7bb9e3d97ed073f3d0c0c6855317490f8d445a40c8e0a	pool/main/r/runit/runit_2.1.2-4_aarch64.deb	52924
@@ -670,7 +670,7 @@ deutex	5.2.3-1	aarch64	bdd1c239d07b9ac78f093749a618c716c1b155cab34566bd717e16ace
 dex2jar	2.4-1	all	20301c739e56512b80dad7a7be2309d8333f7cb31d48282fbab6964332ebd01d	pool/main/d/dex2jar/dex2jar_2.4-1_all.deb	18737008
 dialog-static	1.3-20260721-0	aarch64	023859d153d0691d92ccad1dcc7c7fe26a384d2b2860af00c87362580007e2cc	pool/main/d/dialog-static/dialog-static_1.3-20260721-0_aarch64.deb	93604
 dictd	1.13.3-1	aarch64	5643520551e42c3611946fdc4256629a59927937efa82b36cbaa9f5f676e0690	pool/main/d/dictd/dictd_1.13.3-1_aarch64.deb	119828
-diff-so-fancy	1.4.10	all	525b21cea838331d3877d0b7ac3ee19ee21b91e0b57f14af5e94f312383b9194	pool/main/d/diff-so-fancy/diff-so-fancy_1.4.10_all.deb	17564
+diff-so-fancy	1.4.12	all	169297a4dde10cbde5204ad4351f452d576014ca6a209b3b7c39af98025876c7	pool/main/d/diff-so-fancy/diff-so-fancy_1.4.12_all.deb	19536
 diffstat	1.69	aarch64	c0f562a97bf3fcf552cc0a8f209317aae35478b43d7022fecf91b434b6f95732	pool/main/d/diffstat/diffstat_1.69_aarch64.deb	22000
 difftastic	0.70.0	aarch64	5694ac1b5a36c215b2d6a87ee3895b55d3e146aa2298469e0290525231e01ade	pool/main/d/difftastic/difftastic_0.70.0_aarch64.deb	6249084
 dirb	2.22-5	aarch64	c0c294ba258eb1cd75f7e4d52a01efbced690851e5314745ae79b6af236d2454	pool/main/d/dirb/dirb_2.22-5_aarch64.deb	191340
@@ -884,8 +884,8 @@ imlib2	1.12.6-2	aarch64	8454afa48c38c8b996a0abfb36ef5045a5875aa02d6c818cc49d9b62
 janet	1.41.2	aarch64	b02273367d9fa448b80e3550d55d159f7547e80507c5060973ffcdec13641653	pool/main/j/janet/janet_1.41.2_aarch64.deb	249584
 jbig2dec-static	0.20-2	aarch64	dc4ee66f54fd2929f7d1c7a0c411d8e008b49ff38cb8dcc2114eedd319cf068a	pool/main/j/jbig2dec-static/jbig2dec-static_0.20-2_aarch64.deb	44404
 jbig2dec	0.20-2	aarch64	c00c18ca286499250d32661ec1ffa1d5e8501b4519a78d3b3cf6259b846db9e2	pool/main/j/jbig2dec/jbig2dec_0.20-2_aarch64.deb	48984
-json-c-static	0.19	aarch64	c657803a65344b59f5061ec31ab3632f3f5def9b2294bef809639a3b7c4b7b51	pool/main/j/json-c-static/json-c-static_0.19_aarch64.deb	31056
-json-c	0.19	aarch64	3889fd174519ba2f195238029ec7a992db1589b253674e30b9ba70722bdf0940	pool/main/j/json-c/json-c_0.19_aarch64.deb	52020
+json-c-static	0.19-1	aarch64	75d832b3c0e45d6a104c27a4d0143a94b93dd089141dc9e787859564a6b8663f	pool/main/j/json-c-static/json-c-static_0.19-1_aarch64.deb	31136
+json-c	0.19-1	aarch64	09b1e4641cd01070dc1bd1acbae275922016b10d978919c0688b425c5289a2ae	pool/main/j/json-c/json-c_0.19-1_aarch64.deb	52076
 jsoncpp-static	1.9.8-1	aarch64	16c3140ce2e0c9bd6789b27978bf68180196a33ddbab2e7b7235390d10e0fd8a	pool/main/j/jsoncpp-static/jsoncpp-static_1.9.8-1_aarch64.deb	73012
 jsoncpp	1.9.8-1	aarch64	29ef92ac09cb9f8409ffc7f83bc2cb0e677a714d3174ecb888e68365d8a1ca2e	pool/main/j/jsoncpp/jsoncpp_1.9.8-1_aarch64.deb	96096
 kainjow-mustache	4.1	all	8c1cb6f9d4a0cb59f688d9c116be8063f2a172c432c4f93c50a99692c29c00e8	pool/main/k/kainjow-mustache/kainjow-mustache_4.1_all.deb	8292
@@ -1049,8 +1049,8 @@ libglibmm-2.4	2.66.9	aarch64	e3925cb2b721cd8b1f27c7c8d1b33741f586bc8d4206e0503d4
 libglibmm-2.68	2.88.1	aarch64	f013838570080bffd8a93220473bdd5457917bcf75a5f8cad91989001fd3305c	pool/main/l/libglibmm-2.68/libglibmm-2.68_2.88.1_aarch64.deb	1009976
 libglvnd-dev	1.7.0-1	all	d3fd2b462a9494a08950e8df0dd89becd30c53475459ebd4aee0c2f7da9e4195	pool/main/l/libglvnd-dev/libglvnd-dev_1.7.0-1_all.deb	150152
 libglvnd	1.7.0-1	aarch64	398110d26b1a5958df0974bc7b1c9c1d0feddae0a4ebf64f0ca85fb528421270	pool/main/l/libglvnd/libglvnd_1.7.0-1_aarch64.deb	177948
-libgmime-static	3.2.15-2	aarch64	5e66be78615a50df5d4095fc968cf42782a49c0d76b821bb680959e15a9b023c	pool/main/l/libgmime-static/libgmime-static_3.2.15-2_aarch64.deb	162452
-libgmime	3.2.15-2	aarch64	fb37d51b8ccde20cc3e2ac100bce04d2f5fe7c2976b76cb049920154ddb72d9a	pool/main/l/libgmime/libgmime_3.2.15-2_aarch64.deb	252052
+libgmime-static	3.2.15-4	aarch64	8037e3172c866d6af5ab764d873df240786c2978ea78b0cb176d4c24c39c0610	pool/main/l/libgmime-static/libgmime-static_3.2.15-4_aarch64.deb	162368
+libgmime	3.2.15-4	aarch64	a9cb1d6811dfe08b6dc8578f2a7dbc87d67fa8f69b49cd8777dd934ae4896d94	pool/main/l/libgmime/libgmime_3.2.15-4_aarch64.deb	251864
 libgmp-static	6.3.0-2	aarch64	959219f321b244f80eecfa2c07a0c7af8f15d82e3a4a2b8f44d83d82bb39cb23	pool/main/l/libgmp-static/libgmp-static_6.3.0-2_aarch64.deb	226516
 libgnt	2.14.4-2	aarch64	4c24cb47edaf5f9e03ecae8a71f82caff27dbd48b1dcb1af332f48970caed9de	pool/main/l/libgnt/libgnt_2.14.4-2_aarch64.deb	96244
 libgnutls-static	3.8.13-2	aarch64	8c30c057d24a37c9d9848f280bb277c08f5b68c9e01bff504eae8d87ec69ccd5	pool/main/l/libgnutls-static/libgnutls-static_3.8.13-2_aarch64.deb	839840
@@ -2682,3 +2682,15 @@ zbar-static	0.23.93-2	aarch64	47693b421ade0a675856a2e7ccfe25e1346cca421c1b44a1b7
 zbar	0.23.93-2	aarch64	7b5dcdd33c29c048ca58d415c1708145218ca0f422f441530abfc1c0cc6420b3	pool/main/z/zbar/zbar_0.23.93-2_aarch64.deb	129544
 zellij	0.45.0	aarch64	ac614f9984be56b46ed998ddb01106778c421d9304ef82ffc8c4c31eaabd1647	pool/main/z/zellij/zellij_0.45.0_aarch64.deb	7877568
 cadaver	0.28	aarch64	4206c8f5ae30031c60ed84ba9fb28cf0ba2b55d19f8b49b63b4c50feb6e01d90	pool/main/c/cadaver/cadaver_0.28_aarch64.deb	33396
+e2tools	0.1.2-1	aarch64	bcd4264db81317e51fcc2651f23ab8b5686c0e267c71160b7ed4c269d73592fd	pool/main/e/e2tools/e2tools_0.1.2-1_aarch64.deb	130776
+k2pdfopt	2.55-6	aarch64	17c212b1760cc385067f1bd94a9c9e47861817becc430e58109dc9b5af0bc9ab	pool/main/k/k2pdfopt/k2pdfopt_2.55-6_aarch64.deb	349076
+lzop	1.04-2	aarch64	fd8b81b3294eb967bd6bdbdfc5fd90c47e109383bccbedff5fb0dd65e6f1c693	pool/main/l/lzop/lzop_1.04-2_aarch64.deb	61664
+mu	1.14.3	aarch64	2fa50ad5e3ec6ba77fefc5d1f061a8d17a2cef67da350a3148f9cf5b989c803d	pool/main/m/mu/mu_1.14.3_aarch64.deb	555048
+muchsync	7-3	aarch64	05aece4e8554aa665194ef4352b0f4492f93702de434d3628d0cd0a18fe25679	pool/main/m/muchsync/muchsync_7-3_aarch64.deb	83944
+mupdf-tools	1.28.2-1	aarch64	3f898610f0548518390a5940e68d1e5e4f8331a6cbc399a6cc941b1bd24ce9cc	pool/main/m/mupdf-tools/mupdf-tools_1.28.2-1_aarch64.deb	142996
+mupdf	1.28.2-1	aarch64	5a6a2e5d55248ee333ae6838e94a32737256b4f74bc7eda443efb9fbe50ae60b	pool/main/m/mupdf/mupdf_1.28.2-1_aarch64.deb	28300696
+neomutt	20260616	aarch64	44e15f57684f729da311de00e0488ae12f3cf131a2d08b58c79308fe9826320e	pool/main/n/neomutt/neomutt_20260616_aarch64.deb	1046872
+netpbm	1:10.73.43-5	aarch64	42a2567c0745a4b9ca71a9dbc3d03b4b2ae1d8086a5557d42eaa47d8eadbc8ce	pool/main/n/netpbm/netpbm_1:10.73.43-5_aarch64.deb	1028900
+newsboat	2.44	aarch64	1f566fa4fd000785781245c9088376e5e1a1dcb3bb783c782784274d46b19f18	pool/main/n/newsboat/newsboat_2.44_aarch64.deb	1895040
+notmuch	0.40-1	aarch64	75879f89f46552f7f6f6b020d8ed3f04adc8b39e6f6ff83a6a9ffb7c3f98ce2c	pool/main/n/notmuch/notmuch_0.40-1_aarch64.deb	397592
+python-mupdf	1.28.2-1	aarch64	e7be8166deecc7b550e394044e6998c8cbc91f6a1246be5731fdcce1b57e7863	pool/main/p/python-mupdf/python-mupdf_1.28.2-1_aarch64.deb	1975872
