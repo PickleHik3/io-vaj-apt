@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
 # Generated: 2026-07-02T00:00:00Z
-# Package count: 2702
+# Package count: 2718
 # Columns: name version arch sha256 object-path size
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb	1033296
@@ -2706,3 +2706,19 @@ sabnzbd	5.1.2	all	4c94772fbba401dbb3978554bbda39dfac1858daa678f7a19f2fa58ac688cd
 subtitleripper	0.3.4-1	aarch64	2ab1300d03059a64df95ad86f2eb924657b6846ce410444116c9a9fe09809ba1	pool/main/s/subtitleripper/subtitleripper_0.3.4-1_aarch64.deb	25848
 unicode-data	18.0.0	all	88708a2d577cc1f5b85e86097150d80905bcf0f612889cf6e37778cde6a8405f	pool/main/u/unicode-data/unicode-data_18.0.0_all.deb	10859892
 vcsh	2.0.10	all	db9366007eb5b990016892eef30c43b84fbcb515fe4c3eb1f0c2eb8a7b01d19c	pool/main/v/vcsh/vcsh_2.0.10_all.deb	32460
+sigye	0.6.0-1	aarch64	dedc3fd2f01f9c14b101a3e811a9be7baa0aa440fab9a3ff915f8610303e7ff5	pool/main/s/sigye/sigye_0.6.0-1_aarch64.deb	1478864
+zig	0.16.0	aarch64	85d8214acbeecf4737437d770a9345f8832e23747e9edb84c963aa28f79176e7	pool/main/z/zig/zig_0.16.0_aarch64.deb	53651616
+zile	2.6.4-3	aarch64	5617ea736ea9935dea4229aa95d6a77ac95df4559c90bafe24c766cf05eb0317	pool/main/z/zile/zile_2.6.4-3_aarch64.deb	111724
+zip	3.0-7	aarch64	e51dde57b45739456c926d4e3a5817385f131e3bf9e5d827541f8343d4f0945c	pool/main/z/zip/zip_3.0-7_aarch64.deb	142336
+zipios	2.3.4	aarch64	973ce25400869836119ea7b0e466a27cdde598bcab2dbe5760f2285617365201	pool/main/z/zipios/zipios_2.3.4_aarch64.deb	82204
+zk	0.15.6	aarch64	8f8393dc265d5fab7355c5b8a2b13199988a1df2ff5db84048dac798b1d2e4a9	pool/main/z/zk/zk_0.15.6_aarch64.deb	3613560
+zls	0.16.0	aarch64	f37cc50c6b9fa9365c90230c2e3438dffdfe382132dbc0352435f09b7d7055db	pool/main/z/zls/zls_0.16.0_aarch64.deb	1037660
+znc	1.10.2	aarch64	8ff0a5c928a692e4fb47954b8b12d56e904a20b5b19e9a927418dfcba028e720	pool/main/z/znc/znc_1.10.2_aarch64.deb	1606380
+zola	0.23.4	aarch64	d17f2d5a6440278585aa7e456786d2af3c33589bfcca9a2130b958bcb6a72cc2	pool/main/z/zola/zola_0.23.4_aarch64.deb	9168500
+zpaq	7.15-1	aarch64	520a75da0601c11afe83686f75a065fdfa6ca975381ebdd3c60ada20db7222ca	pool/main/z/zpaq/zpaq_7.15-1_aarch64.deb	149768
+zrok	1.1.11	aarch64	d33bf4b6d7af015fc7b39f0be6ea58dba4f69052fba56e8dae7e264859a7c044	pool/main/z/zrok/zrok_1.1.11_aarch64.deb	38025004
+zssh	1.5c-2	aarch64	ec60fe0bf672b6224f3424cec119848a858d0fa94d012c9b10d17ba323163fd3	pool/main/z/zssh/zssh_1.5c-2_aarch64.deb	14164
+zsync	0.8.0	aarch64	aae6cdd551ae7920d20943b7ac2dd35369de920768252f22dbb2458314bb5666	pool/main/z/zsync/zsync_0.8.0_aarch64.deb	2031568
+zziplib	0.13.80-1	aarch64	2239a227604a29798c23b5d43c0e028e8e8858b7147d88d946b6f98d2ed8cad1	pool/main/z/zziplib/zziplib_0.13.80-1_aarch64.deb	54948
+zzuf-static	2022.05.29-1	aarch64	0331d13ac843bc5f6a424e8f700e7b8f673ba641d45c254e778f4584d79d6179	pool/main/z/zzuf-static/zzuf-static_2022.05.29-1_aarch64.deb	66732
+zzuf	2022.05.29-1	aarch64	65069108ee03ca268a40a8e3578362a90195ce7ddb09acfc591a0a401e0ead3a	pool/main/z/zzuf/zzuf_2022.05.29-1_aarch64.deb	49468
