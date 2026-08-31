@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
 # Generated: 2026-07-02T00:00:00Z
-# Package count: 2720
+# Package count: 2725
 # Columns: name version arch sha256 object-path size
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb	1033296
@@ -2724,3 +2724,8 @@ zzuf-static	2022.05.29-1	aarch64	0331d13ac843bc5f6a424e8f700e7b8f673ba641d45c254
 zzuf	2022.05.29-1	aarch64	65069108ee03ca268a40a8e3578362a90195ce7ddb09acfc591a0a401e0ead3a	pool/main/z/zzuf/zzuf_2022.05.29-1_aarch64.deb	49468
 bacula-fd-static	15.0.3-3	aarch64	cfa0c2d1d63cfa8d8b07406cbe2bdceca785034ac51ef2d1bb7bb9fd46e322da	pool/main/b/bacula-fd-static/bacula-fd-static_15.0.3-3_aarch64.deb	327196
 bacula-fd	15.0.3-3	aarch64	c3bc8f118464bd94cab0489f4934e9f141843813dce9295b746c391573382b42	pool/main/b/bacula-fd/bacula-fd_15.0.3-3_aarch64.deb	535844
+dar-static	2.8.6	aarch64	2d6538b701e608b287830beb41b5002e478ca6178abfcb227036152a086abe9a	pool/main/d/dar-static/dar-static_2.8.6_aarch64.deb	1131384
+dar	2.8.6	aarch64	a161ec59d129d793fd8ba436092dc06d02340bf361b6acc5e4a52f9a0f08efac	pool/main/d/dar/dar_2.8.6_aarch64.deb	1353048
+gmic-gm	3.7.2	aarch64	0410b8fd29bf959f6b16075839868afb488e9d34072e154c0089308ae308e894	pool/main/g/gmic-gm/gmic-gm_3.7.2_aarch64.deb	2721008
+gmic	3.7.2	aarch64	462907265cb6c799be163ef525719c77c6c143db83c2ad16eb2e75c41cddc62f	pool/main/g/gmic/gmic_3.7.2_aarch64.deb	2719048
+hledger	1.52.3	aarch64	7b6012e21ffd7ab31a29c0700d05237847758c136bf0ea9e266ba5268fcf0a17	pool/main/h/hledger/hledger_1.52.3_aarch64.deb	8434868
