@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
 # Generated: 2026-07-02T00:00:00Z
-# Package count: 2677
+# Package count: 2678
 # Columns: name version arch sha256 object-path size
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb	1033296
@@ -2681,3 +2681,4 @@ z3	5.1.0	aarch64	130e470bd308e85adc0641a1f251c1e4f217abd5c1e0106d618bf068c474ab1
 zbar-static	0.23.93-2	aarch64	47693b421ade0a675856a2e7ccfe25e1346cca421c1b44a1b77c102440eae4a8	pool/main/z/zbar-static/zbar-static_0.23.93-2_aarch64.deb	94084
 zbar	0.23.93-2	aarch64	7b5dcdd33c29c048ca58d415c1708145218ca0f422f441530abfc1c0cc6420b3	pool/main/z/zbar/zbar_0.23.93-2_aarch64.deb	129544
 zellij	0.45.0	aarch64	ac614f9984be56b46ed998ddb01106778c421d9304ef82ffc8c4c31eaabd1647	pool/main/z/zellij/zellij_0.45.0_aarch64.deb	7877568
+cadaver	0.28	aarch64	4206c8f5ae30031c60ed84ba9fb28cf0ba2b55d19f8b49b63b4c50feb6e01d90	pool/main/c/cadaver/cadaver_0.28_aarch64.deb	33396
