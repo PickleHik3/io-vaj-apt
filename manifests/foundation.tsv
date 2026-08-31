@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
 # Generated: 2026-07-02T00:00:00Z
-# Package count: 2700
+# Package count: 2702
 # Columns: name version arch sha256 object-path size
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb	1033296
@@ -2704,3 +2704,5 @@ ripsecrets	0.1.11-1	aarch64	47381a0f8ae2fd563a22d6e9a1f41678f272ed190033e7cdd8ce
 rpm	4.18.1-3	aarch64	e12182cb4c750b905136ebc349fd140e19aa62890c244981d0969fc9bc205bfe	pool/main/r/rpm/rpm_4.18.1-3_aarch64.deb	396448
 sabnzbd	5.1.2	all	4c94772fbba401dbb3978554bbda39dfac1858daa678f7a19f2fa58ac688cdb0	pool/main/s/sabnzbd/sabnzbd_5.1.2_all.deb	1151460
 subtitleripper	0.3.4-1	aarch64	2ab1300d03059a64df95ad86f2eb924657b6846ce410444116c9a9fe09809ba1	pool/main/s/subtitleripper/subtitleripper_0.3.4-1_aarch64.deb	25848
+unicode-data	18.0.0	all	88708a2d577cc1f5b85e86097150d80905bcf0f612889cf6e37778cde6a8405f	pool/main/u/unicode-data/unicode-data_18.0.0_all.deb	10859892
+vcsh	2.0.10	all	db9366007eb5b990016892eef30c43b84fbcb515fe4c3eb1f0c2eb8a7b01d19c	pool/main/v/vcsh/vcsh_2.0.10_all.deb	32460
