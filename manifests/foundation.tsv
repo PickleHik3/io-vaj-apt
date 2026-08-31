@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
 # Generated: 2026-07-02T00:00:00Z
-# Package count: 2622
+# Package count: 2677
 # Columns: name version arch sha256 object-path size
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb	1033296
@@ -1658,7 +1658,7 @@ yajl-static	2.1.0-8	aarch64	ea86bc7225e2c832ce8eeb9b3f8bb1290da9a862f50c8f11c743
 yajl	2.1.0-8	aarch64	f0e6413775424cbb388bcde159574d322713a6160b369224c77da2ff42ce968f	pool/main/y/yajl/yajl_2.1.0-8_aarch64.deb	25264
 yasm-static	1.3.0-7	aarch64	f6edb0a7627a260311990c7b09b5f6f65342b7ee4ea62bedd5e0fa08208b9170	pool/main/y/yasm-static/yasm-static_1.3.0-7_aarch64.deb	274676
 yasm	1.3.0-7	aarch64	7f8dbe5497a411849e558b7dcec590d9ee4d731276ff1251914ac2c33f6a8b8f	pool/main/y/yasm/yasm_1.3.0-7_aarch64.deb	390900
-yazi	26.5.6	aarch64	1711ecebf2530ae432c059c7b591a26663de3466a14c15e7fd394f1cd6832fff	pool/main/y/yazi/yazi_26.5.6_aarch64.deb	6263672
+yazi	26.8.15	aarch64	d5b94be91371cf73d9926c3c563ce1007adda67c5e003884cf6c438f5f48fc05	pool/main/y/yazi/yazi_26.8.15_aarch64.deb	9798836
 zlib-static	1.3.2	aarch64	7fbf2c991746865475c03680a21d8aeed70d74c7748cdf04a12ee45b1c9bbe59	pool/main/z/zlib-static/zlib-static_1.3.2_aarch64.deb	35480
 zopfli	1.0.3-5	aarch64	074fea094383d2f29498edb4072e952d1cf7b4f0e573cc96b9ab04dff64eb520	pool/main/z/zopfli/zopfli_1.0.3-5_aarch64.deb	22524
 tree	2.3.2	aarch64	df66b7ee658209eeea8477d38bf577b6c48c13784248a1311cd790041b162a3b	pool/main/t/tree/tree_2.3.2_aarch64.deb	35960
@@ -2626,3 +2626,58 @@ walk	1.13.0	aarch64	0cc2342e24215c00082e0d27dcba71c67329db5b9e52496d4a53d48ea7bd
 wasm-component-ld	0.5.30	aarch64	b177e1f1ba9c2409d9f30a574d6614e91a1f18e689da2911e25535ffbcba3ca5	pool/main/w/wasm-component-ld/wasm-component-ld_0.5.30_aarch64.deb	1427520
 wasmedge	0.17.1	aarch64	a01cc53785e44885b91ce5a468cc322385ce9b027d363ffbc90c41fab8349fa3	pool/main/w/wasmedge/wasmedge_0.17.1_aarch64.deb	497304
 wasmer	7.1.0	aarch64	5bda9a513de1b2abb6efc2cb64f7e02f97e29c7f3859516c7be5732b594f7d47	pool/main/w/wasmer/wasmer_7.1.0_aarch64.deb	59219780
+wasmtime	46.0.1-1	aarch64	b828c9c476cbf29e80537acc10c628a5b290e884e8aab561a2c65757f602e071	pool/main/w/wasmtime/wasmtime_46.0.1-1_aarch64.deb	8530936
+watchexec	2.7.0	aarch64	8991d6da5c46d785e22cc664973ec96c6bfeb2065924302c5cae2a276c31ac6c	pool/main/w/watchexec/watchexec_2.7.0_aarch64.deb	2480900
+waypipe	0.11.2	aarch64	eccd8cb07c03dd5ba25fea07d8ea96e8ce99c8ff809fb5719702657efbbf9568	pool/main/w/waypipe/waypipe_0.11.2_aarch64.deb	65412
+wcalc	2.5-6	aarch64	5cde1ac785eff72b958808e2cf80476dd4a39482a553ce2c55a708d0b2b89858	pool/main/w/wcalc/wcalc_2.5-6_aarch64.deb	97380
+wdiff	1.2.2-2	aarch64	135b402ac2ff514426542f7d9cf5c8d7397a1953c7e16e74439396bd90f49872	pool/main/w/wdiff/wdiff_1.2.2-2_aarch64.deb	16360
+webp-pixbuf-loader	0.2.7-1	aarch64	cf1acc6e34ce8188d25c5423af72448c915a049aaa6990892ebe79902dedd96c	pool/main/w/webp-pixbuf-loader/webp-pixbuf-loader_0.2.7-1_aarch64.deb	7468
+websocat	1.14.1	aarch64	089149dbc21a57fbc035f0427e7573e488cfe3e51328fc18d3fba5444f9ca801	pool/main/w/websocat/websocat_1.14.1_aarch64.deb	964672
+websocketd	0.4.1-4	aarch64	f8f3097da4fb284ab101eaa2d8b07732b518aeff57e8b7a0c18edc6d28b682ce	pool/main/w/websocketd/websocketd_0.4.1-4_aarch64.deb	2116888
+webtunnel	0.0.5	aarch64	dde172518d020b8e04ca84727792b21f13da69a9b99e391870e0759052c9b391	pool/main/w/webtunnel/webtunnel_0.0.5_aarch64.deb	1965624
+weechat-lua-plugin	4.10.0	aarch64	42de3dbd3ddfa5ae0588b6b3a0fbcfaaf147cf58905859000b014f2fe25c727a	pool/main/w/weechat-lua-plugin/weechat-lua-plugin_4.10.0_aarch64.deb	40008
+weechat-matrix-rs	2022.10.04-2	aarch64	9c71375948be5d2017b40bf3fe6876d9e19f13f513be37170fb830a47f9a0ae2	pool/main/w/weechat-matrix-rs/weechat-matrix-rs_2022.10.04-2_aarch64.deb	4133012
+weechat-perl-plugin	4.10.0	aarch64	5c004af8a61b4cef3407154125eae87caea63c4754a6ceda903ac15bf6b5b50e	pool/main/w/weechat-perl-plugin/weechat-perl-plugin_4.10.0_aarch64.deb	62296
+weechat-python-plugin	4.10.0	aarch64	6770428d703676f1ad3d8dd612a9e003aea90b299203f761c251c5b91d040eb3	pool/main/w/weechat-python-plugin/weechat-python-plugin_4.10.0_aarch64.deb	43488
+weechat-ruby-plugin	4.10.0	aarch64	7ae8c3549cf3933cacbf590a8cb99807b170e07acd53efcda3e4a25c2cec6269	pool/main/w/weechat-ruby-plugin/weechat-ruby-plugin_4.10.0_aarch64.deb	46348
+weechat	4.10.0	aarch64	e1882e90177f31833f905edcf6a627b64c7bb142f33af60b577c313e21dbe81d	pool/main/w/weechat/weechat_4.10.0_aarch64.deb	803600
+weggli	0.2.4-3	aarch64	da3d25e10324f3a3260fbf3a8baa5df0f9cf6d234e43c2fd7651d9a591148f16	pool/main/w/weggli/weggli_0.2.4-3_aarch64.deb	748528
+wego	2.4	aarch64	3262689db10452420371801f75d0780f6705cca51404c74aa0884221353422ea	pool/main/w/wego/wego_2.4_aarch64.deb	2131176
+wget2-static	2.2.1-1	aarch64	2da0e7d00767d471625de2d56a4baa5a38600afc5f9f4c0bcd4954a1f98d51a1	pool/main/w/wget2-static/wget2-static_2.2.1-1_aarch64.deb	223104
+wget2	2.2.1-1	aarch64	89fa355a55fcabc8bd9e4e90c3e8b60f45a1486b2548ecc541962939a216c898	pool/main/w/wget2/wget2_2.2.1-1_aarch64.deb	292584
+wgetpaste	2.34	all	aef5e0765e107df7993f8f16d0cb2851d10328c3fbd4e64f4eb9544fe5332251	pool/main/w/wgetpaste/wgetpaste_2.34_all.deb	14432
+whois	5.6.6	aarch64	10d60ba10f9a12d7f6efd89bff20bffa87ed3452d50f3df7dff3bdbe92c89211	pool/main/w/whois/whois_5.6.6_aarch64.deb	38988
+wireproxy	1.1.3	aarch64	3c89a81d4ffd866748fe8eb378030bc4d78b0df70eb822bc1512911a0e7998a7	pool/main/w/wireproxy/wireproxy_1.1.3_aarch64.deb	2968940
+wiz	2025.04.10	aarch64	218289d745a4c18be9cff701c250217ecbed9d91a3232780e3b4f733bde6bb88	pool/main/w/wiz/wiz_2025.04.10_aarch64.deb	225488
+woff2	1.0.2-4	aarch64	b01571f4b136f4c4aacaa5ff0500527975d587b086d1a14701c2140756af4c53	pool/main/w/woff2/woff2_1.0.2-4_aarch64.deb	67012
+wol	0.7.1-4	aarch64	8e7ba373ad9f9a26bed19ab69754a390fb5bd48bd79ff9bbb3b46c0632498a51	pool/main/w/wol/wol_0.7.1-4_aarch64.deb	13800
+wordgrinder	0.8-1	aarch64	b986e83e1bb61978889dacfef0cbd770a5ed5f03bf07d5dda4e10a5e9489dc69	pool/main/w/wordgrinder/wordgrinder_0.8-1_aarch64.deb	104688
+wren	0.4.0-2	aarch64	302e2c1e1dfe8e25261614f1600d8275fed3a3914a1cc5ac349de382941518d7	pool/main/w/wren/wren_0.4.0-2_aarch64.deb	62552
+wrk	4.2.0-1	aarch64	71fc562515557498f7f5aac160df543f23187452f834a7469451bf25a4a55a67	pool/main/w/wrk/wrk_4.2.0-1_aarch64.deb	31424
+wtfutil	0.50.0	aarch64	a44fec13e701eeeba3363949c0bd4e6c32b552cd27cedcc9ba8c2d1e0a9b6dee	pool/main/w/wtfutil/wtfutil_0.50.0_aarch64.deb	13311692
+wuzz	0.5.0-6	aarch64	83e61d42d7cc441207d0360688dc0cdebda1e889d98e7f0d12f6c8f038499a46	pool/main/w/wuzz/wuzz_0.5.0-6_aarch64.deb	2733308
+x11-repo	8.4-1	all	845fbb46e86046bf49bcf88cf592798bd09f19bd0665ee49bfbf305f5aedff5f	pool/main/x/x11-repo/x11-repo_8.4-1_all.deb	1200
+xdelta3-static	3.2.0	aarch64	cb42a33129ba15036e9e81f91a77a96345b4b598daca6e2d453a400985848cf4	pool/main/x/xdelta3-static/xdelta3-static_3.2.0_aarch64.deb	32436
+xdelta3	3.2.0	aarch64	89a3bc2a6d73ebd0ec1bd709ecbfb1ed5cfbf3ef4f65fe6fa4e42d5005fae3e4	pool/main/x/xdelta3/xdelta3_3.2.0_aarch64.deb	101272
+xdg-user-dirs	0.20	aarch64	87a539c654b1bab9330c5468aa77f6123f674eb36f4f70b18e8fd412870c7bca	pool/main/x/xdg-user-dirs/xdg-user-dirs_0.20_aarch64.deb	9256
+xh	0.26.2	aarch64	017a1e47cc4ec7dd7100af667e39aea19835dc6e01854dddb9597773f00df47e	pool/main/x/xh/xh_0.26.2_aarch64.deb	2951156
+xmake	3.1.1	aarch64	f7fb20b9c87fe0a097a197f9073ecc73808ea3a82e6c543bc9c25d822e37a82b	pool/main/x/xmake/xmake_3.1.1_aarch64.deb	1133084
+xmlstarlet	1.6.1-8	aarch64	45a987b2d785a04861711991d71579fc81a7b8f4bfd226875a35bfce1416c427	pool/main/x/xmlstarlet/xmlstarlet_1.6.1-8_aarch64.deb	42152
+xmlto	0.0.29-2	aarch64	8b34096284b0d2b6566c5c03fd0cfd7df90628ac900f092347de41a582cddcfd	pool/main/x/xmlto/xmlto_0.0.29-2_aarch64.deb	21248
+xorriso	1:1.5.8.pl02	aarch64	336191ed20951c032695eb7311c68c36719b52d91e52f8305d26b19a10d91b27	pool/main/x/xorriso/xorriso_1:1.5.8.pl02_aarch64.deb	900436
+yadm	3.5.0	aarch64	a9b391a4498764268e1feb9faaf408440100997ef012cd4e1df02031eb17d341	pool/main/y/yadm/yadm_3.5.0_aarch64.deb	29164
+yara-static	4.5.8-1	aarch64	927c0a2ecdb2c22a4b1cc444b0f4dd72c7d99bc2ee0519f69aab9852013be887	pool/main/y/yara-static/yara-static_4.5.8-1_aarch64.deb	178340
+yara	4.5.8-1	aarch64	7895b4428948de6e198af4372f7d0379fbb18712d93d61a0cd02cd6d7087160e	pool/main/y/yara/yara_4.5.8-1_aarch64.deb	217708
+yoga	3.2.1	aarch64	aebedb000db72d70e90c19dbad25dfe2fb314242f500f384db144a2e2c43ce6d	pool/main/y/yoga/yoga_3.2.1_aarch64.deb	74608
+yosys	0.68	aarch64	87a2aeb70884b542c2314f38e29691a18601437d904ab23422d4acfdb05f59a6	pool/main/y/yosys/yosys_0.68_aarch64.deb	13539764
+youtubedr	2.10.6	aarch64	c9b91171f4767dcedf2ef963620e5dcfab87b345a1432e9e97ce9119c65f1f01	pool/main/y/youtubedr/youtubedr_2.10.6_aarch64.deb	4255636
+yq	4.53.6	aarch64	b1a4ea63c095d5e5f2157dd54466c7a6ada0b08478fa6d91e1213344ef7e4707	pool/main/y/yq/yq_4.53.6_aarch64.deb	3810860
+ytfzf	2.6.2	all	e2b2544477f5677591fa61af6a7110c7de6f60b15c5d1a2bebc820b8500cb60e	pool/main/y/ytfzf/ytfzf_2.6.2_all.deb	62492
+ytui-music	2.0.0-beta-5	aarch64	b3cb3d9adeaf1cfb18d4246057f3f92687c0ecd19c8bde5de9eb022e44452294	pool/main/y/ytui-music/ytui-music_2.0.0-beta-5_aarch64.deb	766872
+yuma123-static	2.13-4	aarch64	35b5e8a7383c7d8b18aac56dbe6c23fae828085b7bb9f9c80cf04d4825cbc9fd	pool/main/y/yuma123-static/yuma123-static_2.13-4_aarch64.deb	2134484
+yuma123	2.13-4	aarch64	d3c3e62425bdddfc6652b1b145129686af723e9073f0a8486266aee91ebab027	pool/main/y/yuma123/yuma123_2.13-4_aarch64.deb	839964
+z-push	2.7.6-1	all	19c20e223016b3cbe308fbfe7a0053364a15f2918d40753dbba9c9e3c4626a84	pool/main/z/z-push/z-push_2.7.6-1_all.deb	505044
+z3	5.1.0	aarch64	130e470bd308e85adc0641a1f251c1e4f217abd5c1e0106d618bf068c474ab19	pool/main/z/z3/z3_5.1.0_aarch64.deb	12038028
+zbar-static	0.23.93-2	aarch64	47693b421ade0a675856a2e7ccfe25e1346cca421c1b44a1b77c102440eae4a8	pool/main/z/zbar-static/zbar-static_0.23.93-2_aarch64.deb	94084
+zbar	0.23.93-2	aarch64	7b5dcdd33c29c048ca58d415c1708145218ca0f422f441530abfc1c0cc6420b3	pool/main/z/zbar/zbar_0.23.93-2_aarch64.deb	129544
+zellij	0.45.0	aarch64	ac614f9984be56b46ed998ddb01106778c421d9304ef82ffc8c4c31eaabd1647	pool/main/z/zellij/zellij_0.45.0_aarch64.deb	7877568
