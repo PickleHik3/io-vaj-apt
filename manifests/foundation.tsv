@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
 # Generated: 2026-07-02T00:00:00Z
-# Package count: 2718
+# Package count: 2720
 # Columns: name version arch sha256 object-path size
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb	1033296
@@ -558,7 +558,7 @@ cboard	0.7.5-5	aarch64	611d8249e325e82f4f99d250f783153d4cbbbf845b114ec43eb54c69c
 cbonsai	1.4.2-1	aarch64	c5c490d5843182573b09de3132f0b763d4e4725e78f6cf52236b3fe215252ad8	pool/main/c/cbonsai/cbonsai_1.4.2-1_aarch64.deb	11244
 cc65	2.19-2	aarch64	cf02040a566de5e6e8c11bb256a7e0f448500132641fa9114a0b296ab52a0eba	pool/main/c/cc65/cc65_2.19-2_aarch64.deb	2111328
 ccache	4.14	aarch64	e78e6ac0bc01d5bad811a6c03c9143dc622b48861e9a75f6b2cddd7398da20cb	pool/main/c/ccache/ccache_4.14_aarch64.deb	555924
-cccc	3.2.0-1	aarch64	72a97c849a4f616903f84139a6c8590817477a257594f4ae9d3aefd6f3cc060e	pool/main/c/cccc/cccc_3.2.0-1_aarch64.deb	2045284
+cccc	3.2.0-2	aarch64	aaac05e7607cc92066a8bb265fbaf064bb8ff9bf5b67414651c5afc895fe91f9	pool/main/c/cccc/cccc_3.2.0-2_aarch64.deb	130480
 ccextractor	0.94-7	aarch64	63afe1fc3e05fb8dff09bbfe777d8955fca8d357da8fa442858010cfff76eb38	pool/main/c/ccextractor/ccextractor_0.94-7_aarch64.deb	224144
 ccls-static	0.20250815.1	aarch64	ddde68094e3883f2632b4118577cf9e004dfd9be7265662703b0afa0fc5920a3	pool/main/c/ccls-static/ccls-static_0.20250815.1_aarch64.deb	3029460
 ccls	0.20250815.1-1	aarch64	2b7a9cbeda27c3ce97bd08cbe57a7b587f6834e54bf97890cb2aa739c8a27b68	pool/main/c/ccls/ccls_0.20250815.1-1_aarch64.deb	398140
@@ -581,7 +581,7 @@ chrony	4.8	aarch64	a2b6392fc10db7ba684b27b4940ea8d8410c18e9f11776920a602d28d87b7
 cicada	1.3.1	aarch64	5f8bdc6f984fb58e07358dab37758c85680e3944d2d115fb35a35d3510bb90fc	pool/main/c/cicada/cicada_1.3.1_aarch64.deb	1544132
 ciso	1.0.2-2	aarch64	21aa87426fd8d78803832a98e03e714627b67b8a8560e54eae5f64f6ed5695af	pool/main/c/ciso/ciso_1.0.2-2_aarch64.deb	4676
 cjson	1.7.19	aarch64	c0290a39317bc80339679c116acb23fea6469c77f75964458fad9e9f53598557	pool/main/c/cjson/cjson_1.7.19_aarch64.deb	25388
-ckermit	9.0.302-3	aarch64	ad8100d3d082ed85374903287282864cd0baf328af54e1f78b33f161bce98d9b	pool/main/c/ckermit/ckermit_9.0.302-3_aarch64.deb	2923780
+ckermit	9.0.302-4	aarch64	e8b589eafe504fe7b7d3a4acd21af2c1398c82a5c7d8dd62d51807d82274fe0e	pool/main/c/ckermit/ckermit_9.0.302-4_aarch64.deb	1403140
 clamav-static	1.5.4	aarch64	0075ae2e5c69b4fac1e51bb40980d739343cd6d9e8308477bd973755d49da0b2	pool/main/c/clamav-static/clamav-static_1.5.4_aarch64.deb	8309676
 clamav	1.5.4	aarch64	767145a8bcb30786161f25d03f17a85271c4193252ba07502f784e62467a09a8	pool/main/c/clamav/clamav_1.5.4_aarch64.deb	7197500
 clblast	1.7.0	aarch64	57431e7bb1494bf6dbcf721fb12dae1f859efbf79dfddcedcc75f89b913ec246	pool/main/c/clblast/clblast_1.7.0_aarch64.deb	1095772
@@ -2722,3 +2722,5 @@ zsync	0.8.0	aarch64	aae6cdd551ae7920d20943b7ac2dd35369de920768252f22dbb2458314bb
 zziplib	0.13.80-1	aarch64	2239a227604a29798c23b5d43c0e028e8e8858b7147d88d946b6f98d2ed8cad1	pool/main/z/zziplib/zziplib_0.13.80-1_aarch64.deb	54948
 zzuf-static	2022.05.29-1	aarch64	0331d13ac843bc5f6a424e8f700e7b8f673ba641d45c254e778f4584d79d6179	pool/main/z/zzuf-static/zzuf-static_2022.05.29-1_aarch64.deb	66732
 zzuf	2022.05.29-1	aarch64	65069108ee03ca268a40a8e3578362a90195ce7ddb09acfc591a0a401e0ead3a	pool/main/z/zzuf/zzuf_2022.05.29-1_aarch64.deb	49468
+bacula-fd-static	15.0.3-3	aarch64	cfa0c2d1d63cfa8d8b07406cbe2bdceca785034ac51ef2d1bb7bb9fd46e322da	pool/main/b/bacula-fd-static/bacula-fd-static_15.0.3-3_aarch64.deb	327196
+bacula-fd	15.0.3-3	aarch64	c3bc8f118464bd94cab0489f4934e9f141843813dce9295b746c391573382b42	pool/main/b/bacula-fd/bacula-fd_15.0.3-3_aarch64.deb	535844
