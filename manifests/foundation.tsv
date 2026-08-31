@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
 # Generated: 2026-07-02T00:00:00Z
-# Package count: 2487
+# Package count: 2514
 # Columns: name version arch sha256 object-path size
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb	1033296
@@ -2491,3 +2491,30 @@ tcllib	2.0	all	b6fff939ec717f4989a3aed0c34cc418fc26a9d350663fc6ba0d1672d98f412e	
 tcsh	6.24.16-1	aarch64	3346cdc0c0f54d525bd857caed8509307e775c41da071f07c9150ce2904f852f	pool/main/t/tcsh/tcsh_6.24.16-1_aarch64.deb	211320
 tdl	0.20.4	aarch64	d9c986a72af2bf43c71fc496c757a2d33f5285a483b969b655cfba17dc96ae24	pool/main/t/tdl/tdl_0.20.4_aarch64.deb	9199572
 tea	0.15.1	aarch64	cf7956b55fa75530929100cf9bbf6f0bc6ef0d11d15983b0e3b4ae082540a944	pool/main/t/tea/tea_0.15.1_aarch64.deb	6163344
+teckit-static	2.5.13	aarch64	cc8fd451f8be4b6c225a95d6155005e7cd3d526fe7f42c6697aa80f8dec3f204	pool/main/t/teckit-static/teckit-static_2.5.13_aarch64.deb	342576
+teckit	2.5.13	aarch64	8e01af864c33cfd041397def82ab796b663c0945bf4904b6cb1d318ad6e9139e	pool/main/t/teckit/teckit_2.5.13_aarch64.deb	463928
+tectonic	0.17.0-1	aarch64	c8b9a1004d1fbbc593bf12f1ae2d7cabd7a77877a14287441f6e52613164dd87	pool/main/t/tectonic/tectonic_0.17.0-1_aarch64.deb	4141264
+telegram-bot-api	20241031-2	aarch64	beaf458e55b2666015a648bc4bb074bec125a05b8a37a15a00359a91b4330b21	pool/main/t/telegram-bot-api/telegram-bot-api_20241031-2_aarch64.deb	5471612
+teleport-tsh	18.10.0	aarch64	0bd1066e6f370d35c9413f012067305d90573b189c57a753353db07d4c0727ef	pool/main/t/teleport-tsh/teleport-tsh_18.10.0_aarch64.deb	22314988
+tere	1.6.0-1	aarch64	18813a1d2fd125eafa6d8df8d300e9589d0a0493fbcfe1f13b21f57e88ef4052	pool/main/t/tere/tere_1.6.0-1_aarch64.deb	707484
+tergent	1.0.0-5	aarch64	654a6534f9b432c3510f5f100e5862abed4783fe9e9462bfcd3a0da549982465	pool/main/t/tergent/tergent_1.0.0-5_aarch64.deb	225928
+termimage	1.2.1-1	aarch64	df4d28f1b5270c2e4cdf974208b3839f4a6279c1402e8f45aa8ce3dc0650a742	pool/main/t/termimage/termimage_1.2.1-1_aarch64.deb	768572
+termplay	2.0.6-1	aarch64	5bde8f1f0b9fb65f383579e3b02847fd5026d1cb8a3412cb2f81e3c041d8aa24	pool/main/t/termplay/termplay_2.0.6-1_aarch64.deb	609308
+termux-apt-repo	0.5-5	all	409bdc5f62b3b54bc0f45937ae93e0fe25a0e2cf87f2d5c6f64fc940ba1d4860	pool/main/t/termux-apt-repo/termux-apt-repo_0.5-5_all.deb	9260
+termux-create-package	0.12.0-3	all	9890f61a4c7a182cfb9b57da2f3862ce9e81b2691176cdb02d5124f1542ca062	pool/main/t/termux-create-package/termux-create-package_0.12.0-3_all.deb	33356
+termux-elf-cleaner	3.0.1-1	aarch64	aaa17c870c94b3bcaa24c1099e057a2930e6bc1dc22009025cb43d121324503c	pool/main/t/termux-elf-cleaner/termux-elf-cleaner_3.0.1-1_aarch64.deb	18068
+teseq	1.1.1-2	aarch64	901e6316ded0e14280b2210492aff7703048b50846d86a28fde8089f411d0c91	pool/main/t/teseq/teseq_1.1.1-2_aarch64.deb	49504
+testssl.sh	3.2.4	all	916a077567225cde1dedd4768896728ac6851f3342a5fab68396fd3fdab051d5	pool/main/t/testssl.sh/testssl.sh_3.2.4_all.deb	868312
+texlab	5.26.0	aarch64	13ae186c3c278a226c38484e47cf99b24d5e677195b568db5ff5e902ebb437cd	pool/main/t/texlab/texlab_5.26.0_aarch64.deb	8784212
+texlive-bin-static	1:2026.0	aarch64	d6e43dd63f024941db72a0d8dc8e6786d9410bb7816afebad351dff1cd4b3ef2	pool/main/t/texlive-bin-static/texlive-bin-static_1:2026.0_aarch64.deb	440212
+texlive-bin	1:2026.0	aarch64	e8576be6f82b5847afca5c21217e245db1401c461b5275049264696afda84d44	pool/main/t/texlive-bin/texlive-bin_1:2026.0_aarch64.deb	10798500
+tgpt	2.11.1	aarch64	ccc54fe280e830821842b97a780ed7a6d125ebafe2a7277ee43769fb6c2d9bba	pool/main/t/tgpt/tgpt_2.11.1_aarch64.deb	2993144
+tig	2.6.1	aarch64	0b949860b60ed4f1289e7726d912065ba3e37a5b771cea49c3269ef0bd06981c	pool/main/t/tig/tig_2.6.1_aarch64.deb	227988
+tilde	1.1.3-2	aarch64	da95dd8a36e6cf8881523b84b40400989f0aee131bdf46f882c481ae7adf7e57	pool/main/t/tilde/tilde_1.1.3-2_aarch64.deb	146728
+time	1.9-1	aarch64	9fe543e948642b067ab3bf516055fe7925b02f43d08a709d62b575cf5a542eda	pool/main/t/time/time_1.9-1_aarch64.deb	21372
+timewarrior-static	1.10.0	aarch64	699a7d0f3b606730fec3c7fba95a7014823ee88d4cd3dfd7039a0daee3c1db41	pool/main/t/timewarrior-static/timewarrior-static_1.10.0_aarch64.deb	219844
+timewarrior	1.10.0	aarch64	2edf4c21348b04e12275b84a227bc76ea0cfff0bd25148e18f0c78763be1f9b0	pool/main/t/timewarrior/timewarrior_1.10.0_aarch64.deb	286700
+timidity++	2.15.0-2	aarch64	dd8ea4b424af7a4a8760d01fa6363330c219a63272434ee384a8d96ab28ff770	pool/main/t/timidity++/timidity++_2.15.0-2_aarch64.deb	350612
+tin-summer	1.21.14-1	aarch64	337905e14fe62e8a24f2eb7d75d4a578ab71e9dab5a340b8483b606f4d2a1cfa	pool/main/t/tin-summer/tin-summer_1.21.14-1_aarch64.deb	704028
+tintin++	2.02.61	aarch64	d12ddfb9eb3f752869a25c05d7c7022961151b1f17d3b01f9e8941941599d1cb	pool/main/t/tintin++/tintin++_2.02.61_aarch64.deb	1405916
+tinyfugue	5.0b8-4	aarch64	44ac9f3a767b7d8b7f37895aa86e66b52e3ef2b971209bdf96f117af116f995e	pool/main/t/tinyfugue/tinyfugue_5.0b8-4_aarch64.deb	301052
