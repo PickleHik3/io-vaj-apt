@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
 # Generated: 2026-07-02T00:00:00Z
-# Package count: 2735
+# Package count: 2738
 # Columns: name version arch sha256 object-path size
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb	1033296
@@ -2739,3 +2739,6 @@ music-file-organizer	1.0.4-10	aarch64	69e12789804397ea1af4dab13b19e3c447b43a3b64
 mympd	25.3.0	aarch64	80233343b96cc24a7c39ad4ea3bd43e1823eb4d3934ac95c50ab866ff0c032e9	pool/main/m/mympd/mympd_25.3.0_aarch64.deb	817700
 nethack	3.6.7-2	aarch64	4c47435d716d2517f95f9b6c08bc06f9d01a0e8256a591d7b59459516f4a696c	pool/main/n/nethack/nethack_3.6.7-2_aarch64.deb	1386512
 opus-tools	0.2-4	aarch64	d7248e771b514adf9081f247c21d1b3b8dcf23ca928bddb6845fd190287a229f	pool/main/o/opus-tools/opus-tools_0.2-4_aarch64.deb	54136
+python2-static	2.7.18-15	aarch64	724390841a990f49a6f0e300aab8f763a540260be5e692ea1fba989e3ba0060e	pool/main/p/python2-static/python2-static_2.7.18-15_aarch64.deb	1974540
+python2	2.7.18-15	aarch64	2271e40f4af4dfbc665e3f76b1f6fe33930c6407ec1dda73015773f909ab3c67	pool/main/p/python2/python2_2.7.18-15_aarch64.deb	4959716
+texlive-installer	20260301	all	53036b8af248adffb9616ab2d21ab3658357344eff70ced6e669e063d4e67812	pool/main/t/texlive-installer/texlive-installer_20260301_all.deb	522376
