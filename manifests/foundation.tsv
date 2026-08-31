@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
 # Generated: 2026-07-02T00:00:00Z
-# Package count: 2573
+# Package count: 2622
 # Columns: name version arch sha256 object-path size
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb	1033296
@@ -2577,3 +2577,52 @@ unifdef	2.12-1	aarch64	378955aa8b81fd2a0353e8b5d59079e0ed2a02ae669ffd3d58eb8772f
 units-cur	2.27	all	0fada55ba7ef283d4e532aa905cdd27258471ceb93a0984758d8e906426c2d31	pool/main/u/units-cur/units-cur_2.27_all.deb	9980
 units	2.27	aarch64	c82454cc6bcd8ec958c95caa81415a18e4576ba053b4a0e6cdb0b36e2751b0b7	pool/main/u/units/units_2.27_aarch64.deb	285296
 unpaper	1:7.0.0-4	aarch64	073c4d13b1a09e8ec5d52c7175398089cc43725d72adaffa187886f505a18694	pool/main/u/unpaper/unpaper_1:7.0.0-4_aarch64.deb	30536
+unrar	7.2.7	aarch64	1e9862dd99cadf45934134cd72ca322a9a0f6b27e853b2c5361b44addb3d7feb	pool/main/u/unrar/unrar_7.2.7_aarch64.deb	165452
+unshield	1.6.2-1	aarch64	c2d9f6e99c5abc1a3b9b21557a880c9b1263a8d5de4c65aee52c2d677c6feb44	pool/main/u/unshield/unshield_1.6.2-1_aarch64.deb	23068
+up	0.4-4	aarch64	f8496ecb6e2eb080b496687c8bf043d6434ff784208956159a14566489ba511d	pool/main/u/up/up_0.4-4_aarch64.deb	907212
+upower	1.91.3	aarch64	201cbd85f151472a1a68e27d8437ee611d81bf0918abe5d5529ce76cce83df35	pool/main/u/upower/upower_1.91.3_aarch64.deb	81284
+upx	5.2.0	aarch64	e831d0a463ed3c82f6d61b1a4982332e9219fdf68fab86e99de7783af0f9ef4c	pool/main/u/upx/upx_5.2.0_aarch64.deb	664596
+urdfdom-headers	3.0.1	aarch64	42ae300caa3eb01b57888d3a843716135cac999b185e0d7393eea46e6b03b770	pool/main/u/urdfdom-headers/urdfdom-headers_3.0.1_aarch64.deb	12060
+urdfdom	6.0.1	aarch64	62ef3b6c9475781bb9d83fcb08b09326d294d9a781296bdb3f0c77fc22e83137	pool/main/u/urdfdom/urdfdom_6.0.1_aarch64.deb	81248
+usql	0.21.4-2	aarch64	d166b8037b8db4e496fe9581866f65ea74e5130b0e756c2186ae4acd130b3e4e	pool/main/u/usql/usql_0.21.4-2_aarch64.deb	26926568
+uthash	2.4.0	all	f8621a566b85f5a323b883c73ae6379bf9ffb8ee49373f662e6a35b6a351e2da	pool/main/u/uthash/uthash_2.4.0_all.deb	20212
+uucp	1.07-2	aarch64	86d107772366a266873204008068c4d5ddb5734a69e66bbd5d7379c43935f3f0	pool/main/u/uucp/uucp_1.07-2_aarch64.deb	315280
+uv	0.12.6	aarch64	c63cc11b4d37f983a67158db0e48b18ab26417895cb350fe0e3c15db969a4140	pool/main/u/uv/uv_0.12.6_aarch64.deb	12079776
+uwsgi	2.0.31-2	aarch64	198e53352ce0008b4e21219d0394bbf067bc5a4e33d4dfb1f6d8c89e421d287d	pool/main/u/uwsgi/uwsgi_2.0.31-2_aarch64.deb	382672
+v2ray	5.53.0	aarch64	db7c8b68693ee40176392cd19d0f730a81097055f6840e44739bd1459f8af710	pool/main/v/v2ray/v2ray_5.53.0_aarch64.deb	11611516
+vale	3.19.0	aarch64	cad36f1c5c58594e007db5658f85a8cd20b46686f9a64bccb6823bf4567153f7	pool/main/v/vale/vale_3.19.0_aarch64.deb	7531768
+valkey-static	9.1.1-3	aarch64	796af9e8ca1c31765322bd7ae51bee47c25ce45867ce4d70889bd1106e0636e0	pool/main/v/valkey-static/valkey-static_9.1.1-3_aarch64.deb	82248
+valkey	9.1.1-3	aarch64	c62140b8e63606018b3cea1beff7173aae17e98948a2ef53180be64d00f426c1	pool/main/v/valkey/valkey_9.1.1-3_aarch64.deb	1139784
+vapoursynth	73-2	aarch64	4f9b09f0859934c00f5b9f27e71bc6ebf5038e723e6cbb830aac90d6120afbef	pool/main/v/vapoursynth/vapoursynth_73-2_aarch64.deb	35612
+vbindiff	3.0-beta5-1	aarch64	90f1dbb0fba326594bff50c8a56f2aa271bd5f205aaef5ebbbe9bb072e338a42	pool/main/v/vbindiff/vbindiff_3.0-beta5-1_aarch64.deb	31328
+vde2-static	2.3.3-6	aarch64	cce0cc73e2359caf40224f48c7379f2258a9cdddfffda04edcdf87a4315ba9ec	pool/main/v/vde2-static/vde2-static_2.3.3-6_aarch64.deb	22084
+vde2	2.3.3-6	aarch64	39f85ce5deef3b69497587de6bfaa804ea46bdc45ff293e45a12807b2a0bdcad	pool/main/v/vde2/vde2_2.3.3-6_aarch64.deb	139316
+vegeta	12.13.0	aarch64	d4412d78d0a275b2267f7c23dad2eab4195e406b3c72f690f49b4e0137ae7e99	pool/main/v/vegeta/vegeta_12.13.0_aarch64.deb	3501892
+vera	1.3.0-10	aarch64	624222399354f47df8080f88a138d6b4a7b72051811075fdd4b8feb5da54fa27	pool/main/v/vera/vera_1.3.0-10_aarch64.deb	143588
+vgmstream	2117	aarch64	c087b8fa6bc0aad01e8b8db9f23186d7be2b9f90f341bfe1b5dd77a0faacfd5f	pool/main/v/vgmstream/vgmstream_2117_aarch64.deb	794720
+vgmtools	2023.01.27-1	aarch64	12bfec56897a0a12d7ff22eba89bf41be7ba94f5e878afd4b546cac774c88775	pool/main/v/vgmtools/vgmtools_2023.01.27-1_aarch64.deb	178420
+viddy	1.3.1	aarch64	c7bc3ee5787199b2db4052a235a6b0ab396b7cbc8a7fb6753cd997e13af040c8	pool/main/v/viddy/viddy_1.3.1_aarch64.deb	2035260
+vifm	0.14.4-1	aarch64	74d8d52e7c740b538928e95f5120266983dc2b1b50bbe35397ef1fb738c17543	pool/main/v/vifm/vifm_0.14.4-1_aarch64.deb	847932
+vile	9.8z-1	aarch64	d554080768d4c473cdb70490d9a8e3b599f1a6af2a592a62d6fa08e71617681e	pool/main/v/vile/vile_9.8z-1_aarch64.deb	881592
+virustotal-cli	1.3.1	aarch64	a99affbae6df2fb54a0580de96d62e7af1d678a4549e62f73f313b8676f3cff2	pool/main/v/virustotal-cli/virustotal-cli_1.3.1_aarch64.deb	3218576
+vis	0.9-p20250111-1	aarch64	fb75b605cae6900398c5d4b3840e4f4ce673e2dc716198b094e4483bdc31e896	pool/main/v/vis/vis_0.9-p20250111-1_aarch64.deb	321168
+vitetris	0.59.1-4	aarch64	265d81a275555a92d9265a3329c73c891b7a70c70634dc75e29f63ba531684c1	pool/main/v/vitetris/vitetris_0.59.1-4_aarch64.deb	46244
+viu	1.6.1	aarch64	f58433628b81d413a2a6886769daf10cfd6d34d40033289fa94929a6563dd5e3	pool/main/v/viu/viu_1.6.1_aarch64.deb	984600
+vivid	0.11.1	aarch64	52184634873e829c99bec17c119bbc5c82103793ea7f3de8efa78bf5683a0e26	pool/main/v/vivid/vivid_0.11.1_aarch64.deb	318300
+vobsub2srt	2017.12.18-4	aarch64	70903fcbcbc0c1fbad404a3be95aaa6b48411ca29c5633fd5b0987931a32969d	pool/main/v/vobsub2srt/vobsub2srt_2017.12.18-4_aarch64.deb	39648
+vorbis-tools	1.4.3-1	aarch64	0ddf94f8ec09b80e320f8aff537bcde7ac0915888a73e5341df8c38b0e1eee38	pool/main/v/vorbis-tools/vorbis-tools_1.4.3-1_aarch64.deb	63268
+vtm	2026.07.22	aarch64	ea7b5bfd8ee27ab4dde642a2b0c1bfda6ed556186a3faaa0b0f6111ed11cc025	pool/main/v/vtm/vtm_2026.07.22_aarch64.deb	1413460
+vttest	20251205	aarch64	a0ab641b783bd526c89acc8c291d8a42e26bf1f106dc424fb29e5f1a490f9116	pool/main/v/vttest/vttest_20251205_aarch64.deb	91968
+vulkan-extension-layer	1.4.360	aarch64	f59ef942656cdffe14fe1c957c1bdd5ddc6a233aabf95a103df421f71cda9b1f	pool/main/v/vulkan-extension-layer/vulkan-extension-layer_1.4.360_aarch64.deb	449048
+vulkan-tools	1.4.360	aarch64	57758b2483133b31f1475c3e449a5ed259b65505915e7fcded5fc8f8a37aa740	pool/main/v/vulkan-tools/vulkan-tools_1.4.360_aarch64.deb	404356
+vulkan-utility-libraries	1.4.360	aarch64	1e73c0fbd445123914bd6dc51d4ffbe065254ff20379994cfa0afc28af31ec8f	pool/main/v/vulkan-utility-libraries/vulkan-utility-libraries_1.4.360_aarch64.deb	628796
+vulkan-validation-layers	1.4.357	aarch64	29ecc0a1eb5d35c9e5496ccb74b8060b5c4168391928917693be8bb2eea99175	pool/main/v/vulkan-validation-layers/vulkan-validation-layers_1.4.357_aarch64.deb	5044420
+vulkan-volk	1.4.350	aarch64	281aa51607962407c4f131eff3124c79123ad5668b780e3f5701e0fddfe2b130	pool/main/v/vulkan-volk/vulkan-volk_1.4.350_aarch64.deb	72400
+w3m-img	0.5.6-2	aarch64	0f429ab39e5596a388668fa758eb0eac3f5b1c7f532e31f54051062b87dac208	pool/main/w/w3m-img/w3m-img_0.5.6-2_aarch64.deb	5792
+w3m	0.5.6-2	aarch64	57c8ff911ab6bce138f55bb19db6aa8b2d8c2bd2c2ea915b69a3c32a31b54e1a	pool/main/w/w3m/w3m_0.5.6-2_aarch64.deb	686988
+wabt	1.0.41	aarch64	9f73c695afab617a1e66d71a892252b19416eb0b6739cf2b9a50550fa073dc10	pool/main/w/wabt/wabt_1.0.41_aarch64.deb	1478952
+wakatime-cli	2.24.4	aarch64	6ebb5ed786d2278a5b3da5b454ce41d8d7d011b305b765b55847f596ffb60f0c	pool/main/w/wakatime-cli/wakatime-cli_2.24.4_aarch64.deb	5290456
+walk	1.13.0	aarch64	0cc2342e24215c00082e0d27dcba71c67329db5b9e52496d4a53d48ea7bd98dc	pool/main/w/walk/walk_1.13.0_aarch64.deb	2463252
+wasm-component-ld	0.5.30	aarch64	b177e1f1ba9c2409d9f30a574d6614e91a1f18e689da2911e25535ffbcba3ca5	pool/main/w/wasm-component-ld/wasm-component-ld_0.5.30_aarch64.deb	1427520
+wasmedge	0.17.1	aarch64	a01cc53785e44885b91ce5a468cc322385ce9b027d363ffbc90c41fab8349fa3	pool/main/w/wasmedge/wasmedge_0.17.1_aarch64.deb	497304
+wasmer	7.1.0	aarch64	5bda9a513de1b2abb6efc2cb64f7e02f97e29c7f3859516c7be5732b594f7d47	pool/main/w/wasmer/wasmer_7.1.0_aarch64.deb	59219780
