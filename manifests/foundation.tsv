@@ -1224,8 +1224,8 @@ libopencore-amr-static	0.1.6-1	aarch64	fac9ec74821fc23877c8506d74fc4c6f914bf868a
 libopenfec	1.4.2.12-1	aarch64	381879a4c7581d29ee3fecbb60fd9ede7ea50b77ea350d6f3b577fbfecc0d2ad	pool/main/l/libopenfec/libopenfec_1.4.2.12-1_aarch64.deb	207408
 libopenmpt-static	0.8.9-1	aarch64	8be2bc52c383af8a130a4f77d2b3490dade28be8385d4189d6b6989133c501dc	pool/main/l/libopenmpt-static/libopenmpt-static_0.8.9-1_aarch64.deb	1398120
 libopus-static	1.6.1	aarch64	6500ac586720ecb8468589480f6050ed3db2ef764a59010a10b7360ccfef7484	pool/main/l/libopus-static/libopus-static_1.6.1_aarch64.deb	202128
-libopusenc-static	0.2.1-5	aarch64	f328041a75369eeb16a2490c4c4bb2499de2c96b098609ccfae7138377b338eb	pool/main/l/libopusenc-static/libopusenc-static_0.2.1-5_aarch64.deb	22540
-libopusenc	0.2.1-5	aarch64	e2a9f94727f562703355b5c9d12fffed14eda4e9977ed7e4e24176ea3578fa9e	pool/main/l/libopusenc/libopusenc_0.2.1-5_aarch64.deb	24236
+libopusenc-static	0.2.1-6	aarch64	12bf1570d53596d86860f8fd92a2c26b96e327840844447c23775a338945ad1a	pool/main/l/libopusenc-static/libopusenc-static_0.2.1-6_aarch64.deb	22536
+libopusenc	0.2.1-6	aarch64	a1b0595b5fb4781e82f60b9cdb4638e349cf0a5fd4f9ef11ef341af6eef3d7ed	pool/main/l/libopusenc/libopusenc_0.2.1-6_aarch64.deb	24364
 liborc	0.4.42-1	aarch64	de27320244e327e76927c8974582d4fb33b531699378e74331da8178dc9b8c0c	pool/main/l/liborc/liborc_0.4.42-1_aarch64.deb	267976
 libosmium-static	2.23.1	all	4c6cbeba27bfea3127c6040bdf9f2964eb52914926aa529b206e551431239706	pool/main/l/libosmium-static/libosmium-static_2.23.1_all.deb	22512
 libosmium	2.23.1-1	all	81b1414edb248be26240006a71c90eb791952c48822539a3f89e0af3ecf9cb32	pool/main/l/libosmium/libosmium_2.23.1-1_all.deb	175020
@@ -1399,7 +1399,7 @@ libuv-static	1.52.1	aarch64	471e031f044cd8b1a65109d4b357d02a2ac5ec0080f3685f0935
 libv4l-static	1.24.1-2	aarch64	9f4d8c87ce7cf2d0cf780ba4746ce8119cfc1ef7bcdb7558ee7b58a534adf3c7	pool/main/l/libv4l-static/libv4l-static_1.24.1-2_aarch64.deb	83280
 libvbisam-static	2.0-3	aarch64	8608b37368e70902a4d7c98f57a37666a8e059c129aad93e2e8036965b6bebd7	pool/main/l/libvbisam-static/libvbisam-static_2.0-3_aarch64.deb	42968
 libvbisam	2.0-3	aarch64	39089b3eadcf9bd00d19c35c0811ca3fd2ce13900a9c51d8b0dd6f087485be1d	pool/main/l/libvbisam/libvbisam_2.0-3_aarch64.deb	39084
-libvigra	1.12.4	aarch64	b09b2be9b7c0b2d6224f891eebeb29267b5da21b6f674ef6907b884fa1b10f99	pool/main/l/libvigra/libvigra_1.12.4_aarch64.deb	1791832
+libvigra	1.12.4-1	aarch64	01c2a2a7090863899260fae06a0edfa089a7a69146466c6856ca2985991966da	pool/main/l/libvigra/libvigra_1.12.4-1_aarch64.deb	926364
 libvisio-static	0.1.10-1	aarch64	8b390dda1672350c55aa66ee2afc30a52648039be2f8d5fff5b264412fa05c45	pool/main/l/libvisio-static/libvisio-static_0.1.10-1_aarch64.deb	365452
 libvisio	0.1.10-1	aarch64	b8796a3c797635275795b465ce0d4104d78d41893af32b795dfaaf8fff7f6898	pool/main/l/libvisio/libvisio_0.1.10-1_aarch64.deb	177804
 libvmaf-static	3.2.0-1	aarch64	0fe1c7e7821a61d660db65c2a7cf703ba63dec5104602f1dd31f2d1057c08c3c	pool/main/l/libvmaf-static/libvmaf-static_3.2.0-1_aarch64.deb	163896
@@ -1499,8 +1499,8 @@ marisa	0.3.1-1	aarch64	27176c2d85189ad292e9e46d39e155d374f61b4e4ce342b3a524d7f46
 mbedtls-static	3.6.4-2	aarch64	16baa60c17de03fb0ab167fa21f5b7c591063462ba2dbaef9a96e74b1c38b6f4	pool/main/m/mbedtls-static/mbedtls-static_3.6.4-2_aarch64.deb	1308
 mbedtls	3.6.4-2	aarch64	e0d062be9e90850033a893074a79899fd591aa6d1ef1170c7b096fc54e3458c0	pool/main/m/mbedtls/mbedtls_3.6.4-2_aarch64.deb	635008
 mdds	3.2.1	all	65f164cac0ff0a9328424ad3494115b724067d8362c16b7b074963064495b906	pool/main/m/mdds/mdds_3.2.1_all.deb	126524
-mercury-static	22.01.8-1	aarch64	5a9535fffb5a6a95cefd8347b5e28153577a8512fa29046017448547c633eca0	pool/main/m/mercury-static/mercury-static_22.01.8-1_aarch64.deb	16542900
-mercury	22.01.8-1	aarch64	c371e7d1d770d60d0c92ed02414a70489a1975c9bc01e54e4dcc9f68def49174	pool/main/m/mercury/mercury_22.01.8-1_aarch64.deb	200914004
+mercury-static	22.01.8-3	aarch64	3fc2b8a45e9b9827d37783cce66c6a5d3b15c41957382f2076e298a07116f577	pool/main/m/mercury-static/mercury-static_22.01.8-3_aarch64.deb	7128256
+mercury	22.01.8-3	aarch64	e3382f8087dcb8da39b94c2b29d4da95dd3b1001a4473f377c8394f6834246f7	pool/main/m/mercury/mercury_22.01.8-3_aarch64.deb	10976580
 mesa-dev	26.0.6-2	all	553b58a5cd945a6ad3486e3c770154ac1560a6eb5be83283834aa269a92afdb9	pool/main/m/mesa-dev/mesa-dev_26.0.6-2_all.deb	25348
 mesa-opencl-icd-rusticl	26.0.6-2	aarch64	c945404dd43d838ffe7503053bd352f3500e588ada4c618506df9ad0d8703e35	pool/main/m/mesa-opencl-icd-rusticl/mesa-opencl-icd-rusticl_26.0.6-2_aarch64.deb	2947168
 mesa-vulkan-icd-freedreno	26.0.6-2	aarch64	8cbb6644c3be33fc8270dbc7981c1dfb7cf882627300d72735da295267922123	pool/main/m/mesa-vulkan-icd-freedreno/mesa-vulkan-icd-freedreno_26.0.6-2_aarch64.deb	1479428
