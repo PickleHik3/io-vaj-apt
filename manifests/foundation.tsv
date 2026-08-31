@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
 # Generated: 2026-07-02T00:00:00Z
-# Package count: 2514
+# Package count: 2573
 # Columns: name version arch sha256 object-path size
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb	1033296
@@ -2518,3 +2518,62 @@ timidity++	2.15.0-2	aarch64	dd8ea4b424af7a4a8760d01fa6363330c219a63272434ee384a8
 tin-summer	1.21.14-1	aarch64	337905e14fe62e8a24f2eb7d75d4a578ab71e9dab5a340b8483b606f4d2a1cfa	pool/main/t/tin-summer/tin-summer_1.21.14-1_aarch64.deb	704028
 tintin++	2.02.61	aarch64	d12ddfb9eb3f752869a25c05d7c7022961151b1f17d3b01f9e8941941599d1cb	pool/main/t/tintin++/tintin++_2.02.61_aarch64.deb	1405916
 tinyfugue	5.0b8-4	aarch64	44ac9f3a767b7d8b7f37895aa86e66b52e3ef2b971209bdf96f117af116f995e	pool/main/t/tinyfugue/tinyfugue_5.0b8-4_aarch64.deb	301052
+tinymist	0.15.4	aarch64	5594a360039876fea51036c9f993c38ad77bedb7802770cde79d708b98d530bc	pool/main/t/tinymist/tinymist_0.15.4_aarch64.deb	31895880
+tinyproxy	1.11.3	aarch64	068a27a5bd71b6f59e901a1ed57a48fffa09c745742328ab703c31f61494b2d7	pool/main/t/tinyproxy/tinyproxy_1.11.3_aarch64.deb	45472
+tinyscheme	1.42-2	aarch64	1f51e9a92bf738022f7f30843f456fea3791551cf6883b407174e6ef6e5b8f19	pool/main/t/tinyscheme/tinyscheme_1.42-2_aarch64.deb	32076
+tinysparql	3.10.1-1	aarch64	5f37c228a3a92daa652ff776675de8d5f06f3381bbb617d57c176b8eb6733893	pool/main/t/tinysparql/tinysparql_3.10.1-1_aarch64.deb	681320
+tizonia	0.22.0-26	aarch64	71b4f64901215c45a27940f443c552831479484da7f2e04bd8cd5567053f635f	pool/main/t/tizonia/tizonia_0.22.0-26_aarch64.deb	1382392
+tmate	2.4.0-3	aarch64	26d106f141e5e939ce26ee65c0ca0ac8fa2e15b46f765d45d1e391d9a3d486c6	pool/main/t/tmate/tmate_2.4.0-3_aarch64.deb	220608
+toilet	0.3-3	aarch64	1cda4bfdae4df5cf4b7aa19b29ef73583e166eb16eac098dc579065f67b8d8ee	pool/main/t/toilet/toilet_0.3-3_aarch64.deb	718960
+tokei	14.0.0	aarch64	5f50f17bd084ba262fc79020f4f12d4bfaba21b7cf347b915f17425c0c377980	pool/main/t/tokei/tokei_14.0.0_aarch64.deb	1165564
+tome2	2025.12.13-2	aarch64	9b308c470ca5e333c9550ded1e39498232adce2255ccb3ffb6b6b1a376bfa1b2	pool/main/t/tome2/tome2_2025.12.13-2_aarch64.deb	1784660
+toml11	4.4.0	aarch64	c9fe43a439e7beda4f3e0a111835992bed436440fd3568c8eff84aa115e4325e	pool/main/t/toml11/toml11_4.4.0_aarch64.deb	73432
+topgrade	17.9.0	aarch64	39372e91efda3e341ce8fdd6912c27b1840b09ddea9806d4b93ebab4d58e8f32	pool/main/t/topgrade/topgrade_17.9.0_aarch64.deb	1943712
+torsocks-static	2.5.0-1	aarch64	fa02ec536038c5507c3d90ecdda5e857109ce27de99481174b94c474bd798721	pool/main/t/torsocks-static/torsocks-static_2.5.0-1_aarch64.deb	33920
+torsocks	2.5.0-1	aarch64	1e6239d3d63c15dbc392513c4ea223745ac8cec163aaf6dd7d3c6f689a085460	pool/main/t/torsocks/torsocks_2.5.0-1_aarch64.deb	49752
+totem-pl-parser	3.26.7	aarch64	d82778fed03ee8ca842eebb67cb45d10185cf0567139a611aa25458eb6306a17	pool/main/t/totem-pl-parser/totem-pl-parser_3.26.7_aarch64.deb	63012
+toxic	0.16.3	aarch64	eac0a0bdfffa57065fe5c250a6f1b553cc0407424eaaa56deb8480e622bca4e7	pool/main/t/toxic/toxic_0.16.3_aarch64.deb	908412
+tracepath	20250605-1	aarch64	7981b4c62e14bea9f9cbed5ef4c22828dd5243cc488094da70e8fea95deba63c	pool/main/t/tracepath/tracepath_20250605-1_aarch64.deb	8804
+traceroute	2.1.6-1	aarch64	767fb094ca457073e0d0fdd1b5faf08018dc808c2ddcdb57b46f4820e0c67312	pool/main/t/traceroute/traceroute_2.1.6-1_aarch64.deb	32568
+translate-shell	0.9.7.1-1	all	5469737af46d4c6b1a1fd7a6c083372ac758490f33fa0050fe41eb5f23760171	pool/main/t/translate-shell/translate-shell_0.9.7.1-1_all.deb	46076
+transmission	4.1.3	aarch64	85223ae3739d1a0e2550273da0a26929af3c20ae0bd1333cb9ce8caa72ff017c	pool/main/t/transmission/transmission_4.1.3_aarch64.deb	1505364
+trojan-go	0.10.6-4	aarch64	26f05218fe4d026b9a38650004cafcee941e6cf948dd36efca8e4cbdeb715429	pool/main/t/trojan-go/trojan-go_0.10.6-4_aarch64.deb	4247132
+trunk	0.21.14-1	aarch64	da68aac3ecd325b0189f67f833e064397424f7d2b0d3a3350adb1b9ee1279487	pool/main/t/trunk/trunk_0.21.14-1_aarch64.deb	4022196
+trurl	0.16.1-1	aarch64	e90f22df28ef2503a7c55ebb9a759c1706d91507f62a7419e83eafbed12c98fc	pool/main/t/trurl/trurl_0.16.1-1_aarch64.deb	21996
+trzsz-go	1.2.0	aarch64	2625eca8ce032c881bf92f62bd46a05e93b7fce5b85e9a2ed733358db7d8af60	pool/main/t/trzsz-go/trzsz-go_1.2.0_aarch64.deb	2973160
+trzsz-ssh	0.1.26	aarch64	7c3dff40274528613aefe20ba50e9e18cab957f9c43825d4b7652448d14da2d4	pool/main/t/trzsz-ssh/trzsz-ssh_0.1.26_aarch64.deb	5520124
+tsocks	1.8beta5-5	aarch64	26cb43f373a362abb90c2a0019cfa9a97d1d9f669b6aef92cd367cb7047b9f7f	pool/main/t/tsocks/tsocks_1.8beta5-5_aarch64.deb	19740
+tsu	8.6.0-1	all	16b091b51d18dc0875aa44bc5f99db5bbef1b62064f3544d3be457e8228c84dd	pool/main/t/tsu/tsu_8.6.0-1_all.deb	4404
+ttf-jetbrains-mono	2.304	all	9c14c89e7f48047ed725989940a1289e064e78a4f92675ba0e332c84392fff03	pool/main/t/ttf-jetbrains-mono/ttf-jetbrains-mono_2.304_all.deb	735664
+ttf-nerd-fonts-symbols	3.5.1	all	066b4795ff5deada2499802caf36b1ef9d88c068a08a7dee1a2ec234ceb1eb69	pool/main/t/ttf-nerd-fonts-symbols/ttf-nerd-fonts-symbols_3.5.1_all.deb	2361240
+tty-clock	2.3-2	aarch64	962f37c60b8ee1fc700f833fb3c70db79adb3e0fff0007adffcdfdfea99386d6	pool/main/t/tty-clock/tty-clock_2.3-2_aarch64.deb	8868
+tty-solitaire	1.4.1-1	aarch64	30ce6dc6d4d1ad888fa7c5bab546f9c1939681c740e46ef37b5ba1c310511c17	pool/main/t/tty-solitaire/tty-solitaire_1.4.1-1_aarch64.deb	9336
+ttyc	0.4-4	aarch64	db7550d97f2842cb60085a97ca478ed8e4761b24a245ee689ca1a00a6b3aeda7	pool/main/t/ttyc/ttyc_0.4-4_aarch64.deb	2305620
+ttyd	1.7.7-5	aarch64	cf065cccb3cd304224ec51d59a902d996782da2484b61b3363c75ee200631f79	pool/main/t/ttyd/ttyd_1.7.7-5_aarch64.deb	210228
+ttyper	1.6.0-1	aarch64	22ef540467aeacd0a3798ff8e55c14806b8f4df4ec111bde6b57c1fc7da627ae	pool/main/t/ttyper/ttyper_1.6.0-1_aarch64.deb	586572
+ttyplot	1.7.6	aarch64	2ddd8dfe7fadd03d22b14717db78a2669ec7f374c5e93103e96ad9d2df55fb38	pool/main/t/ttyplot/ttyplot_1.7.6_aarch64.deb	9676
+ttyrec	1.0.8-8	aarch64	e38ed479a1a8ae1cf5812c31e4c0dfcf2a3abaf06a74e47f28bf08a7f36818ce	pool/main/t/ttyrec/ttyrec_1.0.8-8_aarch64.deb	10724
+tudo	1.2.0	all	685feac709b2ca7a00c944f41d3384435aaa388311f1ec90395d563377c05675	pool/main/t/tudo/tudo_1.2.0_all.deb	45496
+tur-repo	1.0.1	all	18edd901da59d58885760f1f4cb589b8ef12435271d8f7302485b80656e8ec81	pool/main/t/tur-repo/tur-repo_1.0.1_all.deb	2896
+turbo	2.10.0	aarch64	b0c6fb9a2219328abfe02d2cc7663afcd0e3e8dc82b23f293632579ea64f67a4	pool/main/t/turbo/turbo_2.10.0_aarch64.deb	10667384
+turbopack	16.3.1	aarch64	191941c40bbe4cd612c87ce2f209a80ee426ad4283346a095b6ed8cd8935120b	pool/main/t/turbopack/turbopack_16.3.1_aarch64.deb	19742768
+tut	2.0.1-3	aarch64	6d9d190084001a02a8bfd5936162d8c76e78a0be82660092d0675adcd5f48228	pool/main/t/tut/tut_2.0.1-3_aarch64.deb	3287868
+tvheadend-data	4.2.8-12	all	22402d8f695e157cc76203865f50bba7cd9e010eb440d7994b11881905eab1b4	pool/main/t/tvheadend-data/tvheadend-data_4.2.8-12_all.deb	4868960
+tvheadend	4.2.8-12	aarch64	91b5626d440bc652010aad67d4a2e857ce347a21243e148f5a11b4e505c9f24d	pool/main/t/tvheadend/tvheadend_4.2.8-12_aarch64.deb	1020552
+tweego	2.1.1-4	aarch64	8244af1c121dd41d80764b226d4937b525a6df9dcab38fc9f29bdf6f81a3aaf6	pool/main/t/tweego/tweego_2.1.1-4_aarch64.deb	1188408
+txikijs	1:26.6.0	aarch64	d6bc0ce08ca3d1d48bf02ad9b380bea5c4e0877921d33c409381e0f41e758909	pool/main/t/txikijs/txikijs_1:26.6.0_aarch64.deb	1936664
+ty	0.0.75	aarch64	aef52cd4dae6b8352f3ea007e41ce2c432a2ab6fdceabddd41cb6b78d9c77a8d	pool/main/t/ty/ty_0.0.75_aarch64.deb	8307480
+typst	0.15.1	aarch64	376f6ba591255fa3a91b081db494fff7f6138bcf2427348fb3ae4fed6ef182d8	pool/main/t/typst/typst_0.15.1_aarch64.deb	14307876
+typstfmt	0.2.10-1	aarch64	c66c8bc299e0250dbc939744cb96b8c1ae1f02a6956c1c6cef57a3d62e46f00a	pool/main/t/typstfmt/typstfmt_0.2.10-1_aarch64.deb	714428
+udftools	2.3-1	aarch64	7d62953ce410d54fd6f1d6975bd9d44a302b9f6a2f2560545e15f2427e27892c	pool/main/u/udftools/udftools_2.3-1_aarch64.deb	108976
+udocker	1.3.17-5	all	7ec81ef5992044c898c0d4e2247f8410cee429b8c6de199ecc90e9b414abde4f	pool/main/u/udocker/udocker_1.3.17-5_all.deb	83988
+uftrace	0.19-3	aarch64	3645db802ae5a3812efede5ae4cf5169fa7ea198788149975abe57c3438259bb	pool/main/u/uftrace/uftrace_0.19-3_aarch64.deb	369828
+ugrep	7.8.4	aarch64	f4b6a3561eeb6179ef12f750f68a2d89661abc1a314c2250f34c000f3951e3a9	pool/main/u/ugrep/ugrep_7.8.4_aarch64.deb	353572
+unicode-cldr	48.1	all	4ed0bc66d043841470f7b2784ad07f358e9ec5397462baa4a7a849fb3d7fd243	pool/main/u/unicode-cldr/unicode-cldr_48.1_all.deb	21069656
+unicode-emoji	17.0.0	all	785a6a8ab33a8c78df96211fffe77fdeaec96d057ffdde898428d2128b8db120	pool/main/u/unicode-emoji/unicode-emoji_17.0.0_all.deb	74748
+unicorn-static	2.1.4	aarch64	70d15cc62515d40e00e5725d48be54ee62931e32b497bd1a4433ea8dd7a3a614	pool/main/u/unicorn-static/unicorn-static_2.1.4_aarch64.deb	2398060
+unicorn	2.1.4	aarch64	31cb340ff0e7386556a4716703893b8f9111a414ec74c7e8b8011b50d375862b	pool/main/u/unicorn/unicorn_2.1.4_aarch64.deb	2570500
+unifdef	2.12-1	aarch64	378955aa8b81fd2a0353e8b5d59079e0ed2a02ae669ffd3d58eb8772f2d1fc71	pool/main/u/unifdef/unifdef_2.12-1_aarch64.deb	16228
+units-cur	2.27	all	0fada55ba7ef283d4e532aa905cdd27258471ceb93a0984758d8e906426c2d31	pool/main/u/units-cur/units-cur_2.27_all.deb	9980
+units	2.27	aarch64	c82454cc6bcd8ec958c95caa81415a18e4576ba053b4a0e6cdb0b36e2751b0b7	pool/main/u/units/units_2.27_aarch64.deb	285296
+unpaper	1:7.0.0-4	aarch64	073c4d13b1a09e8ec5d52c7175398089cc43725d72adaffa187886f505a18694	pool/main/u/unpaper/unpaper_1:7.0.0-4_aarch64.deb	30536
