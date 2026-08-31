@@ -733,7 +733,7 @@ dx	1:1.16-7	all	d1b56ab1bb72cdc3d172809e4f85f1636fd1d4a52d5666e72332b44acabb5239
 e2fsprogs	1.47.4	aarch64	9fe1f9ee2783df2c966c322676b000c928e5812dd138402c0940f4ee3186d3da	pool/main/e/e2fsprogs/e2fsprogs_1.47.4_aarch64.deb	783448
 ebook-tools	0.2.2-3	aarch64	db25b22f5b30c6ce465339cc1a43cd49bd1c694fbca26d9dfe271717427953f5	pool/main/e/ebook-tools/ebook-tools_0.2.2-3_aarch64.deb	21640
 ecj	1:4.12-5	all	632eb5b1632c2c01b7dd09f3ee866b863c12957201d4bc0a7b47468ff32f1f1b	pool/main/e/ecj/ecj_1:4.12-5_all.deb	6778712
-ecl	24.5.10-1	aarch64	5cad8062bfeb73a8f8429f40e7819517fe3fd738b091d73445a2be6812607f4e	pool/main/e/ecl/ecl_24.5.10-1_aarch64.deb	17195760
+ecl	24.5.10-3	aarch64	3e7b50b90e1d86f51eb89316b226ab1dbb7bc5879fa5ddb5f0bd77ebeac77409	pool/main/e/ecl/ecl_24.5.10-3_aarch64.deb	2092868
 edbrowse	3.8.18	aarch64	602e438b8cb3bfdb04b80ad6157239ff6c4a2bbe4ee94ddc1fe596d5265de81b	pool/main/e/edbrowse/edbrowse_3.8.18_aarch64.deb	673536
 editorconfig-core-c-static	0.12.11	aarch64	303c629499341d4a56f1f22e529aea8d2001b45bcbbb21f46db0bc93b685d94d	pool/main/e/editorconfig-core-c-static/editorconfig-core-c-static_0.12.11_aarch64.deb	7880
 editorconfig-core-c	0.12.11	aarch64	f18e574f92e1453054f811af06677b794bf6d7a5dc4469afb029c31713f526b6	pool/main/e/editorconfig-core-c/editorconfig-core-c_0.12.11_aarch64.deb	17872
