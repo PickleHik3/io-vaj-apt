@@ -103,7 +103,7 @@ libssh2	1.11.1-2	aarch64	e901c9c703a9474de0d111ed8fd8dbc3f0953cd174300837b31eed7
 libtalloc	2.4.3	aarch64	19b63c822e078a62f21e400d3250b081c66e0cd7431e93236b7ab9755cde36e2	pool/main/l/libtalloc/libtalloc_2.4.3_aarch64.deb	33104
 libtirpc	1.3.7-1	aarch64	405064f7b95898580da442e8d36af47453dcb4f60cb25d441ef73013c1a477a5	pool/main/l/libtirpc/libtirpc_1.3.7-1_aarch64.deb	123964
 littlecms	2.19.1	aarch64	04fbcb422ade708df8ad94f15cb6631d7bb2ed35389c305755d2898cdc26dd22	pool/main/l/littlecms/littlecms_2.19.1_aarch64.deb	143916
-libunbound	1.26.0	aarch64	0ede3e3bb87fbc4526434b9bb2cb74e49bf162bee3dc6816e20ccfd92714bb1c	pool/main/l/libunbound/libunbound_1.26.0_aarch64.deb	385556
+libunbound	1.26.0-1	aarch64	d25b9a5acf6c2a6b0286526d5b2c81ed4608522aacc3fc3d278cd5c779c452e4	pool/main/l/libunbound/libunbound_1.26.0-1_aarch64.deb	384832
 libunistring	1.4.2	aarch64	33664789762b25a28cef71ca4350fe44dfc25f7befbd68ef4571730385911911	pool/main/l/libunistring/libunistring_1.4.2_aarch64.deb	566508
 libusb	1.0.30	aarch64	63bc738cea29228f9b8468e404e120bd0fe8492224e67967c31937632d6cf4e5	pool/main/l/libusb/libusb_1.0.30_aarch64.deb	59772
 libuuid	2.42.1-4	aarch64	2e192128beb97aa6eb9ede2d02ec21f1307be16b61012345b2e2276e90de6151	pool/main/l/libuuid/libuuid_2.42.1-4_aarch64.deb	15416
@@ -147,7 +147,7 @@ python	3.14.6-1	aarch64	dc8ff5732845be28b009358b9633463874e3e98e883ff8bd0c83642f
 python-ensurepip-wheels	3.14.6-1	all	38b92118e056b4328d3196789782c1e37ae81d9f0313bebe562618c9742f52ae	pool/main/p/python-ensurepip-wheels/python-ensurepip-wheels_3.14.6-1_all.deb	1740092
 python-tkinter	3.14.6-1	aarch64	9a5e869af01bda4614b1f60c166d6b6479054d8f98c7fde6b00501887ccaabf6	pool/main/p/python-tkinter/python-tkinter_3.14.6-1_aarch64.deb	507056
 python-xcbgen	1.17.0-3	all	fb03b8f4ee0dcfbffbcd05a0ec8d26eb12eae9cd012969263b3c2e2c12d6b5bc	pool/main/p/python-xcbgen/python-xcbgen_1.17.0-3_all.deb	15180
-pyunbound	1.26.0	aarch64	f9718a682fd306a3d216d1a21647bc25ab80942a9491dce14c220d8e9a40fdea	pool/main/p/pyunbound/pyunbound_1.26.0_aarch64.deb	784
+pyunbound	1.26.0-1	aarch64	c8b60e16f1a4c51b688cd03ebdcdfd87f27e89c5d4fe6428b19a0517322486c7	pool/main/p/pyunbound/pyunbound_1.26.0-1_aarch64.deb	796
 pzstd	1.5.7-1	aarch64	63e782a135cc586eaa7618389c6b8ff405e07d2eb8753949398ee541f09adb56	pool/main/p/pzstd/pzstd_1.5.7-1_aarch64.deb	42032
 readline	8.3.3	aarch64	fbf33185ad4dc5aca8e208df90483d001fed0badd75c7c8cfdfe9137ee78723e	pool/main/r/readline/readline_8.3.3_aarch64.deb	294108
 resolv-conf	1.3	aarch64	22ce7aef56d8cb529db1b6899418e8b54106660d630f0a84ce6e3b5c3c20ffff	pool/main/r/resolv-conf/resolv-conf_1.3_aarch64.deb	996
@@ -170,7 +170,7 @@ tk	8.6.14-1	aarch64	922c757950f31682f474ed8f2dafb75e90df27a57fd8aa45419dff8edf05
 tmux	3.7c	aarch64	30e8361067dc34c98e3f95cfb65ec894b5274835f8da065828bc379b521ab061	pool/main/t/tmux/tmux_3.7c_aarch64.deb	386412
 tor	0.4.9.11	aarch64	88906c283c7b3131a0ad6475d062ce360b6933503361a35899c519c0fbbc3a1c	pool/main/t/tor/tor_0.4.9.11_aarch64.deb	3325052
 ttf-dejavu	2.37-8	all	d8d1b07911919f9ddf50bb8b06539214d32d133a197ad0c58c6ff3833437e99d	pool/main/t/ttf-dejavu/ttf-dejavu_2.37-8_all.deb	2460480
-unbound	1.26.0	aarch64	e531a96f28703ff1f6055ae2e968a48dcac08788c6d23400640e0e4bae1a88ac	pool/main/u/unbound/unbound_1.26.0_aarch64.deb	654996
+unbound	1.26.0-1	aarch64	0e8f4e80b69b005eb5886e344e733e62f96683437900da01c5800d83fcbcaffb	pool/main/u/unbound/unbound_1.26.0-1_aarch64.deb	639168
 unzip	6.0-10	aarch64	f7f76c79c50ea60cd9fb543f997098b74afec35e52d1f91bcfb16f8978c98983	pool/main/u/unzip/unzip_6.0-10_aarch64.deb	116760
 utf8cpp	1:4.2.0	all	7bf808fbcf72fb8d6d2e6d8ca870fe6e79f05709fb84740aea216b3950cd8f73	pool/main/u/utf8cpp/utf8cpp_1:4.2.0_all.deb	10496
 util-linux	2.42.1-4	aarch64	af4c0f24bb629894ca629c7564c010a4379a267a6dc0cc472c3070d730ac08fc	pool/main/u/util-linux/util-linux_2.42.1-4_aarch64.deb	787788
@@ -837,7 +837,7 @@ geoip2-database	20191221-2	all	157b87e64dba592cd86062e6b8a6b0b1940fc6c1584716e29
 gettext-static	1.0-1	aarch64	79c3eebc21ffe15a7d96b93f3845a9ba617cc3b3eeea355f3c7ab171adacdd32	pool/main/g/gettext-static/gettext-static_1.0-1_aarch64.deb	571980
 gflags-static	2.3.1	aarch64	f2f606c41328fbf1037eedb0881d3c41f5d4d934ff3bb5dad76a3f2a27a826d7	pool/main/g/gflags-static/gflags-static_2.3.1_aarch64.deb	60064
 gflags	2.3.1	aarch64	f71eabfbf7d6e2fddc84a61600c192a1e1ecb630e55a0c4130b49221e6cbd2e6	pool/main/g/gflags/gflags_2.3.1_aarch64.deb	79580
-ghostscript	10.07.1-1	aarch64	ea39ae681481dcfdb90ed2f930ce3d8263d53545bd9c75fe825fd62e7afc1716	pool/main/g/ghostscript/ghostscript_10.07.1-1_aarch64.deb	20461148
+ghostscript	10.07.1-2	aarch64	61d4012515cba3e3ed081a4b9cbd664931765b2d444f88f76db3144a611e735b	pool/main/g/ghostscript/ghostscript_10.07.1-2_aarch64.deb	20459428
 giflib-static	5.2.2-2	aarch64	d0285817f4b71fd6307648e1a717f6c3aa0f9eab582ae683cd0835fc631d345d	pool/main/g/giflib-static/giflib-static_5.2.2-2_aarch64.deb	14972
 git-gitk	2.54.0	aarch64	b2b4214b130c66ea46d90b92bf8941227f9ef87ebb906d2317bc9cd39bdbab65	pool/main/g/git-gitk/git-gitk_2.54.0_aarch64.deb	143636
 git-gui	2.54.0	aarch64	ea520bd4032d96e12ebe140705835e3115355f1f7f014f1f279d0f9306cef5cc	pool/main/g/git-gui/git-gui_2.54.0_aarch64.deb	214896
@@ -1386,7 +1386,7 @@ libuchardet	0.0.8-2	aarch64	e4380747d479ec61568ae988b676fec8881def13355d11d36692
 libucontext-static	1.5	aarch64	c6d2f4a1d59ab6d3b75862fc699e4ad325d183baba5f77fc11c587d8694be6e2	pool/main/l/libucontext-static/libucontext-static_1.5_aarch64.deb	4260
 libucontext	1.5	aarch64	268c65c05a4bdeef25cd041a5874f35580e1b78c1f1e9576a5eb472136116446	pool/main/l/libucontext/libucontext_1.5_aarch64.deb	3288
 libudfread-static	1.2.0	aarch64	f6846b7b7f5257e12dc1d5893df6d1add35eaf7926850d229046008cbcaaf438	pool/main/l/libudfread-static/libudfread-static_1.2.0_aarch64.deb	36232
-libunbound-static	1.26.0	aarch64	4148748da78cc36470db184d2b0cead39af918d703820c8bf47f004569bfb9a3	pool/main/l/libunbound-static/libunbound-static_1.26.0_aarch64.deb	463700
+libunbound-static	1.26.0-1	aarch64	4d23a5816a91338c7a15107670e99e7558058e7a9e17b2b4478c66f9121bf669	pool/main/l/libunbound-static/libunbound-static_1.26.0-1_aarch64.deb	463996
 libunistring-static	1.4.2	aarch64	96b478001d18692469699f7c842cfa449208efb2a8fc9e2216b1b4f95f83cd5f	pool/main/l/libunistring-static/libunistring-static_1.4.2_aarch64.deb	482992
 libunqlite	1.1.9-1	aarch64	cfc98b7260353d5e2040abcd039b86b9492851a89946fbe411c9980842cb9150	pool/main/l/libunqlite/libunqlite_1.1.9-1_aarch64.deb	186960
 liburcu-static	0.15.6	aarch64	58b8cb5250d5123741608722ff84df39aa1696eca726023e2e0752e5cfd6c2bb	pool/main/l/liburcu-static/liburcu-static_0.15.6_aarch64.deb	44868
