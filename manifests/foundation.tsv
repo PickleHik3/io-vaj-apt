@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
 # Generated: 2026-07-02T00:00:00Z
-# Package count: 2740
+# Package count: 2741
 # Columns: name version arch sha256 object-path size
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb	1033296
@@ -2744,3 +2744,4 @@ python2	2.7.18-15	aarch64	2271e40f4af4dfbc665e3f76b1f6fe33930c6407ec1dda73015773
 texlive-installer	20260301	all	53036b8af248adffb9616ab2d21ab3658357344eff70ced6e669e063d4e67812	pool/main/t/texlive-installer/texlive-installer_20260301_all.deb	522376
 wallust	3.5.2	aarch64	1736b806373c39b31ccdd85441cac2128aa20f899300ac4672a1d9a2e018ef53	pool/main/w/wallust/wallust_3.5.2_aarch64.deb	1764340
 wireguard-tools	1.0.20210914-3	aarch64	7b62d5b068cc5fae9e95a2f18f06a9bfa2998e935be43e32215e19666b16ee50	pool/main/w/wireguard-tools/wireguard-tools_1.0.20210914-3_aarch64.deb	48804
+kbd	2.10.0	aarch64	1855e42b8fa001a6a8e74d97d907376ce6147d0149af5b952254471c31f5894d	pool/main/k/kbd/kbd_2.10.0_aarch64.deb	7064
