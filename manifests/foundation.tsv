@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
 # Generated: 2026-07-02T00:00:00Z
-# Package count: 2745
+# Package count: 2747
 # Columns: name version arch sha256 object-path size
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb	1033296
@@ -2749,3 +2749,5 @@ quilt	0.69	all	89a2ad8e8ce2f93796ec5eb51850b9a6262fe1e4f1e295872ea5ff453f446ff8	
 renameutils	0.12.0-3	aarch64	e488b33a1fcbdcf5ba67378f7a30fde1234d626f7aeb00d81c8fa6aa293d9c93	pool/main/r/renameutils/renameutils_0.12.0-3_aarch64.deb	46924
 smalltalk-static	3.2.91-17	aarch64	0bd1198eba141e409e4f9bbf2f439e0d0bbaae644019f9758db035f549fc3ef6	pool/main/s/smalltalk-static/smalltalk-static_3.2.91-17_aarch64.deb	267096
 smalltalk	3.2.91-17	aarch64	bb75e8f3719f610303a2a3734a10a18231638f3a7517284b83b7bad324f57a21	pool/main/s/smalltalk/smalltalk_3.2.91-17_aarch64.deb	2280644
+recutils-static	1.9-1	aarch64	1022852b0ba4487e2ee44a98b3e7148865c67a8b633ba1695687d89d4fbcf375	pool/main/r/recutils-static/recutils-static_1.9-1_aarch64.deb	154728
+recutils	1.9-1	aarch64	2baa111b09a6edf974235df50ff83a228662b386be8dd40e71ae63c6a64ce451	pool/main/r/recutils/recutils_1.9-1_aarch64.deb	286688
