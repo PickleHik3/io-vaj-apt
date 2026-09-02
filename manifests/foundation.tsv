@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
 # Generated: 2026-07-02T00:00:00Z
-# Package count: 2750
+# Package count: 2751
 # Columns: name version arch sha256 object-path size
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb	1033296
@@ -2754,3 +2754,4 @@ recutils	1.9-1	aarch64	2baa111b09a6edf974235df50ff83a228662b386be8dd40e71ae63c6a
 gforth	0.7.3-3	aarch64	531e22339142acdeb97a414476d274e0116bdfbda4e023b934a00b3102e2423c	pool/main/g/gforth/gforth_0.7.3-3_aarch64.deb	634364
 tcc	1:0.9.27-p20230415-2	aarch64	fb8f08717a69d007e343cd4cf79d7b072b8647af6dea9cf4d123d3d6d5daf167	pool/main/t/tcc/tcc_1:0.9.27-p20230415-2_aarch64.deb	248688
 codon	0.19.6-1	aarch64	550a398a48b7c23299a17fed0064a4dcd53e68a564492681438582354016dd49	pool/main/c/codon/codon_0.19.6-1_aarch64.deb	35907276
+xmppc	0.1.2-4	aarch64	5f69428c852bde5b4bfd9540894da5e59dbefde99d34334281855b77fa2d3539	pool/main/x/xmppc/xmppc_0.1.2-4_aarch64.deb	20320
