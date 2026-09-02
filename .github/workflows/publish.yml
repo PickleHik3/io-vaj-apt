@@ -97,6 +97,34 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
 
+      # A deb that carries another package's files is uninstallable (dpkg
+      # refuses the conflict) and poisons the pool for everyone. 279 of the
+      # first 1,656 published debs were contaminated this way by the old
+      # concurrent-prefix build queue; audit before anything reaches R2.
+      # Runs before the ~5 GB pool sync so a bad wave is rejected cheaply.
+      - name: Audit wave debs for foreign files
+        run: |
+          rc=0
+          python3 scripts/audit-deb-contents.py incoming \
+            --contents "$RUNNER_TEMP/Contents-aarch64.gz" --tsv "$RUNNER_TEMP/dirty.tsv" || rc=$?
+          if [ "$rc" -eq 2 ]; then
+            echo "::error::audit could not run (upstream Contents index unreachable?)"
+            exit 1
+          fi
+          if [ "$rc" -ne 0 ]; then
+            {
+              echo "### Wave rejected: contaminated debs"
+              echo
+              echo "| package | foreign files | total | top upstream owners |"
+              echo "|---|---:|---:|---|"
+              awk -F'\t' '{printf "| `%s` | %s | %s | %s |\n", $1, $2, $3, $4}' "$RUNNER_TEMP/dirty.tsv"
+              echo
+              echo "Revbump and rebuild these, then re-dispatch \`$TAG\`."
+            } >> "$GITHUB_STEP_SUMMARY"
+            echo "::error::wave $TAG carries debs with another package's files; nothing published"
+            exit 1
+          fi
+
       - name: Sync pool from R2
         run: |
           # Source of truth for pool objects; needed so generate_repo can read
