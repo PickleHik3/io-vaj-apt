@@ -877,8 +877,8 @@ hnterm	1.0.5-2	aarch64	c54dced5a4b5fa9ae3549c22c1940ef3511c99beeb8fc421a9b1fabf0
 hunspell-en-us	20240129	all	f7e5c6b82ebbe0e967c2429428e5ee728a1bf7d474468ed1c81423ddb6958f66	pool/main/h/hunspell-en-us/hunspell-en-us_20240129_all.deb	162108
 hunspell-static	1.7.3	aarch64	1aaf7cb7626db037b174ae51933145e311097789389645d650f1fb934abf9113	pool/main/h/hunspell-static/hunspell-static_1.7.3_aarch64.deb	235948
 hunspell	1.7.3	aarch64	055a41b00f265373d842832ff7707cd593b3defbe8e2d7eb1f105619dcd71245	pool/main/h/hunspell/hunspell_1.7.3_aarch64.deb	240340
-imagemagick-static	7.1.2.30-1	aarch64	6482a80562fb1424a9a31572f44c958a43265de67f65c443845d3ca706d9f18b	pool/main/i/imagemagick-static/imagemagick-static_7.1.2.30-1_aarch64.deb	1938432
-imagemagick	7.1.2.30-1	aarch64	6f1f58c913fdfaca05697a70e64cb966f8b4f3678d5919a130a428e2e871452e	pool/main/i/imagemagick/imagemagick_7.1.2.30-1_aarch64.deb	1837064
+imagemagick-static	7.1.2.30-2	aarch64	e8bdea799077ae1442db756bb23105a57298e09a389962d0884966a134b2b8ff	pool/main/i/imagemagick-static/imagemagick-static_7.1.2.30-2_aarch64.deb	1942216
+imagemagick	7.1.2.30-2	aarch64	e7d8cc36fb096d4b04537e7ef1a7e70fac79d6d3c9459133027b555ce0da003a	pool/main/i/imagemagick/imagemagick_7.1.2.30-2_aarch64.deb	1840344
 imlib2-static	1.12.6-2	aarch64	04c907930a593efa5baf06a4c76b02c8dfbced45d3624da4b05727bb4de32cad	pool/main/i/imlib2-static/imlib2-static_1.12.6-2_aarch64.deb	115736
 imlib2	1.12.6-2	aarch64	8454afa48c38c8b996a0abfb36ef5045a5875aa02d6c818cc49d9b627d704e88	pool/main/i/imlib2/imlib2_1.12.6-2_aarch64.deb	509428
 janet	1.41.2	aarch64	b02273367d9fa448b80e3550d55d159f7547e80507c5060973ffcdec13641653	pool/main/j/janet/janet_1.41.2_aarch64.deb	249584
