@@ -102,7 +102,18 @@ jobs:
       # first 1,656 published debs were contaminated this way by the old
       # concurrent-prefix build queue; audit before anything reaches R2.
       # Runs before the ~5 GB pool sync so a bad wave is rejected cheaply.
+      # A deb that carries another package's files is uninstallable (dpkg
+      # refuses the conflict) and poisons the pool for everyone. 279 of the
+      # first 1,656 published debs were contaminated this way by the old
+      # concurrent-prefix build queue; audit before anything reaches R2.
+      # Runs before the ~5 GB pool sync so a bad deb is caught cheaply.
+      #
+      # Quarantine rather than reject the wave: the first real firing held up
+      # 25 clean debs behind one bad faust. The clean ones publish, the dirty
+      # ones are set aside, and the job still ends red (see "Fail if anything
+      # was quarantined") so the staging release survives for re-dispatch.
       - name: Audit wave debs for foreign files
+        id: audit
         run: |
           rc=0
           python3 scripts/audit-deb-contents.py incoming \
@@ -111,17 +122,38 @@ jobs:
             echo "::error::audit could not run (upstream Contents index unreachable?)"
             exit 1
           fi
-          if [ "$rc" -ne 0 ]; then
-            {
-              echo "### Wave rejected: contaminated debs"
-              echo
-              echo "| package | foreign files | total | top upstream owners |"
-              echo "|---|---:|---:|---|"
-              awk -F'\t' '{printf "| `%s` | %s | %s | %s |\n", $1, $2, $3, $4}' "$RUNNER_TEMP/dirty.tsv"
-              echo
-              echo "Revbump and rebuild these, then re-dispatch \`$TAG\`."
-            } >> "$GITHUB_STEP_SUMMARY"
-            echo "::error::wave $TAG carries debs with another package's files; nothing published"
+          if [ "$rc" -eq 0 ]; then
+            echo "quarantined=0" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          mkdir -p quarantine
+          while IFS="$(printf '\t')" read -r name foreign total owners; do
+            [ -n "$name" ] || continue
+            for f in incoming/*.deb; do
+              [ -e "$f" ] || continue
+              if [ "$(dpkg-deb -f "$f" Package)" = "$name" ]; then
+                mv "$f" quarantine/
+                echo "quarantined $name ($foreign/$total foreign files: $owners)"
+                break
+              fi
+            done
+          done < "$RUNNER_TEMP/dirty.tsv"
+          n_bad=$(ls -1 quarantine/*.deb 2>/dev/null | wc -l)
+          n_left=$(ls -1 incoming/*.deb 2>/dev/null | wc -l)
+          echo "quarantined=$n_bad" >> "$GITHUB_OUTPUT"
+          {
+            echo "### $n_bad deb(s) quarantined: they carry another package's files"
+            echo
+            echo "| package | foreign files | total | top upstream owners |"
+            echo "|---|---:|---:|---|"
+            awk -F"\t" '{printf "| `%s` | %s | %s | %s |\n", $1, $2, $3, $4}' "$RUNNER_TEMP/dirty.tsv"
+            echo
+            echo "The other $n_left deb(s) in this wave were published normally."
+            echo "Fix these recipes, then re-dispatch \`$TAG\`."
+          } >> "$GITHUB_STEP_SUMMARY"
+          echo "::warning::$n_bad deb(s) quarantined; $n_left published"
+          if [ "$n_left" -eq 0 ]; then
+            echo "::error::every deb in $TAG is contaminated; nothing to publish"
             exit 1
           fi
 
@@ -184,6 +216,15 @@ jobs:
             [ "$attempt" -lt 3 ] || { echo "::error::manifest push failed after $attempt attempts"; exit 1; }
             sleep 10
           done
+
+      # Last, so the clean debs above are already published. Failing here
+      # keeps the staging release (see below), which is the standing to-do
+      # marker for the quarantined packages.
+      - name: Fail if anything was quarantined
+        if: steps.audit.outputs.quarantined != '0'
+        run: |
+          echo "::error::${{ steps.audit.outputs.quarantined }} deb(s) in $TAG carry another package's files and were not published"
+          exit 1
 
       # Only after everything above succeeded: a failed run must leave the
       # staging release in place so it can be re-dispatched once the cause
