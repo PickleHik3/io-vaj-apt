@@ -547,7 +547,7 @@ cargo-binstall	1.22.0	aarch64	27ffc5776f7b26866dac46227e287b7f99c0dc07cc97576c48
 cargo-c	0.10.25	aarch64	5e4977468d9e4be6033a90d14d8079ea099ca7af1e0123025420bd7e73ff66cf	pool/main/c/cargo-c/cargo-c_0.10.25_aarch64.deb	24525876
 cargo-cache	0.8.3-1	aarch64	bb32e1bedf969efbed09205d1fcb3d26405c44f2c4cc3778ff5b7f35a4deadd7	pool/main/c/cargo-cache/cargo-cache_0.8.3-1_aarch64.deb	905144
 cargo-leptos-static	0.3.6	aarch64	e147c0c89b44a633efb3306c098a92a5f8c9d240ecfb495e66e492af0c3149fb	pool/main/c/cargo-leptos-static/cargo-leptos-static_0.3.6_aarch64.deb	4510504
-cargo-leptos	0.3.7	aarch64	cff6132ce37563461ef58eb3b55c447f0f005f1f9d3ecf7e539be33259dac44b	pool/main/c/cargo-leptos/cargo-leptos_0.3.7_aarch64.deb	8211056
+cargo-leptos	0.3.7-1	aarch64	70d29e65f774d244425990646fd9c4bc37da1e555d91b17f779513e553b13b4a	pool/main/c/cargo-leptos/cargo-leptos_0.3.7-1_aarch64.deb	8309760
 catdoc	0.95-2	aarch64	404932a86068ac5c2705a92d4e6b97195c231839a59182a537c85cb1d30e7fb7	pool/main/c/catdoc/catdoc_0.95-2_aarch64.deb	70356
 catgirl	2.2a-1	aarch64	d48d071c9e48dfb5ef795b1534674024dc29b617262395ee1898e2aa0e2989e3	pool/main/c/catgirl/catgirl_2.2a-1_aarch64.deb	50724
 catimg	2.8.0	aarch64	e3296b9be3a4fd6bfa5c981658af45ebbf0dc54058a1ecf3036db77dd0f534fe	pool/main/c/catimg/catimg_2.8.0_aarch64.deb	38668
@@ -561,7 +561,7 @@ ccache	4.14	aarch64	e78e6ac0bc01d5bad811a6c03c9143dc622b48861e9a75f6b2cddd7398da
 cccc	3.2.0-2	aarch64	aaac05e7607cc92066a8bb265fbaf064bb8ff9bf5b67414651c5afc895fe91f9	pool/main/c/cccc/cccc_3.2.0-2_aarch64.deb	130480
 ccextractor	0.94-7	aarch64	63afe1fc3e05fb8dff09bbfe777d8955fca8d357da8fa442858010cfff76eb38	pool/main/c/ccextractor/ccextractor_0.94-7_aarch64.deb	224144
 ccls-static	0.20250815.1	aarch64	ddde68094e3883f2632b4118577cf9e004dfd9be7265662703b0afa0fc5920a3	pool/main/c/ccls-static/ccls-static_0.20250815.1_aarch64.deb	3029460
-ccls	0.20250815.1-1	aarch64	2b7a9cbeda27c3ce97bd08cbe57a7b587f6834e54bf97890cb2aa739c8a27b68	pool/main/c/ccls/ccls_0.20250815.1-1_aarch64.deb	398140
+ccls	0.20250815.1-2	aarch64	0028cb15daa1fd8be550dc21cf29f809da04fa3067f6155dc48ce7441a53094d	pool/main/c/ccls/ccls_0.20250815.1-2_aarch64.deb	398052
 ccrypt	1.11-2	aarch64	9cd93913f8fd220b93fe6e6ffa54d6a9eb0f58b9fcd45d16457108a8d379870e	pool/main/c/ccrypt/ccrypt_1.11-2_aarch64.deb	38036
 cdk	5.0-20260119-0	aarch64	73c4c0dec192a2cb3443d8ab5f9783e9d7c889cdb33c266cd9597695bdb984a1	pool/main/c/cdk/cdk_5.0-20260119-0_aarch64.deb	231236
 cec-client	8.1.6	aarch64	cdd5fe20ddb0e746f466c9046de2ecda110c7ee4b1413062fcdd5aae9469f3ce	pool/main/c/cec-client/cec-client_8.1.6_aarch64.deb	43596
@@ -615,7 +615,7 @@ composer	2.10.3	all	06bb6294544d2ca5b8d57ca896e8f6a0923bb73f68b8022a07acdb80783f
 console-bridge	1.0.2-1	aarch64	df59cdf5bd4ad13e3ec4e2a28ff2cdd091eaf576a3bc920e4fa3cfa401c9df6f	pool/main/c/console-bridge/console-bridge_1.0.2-1_aarch64.deb	21128
 convertlit	1.8-3	aarch64	b8cc134c7a7d0b4fbaf732fd9a1ba18f04d3da30af8f133f411be04582191bab	pool/main/c/convertlit/convertlit_1.8-3_aarch64.deb	60672
 cookcli-static	0.32.0	aarch64	583bc9c77eddb4e98dce4b9f240bd283dc9adc14f7b0b47f8b31164c14229e10	pool/main/c/cookcli-static/cookcli-static_0.32.0_aarch64.deb	661900
-cookcli	0.34.0	aarch64	67f444902961f1f62913e8432d9b67e685934df7b10520bfff655cdf03febb5c	pool/main/c/cookcli/cookcli_0.34.0_aarch64.deb	7791960
+cookcli	0.34.0-1	aarch64	ac0df467284fc2eb24400b78c4a87e8007f30fef13dccd8e8483880f4ec3fe98	pool/main/c/cookcli/cookcli_0.34.0-1_aarch64.deb	7748048
 corgi	0.2.4-7	aarch64	3b464610607e468382941c11eb7831cf3652ebe8a917ba099056ff7606f6b281	pool/main/c/corgi/corgi_0.2.4-7_aarch64.deb	1150004
 corkscrew	2.0-4	aarch64	567f45cab3702442dfd659a431a0ab52025a4fe37e61dd694bfb595c4c2ec98e	pool/main/c/corkscrew/corkscrew_2.0-4_aarch64.deb	5988
 corrosion	0.6.1	all	c7810c623f93b4fb15fcf3b9d8c3d84d1c8e37190e2cae32cb4b37f4845959eb	pool/main/c/corrosion/corrosion_0.6.1_all.deb	35208
@@ -623,13 +623,13 @@ cowsay	3.8.4	all	072f4b3b05b1d1132c46456045c11f0be52eea3f3b536d47a8bee87c0ad5d41
 cpio	2.15-1	aarch64	5606895c833725208cf3f9bcef9b27fc689d8ffdc56a3d8729ab33fcfbcbe278	pool/main/c/cpio/cpio_2.15-1_aarch64.deb	66304
 cppcheck	2.21.1	aarch64	0da530c11a10343d13c42f040f4e2d888a8ea097e0fb2dfbf5706f5f71e43a90	pool/main/c/cppcheck/cppcheck_2.21.1_aarch64.deb	1867088
 cppi-static	1.18-2	aarch64	dbd0c032eb3d4dc3c0653b06d2939b1fe7e2310bc3b5a80f86c70d5ce6ace6d0	pool/main/c/cppi-static/cppi-static_1.18-2_aarch64.deb	300904
-cppi	1.18-3	aarch64	582362de26b8291478f7110a911378f848d1d979d45bbcc39d014f307001fb86	pool/main/c/cppi/cppi_1.18-3_aarch64.deb	19392
+cppi	1.18-4	aarch64	6d96d67ca0eaa0f89469a4fcdb7b3ae4df313bbf5deadad69a5b704d074fd5a2	pool/main/c/cppi/cppi_1.18-4_aarch64.deb	19376
 cppunit-static	1.15.1-2	aarch64	d3e04970e0e897ff2093b679f8e62a875b3b4a1e0ce5b8f2428b4ee6645e36f3	pool/main/c/cppunit-static/cppunit-static_1.15.1-2_aarch64.deb	108144
 cppunit	1.15.1-2	aarch64	6b7d866adaa86045d8da02f9ba4d5c6526641034f5cf083d7907fba08e36286d	pool/main/c/cppunit/cppunit_1.15.1-2_aarch64.deb	128952
 cpufetch	1.07-1	aarch64	04ed014c784bbcf8d6f209adf3371b7a5b69697d4a06eb7e248caa1c3edeb7fb	pool/main/c/cpufetch/cpufetch_1.07-1_aarch64.deb	45408
 cpulimit	0.2-2	aarch64	419707f5ee6617f1add8225b0afd4a475fc3a5f8de485600c289df2caeebe500	pool/main/c/cpulimit/cpulimit_0.2-2_aarch64.deb	7740
 crawl-static	0.34.1	aarch64	aa4f8b63dd7ca1f2743a434dfd1e0d03b22023e3b660c1ebe8118b03735170f2	pool/main/c/crawl-static/crawl-static_0.34.1_aarch64.deb	215100
-crawl	0.34.1-1	aarch64	01baca0557ac606a537bd9cd59b84aa3653da6a04a8dea9e117ad9e2e5db3a45	pool/main/c/crawl/crawl_0.34.1-1_aarch64.deb	6408116
+crawl	0.34.1-2	aarch64	7b3c98d0304c89fb9fe0336f1f8c2dbcda867ac6857c1b8e1d764dded4eb5d87	pool/main/c/crawl/crawl_0.34.1-2_aarch64.deb	6492904
 croc	1:11.3.2	aarch64	a57bb535f481e2beb1944d1e620691de3f4ea93bcdbae3511aa73289cd3c3946	pool/main/c/croc/croc_1:11.3.2_aarch64.deb	3640656
 cronie	1.7.2-4	aarch64	1aaa8e5025f3d1bb19028f9b51e239ab0a183ec8b650228fd247d2d583eeecd5	pool/main/c/cronie/cronie_1.7.2-4_aarch64.deb	58156
 crowbook	0.17.0-2	aarch64	797d05272aede5f6e8181b85ab54b7254b6446157c5b64ec1c81914dd6080e56	pool/main/c/crowbook/crowbook_0.17.0-2_aarch64.deb	1944576
@@ -772,9 +772,9 @@ fakeroot	2.1.4	aarch64	1efa12a828e522684f049843527e2609eb72861a8fb85cd54029ff5d6
 fasd	2.0.0	aarch64	0d77b24372dce05e406d7b9fb50823804f6e2198fdc799dd01a0f7adf0b41971	pool/main/f/fasd/fasd_2.0.0_aarch64.deb	7424
 fastmod	0.4.4-2	aarch64	2f4aa378da69b9a23659a9b3dc8581028b7d73e8dfbca0e32a3e47f7420209db	pool/main/f/fastmod/fastmod_0.4.4-2_aarch64.deb	932756
 fatsort	1.7.679	aarch64	260ae4ec53b1067d2b33fffef094b511f342d0b1a4896010dbddc2f16b7ea216	pool/main/f/fatsort/fatsort_1.7.679_aarch64.deb	25948
-faust-static	2.85.9	aarch64	d78e78d2fb45a3d841de95594087e053c4601881090afb1733a5ddf43c9aaf4a	pool/main/f/faust-static/faust-static_2.85.9_aarch64.deb	4612872
+faust-static	2.85.9-1	aarch64	6d25ad8cfc6b6add9d602978fca4858c380844d1fad85f0b626d82d613bf20f8	pool/main/f/faust-static/faust-static_2.85.9-1_aarch64.deb	4534588
 faust	2.85.9	aarch64	2d7203d597621eadcbb75ae2af3cc0e3c9280567461fe41b4098b9b6d003a5b0	pool/main/f/faust/faust_2.85.9_aarch64.deb	26270960
-faustlibraries	2.85.9	all	9447d21e61bdd5b81e705ae040cb40ce3d7940f84921a79df671ced257c0ead6	pool/main/f/faustlibraries/faustlibraries_2.85.9_all.deb	404832
+faustlibraries	2.85.9-1	all	33b9d90440637f9f3a5a41e78b1b8943ca918450e591383e7ef815b0b4f0e89e	pool/main/f/faustlibraries/faustlibraries_2.85.9-1_all.deb	404728
 fcgi-static	2.4.7	aarch64	e497c28a0609da591f87cbf4b7483e037c510c46749e85e327827ef1f0a544a3	pool/main/f/fcgi-static/fcgi-static_2.4.7_aarch64.deb	19920
 fcgi	2.4.7	aarch64	526c9e3e9609d8d23de4fa728c34ea465fd1e4e6c44f43ca7632386553fcb0ea	pool/main/f/fcgi/fcgi_2.4.7_aarch64.deb	49628
 fcgiwrap	1.1.0+g99c942c	aarch64	560218e63f88774bebb345c61a28d39caf52cec26bcd212a1c128488eb5a67c0	pool/main/f/fcgiwrap/fcgiwrap_1.1.0+g99c942c_aarch64.deb	9480
@@ -797,7 +797,7 @@ file-static	5.48-1	aarch64	587d2484a58c3d8a3c159617c9f356f098492889287b0284be677
 finch-static	2.14.14-3	aarch64	60745fa2f4ddfe4c90054731c783c84de48b872fd9253c37fd240a353c0df9d9	pool/main/f/finch-static/finch-static_2.14.14-3_aarch64.deb	2779808
 finch	2.14.14-3	aarch64	c40fda42f54cd482fbec46ed3e1127a7bdb632be1fd90d1ae6360258006b3d29	pool/main/f/finch/finch_2.14.14-3_aarch64.deb	874948
 findomain-static	10.0.1-1	aarch64	d72872a5f473e8cdd64b1c1d00f855fd6acc251857f8984ed248b72e611bb318	pool/main/f/findomain-static/findomain-static_10.0.1-1_aarch64.deb	1923276
-findomain	10.0.1-2	aarch64	ea605619dee021727cd055820cf75ad0584a969385e4501d26908912b595cc64	pool/main/f/findomain/findomain_10.0.1-2_aarch64.deb	3762020
+findomain	10.0.1-3	aarch64	ce433fc2ed36ff1ff78f1dec4744b9091d7facd332df0bdf0b0ff52c649a7a1d	pool/main/f/findomain/findomain_10.0.1-3_aarch64.deb	3761820
 flac	1.5.0-2	aarch64	c6e652296a68368c1faa79219670bc284f50f730957f0be3e5e1696871acb796	pool/main/f/flac/flac_1.5.0-2_aarch64.deb	104856
 flatbuffers-static	25.12.19-2026-02-06-03fffb2-1	aarch64	05b967035cd32d205d3a6aa95aa8a286dd10d2024045fd6193d3969e21b33416	pool/main/f/flatbuffers-static/flatbuffers-static_25.12.19-2026-02-06-03fffb2-1_aarch64.deb	172872
 flatbuffers	25.12.19-2026-02-06-03fffb2-1	aarch64	b1a915d4be5659328bab32d6c89ed37943166a7a4590d4f835b6a79c5e5eb8f1	pool/main/f/flatbuffers/flatbuffers_25.12.19-2026-02-06-03fffb2-1_aarch64.deb	1052000
@@ -810,7 +810,7 @@ fmt	1:11.2.0	aarch64	f78e7bed1be949f2214bd7e34b721fe103e0e522bb267a3f50607f1303e
 fontconfig-static	2.18.3-1	aarch64	69ee48546d94f31aae0bf23a300af1860343d5c3d79037ff989a13784560b956	pool/main/f/fontconfig-static/fontconfig-static_2.18.3-1_aarch64.deb	135708
 forestdb-dump	1.2-2	aarch64	02e2c377e51ecc09353024c5838b2dcea43c35dafd9c4d13c620aac982dfacb4	pool/main/f/forestdb-dump/forestdb-dump_1.2-2_aarch64.deb	106176
 forgejo-static	15.0.2	aarch64	cbe5dd583156c1cc5536e5267ab7281d44dd91c70c0e544235119f104169b3ef	pool/main/f/forgejo-static/forgejo-static_15.0.2_aarch64.deb	4612364
-forgejo	16.0.3	aarch64	3076b349cec417a27246e2faafca7e09cf32ad4a1d55e568685387c49174e644	pool/main/f/forgejo/forgejo_16.0.3_aarch64.deb	35010604
+forgejo	16.0.3-1	aarch64	d981aaa2427a38125fa9ae16a13f96e90730230c2a8978a3f892177db9239462	pool/main/f/forgejo/forgejo_16.0.3-1_aarch64.deb	35241088
 fortune	1.2-2	aarch64	5f9021dca48a81b64703bb65a9497b405e0e7670e257570aaee57b25581707a8	pool/main/f/fortune/fortune_1.2-2_aarch64.deb	817700
 fossil	2.28	aarch64	84971b0cfa208d06b79b4da8a25f1b4c4ead7e58febdf8f1f5250a1638c87ec4	pool/main/f/fossil/fossil_2.28_aarch64.deb	1707400
 freecell-solver	6.16.0-2	aarch64	e84176ba5ede7923e8e9aa864d6a3cb7dc92bf65e786f1b8db11ed0ace07981c	pool/main/f/freecell-solver/freecell-solver_6.16.0-2_aarch64.deb	173608
@@ -830,9 +830,9 @@ gauche-static	0.9.15-4	aarch64	17db1877cc22ac2a15000bdef46c61ad73c3e39f90c377919
 gauche	0.9.15-4	aarch64	44c0276a214a4567f98ec9130a6bcbf989a9a7ce4f69f1f230580b232e47dac0	pool/main/g/gauche/gauche_0.9.15-4_aarch64.deb	8679020
 gawk-static	5.3.2	aarch64	705e0f6cf45f5442808db85d2f71043f8f56f7efe088b686123341fb651849d5	pool/main/g/gawk-static/gawk-static_5.3.2_aarch64.deb	24860
 gdb-static	16.3-3	aarch64	7a05004f09388022507ff95b0298063ea9870051c9e021d099b689e3e621c831	pool/main/g/gdb-static/gdb-static_16.3-3_aarch64.deb	1491932
-gdb	16.3-4	aarch64	fa28acc7228500064ca91942c3de331bc57e7c5a3829fbed7920286938662ffc	pool/main/g/gdb/gdb_16.3-4_aarch64.deb	3941304
+gdb	16.3-5	aarch64	052269ecdc870e5fd0aa10afbbba1b6b9260a749b32dbb7601cac52691d588de	pool/main/g/gdb/gdb_16.3-5_aarch64.deb	3940440
 gdbm-static	1.26-1	aarch64	4de8da55cfcb8ccca3c3b494a91ee9abaa775990691e5392c3aa510bb3103a1c	pool/main/g/gdbm-static/gdbm-static_1.26-1_aarch64.deb	31992
-gdbserver	16.3-4	aarch64	d2f45e96c223b409092b8f0283f150fd1a99de50c0ccf9feabbbb195881d6f8f	pool/main/g/gdbserver/gdbserver_16.3-4_aarch64.deb	216384
+gdbserver	16.3-5	aarch64	f631248e95b39cdac586e253855bc25dbaab2fdd7e131f904313b0169f074ebd	pool/main/g/gdbserver/gdbserver_16.3-5_aarch64.deb	216276
 geoip2-database	20191221-2	all	157b87e64dba592cd86062e6b8a6b0b1940fc6c1584716e294bf4cd461bf530a	pool/main/g/geoip2-database/geoip2-database_20191221-2_all.deb	23194428
 gettext-static	1.0-1	aarch64	79c3eebc21ffe15a7d96b93f3845a9ba617cc3b3eeea355f3c7ab171adacdd32	pool/main/g/gettext-static/gettext-static_1.0-1_aarch64.deb	571980
 gflags-static	2.3.1	aarch64	f2f606c41328fbf1037eedb0881d3c41f5d4d934ff3bb5dad76a3f2a27a826d7	pool/main/g/gflags-static/gflags-static_2.3.1_aarch64.deb	60064
@@ -868,7 +868,7 @@ gsf-tools	1.14.58	aarch64	ac92c7f9d9c52a0fb2259b7ad10db0152ba0cdc0fade528c3aaa97
 gsl-static	2.8-1	aarch64	fdbcd10e211fce50b11604af1ab6747cdc06ba9ef0a41f5a7a6ed2cd79ee5d23	pool/main/g/gsl-static/gsl-static_2.8-1_aarch64.deb	908712
 gsl	2.8-1	aarch64	e5ae9e8dcbb7b1962d126926368d358c3463fda19bc79352551fd2a6847ad726	pool/main/g/gsl/gsl_2.8-1_aarch64.deb	1236284
 gst-plugins-base-static	1.28.4	aarch64	937dc873a2b947eda832b7acab838b571b17b656ce70c4d68edf03ec8b4c6673	pool/main/g/gst-plugins-base-static/gst-plugins-base-static_1.28.4_aarch64.deb	174464
-gst-plugins-base	1.28.6-1	aarch64	c86c93c99859e4e9890b2f326a4c0596a4de8239e897a663fdc3c9f6a9765bff	pool/main/g/gst-plugins-base/gst-plugins-base_1.28.6-1_aarch64.deb	2015716
+gst-plugins-base	1.28.6-2	aarch64	ea5fbee86259489dd1a6bde6cc12ec7492a42b2b3f0bae601d4a2d3143db1eb9	pool/main/g/gst-plugins-base/gst-plugins-base_1.28.6-2_aarch64.deb	2015796
 gstreamer-static	1.28.4	aarch64	87dbc9fc5701476b8931e3863ed51a1c5e7022582e2188f11b31164a1f78208c	pool/main/g/gstreamer-static/gstreamer-static_1.28.4_aarch64.deb	3700620
 gstreamer	1.28.6	aarch64	d1d2efcc083708a41a5ff91821f650c65b4ef40355d6fc506122bed83f74fb34	pool/main/g/gstreamer/gstreamer_1.28.6_aarch64.deb	1344616
 guile-static	3.0.11-2	aarch64	e94c53836451a2efc83b04bdb5b7f015d3fb7489b7356971460d439f9df5b8b2	pool/main/g/guile-static/guile-static_3.0.11-2_aarch64.deb	1469816
