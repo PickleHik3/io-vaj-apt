@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
 # Generated: 2026-07-02T00:00:00Z
-# Package count: 2823
+# Package count: 2848
 # Columns: name version arch sha256 object-path size
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb	1033296
@@ -2827,3 +2827,28 @@ libqxp-static	0.0.3	aarch64	390bb3e0548f226604aed3df9d9bf9e8380758e6c833e4c43684
 libqxp	0.0.3	aarch64	1e41561f9f478494a4f26a03579a5d957d65136f41a42b130ab0bc65848d1db5	pool/main/l/libqxp/libqxp_0.0.3_aarch64.deb	98684
 libxisf	0.2.13	aarch64	d13fa4d75d5bb1902a3ebc7902917adb3afff64852b07aaa0e4a733fc631a1ad	pool/main/l/libxisf/libxisf_0.2.13_aarch64.deb	198216
 python-ctranslate2	4.8.1-1	all	e8cf94a7c22e97e6b0405e95e19a9a2c84f241228cd303492c82d858468366e2	pool/main/p/python-ctranslate2/python-ctranslate2_4.8.1-1_all.deb	243680
+libstaroffice-static	0.0.8-1	aarch64	e6a467a8c964ce5b8fcbfa9dfa396ba779950d99947b7f8f3a875aa3ee426395	pool/main/l/libstaroffice-static/libstaroffice-static_0.0.8-1_aarch64.deb	1048932
+libstaroffice	0.0.8-1	aarch64	f00797e7c4a38de251427b8cc6eaabe48de5272acc6836dbca75cff76c7adb58	pool/main/l/libstaroffice/libstaroffice_0.0.8-1_aarch64.deb	526764
+libunibreak-static	7.0	aarch64	b6d0cf68f7991417bca8f14c84c982e2b2b416b5cd0329d6eea6868b6588f5e2	pool/main/l/libunibreak-static/libunibreak-static_7.0_aarch64.deb	18368
+libunibreak	7.0	aarch64	777542a98ee9b34d8ba318fb9c4422db3b2d20bdd4208a8295026b9d1d3a223c	pool/main/l/libunibreak/libunibreak_7.0_aarch64.deb	20988
+libzmf-static	0.0.2-5	aarch64	3bec9e1489f6d84c328d14bc4afc9cb9c4a0fb72b4bdecaa62aeacb28b596723	pool/main/l/libzmf-static/libzmf-static_0.0.2-5_aarch64.deb	93912
+libzmf	0.0.2-5	aarch64	d94c045716845907b47129527460cb08f267e1aa2f3cd22293b97455d72ffb64	pool/main/l/libzmf/libzmf_0.0.2-5_aarch64.deb	64976
+lpsolve	5.5.2.11-1	aarch64	3b02dccac24e49959656b4fb9cee2a788bc62aa5e3f80e2d9593aceb42ea1de3	pool/main/l/lpsolve/lpsolve_5.5.2.11-1_aarch64.deb	345668
+luau	0.735	aarch64	98450697d23a4d34e6f411bfa85b081ec832d3718c30c00c30b23085f0bb7579	pool/main/l/luau/luau_0.735_aarch64.deb	2209924
+maintainerr	3.25.0	aarch64	3c84adca785f88380e6f1453636141072fc24c61d68b8045e8cd21846e3b6fee	pool/main/m/maintainerr/maintainerr_3.25.0_aarch64.deb	16995028
+mdf2iso	0.3.1	aarch64	ff659825c2a9295e199c74fdcf87e7aa3c7751f92b87f94db42190adae8562ec	pool/main/m/mdf2iso/mdf2iso_0.3.1_aarch64.deb	4672
+miniz	3.1.2	aarch64	aba137dfb0ccb589b3ec5d1b83a4fa912b79b7216ac81dfd9b4f67909748154c	pool/main/m/miniz/miniz_3.1.2_aarch64.deb	59300
+monit	6.0.0	aarch64	20d5685ee3df36a18beb809ada7b1caccbcd0398348d84f64c232678ecd399a7	pool/main/m/monit/monit_6.0.0_aarch64.deb	298152
+proton-pass-cli	2.3.3	aarch64	fbbfecf18a535a807c9d5e8a87fb7f702de5c896b3008cb3275ed5adf28c1c3f	pool/main/p/proton-pass-cli/proton-pass-cli_2.3.3_aarch64.deb	6338548
+python-soxr	1.1.0-1	aarch64	52e8f63a9613f24a37ee3cac5fcd6c794976977d3d4ee71cceb580a855779627	pool/main/p/python-soxr/python-soxr_1.1.0-1_aarch64.deb	77648
+redland	1.0.17-1	aarch64	87cf0e2624f34bd452efba452b5a9c7110bb0f229b7743200aa1311e952e0d38	pool/main/r/redland/redland_1.0.17-1_aarch64.deb	134092
+rmw	0.10.0	aarch64	29ad28655e6e4f52bd4d988d55452d33d649fedab54ab4df44eef71b19b1c805	pool/main/r/rmw/rmw_0.10.0_aarch64.deb	51144
+rqbit	9.0.1	aarch64	d2c1228d2e63a8b37df95eafa9ab0190ef7b7cf1522b8a24e46bac62605fbcdf	pool/main/r/rqbit/rqbit_9.0.1_aarch64.deb	3942896
+sea-orm-cli	2.0.2	aarch64	df378bb18ec867cb9448a487555598e0a7128e1f8c231f6239310b09c92d5baa	pool/main/s/sea-orm-cli/sea-orm-cli_2.0.2_aarch64.deb	1942816
+seerr	3.4.1-1	aarch64	d4f35f59f97c102c04647ebcde70504f2604fcdf6dd0c21f0e7d5cb04ab40d10	pool/main/s/seerr/seerr_3.4.1-1_aarch64.deb	139450772
+sqlc	1.31.1	aarch64	456ed69130788a4d50ebc620bc68f214eef394ffd75ade28ec244659935a3805	pool/main/s/sqlc/sqlc_1.31.1_aarch64.deb	10304948
+stduuid	1.2.3-1	aarch64	f9ac6758c30e382ac6673385d7d06c38c93ae9762bad2dea1e2e02156940a14a	pool/main/s/stduuid/stduuid_1.2.3-1_aarch64.deb	10008
+wcslib-static	8.9	aarch64	c1a32814fea286c60337490e8cc21de97d793b2bda263bb07659a493fe8ba8df	pool/main/w/wcslib-static/wcslib-static_8.9_aarch64.deb	200632
+wcslib	8.9	aarch64	f3e78fae21afa8fa24266ffb71d800b82c52d70cac29d36887bb5835b54d66c3	pool/main/w/wcslib/wcslib_8.9_aarch64.deb	2440924
+xsimd	14.3.0	aarch64	eddf39f54e9ad39a388468ca82c9526c44a874d33a52d0876c6d912e2165fb1c	pool/main/x/xsimd/xsimd_14.3.0_aarch64.deb	177180
+zug	0.1.2	aarch64	ba72fdf8d6ef1558a202b30b62c16d7dd4a7fa1de7ddf02b8a5b13a954046a87	pool/main/z/zug/zug_0.1.2_aarch64.deb	31980
