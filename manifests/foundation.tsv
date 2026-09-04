@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
 # Generated: 2026-07-02T00:00:00Z
-# Package count: 2751
+# Package count: 2752
 # Columns: name version arch sha256 object-path size
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb	1033296
@@ -772,9 +772,9 @@ fakeroot	2.1.4	aarch64	1efa12a828e522684f049843527e2609eb72861a8fb85cd54029ff5d6
 fasd	2.0.0	aarch64	0d77b24372dce05e406d7b9fb50823804f6e2198fdc799dd01a0f7adf0b41971	pool/main/f/fasd/fasd_2.0.0_aarch64.deb	7424
 fastmod	0.4.4-2	aarch64	2f4aa378da69b9a23659a9b3dc8581028b7d73e8dfbca0e32a3e47f7420209db	pool/main/f/fastmod/fastmod_0.4.4-2_aarch64.deb	932756
 fatsort	1.7.679	aarch64	260ae4ec53b1067d2b33fffef094b511f342d0b1a4896010dbddc2f16b7ea216	pool/main/f/fatsort/fatsort_1.7.679_aarch64.deb	25948
-faust-static	2.85.9-1	aarch64	6d25ad8cfc6b6add9d602978fca4858c380844d1fad85f0b626d82d613bf20f8	pool/main/f/faust-static/faust-static_2.85.9-1_aarch64.deb	4534588
-faust	2.85.9	aarch64	2d7203d597621eadcbb75ae2af3cc0e3c9280567461fe41b4098b9b6d003a5b0	pool/main/f/faust/faust_2.85.9_aarch64.deb	26270960
-faustlibraries	2.85.9-1	all	33b9d90440637f9f3a5a41e78b1b8943ca918450e591383e7ef815b0b4f0e89e	pool/main/f/faustlibraries/faustlibraries_2.85.9-1_all.deb	404728
+faust-static	2.85.9-2	aarch64	ca6598baf0dfe6d58bbbd7feb31c7727a42de800a25bdb9262943702a66412d4	pool/main/f/faust-static/faust-static_2.85.9-2_aarch64.deb	4536460
+faust	2.85.9-2	aarch64	67122c46a7f35c7a95c2d510f91f05615351c4cb36571af5391840a2a89171b4	pool/main/f/faust/faust_2.85.9-2_aarch64.deb	25702620
+faustlibraries	2.85.9-2	all	fca04492408dffcfc4b6b475f8d73fcb88281e7f353f775b5e713941ba7b3796	pool/main/f/faustlibraries/faustlibraries_2.85.9-2_all.deb	404736
 fcgi-static	2.4.7	aarch64	e497c28a0609da591f87cbf4b7483e037c510c46749e85e327827ef1f0a544a3	pool/main/f/fcgi-static/fcgi-static_2.4.7_aarch64.deb	19920
 fcgi	2.4.7	aarch64	526c9e3e9609d8d23de4fa728c34ea465fd1e4e6c44f43ca7632386553fcb0ea	pool/main/f/fcgi/fcgi_2.4.7_aarch64.deb	49628
 fcgiwrap	1.1.0+g99c942c	aarch64	560218e63f88774bebb345c61a28d39caf52cec26bcd212a1c128488eb5a67c0	pool/main/f/fcgiwrap/fcgiwrap_1.1.0+g99c942c_aarch64.deb	9480
@@ -2755,3 +2755,4 @@ gforth	0.7.3-3	aarch64	531e22339142acdeb97a414476d274e0116bdfbda4e023b934a00b310
 tcc	1:0.9.27-p20230415-2	aarch64	fb8f08717a69d007e343cd4cf79d7b072b8647af6dea9cf4d123d3d6d5daf167	pool/main/t/tcc/tcc_1:0.9.27-p20230415-2_aarch64.deb	248688
 codon	0.19.6-1	aarch64	550a398a48b7c23299a17fed0064a4dcd53e68a564492681438582354016dd49	pool/main/c/codon/codon_0.19.6-1_aarch64.deb	35907276
 xmppc	0.1.2-4	aarch64	5f69428c852bde5b4bfd9540894da5e59dbefde99d34334281855b77fa2d3539	pool/main/x/xmppc/xmppc_0.1.2-4_aarch64.deb	20320
+iwyu	0.25-2	aarch64	f8cbdc82ba5bb2c4fe207b5f51927eae3e1a91a0c67ba262134cf5430443e4be	pool/main/i/iwyu/iwyu_0.25-2_aarch64.deb	583600
