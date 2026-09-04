@@ -20,6 +20,7 @@ SUITE = pub.SUITE
 COMPONENT = pub.COMPONENT
 ARCHITECTURE = pub.ARCHITECTURE
 MUTABLE_METADATA = pub.MUTABLE_METADATA
+DEB_ARCHITECTURE = pub.gen.DEB_ARCHITECTURE
 MUTABLE_CACHE_CONTROL = pub.MUTABLE_CACHE_CONTROL
 _upload_order_key = pub._upload_order_key
 verify_cache_policy = pub.verify_cache_policy
@@ -169,6 +170,7 @@ class TestUploadOrder(unittest.TestCase):
             "pool/main/z/zstd/zstd_1.5.7-1_aarch64.deb",
             f"dists/{SUITE}/{COMPONENT}/{ARCHITECTURE}/Packages",
             f"dists/{SUITE}/{COMPONENT}/{ARCHITECTURE}/Packages.gz",
+            f"dists/{SUITE}/Contents-{DEB_ARCHITECTURE}.gz",
             f"dists/{SUITE}/Release",
             f"dists/{SUITE}/Release.gpg",
             f"dists/{SUITE}/InRelease",
@@ -308,8 +310,8 @@ class TestVerifyCachePolicy(unittest.TestCase):
 class TestMutableMetadataSet(unittest.TestCase):
     """Consistency checks on the MUTABLE_METADATA constant."""
 
-    def test_exactly_five_objects(self):
-        self.assertEqual(len(MUTABLE_METADATA), 5)
+    def test_exactly_six_objects(self):
+        self.assertEqual(len(MUTABLE_METADATA), 6)
 
     def test_all_are_dists_paths(self):
         for p in MUTABLE_METADATA:
@@ -326,6 +328,7 @@ class TestMutableMetadataSet(unittest.TestCase):
             f"dists/{SUITE}/Release.gpg",
             f"dists/{SUITE}/{COMPONENT}/{ARCHITECTURE}/Packages",
             f"dists/{SUITE}/{COMPONENT}/{ARCHITECTURE}/Packages.gz",
+            f"dists/{SUITE}/Contents-{DEB_ARCHITECTURE}.gz",
         }
         self.assertEqual(MUTABLE_METADATA, frozenset(expected))
 

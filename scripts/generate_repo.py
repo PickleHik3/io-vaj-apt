@@ -28,6 +28,7 @@ from typing import Iterable
 SUITE = "stable"
 COMPONENT = "main"
 ARCHITECTURE = "binary-aarch64"
+DEB_ARCHITECTURE = ARCHITECTURE.removeprefix("binary-")
 PROVENANCE_FILENAME = "vaj-metadata-provenance.json"
 PROVENANCE_SCHEMA_VERSION = 1
 GENERATOR_IDENTITY = "vaj.manifest-authoritative-generator.v2"
@@ -430,7 +431,12 @@ def build_package_stanza(
     return stanza_text
 
 
-def _release_text(packages_path: Path, packages_gz_path: Path, release_time: datetime) -> str:
+def _release_text(
+    packages_path: Path,
+    packages_gz_path: Path,
+    release_time: datetime,
+    extra_paths: tuple[Path, ...] = (),
+) -> str:
     lines = [
         "Origin: VAJ",
         "Label: VAJ Terminal",
@@ -442,17 +448,57 @@ def _release_text(packages_path: Path, packages_gz_path: Path, release_time: dat
         "Description: VAJ Terminal Package Repository",
         "MD5Sum:",
     ]
-    for path in (packages_path, packages_gz_path):
-        release_path = path.relative_to(path.parents[2])
-        lines.append(
-            f" {_hash_file(path, 'md5')} {path.stat().st_size:16d} {release_path.as_posix()}"
-        )
-    lines.append("SHA256:")
-    for path in (packages_path, packages_gz_path):
-        release_path = path.relative_to(path.parents[2])
-        lines.append(
-            f" {_hash_file(path, 'sha256')} {path.stat().st_size:16d} {release_path.as_posix()}"
-        )
+    dists_root = packages_path.parents[2]
+    hashed = (packages_path, packages_gz_path) + extra_paths
+    for algorithm in ("md5", "sha256"):
+        if algorithm == "sha256":
+            lines.append("SHA256:")
+        for path in hashed:
+            # Names in Release are relative to dists/<suite>/, so a suite-level
+            # file such as Contents-aarch64.gz appears without any directory.
+            release_path = path.relative_to(dists_root)
+            lines.append(
+                f" {_hash_file(path, algorithm)} {path.stat().st_size:16d} {release_path.as_posix()}"
+            )
+    return "\n".join(lines) + "\n"
+
+
+def _deb_file_paths(deb_path: Path) -> list[str]:
+    """Payload paths inside a .deb, without the leading './'."""
+    tar = subprocess.run(
+        ["dpkg-deb", "--fsys-tarfile", str(deb_path)],
+        check=True, capture_output=True,
+    ).stdout
+    listing = subprocess.run(["tar", "-t"], input=tar, check=True, capture_output=True).stdout
+    paths = []
+    for raw in listing.splitlines():
+        entry = raw.decode("utf-8", errors="replace")
+        if entry.endswith("/"):
+            continue
+        paths.append(entry[2:] if entry.startswith("./") else entry)
+    return paths
+
+
+def build_contents_text(repo_root: Path, entries: list[ManifestEntry]) -> str:
+    """Debian Contents index: 'path<TAB>section/package[,section/package...]'.
+
+    command-not-found builds its lookup database from this file, and
+    scripts/audit-deb-contents.py can use it as a local ownership ground truth
+    instead of upstream Termux's. Reading every payload is the slow part of a
+    publishing wave, but generate_repo.py already opens each deb for its control
+    file and only runs when a wave actually stages something.
+    """
+    owners: dict[str, set[str]] = {}
+    for entry in entries:
+        deb_path = repo_root / _normalized_manifest_path(entry.object_path)
+        for file_path in _deb_file_paths(deb_path):
+            owners.setdefault(file_path, set()).add(entry.name)
+    # Upstream Termux's shape, because its consumers are written against it:
+    # a "FILE LOCATION" header, one space, and bare package names with no
+    # section prefix (Debian would write "main/foo" here).
+    lines = ["FILE LOCATION"]
+    for file_path in sorted(owners):
+        lines.append(f"{file_path} {','.join(sorted(owners[file_path]))}")
     return "\n".join(lines) + "\n"
 
 
@@ -591,13 +637,19 @@ def generate_repository(
     packages_path = packages_dir / "Packages"
     packages_gz_path = packages_dir / "Packages.gz"
     release_path = dists_root / "Release"
+    contents_gz_path = dists_root / f"Contents-{DEB_ARCHITECTURE}.gz"
 
     packages_content = "".join(stanzas)
     packages_path.write_text(packages_content, encoding="utf-8")
     packages_bytes = packages_content.encode("utf-8")
     packages_gz_path.write_bytes(_canonical_gzip_bytes(packages_bytes))
+    contents_gz_path.write_bytes(
+        _canonical_gzip_bytes(build_contents_text(repo_root, entries).encode("utf-8"))
+    )
     release_path.write_text(
-        _release_text(packages_path, packages_gz_path, release_time),
+        _release_text(
+            packages_path, packages_gz_path, release_time, extra_paths=(contents_gz_path,)
+        ),
         encoding="utf-8",
     )
     provenance = build_provenance_record(
@@ -617,6 +669,7 @@ def generate_repository(
         "packages_path": packages_path,
         "packages_gz_path": packages_gz_path,
         "release_path": release_path,
+        "contents_gz_path": contents_gz_path,
         "provenance_path": provenance_path,
         "manifest_sha256": provenance["manifest"]["sha256"],
     }

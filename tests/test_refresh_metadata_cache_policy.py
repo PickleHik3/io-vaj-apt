@@ -4,7 +4,7 @@ These tests use mocked S3 responses and an isolated tempdir repo root.  No
 network, no credentials, no filesystem pollution.  They prove the new
 subcommand:
 
-* only acts on the exact five MUTABLE_METADATA keys,
+* only acts on the exact six MUTABLE_METADATA keys,
 * refuses to touch /pool/ or any .deb,
 * verifies direct-R2 GET bytes equal canonical local bytes before PUT,
 * uses the required Cache-Control on every upload,
@@ -139,7 +139,7 @@ class TestRefreshMetadataDryRun(unittest.TestCase):
         import shutil
         shutil.rmtree(self.tmp, ignore_errors=True)
 
-    def test_dry_run_prints_exactly_five_keys(self):
+    def test_dry_run_prints_exactly_six_keys(self):
         buf_out = []
         from io import StringIO
         fake = _make_fake_urlopen(
@@ -153,7 +153,7 @@ class TestRefreshMetadataDryRun(unittest.TestCase):
                 )
             buf_out.append(buf.getvalue())
         self.assertEqual(errors, [])
-        self.assertEqual(len(results), 5)
+        self.assertEqual(len(results), 6)
         for r in results:
             self.assertEqual(r["status"], "dry-run")
             self.assertIn(r["path"], MUTABLE_METADATA)
@@ -162,7 +162,7 @@ class TestRefreshMetadataDryRun(unittest.TestCase):
             self.assertIn(k, out, f"dry-run output missing key {k}")
         self.assertIn("DRY-RUN", out)
         self.assertEqual(self.captures, [])
-        self.assertEqual(len(MUTABLE_METADATA), 5)
+        self.assertEqual(len(MUTABLE_METADATA), 6)
 
 
 class TestRefreshMetadataRealRun(unittest.TestCase):
@@ -192,8 +192,8 @@ class TestRefreshMetadataRealRun(unittest.TestCase):
                     FAKE_ACCESS_KEY, FAKE_SECRET_KEY, dry_run=False,
                 )
         self.assertEqual(errors, [], f"unexpected errors: {errors}")
-        self.assertEqual(len(results), 5)
-        self.assertEqual(len(self.captures), 5)
+        self.assertEqual(len(results), 6)
+        self.assertEqual(len(self.captures), 6)
         for r in results:
             self.assertEqual(r["status"], "uploaded")
             self.assertEqual(r["origin_sha256"], r["local_sha256"])
@@ -292,7 +292,7 @@ class TestRefreshMetadataRealRun(unittest.TestCase):
                     FAKE_ACCESS_KEY, FAKE_SECRET_KEY, dry_run=True,
                 )
         self.assertEqual(errors, [])
-        self.assertEqual(len(results), 5)
+        self.assertEqual(len(results), 6)
         for r in results:
             self.assertIn(r["path"], MUTABLE_METADATA)
             self.assertFalse(r["path"].startswith("pool/"))

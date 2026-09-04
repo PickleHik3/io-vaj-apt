@@ -46,6 +46,7 @@ MUTABLE_METADATA = frozenset([
     f"dists/{SUITE}/Release.gpg",
     f"dists/{SUITE}/{COMPONENT}/{ARCHITECTURE}/Packages",
     f"dists/{SUITE}/{COMPONENT}/{ARCHITECTURE}/Packages.gz",
+    f"dists/{SUITE}/Contents-{gen.DEB_ARCHITECTURE}.gz",
 ])
 
 MUTABLE_CACHE_CONTROL = "max-age=0, must-revalidate"
@@ -70,6 +71,7 @@ def load_allowlist(repo_root):
     allowed.add(f"dists/{SUITE}/InRelease")
     allowed.add(f"dists/{SUITE}/{COMPONENT}/{ARCHITECTURE}/Packages")
     allowed.add(f"dists/{SUITE}/{COMPONENT}/{ARCHITECTURE}/Packages.gz")
+    allowed.add(f"dists/{SUITE}/Contents-{gen.DEB_ARCHITECTURE}.gz")
     allowed.add(PROVENANCE_REL_PATH)
     allowed.add("keys/io-vaj-archive.gpg")
     allowed.add("keys/io-vaj-archive.asc")
@@ -642,6 +644,7 @@ def _upload_order_key(path):
     metadata_order = [
         f"dists/{SUITE}/{COMPONENT}/{ARCHITECTURE}/Packages",
         f"dists/{SUITE}/{COMPONENT}/{ARCHITECTURE}/Packages.gz",
+        f"dists/{SUITE}/Contents-{gen.DEB_ARCHITECTURE}.gz",
         f"dists/{SUITE}/Release",
         f"dists/{SUITE}/Release.gpg",
         f"dists/{SUITE}/InRelease",
