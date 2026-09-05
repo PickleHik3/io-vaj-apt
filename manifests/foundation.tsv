@@ -1,7 +1,7 @@
 # VAJ Foundation Package Manifest
 # Bootstrap SHA-256: be890809bd455df736ba3a71fe656534be102433535fcf115f64271a4800c9c3
 # Generated: 2026-07-02T00:00:00Z
-# Package count: 2848
+# Package count: 2849
 # Columns: name version arch sha256 object-path size
 
 apt	2.8.1-3	aarch64	db4f88f928a1317960cbffe87b0028dc523dca0d356b9528703c5d1a73cf6509	pool/main/a/apt/apt_2.8.1-3_aarch64.deb	1033296
@@ -2852,3 +2852,4 @@ wcslib-static	8.9	aarch64	c1a32814fea286c60337490e8cc21de97d793b2bda263bb07659a4
 wcslib	8.9	aarch64	f3e78fae21afa8fa24266ffb71d800b82c52d70cac29d36887bb5835b54d66c3	pool/main/w/wcslib/wcslib_8.9_aarch64.deb	2440924
 xsimd	14.3.0	aarch64	eddf39f54e9ad39a388468ca82c9526c44a874d33a52d0876c6d912e2165fb1c	pool/main/x/xsimd/xsimd_14.3.0_aarch64.deb	177180
 zug	0.1.2	aarch64	ba72fdf8d6ef1558a202b30b62c16d7dd4a7fa1de7ddf02b8a5b13a954046a87	pool/main/z/zug/zug_0.1.2_aarch64.deb	31980
+nchat	5.18.20-1	aarch64	15415536ef4713beb6dbf5557880f572de0db4de4615d3378b2e4928a797e183	pool/main/n/nchat/nchat_5.18.20-1_aarch64.deb	12449900
