@@ -15,7 +15,7 @@ bzip2	1.0.8-8	aarch64	b42fb48de249aebf28e905b2ab11451e540e5a423337a242d9c0e203fc
 ca-certificates	1:2026.07.16	all	10f4fa035577ced7db8e1ce6ee9cfc7d66797e80b20236201215568bdff8672e	pool/main/c/ca-certificates/ca-certificates_1:2026.07.16_all.deb	104184
 ca-certificates-java	1:2026.07.16	all	af1353ab7b5e7fb65b4d7697473ca45cb144fba4e3a89cedaeaa862f58c2a442	pool/main/c/ca-certificates-java/ca-certificates-java_1:2026.07.16_all.deb	95108
 c-ares	1.34.8	aarch64	236c2a0f0fc07c1ea01db462eab4f7cabe37c3bb40e7bcc53dbebb2a63a5e8a0	pool/main/c/c-ares/c-ares_1.34.8_aarch64.deb	194900
-command-not-found	3.4.1-15	aarch64	60e6dde1cdd6078b506c2dd44099c2175eed8964fe7a8232babfc58b9b956fbc	pool/main/c/command-not-found/command-not-found_3.4.1-15_aarch64.deb	16964
+command-not-found	3.5.0-8	aarch64	67c825a1f3235f9d90ee41e2a8607a92862919046af955310963b46cc8259313	pool/main/c/command-not-found/command-not-found_3.5.0-8_aarch64.deb	132328
 coreutils	9.11-1	aarch64	2ff6bb950130a573b85b4f853d19fc277341a92fa8ea25fab8f4745effba63a4	pool/main/c/coreutils/coreutils_9.11-1_aarch64.deb	813800
 curl	8.21.0-1	aarch64	0eab44f58d96627d4f147270c166aea3edec9703239a5356cd9fa1870c79893e	pool/main/c/curl/curl_8.21.0-1_aarch64.deb	242996
 dash	0.5.12-2	aarch64	a44120b3027756832eb0c027dd5bc001e9460ac88eb3089e0b55d350b28e1ab3	pool/main/d/dash/dash_0.5.12-2_aarch64.deb	65828
