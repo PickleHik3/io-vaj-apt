@@ -6,7 +6,8 @@ and collected payloads by timestamp, so a deb could pick up whatever another
 build installed meanwhile (2026-08-28 audit: 279 of 1,656 published debs, e.g.
 arpack-ng shipping all of ruby, 145 debs shipping dash's bin/sh -> dpkg refuses
 to install them). Ground truth for "who owns this path" is upstream Termux's
-Contents-aarch64 index (same recipes, same subpackage splits, com.termux prefix).
+Contents-aarch64 indexes -- main, x11 and root (same recipes, same subpackage
+splits, com.termux prefix).
 
 Usage:
     scripts/audit-deb-contents.py <deb-or-dir>...  [--prefix io.vaj.tl]
@@ -19,23 +20,44 @@ import argparse, gzip, os, subprocess, sys, tempfile, urllib.request
 from collections import Counter, defaultdict
 from pathlib import Path
 
-UPSTREAM = "https://packages.termux.dev/apt/termux-main/dists/stable/Contents-aarch64.gz"
+# One index per upstream repository. termux-main alone was ground truth until
+# 2026-09-05, which is fine while we only publish main-repo recipes; the moment
+# an x11 or root package is audited, every one of its files has no upstream
+# owner and the audit silently says nothing about it. Note the suite names
+# differ: main is "stable", the other two are named after the repository.
+UPSTREAM = {
+    "termux-main": "https://packages.termux.dev/apt/termux-main/dists/stable/Contents-aarch64.gz",
+    "termux-x11": "https://packages.termux.dev/apt/termux-x11/dists/x11/Contents-aarch64.gz",
+    "termux-root": "https://packages.termux.dev/apt/termux-root/dists/root/Contents-aarch64.gz",
+}
 
 
-def load_owners(cache: Path) -> dict[str, str]:
-    if not cache.is_file():
-        req = urllib.request.Request(UPSTREAM, headers={"User-Agent": "Debian APT-HTTP/1.3"})
-        with urllib.request.urlopen(req, timeout=120) as r, open(cache, "wb") as f:
-            f.write(r.read())
-    owners: dict[str, str] = {}
-    with gzip.open(cache, "rt", encoding="utf-8", errors="replace") as f:
-        for line in f:
-            parts = line.rstrip("\n").rsplit(None, 1)
-            if len(parts) != 2:
-                continue
-            path, pkgs = parts
-            # "section/name,section/name" -> first owner's bare name
-            owners[path] = pkgs.split(",")[0].rsplit("/", 1)[-1]
+def load_owners(cache: Path) -> dict[str, set[str]]:
+    """path -> every upstream package that ships it.
+
+    A set, not a single name: the same path can be claimed by more than one
+    repository's index, and taking only the first claimant made a deb look
+    contaminated whenever the other claimant was the deb itself.
+    """
+    owners: dict[str, set[str]] = {}
+    for repo, url in UPSTREAM.items():
+        # Keep the caller's --contents as the base name so one flag still
+        # controls where the caches live.
+        part = cache.parent / f"{cache.name.removesuffix('.gz')}.{repo}.gz"
+        if not part.is_file():
+            req = urllib.request.Request(url, headers={"User-Agent": "Debian APT-HTTP/1.3"})
+            with urllib.request.urlopen(req, timeout=120) as r, open(part, "wb") as f:
+                f.write(r.read())
+        with gzip.open(part, "rt", encoding="utf-8", errors="replace") as f:
+            for line in f:
+                parts = line.rstrip("\n").rsplit(None, 1)
+                if len(parts) != 2:
+                    continue
+                path, pkgs = parts
+                # "section/name,section/name" -> each owner's bare name
+                owners.setdefault(path, set()).update(
+                    entry.rsplit("/", 1)[-1] for entry in pkgs.split(",")
+                )
     return owners
 
 
@@ -92,9 +114,9 @@ def main() -> int:
             if "/share/doc/" in path or "/CONTROL/" in path:
                 continue
             total += 1
-            owner = owners.get(path.replace(ours, theirs, 1))
-            if owner and not related(owner, name):
-                foreign += 1; who[owner] += 1
+            claimants = owners.get(path.replace(ours, theirs, 1))
+            if claimants and not any(related(o, name) for o in claimants):
+                foreign += 1; who[sorted(claimants)[0]] += 1
         if foreign >= a.min_foreign:
             bad.append((name, foreign, total, who))
             print(f"CONTAMINATED {deb.name}: {foreign}/{total} files belong to "
