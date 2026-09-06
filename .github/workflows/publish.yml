@@ -217,6 +217,22 @@ jobs:
             sleep 10
           done
 
+      # The wave just superseded a deb for every package it republished, and
+      # nothing else ever deletes one: the pool grew to 11.28 GB against R2's
+      # 10 GB free tier before this step existed, 4.51 GB of it dead.
+      #
+      # Never fails the wave. The publish above already succeeded, and a red
+      # job here would strand the staging release and invite a re-dispatch of
+      # an already-published wave; uncollected garbage can wait for the next
+      # one. Reads the live index, so if Cloudflare serves a stale copy the
+      # debs just published look unreferenced -- they are younger than
+      # --min-age and kept, which is exactly what that guard is for.
+      - name: Prune superseded pool objects
+        if: steps.stage.outputs.staged != '0'
+        run: |
+          python3 scripts/prune-pool.py --apply \
+            || echo "::warning::pool prune failed; superseded debs stay until the next wave"
+
       # Last, so the clean debs above are already published. Failing here
       # keeps the staging release (see below), which is the standing to-do
       # marker for the quarantined packages.
